@@ -1,0 +1,29 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260424153040
+Username: LAPTOP-QDLGLA0U\Admin
+RunAs User: LAPTOP-QDLGLA0U\Admin
+Configuration Name: 
+Machine: LAPTOP-QDLGLA0U (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Start-SessionLog.ps1
+Process ID: 16056
+PSVersion: 5.1.26100.8115
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8115
+BuildVersion: 10.0.26100.8115
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started: D:\Games\Rom games\Pokemon Indigo 4.0.2 EN-5\.\\logs\session-20260424-153040.log
+Run Stop-Transcript when you finish the session.
+**********************
+Command start time: 20260424153040
+**********************
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20260424153040
+**********************

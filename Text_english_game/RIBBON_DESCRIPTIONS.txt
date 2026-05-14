@@ -1,0 +1,160 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[RIBBON_DESCRIPTIONS]
+¡Ganador de la categoría Normal del Concurso Carisma!
+Cool Contest Normal Rank winner!
+¡Ganador de la categoría Alto del Concurso Carisma!
+Cool Contest Super Rank winner!
+¡Ganador de la categoría Avanzado del Concurso Carisma!
+Cool Contest Hyper Rank winner!
+¡Ganador de la categoría Experto del Concurso Carisma!
+Cool Contest Master Rank winner!
+¡Ganador de la categoría Normal del Concurso de Belleza!
+Beauty Contest Normal Rank winner!
+¡Ganador de la categoría Alto del Concurso de Belleza!
+Beauty Contest Super Rank winner!
+¡Ganador de la categoría Avanzado del Concurso de Belleza!
+Beauty Contest Hyper Rank winner!
+¡Ganador de la categoría Experto del Concurso de Belleza!
+Beauty Contest Master Rank winner!
+¡Ganador de la categoría Normal del Concurso de Dulzura!
+Cute Contest Normal Rank winner!
+¡Ganador de la categoría Alto del Concurso de Dulzura!
+Cute Contest Super Rank winner!
+¡Ganador de la categoría Avanzado del Concurso de Dulzura!
+Cute Contest Hyper Rank winner!
+¡Ganador de la categoría Experto del Concurso de Dulzura!
+Cute Contest Master Rank winner!
+¡Ganador de la categoría Normal del Concurso de Ingenio!
+Smart Contest Normal Rank winner!
+¡Ganador de la categoría Alto del Concurso de Ingenio!
+Smart Contest Super Rank winner!
+¡Ganador de la categoría Avanzado del Concurso de Ingenio!
+Smart Contest Hyper Rank winner!
+¡Ganador de la categoría Experto del Concurso de Ingenio!
+Smart Contest Master Rank winner!
+¡Ganador de la categoría Normal del Concurso de Dureza!
+Tough Contest Normal Rank winner!
+¡Ganador de la categoría Alto del Concurso de Dureza!
+Tough Contest Super Rank winner!
+¡Ganador de la categoría Avanzado del Concurso de Dureza!
+Tough Contest Hyper Rank winner!
+¡Ganador de la categoría Experto del Concurso de Dureza!
+Tough Contest Master Rank winner!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Carisma!
+Super Contest Cool Category Normal Rank winner!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Carisma!
+Super Contest Cool Category Great Rank winner!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Carisma!
+Super Contest Cool Category Ultra Rank winner!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Carisma!
+Super Contest Cool Category Master Rank winner!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Belleza!
+Super Contest Beauty Category Normal Rank winner!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Belleza!
+Super Contest Beauty Category Great Rank winner!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Belleza!
+Super Contest Beauty Category Ultra Rank winner!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Belleza!
+Super Contest Beauty Category Master Rank winner!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Dulzura!
+Super Contest Cute Category Normal Rank winner!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Dulzura!
+Super Contest Cute Category Great Rank winner!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Dulzura!
+Super Contest Cute Category Ultra Rank winner!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Dulzura!
+Super Contest Cute Category Master Rank winner!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Ingenio!
+Super Contest Smart Category Normal Rank winner!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Ingenio!
+Super Contest Smart Category Great Rank winner!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Ingenio!
+Super Contest Smart Category Ultra Rank winner!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Ingenio!
+Super Contest Smart Category Master Rank winner!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Dureza!
+Super Contest Tough Category Normal Rank winner!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Dureza!
+Super Contest Tough Category Great Rank winner!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Dureza!
+Super Contest Tough Category Ultra Rank winner!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Dureza!
+Super Contest Tough Category Master Rank winner!
+Cinta otorgada por superar el desafío de nivel 50 de la Torre Batalla.
+Ribbon awarded for clearing the Battle Tower's Lv. 50 challenge.
+Cinta otorgada por superar el desafío de nivel 100 de la Torre Batalla.
+Ribbon awarded for clearing the Battle Tower's Open Level challenge.
+Cinta obtenida por vencer por primera vez al Amo Torre en la Torre Batalla.
+Ribbon awarded for beating the Tower Tycoon at the Battle Tower.
+Cinta obtenida por vencer por segunda vez al Amo Torre en la Torre Batalla.
+Ribbon awarded for beating the Tower Tycoon for the second time.
+Una cinta otorgada por completar el desafío de Doble de la Torre Batalla.
+Ribbon awarded for clearing the Battle Tower Double battle challenge.
+Una cinta otorgada por completar el desafío Multi de la Torre Batalla.
+Ribbon awarded for clearing the Battle Tower Multi battle challenge.
+Una cinta otorgada por completar el desafío Multi Conexión de la Torre Batalla.
+Ribbon awarded for clearing the Battle Tower Link Multi battle challenge.
+Una cinta otorgada por completar el desafío de la Torre Batalla Wi-Fi.
+Ribbon awarded for clearing the Wi-Fi Battle Tower challenge.
+Cinta por superar la Liga Pokémon e ingresar al Salón de la Fama.
+Ribbon for clearing the Pokémon League and entering the Hall of Fame.
+Cinta otorgada por vencer al Campeón e ingresar al Salón de la Fama de Sinnoh.
+Ribbon awarded for beating the Champion and entering the Sinnoh Hall of Fame.
+Una cinta otorgada por establecer un récord increíble.
+A Ribbon awarded for setting an incredible record.
+Una cinta otorgada por establecer un récord histórico.
+A Ribbon awarded for setting an all-time record.
+Una cinta otorgada por establecer un récord legendario.
+A Ribbon awarded for setting a legendary record.
+Una cinta extremadamente bonita y extravagante.
+An extraordinarily gorgeous and extravagant Ribbon.
+Una cinta increíblemente majestuosa y con un aire aristocrático.
+An incredibly regal Ribbon with an air of distinction.
+Una cinta preciosa y majestuosa que es de lo más fabulosa y maravillosa.
+A gorgeous and regal Ribbon that is the peak of fabulous.
+Una cinta para recordar un evento vigorizante que creó energía vital.
+A Ribbon for recalling an invigorating event that created life energy.
+Una cinta para recordar un evento excionante que hizo la vida más interesante.
+A Ribbon for recalling a thrilling event that made life more exciting.
+Una cinta para recordar sentimientos tristes que añadieron interés a la vida.
+A Ribbon for recalling feelings of sadness that added spice to life.
+Una cinta para recordar descuidos que ayudaron a tomar decisiones vitales.
+A Ribbon for recalling a careless error that helped steer decisions.
+Una cinta para recordar una anécdota refrescante que añadió chispa a la vida.
+A Ribbon for recalling a refreshing deed that added sparkle to life.
+Una cinta para recordar un sueño profundo que hizo que la vida fuera calmada.
+A Ribbon for recalling a deep slumber that made life soothing.
+Una cinta para recordar que las sonrisas mejoran la calidad de vida.
+A Ribbon for recalling that smiles make life better.
+Una cinta otorgada a un Pokémon que deja huellas de primera.
+A Ribbon awarded to a Pokémon with a top-quality footprint.
+Cinta otorgada por ser elegido como supermodelo en Hoenn.
+Ribbon awarded for being chosen as a supermodel in Hoenn.
+Cinta otorgada por ser un excelente trabajador.
+Ribbon awarded for being an excellent worker.
+Una cinta para celebrar un cumpleaños.
+A Ribbon to celebrate a birthday.
+Una cinta para conmemorar un día especial.
+A Ribbon to cherish a special memory.
+Una cinta que proclama amor por los Pokémon.
+A Ribbon that proclaims love for Pokémon.
+Cinta de vacaciones especiales.
+Special holiday Ribbon.
+Una cinta conmemorativa obtenida en un lugar misterioso.
+A commemorative Ribbon obtained at a mystery location.
+Una cinta otorgada por superar todos los desafíos difíciles.
+A Ribbon awarded for clearing all difficult challenges.
+Cinta de Campeón.
+Champion Ribbon.
+Cinta de Campeón de Competición de Batalla.
+Battle Competition Champion Ribbon.
+Cinta de Campeón Regional del Campeonato Mundial de Videojuegos Pokémon.
+Pokémon World Championships Regional Champion Ribbon.
+Una cinta otorgada por ganar 100 combates seguidos.
+A Ribbon awarded for winning 100 battles in a row.
+Cinta de Campeón Nacional del Campeonato Mundial de Videojuegos Pokémon.
+Pokémon World Championships National Champion Ribbon.
+Cinta de Campeón Mundial del Campeonato Mundial de Videojuegos Pokémon.
+Pokémon World Championships World Champion Ribbon.

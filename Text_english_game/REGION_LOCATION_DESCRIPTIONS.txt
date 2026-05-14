@@ -1,0 +1,42 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[REGION_LOCATION_DESCRIPTIONS]
+Laboratorio Pokémon
+Pokémon Lab
+Escuela Pokémon
+Pokémon School
+Museo Pokémon
+Pokémon Museum
+Tienda de Bicicletas
+Bicycle Store
+Casa de Bill
+Bill's House
+Bosque Celeste
+Cerulean Forest
+Guardería
+Day Care
+Puerto
+Port
+Torre Pokémon
+Pokémon Tower
+Cementerio
+Cemetery
+Centro Comercial
+Department Store
+Granja Pokémon
+Pokémon Farm
+Silph S.A.
+Silph Co.
+Islas Espuma
+Seafoam Islands
+Liga Pokémon
+Pokémon League
+Altar de Ave Guardiana
+Guardian Bird Altar
+Cueva Perdida
+Lost Cave
+Dojo Magenta
+Magenta Dojo
+Cueva Glaciada
+Glacial Cave

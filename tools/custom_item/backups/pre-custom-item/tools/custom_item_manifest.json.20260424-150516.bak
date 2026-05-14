@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "updated_at_utc": "2026-04-24T07:44:24Z",
+  "items": {
+    "DRAGONSOUL": {
+      "item_spec": {
+        "id": "DRAGONSOUL",
+        "name": "Dragon's Soul",
+        "name_plural": "Dragon's Souls",
+        "pocket": 1,
+        "price": 20000,
+        "sell_price": 20000,
+        "bp_price": 50,
+        "field_use": 0,
+        "battle_use": 0,
+        "flags": [],
+        "move_id": "",
+        "description": "Auto-generated from selected effects:\n- Item Life Orb: Empowers movements, but consumes HP with each attack by 30%.It must be carried by a Pokémon.\n- Item Shell Bell: It must be carried by a Pokémon.Every time it deals damage, it will recover some HP.\n- Item Leftovers: They gradually restore the HP of the Pokémon carrying them during battle.\n- Move Drain Punch: A blow that drains energy.The Pokémon recovers half of the HP taken from the target.\n- Ability Contrary: Reverses changes in characteristics: they go down when it's time to go up and go up when it's time to go down.",
+        "consumable": false,
+        "show_quantity": true
+      },
+      "effect_spec": {
+        "mode": "composite",
+        "source_item_id": "LIFEORB",
+        "resolved_source_item_ids": [
+          "LIFEORB",
+          "SHELLBELL",
+          "LEFTOVERS"
+        ],
+        "selected_item_effect_ids": [
+          "LIFEORB",
+          "SHELLBELL",
+          "LEFTOVERS"
+        ],
+        "selected_move_effect_ids": [
+          "DRAINPUNCH"
+        ],
+        "selected_ability_effect_ids": [
+          "CONTRARY"
+        ],
+        "resolved_templates": [
+          {
+            "source_kind": "ability",
+            "source_id": "CONTRARY",
+            "template_key": "ability_contrary"
+          },
+          {
+            "source_kind": "move",
+            "source_id": "DRAINPUNCH",
+            "template_key": "drain_damage_half"
+          }
+        ],
+        "unsupported_reasons": [],
+        "unsupported_reason": ""
+      },
+      "updated_at_utc": "2026-04-24T07:44:24Z"
+    }
+  },
+  "last_transaction": {
+    "stamp": "20260424-144424",
+    "kind": "upsert",
+    "item_id": "DRAGONSOUL",
+    "patched_files": [
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_backups\\pre-custom-item\\Data\\items.dat.20260424-144424.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_backups\\pre-custom-item\\Data\\Scripts.rxdata.20260424-144424.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_manifest.json",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_backups\\pre-custom-item\\tools\\custom_item_manifest.json.20260424-144424.bak"
+      }
+    ]
+  },
+  "last_rollback": {
+    "rolled_back_at_utc": "2026-04-24T06:18:13Z",
+    "restored_files": [
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_manifest.json"
+    ],
+    "from_transaction_stamp": "20260424-131813",
+    "from_transaction_kind": "upsert",
+    "from_item_id": "ZZUNSUPPORTEDTEST"
+  }
+}

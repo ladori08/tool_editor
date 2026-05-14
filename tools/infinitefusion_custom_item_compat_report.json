@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "target_root": "D:\\InfiniteFusion",
+    "adapter_id": "essentials_packed_rxdata",
+    "levels": {
+      "A_metadata_item_data": true,
+      "B_clone_existing_effects": false,
+      "C_ruby_injection": false
+    },
+    "script_sources": {
+      "scripts_rxdata": true,
+      "plugin_scripts_rxdata": true,
+      "data_scripts_rb": true,
+      "loaded_source_count": 542
+    },
+    "scan_registries": {
+      "item_handlers": true,
+      "battle_item_effects": false,
+      "battle_ability_effects": false
+    },
+    "scan_bucket_counts": {
+      "item_handlers": 9,
+      "battle_item_effects": 0
+    },
+    "ability_total": 466,
+    "move_total": 1360,
+    "runtime_ability_scan_count": 0,
+    "move_with_function_code": 0,
+    "move_without_function_code": 1360,
+    "move_with_function_code_ratio": 0.0,
+    "key_pattern_counts": {
+      "class_Battle_Battler": 0,
+      "def_pbProcessMoveHit": 0,
+      "def_hasActiveAbility_q": 0,
+      "call_hasActiveAbility_q": 0,
+      "call_Battle_Move_from_pokemon_move": 0,
+      "registry_ItemHandlers": 0,
+      "registry_Battle_ItemEffects": 0
+    },
+    "compatibility_score_100": 20
+  },
+  "runtime_ability_ids_example": [],
+  "top_move_function_codes": [],
+  "profile_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\infinitefusion_patch_capability.profile.json",
+  "adapter_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\infinitefusion_patch_adapter.lock.json"
+}

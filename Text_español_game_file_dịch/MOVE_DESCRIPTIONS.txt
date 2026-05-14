@@ -1,0 +1,1674 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[MOVE_DESCRIPTIONS]
+Violenta embestida con cuernos imponentes.
+Lao vào mạnh mẽ bằng những chiếc sừng oai vệ.
+El usuario llama a sus amigos para que ataquen al rival. Suele ser crítico.
+Người dùng gọi bạn bè tấn công đối thủ. Thường là đòn chí mạng.
+El movimiento de las alas crea una onda sónica dañina. Puede disminuir la Defensa Especial del objetivo.
+Chuyển động của cánh tạo ra sóng âm gây hại. Có thể giảm Đặc Phòng mục tiêu.
+Movimiento de gran potencia y prioridad que solo puede usarse en el primer turno del usuario.
+Chiêu sức mạnh lớn và ưu tiên cao, chỉ dùng được ở lượt đầu tiên của người dùng.
+Ataca al oponente con una bola explosiva. Si esta alcanza a un aliado, le hará recuperar PS.
+Tấn công đối thủ bằng quả cầu nổ. Nếu trúng đồng minh, đồng minh sẽ hồi HP.
+Restaura al usuario la mitad del daño causado al objetivo.
+Hồi người dùng một nửa sát thương đã gây cho mục tiêu.
+Ataca al oponente abalanzándose sobre él con todas sus fuerzas y reduce su Ataque.
+Tấn công đối thủ bằng cách lao vào với toàn lực và giảm Tấn Công của nó.
+Cruza las guadañas o las garras para atacar al rival como si fueran unas tijeras.
+Bắt chéo lưỡi hái hoặc móng vuốt để tấn công đối thủ như kéo cắt.
+Ataca con un rayo de luz siniestro. Puede confundir al objetivo.
+Tấn công bằng tia sáng tối tăm. Có thể gây hỗn loạn mục tiêu.
+Ataca al objetivo por la espalda de forma subrepticia y además reduce su Ataque Especial.
+Tấn công mục tiêu từ phía sau một cách lén lút và giảm Đặc Tấn của nó.
+Tras atacar, vuelve a toda prisa para dar paso a otro Pokémon del equipo.
+Sau khi tấn công, nhanh chóng quay về để nhường chỗ cho Pokémon khác trong đội.
+El usuario se hace una bola y arrolla al objetivo con su cuerpo. Puede amedrentar.
+Người dùng cuộn tròn và lăn vào mục tiêu bằng cơ thể. Có thể làm run sợ.
+Pica al rival. Si el adversario lleva una Baya, el agresor se la come y se beneficia de su efecto.
+Cắn đối thủ. Nếu đối thủ mang Berry, kẻ tấn công ăn nó và nhận hiệu ứng.
+Fuerte viento con polvo de escamas. Puede subir todas las características de quien lo usa.
+Gió mạnh với bụi vảy. Có thể tăng tất cả chỉ số của người dùng.
+Al derrotar al objetivo utilizando este movimiento, aumenta muchísimo el Ataque del usuario.
+Khi ngã ngựa mục tiêu bằng chiêu này, Tấn Công người dùng tăng rất mạnh.
+El usuario contraataca. Además baja el Ataque Especial de los oponentes.
+Người dùng phản công. Ngoài ra giảm Đặc Tấn của đối thủ.
+Ataque con garras o guadañas que crece en intensidad si se usa repetidas veces.
+Đòn tấn công bằng móng vuốt hoặc lưỡi hái tăng cường độ khi dùng liên tục.
+Lanza finas púas que hieren de dos a cinco veces.
+Tung gai mỏng gây thương tích từ hai đến năm lần.
+Clava aguijones al rival dos veces. Puede envenenar.
+Cắm ngòi vào đối thủ hai lần. Có thể gây nhiễm độc.
+Oprime al enemigo de cuatro a cinco turnos, durante los cuales no podrá huir.
+Ép kẻ thù từ bốn đến năm lượt, trong thời gian đó không thể chạy trốn.
+El usuario llama a sus amigos para que formen un escudo viviente. Sube la Defensa y la Def. Esp.
+Người dùng gọi bạn bè tạo thành lá chắn sống. Tăng Phòng Thủ và Đặc Phòng.
+El usuario llama a sus amigos para que lo curen. Recupera hasta la mitad de los PS máximos.
+Người dùng gọi bạn bè chữa lành. Hồi đến một nửa HP tối đa.
+Si el objetivo usa un movimiento de tipo Fuego en ese turno, el polvo explota y le inflige daño.
+Nếu mục tiêu dùng chiêu hệ Lửa trong lượt đó, bụi phát nổ và gây sát thương.
+Danza mística que sube el Ataque Especial, la Defensa Especial y la Velocidad.
+Điệu nhảy huyền bí tăng Đặc Tấn, Đặc Phòng và Tốc Độ.
+Usa un polvo que irrita y centra en el usuario la atención y los ataques de los rivales.
+Dùng bụi gây kích thích và tập trung sự chú ý và đòn tấn công của đối thủ vào người dùng.
+Enreda al objetivo para evitar que abandone la batalla.
+Quấn mục tiêu để ngăn nó rời chiến đấu.
+Coloca una red pegajosa en el bando rival que baja la Velocidad de cualquier Pokémon que entre.
+Đặt lưới dính ở phía đối thủ làm giảm Tốc Độ của bất kỳ Pokémon nào vào.
+Lanza seda al objetivo y reduce su Velocidad.
+Tung tơ vào mục tiêu và giảm Tốc Độ của nó.
+Se concentra en una ráfaga de luz que sube muchísimo el Ataque Especial.
+Tập trung vào luồng sáng tăng mạnh Đặc Tấn.
+Ataca ignorando efectos de movimientos como Protección. Baja la Defensa del usuario.
+Tấn công bỏ qua hiệu ứng các chiêu như Protect. Giảm Phòng Thủ người dùng.
+El usuario emplea el Ataque del objetivo para golpear.
+Người dùng dùng Tấn Công của mục tiêu để đánh.
+El usuario transforma su ira en un aura de fuego para atacar. Puede amedrentar al objetivo.
+Người dùng chuyển hóa cơn giận thành hào quang lửa để tấn công. Có thể làm mục tiêu run sợ.
+Gira y golpea al oponente, ignorando los cambios en las características del objetivo.
+Xoay và đánh đối thủ, bỏ qua các thay đổi chỉ số của mục tiêu.
+Ataca al objetivo con una onda siniestra. Puede bajar su Precisión.
+Tấn công mục tiêu bằng sóng tối tăm. Có thể giảm Độ Chính Xác của nó.
+Tritura con afilados colmillos y puede bajar la Defensa del objetivo.
+Nghiền nát bằng nanh sắc và có thể giảm Phòng Thủ mục tiêu.
+Libera una horrible aura llena de malos pensamientos y puede amedrentar al objetivo.
+Giải phóng hào quang khủng khiếp đầy suy nghĩ xấu và có thể làm mục tiêu run sợ.
+El usuario finge hacer una reverencia y ensarta al objetivo con su cabello alborotado. No falla.
+Người dùng giả vờ cúi chào và xuyên mục tiêu bằng mái tóc rối. Không thể trượt.
+Prohibe al objetivo y al usuario abandonar el combate hasta que uno de los dos se debilite.
+Cấm mục tiêu và người dùng rời chiến đấu cho đến khi một trong hai ngã ngựa.
+Inflige al rival un dolor tan abrumador que le impide utilizar durante dos turnos ataques sonoros.
+Gây cho đối thủ cơn đau áp đảo ngăn dùng chiêu âm thanh trong hai lượt.
+Golpe devastador que requiere un absoluto dominio de las artes siniestras. Siempre es crítico.
+Đòn tàn phá đòi hỏi làm chủ hoàn toàn nghệ thuật tối tăm. Luôn là đòn chí mạng.
+Si el usuario ha sufrido una reducción de características en ese turno duplica la potencia.
+Nếu người dùng bị giảm chỉ số trong lượt đó, sức mạnh tăng gấp đôi.
+Ataca al objetivo a la primera oportunidad. Suele ser crítico.
+Tấn công mục tiêu ngay cơ hội đầu tiên. Thường là đòn chí mạng.
+Permite atacar primero. Falla si el objetivo no está preparando ningún ataque.
+Cho phép tấn công trước. Thất bại nếu mục tiêu không đang chuẩn bị đòn tấn công nào.
+Impide al objetivo usar el objeto que lleva durante el combate.
+Ngăn mục tiêu dùng vật phẩm đang mang trong chiến đấu.
+Si el objetivo ya ha sufrido daño en ese turno, la fuerza del ataque se duplica.
+Nếu mục tiêu đã nhận sát thương trong lượt đó, sức mạnh đòn tấn công tăng gấp đôi.
+Un voraz bocado que puede amedrentar al objetivo.
+Một cú cắn tham lam có thể làm mục tiêu run sợ.
+Hace pivotar su cuerpo para infligir daño a todos sus rivales.
+Xoay người để gây sát thương cho tất cả đối thủ.
+Engaña al objetivo para acercarse y dar un puñetazo que no falla.
+Lừa mục tiêu để đến gần và tung cú đấm không thể trượt.
+Ataca y le quita al objetivo su objeto. Si el agresor lleva un objeto, no robará el del objetivo.
+Tấn công và lấy vật phẩm của mục tiêu. Nếu kẻ tấn công đang mang vật phẩm, không đánh cắp.
+Ataca lanzando un chillido insoportable que baja el Ataque Especial de los objetivos.
+Tấn công bằng tiếng kêu không thể chịu được làm giảm Đặc Tấn của các mục tiêu.
+El usuario contraataca con el doble de fuerza si el objetivo usa un movimiento antes.
+Người dùng phản công với gấp đôi sức mạnh nếu mục tiêu dùng chiêu trước.
+Hace el doble de daño al objetivo que pide el relevo.
+Gây gấp đôi sát thương cho mục tiêu đang yêu cầu đổi Pokémon.
+Ataque de todo el equipo Pokémon. Cuantos más haya, más veces ataca.
+Đòn tấn công của toàn đội Pokémon. Càng nhiều Pokémon, càng nhiều lần tấn công.
+Lanza contra el objetivo su objeto. La fuerza del ataque y su efecto varían según el objeto.
+Tung vật phẩm đang mang vào mục tiêu. Sức mạnh và hiệu ứng thay đổi theo vật phẩm.
+Cuanto más hayan subido las características del usuario, mayor será el daño.
+Chỉ số người dùng tăng càng nhiều, sát thương càng lớn.
+La fuerza del ataque aumenta cuanto más se ha fortalecido el rival con cambios de características.
+Sức mạnh đòn tấn công tăng theo mức độ đối thủ tăng chỉ số.
+El objetivo es enviado a un mundo de tinieblas que lo hace dormir.
+Mục tiêu bị gửi đến thế giới tối tăm khiến nó ngủ.
+Impide al objetivo usar el objeto que lleva. Su Entrenador tampoco puede usar objetos sobre él.
+Ngăn mục tiêu dùng vật phẩm đang mang. Huấn Luyện Viên cũng không thể dùng vật phẩm lên nó.
+Lágrimas de cocodrilo que bajan mucho la Defensa Especial del objetivo.
+Nước mắt cá sấu làm giảm mạnh Đặc Phòng mục tiêu.
+Halaga al objetivo y lo confunde, pero también sube su Ataque Especial.
+Tâng bốc mục tiêu và gây hỗn loạn, nhưng cũng tăng Đặc Tấn của nó.
+El usuario se afila las garras para aumentar su Ataque y Precisión.
+Người dùng mài móng vuốt để tăng Tấn Công và Độ Chính Xác.
+El usuario se debilita, pero baja mucho tanto el Ataque como el Ataque Especial del objetivo.
+Người dùng suy yếu, nhưng giảm mạnh cả Tấn Công lẫn Đặc Tấn của mục tiêu.
+Estimula su cerebro pensando en cosas malas. Aumenta considerablemente el Ataque Especial.
+Kích thích não bằng cách nghĩ đến những điều xấu. Tăng đáng kể Đặc Tấn.
+Frena cualquier ataque y baja mucho la defensa si recibe un golpe de contacto. Si se usa mucho falla.
+Chặn bất kỳ đòn tấn công nào và giảm mạnh phòng thủ nếu nhận đòn tiếp xúc. Dùng nhiều sẽ thất bại.
+Baja el Ataque y el Ataque Especial del rival y se cambia por otro Pokémon de su equipo.
+Giảm Tấn Công và Đặc Tấn của đối thủ rồi đổi bằng Pokémon khác trong đội.
+El usuario intimida a su objetivo logrando que su movimiento sea el último del turno.
+Người dùng uy hiếp mục tiêu làm cho chiêu của nó là chiêu cuối cùng trong lượt.
+Roba el efecto de movimientos de curación o de cambio de características de un combatiente.
+Đánh cắp hiệu ứng của các chiêu hồi phục hoặc thay đổi chỉ số của một chiến binh.
+Intercambia con el objetivo los objetos que llevan tan rápido que es imposible verlo a simple vista.
+Hoán đổi vật phẩm đang mang với mục tiêu nhanh đến mức không thể thấy bằng mắt thường.
+Enfurece al objetivo para que solo use movimientos de ataque durante tres turnos.
+Làm tức giận mục tiêu để nó chỉ dùng chiêu tấn công trong ba lượt.
+Invierte por completo los cambios en las características del Pokémon objetivo.
+Đảo ngược hoàn toàn các thay đổi chỉ số của Pokémon mục tiêu.
+Atormenta y enfurece al objetivo, que no puede usar dos veces seguidas el mismo movimiento.
+Hành hạ và làm tức giận mục tiêu, không thể dùng cùng một chiêu liên tiếp hai lần.
+Ataque más poderoso de Eternatus en su forma original. No se podrá mover en el siguiente turno.
+Đòn mạnh nhất của Eternatus ở hình dạng gốc. Không thể di chuyển ở lượt tiếp theo.
+Ataca con su fuerza vital. Cuanto menos vida tenga el usuario, menos daño hará.
+Tấn công bằng sức sống của mình. Người dùng càng ít HP, gây càng ít sát thương.
+Ataca usando tal energía que el tiempo se distorsiona. El usuario descansa el siguiente turno.
+Tấn công bằng năng lượng đến mức thời gian bị bóp méo. Người dùng nghỉ ngơi lượt tiếp theo.
+Hace que grandes cometas caigan del cielo. Baja mucho el Ataque Especial de quien lo usa.
+Làm những sao chổi lớn rơi xuống từ bầu trời. Giảm mạnh Đặc Tấn của người dùng.
+Ataca de dos a tres turnos y acaba confundiendo al agresor.
+Tấn công từ hai đến ba lượt và cuối cùng gây hỗn loạn cho kẻ tấn công.
+Frota las escamas de su cuerpo para crear un fuerte sonido, a costa de reducir su Defensa.
+Cọ vảy cơ thể để tạo ra âm thanh mạnh, đổi lấy việc giảm Phòng Thủ.
+Inflige daño al rival, y si este ya ha hecho uso de algún movimiento, pierde su habilidad.
+Gây sát thương cho đối thủ, và nếu đối thủ đã dùng chiêu nào, mất ability của nó.
+Ataca de forma brutal mientras intimida al objetivo. También puede amedrentarlo.
+Tấn công một cách tàn bạo trong khi uy hiếp mục tiêu. Cũng có thể làm run sợ.
+El usuario lanza un poderoso rayo de energía de su núcleo.
+Người dùng tung tia năng lượng mạnh từ nhân của mình.
+Desgarra al objetivo y el espacio a su alrededor. Suele ser crítico.
+Xé toạc mục tiêu và không gian xung quanh nó. Thường là đòn chí mạng.
+Usa el cuerpo como un martillo para abalanzarse sobre su rival y causarle daño.
+Dùng cơ thể như búa để lao vào đối thủ và gây sát thương.
+Abre mucho la boca y libera una onda de choque que ataca al objetivo.
+Mở to miệng và tung ra sóng xung kích tấn công mục tiêu.
+Araña al objetivo con garras afiladas.
+Cào mục tiêu bằng móng vuốt sắc.
+Azota con ímpetu con su cola al Pokémon enemigo. Esto hace que baje el Ataque del objetivo.
+Quật mạnh đuôi vào Pokémon kẻ thù. Làm giảm Tấn Công mục tiêu.
+Poderosa ráfaga de aliento que golpea al objetivo y puede paralizarlo.
+Luồng hơi thở mạnh đánh mục tiêu và có thể làm tê liệt.
+Ataca al objetivo y lo obliga a cambiarse por otro Pokémon. Si es uno salvaje, acaba el combate.
+Tấn công mục tiêu và buộc nó đổi bằng Pokémon khác. Nếu là hoang dã, kết thúc chiến đấu.
+El usuario ataca dos veces usando Dreepy. Si hay dos enemigos, golpea una vez a cada uno.
+Người dùng tấn công hai lần dùng Dreepy. Nếu có hai kẻ thù, đánh mỗi con một lần.
+Golpea dos veces seguidas con la cola u otras partes de su cuerpo.
+Đánh liên tiếp hai lần bằng đuôi hoặc các phần khác của cơ thể.
+Crea un violento tornado para hacer trizas al rival. Puede amedrentarlo.
+Tạo ra lốc xoáy dữ dội để xé tan đối thủ. Có thể làm run sợ.
+Lanza escamas de dos a cinco veces. Sube la Velocidad del usuario pero reduce su Defensa.
+Tung vảy từ hai đến năm lần. Tăng Tốc Độ người dùng nhưng giảm Phòng Thủ.
+Ráfaga de furiosas ondas de choque que quitan 40 PS.
+Loạt sóng xung kích dữ dội trừ 40 HP.
+El usuario aumenta todas sus características a cambio de sus PS.
+Người dùng tăng tất cả chỉ số đổi lấy HP.
+Danza mística que sube el Ataque y la Velocidad.
+Điệu nhảy huyền bí tăng Tấn Công và Tốc Độ.
+Ataca envolviéndose de una gran carga eléctrica y embistiendo al objetivo con ella. Puede paralizar.
+Tấn công bằng cách bao quanh bằng điện tích lớn và lao vào mục tiêu. Có thể gây tê liệt.
+Placaje de alto riesgo que hiere también al atacante.
+Đòn lao người rủi ro cao cũng gây thương tích cho kẻ tấn công.
+Dispara una descarga eléctrica que causa daño y parálisis.
+Bắn tia điện gây sát thương và tê liệt.
+Ataca y sube su Velocidad del usuario. Cambia de tipo dependiendo de la forma del usuario.
+Tấn công và tăng Tốc Độ người dùng. Thay đổi hệ tùy theo hình dạng người dùng.
+Un poderoso rayo que daña al objetivo y puede paralizarlo.
+Tia sét mạnh gây sát thương mục tiêu và có thể làm tê liệt.
+Enorme descarga eléctrica. Aumenta su potencia si es influenciada por una gigantesca llamarada.
+Tia điện khổng lồ. Tăng sức mạnh nếu bị ảnh hưởng bởi ngọn lửa khổng lồ.
+Ataca con los puños. Convierte los movimientos de tipo Normal en tipo Eléctrico.
+Tấn công bằng nắm đấm. Chuyển các chiêu hệ Thường thành hệ Điện.
+Potente ataque eléctrico que puede paralizar al objetivo.
+Đòn điện mạnh có thể làm tê liệt mục tiêu.
+Carga eléctrica muy potente que también hiere ligeramente a quien la usa.
+Tia điện rất mạnh cũng gây thương tích nhẹ cho người dùng.
+Ataca con su pico electrificado. Si el usuario ataca antes que el objetivo, duplica la potencia.
+Tấn công bằng mỏ tích điện. Nếu người dùng tấn công trước mục tiêu, sức mạnh tăng gấp đôi.
+Una deslumbradora onda eléctrica afecta a los demás Pokémon del combate. Puede paralizar.
+Sóng điện chói lòa ảnh hưởng đến tất cả Pokémon khác trong chiến đấu. Có thể gây tê liệt.
+El usuario rasguea su cuerpo para generar enormes vibraciones con las que ataca al objetivo.
+Người dùng cào cơ thể để tạo ra rung động khổng lồ tấn công mục tiêu.
+El usuario atrapa al rival en una caja eléctrica que dura entre cuatro y cinco turnos.
+Người dùng bẫy đối thủ trong hộp điện kéo dài từ bốn đến năm lượt.
+El usuario se lanza contra el objetivo y le suelta una potente descarga que puede amedrentarlo.
+Người dùng lao vào mục tiêu và tung tia điện mạnh có thể làm run sợ.
+Puñetazo eléctrico. Puede paralizar.
+Cú đấm điện. Có thể gây tê liệt.
+La potencia del movimiento se duplica si el rival se ve afectado por un campo eléctrico.
+Sức mạnh chiêu tăng gấp đôi nếu đối thủ bị ảnh hưởng bởi Electric Terrain.
+Inflige daño a los Pokémon a su alrededor, absorbiendo la mitad del daño producido.
+Gây sát thương cho Pokémon xung quanh, hấp thụ một nửa sát thương gây ra.
+Ataque eléctrico que puede llegar a paralizar.
+Đòn điện có thể gây tê liệt.
+Muerde con colmillos electrificados. Puede hacer que el rival se amedrente o paralice.
+Cắn bằng nanh tích điện. Có thể làm đối thủ run sợ hoặc tê liệt.
+Ataque eléctrico muy rápido e ineludible.
+Đòn điện rất nhanh và không thể tránh được.
+Atrapa y ataca a los objetivos con una telaraña eléctrica. También reduce su Velocidad.
+Bẫy và tấn công mục tiêu bằng mạng nhện điện. Cũng giảm Tốc Độ.
+Lanza un rayo eléctrico contra el rival. Puede subir el Ataque Especial de quien lo usa.
+Tung tia điện vào đối thủ. Có thể tăng Đặc Tấn của người dùng.
+Ataque eléctrico que puede paralizar al objetivo.
+Đòn điện có thể làm tê liệt mục tiêu.
+Frota sus mofletes cargados de electricidad contra el Pokémon objetivo y consigue paralizarlo.
+Cọ má tích điện vào Pokémon mục tiêu và làm nó tê liệt.
+Lanza una bola eléctrica. Cuanto mayor es la Velocidad del usuario, mayor será el daño causado.
+Tung quả cầu điện. Tốc Độ người dùng càng cao, sát thương càng lớn.
+Recarga energía para potenciar el siguiente movimiento Eléctrico. Sube la Defensa Especial.
+Nạp lại năng lượng để tăng cường chiêu Điện tiếp theo. Tăng Đặc Phòng.
+Irradia unas raras ondas que disminuyen mucho el Ataque Especial del objetivo.
+Tỏa ra những sóng lạ làm giảm mạnh Đặc Tấn mục tiêu.
+Durante cinco turnos crea un campo eléctrico que impide dormirse a los Pokémon en el suelo.
+Trong năm lượt tạo ra Electric Terrain ngăn Pokémon trên mặt đất ngủ.
+Si el Pokémon objetivo queda electrificado antes de usar un movimiento, este será de tipo Eléctrico.
+Nếu Pokémon mục tiêu bị tích điện trước khi dùng chiêu, chiêu đó sẽ là hệ Điện.
+Disemina partículas con carga que convierten los movimientos de tipo Normal en tipo Eléctrico.
+Tán ra các hạt có điện tích chuyển các chiêu hệ Thường thành hệ Điện.
+Levita gracias a un campo magnético generado por electricidad durante cinco turnos.
+Lơ lửng nhờ trường từ được tạo ra bởi điện trong năm lượt.
+Aumentar la Defensa y la Defensa Especial de los aliados con las habilidades Más y Menos.
+Tăng Phòng Thủ và Đặc Phòng của đồng minh với các ability Plus và Minus.
+Una ligera descarga que paraliza al objetivo si lo alcanza.
+Tia điện nhẹ làm tê liệt mục tiêu nếu đánh trúng.
+Emplea el poder de la Flor Eterna para lanzar un potente rayo de luz, pero sufre bastante daño.
+Dùng sức mạnh của Bông Hoa Vĩnh Cửu để tung tia sáng mạnh, nhưng nhận khá nhiều sát thương.
+El usuario emite un potente rayo, pero su Ataque Especial se reduce mucho.
+Người dùng tung tia mạnh, nhưng Đặc Tấn giảm mạnh.
+Bruma misteriosa con prioridad alta en campo de niebla.
+Sương mù bí ẩn với ưu tiên cao trong Misty Terrain.
+Invoca el poder de la luna para atacar. Puede disminuir el Ataque Especial del objetivo.
+Triệu hồi sức mạnh mặt trăng để tấn công. Có thể giảm Đặc Tấn mục tiêu.
+Hace cucamonas al objetivo y lo ataca. Puede disminuir el Ataque del objetivo.
+Làm mục tiêu cưng nựng rồi tấn công. Có thể giảm Tấn Công mục tiêu.
+El usuario ataca al enemigo emitiendo vapor. Puede dejar confuso al objetivo.
+Người dùng tấn công kẻ thù bằng cách tỏa hơi nước. Có thể gây hỗn loạn mục tiêu.
+Inflige daño a los oponentes con una potente luz.
+Gây sát thương cho đối thủ bằng ánh sáng mạnh.
+Ataca al objetivo con tal ímpetu que acaba minando su moral y reduce su Ataque Especial.
+Tấn công mục tiêu với tốc độ lớn đến mức làm suy sụp tinh thần và giảm Đặc Tấn.
+Absorbe PS del objetivo con un beso y restaura sus PS.
+Hút HP mục tiêu bằng nụ hôn và hồi HP người dùng.
+Obnubila a los oponentes con su voz y les provoca daños emocionales. Siempre acierta.
+Làm mờ trí óc đối thủ bằng giọng nói và gây tổn thương cảm xúc. Luôn trúng.
+El Pokémon que lo usa desata un vendaval feérico que arremete contra el objetivo.
+Pokémon dùng chiêu tung ra cơn lốc hệ Tiên tấn công mục tiêu.
+Golpea al objetivo con la furia de la naturaleza y reduce sus PS a la mitad.
+Đánh mục tiêu bằng sức mạnh thiên nhiên và giảm HP của nó xuống một nửa.
+Consigue aumentar la Defensa Especial de un Pokémon de su equipo con una fragancia misteriosa.
+Tăng Đặc Phòng của một Pokémon trong đội bằng hương thơm bí ẩn.
+Lanza una mirada al Pokémon objetivo, reduciendo su Ataque. Siempre va primero.
+Nhìn chằm chằm vào Pokémon mục tiêu, giảm Tấn Công của nó. Luôn đi trước.
+Engatusa al objetivo y reduce bastante su Ataque.
+Dụ dỗ mục tiêu và giảm đáng kể Tấn Công của nó.
+Se protege a sí mismo y a sus aliados de ataques de estado, pero no de otro tipo de ataques.
+Bảo vệ bản thân và đồng minh khỏi đòn trạng thái, nhưng không khỏi các loại đòn khác.
+El usuario aumenta el Ataque y el Ataque Especial del objetivo decorándolo.
+Người dùng tăng Tấn Công và Đặc Tấn của mục tiêu bằng cách trang trí nó.
+Consigue que ningún Pokémon pueda huir en el siguiente turno echando un cerrojo.
+Làm cho không Pokémon nào có thể chạy trốn ở lượt tiếp theo bằng cách khóa lại.
+Restaura la mitad de los PS máximos del objetivo. Cura más con campo de hierba.
+Hồi một nửa HP tối đa của mục tiêu. Chữa lành nhiều hơn trong Grassy Terrain.
+Aumenta la Defensa de los Pokémon de tipo Planta en combate usando unos misteriosos poderes.
+Tăng Phòng Thủ của Pokémon hệ Cỏ trong chiến đấu bằng những sức mạnh bí ẩn.
+Concentra energía un turno, y en el segundo aumenta mucho su At. Esp., Def. Esp. y Velocidad.
+Tập trung năng lượng một lượt, và ở lượt thứ hai tăng mạnh Đặc Tấn, Đặc Phòng và Tốc Độ.
+Cubre de niebla el terreno cinco turnos. Los Pokémon en el suelo no reciben cambios de estado.
+Phủ sương mù lên sân trong năm lượt. Pokémon trên mặt đất không nhận thay đổi trạng thái.
+Restaura PS del usuario. La cantidad varía según el tiempo que haga.
+Hồi HP người dùng. Lượng hồi thay đổi theo thời tiết.
+Da un beso con tal dulzura que causa confusión.
+Hôn ngọt ngào đến mức gây hỗn loạn.
+Se concentra para dar un puñetazo. Falla si se sufre un golpe antes de su uso.
+Tập trung để tung cú đấm. Thất bại nếu bị đánh trước khi dùng.
+El usuario arremete con su puerro. El usuario no se podrá mover en el siguiente turno.
+Người dùng lao vào bằng cây tỏi tây. Người dùng không thể di chuyển ở lượt tiếp theo.
+Salta muy alto y lanza una patada. Si falla, dañará al usuario.
+Nhảy rất cao và tung đòn đá. Nếu thất bại, gây thương tích cho người dùng.
+Lucha abiertamente contra el rival. Reduce la Defensa y la Defensa Especial del usuario.
+Chiến đấu trực diện với đối thủ. Giảm Phòng Thủ và Đặc Phòng người dùng.
+Agudiza la concentración mental y libera su poder. Puede disminuir la Def. Esp. del rival.
+Mài giũa tập trung tinh thần và giải phóng sức mạnh. Có thể giảm Đặc Phòng đối thủ.
+Ataque de gran potencia, pero que reduce el Ataque y la Defensa del agresor.
+Đòn tấn công mạnh, nhưng giảm Tấn Công và Phòng Thủ người tấn công.
+Corte doble que suele propinar un golpe crítico.
+Cú chém đôi thường là đòn chí mạng.
+Puñetazo con toda la fuerza concentrada. Causa confusión si atina.
+Cú đấm với toàn bộ sức mạnh tập trung. Gây hỗn loạn nếu đánh trúng.
+Se lanza sobre su oponente. Este movimiento es de tipo Lucha y tipo Volador al mismo tiempo.
+Lao vào đối thủ. Chiêu này vừa hệ Chiến vừa hệ Bay cùng lúc.
+Gira con fuerza el puño y da un gran golpe. No obstante, baja la Velocidad del usuario.
+Xoay mạnh nắm đấm và tung đòn lớn. Tuy nhiên, giảm Tốc Độ người dùng.
+Da un salto y pega una patada. Si falla, dañará al usuario.
+Nhảy lên và tung đòn đá. Nếu thất bại, gây thương tích cho người dùng.
+El usuario ataca con una espada, ignorando cualquier cambio en las características del objetivo.
+Người dùng tấn công bằng kiếm, bỏ qua bất kỳ thay đổi chỉ số nào của mục tiêu.
+El usuario arremete contra el rival con una poderosa patada que siempre baja la Defensa.
+Người dùng lao vào đối thủ bằng đòn đá mạnh luôn giảm Phòng Thủ.
+Ensarta al objetivo con un sable, hiriéndolo con su místico poder.
+Xuyên mục tiêu bằng kiếm, gây thương tích bằng sức mạnh huyền bí.
+Gancho ascendente de gran ímpetu.
+Móc tay đi lên với tốc độ lớn.
+Libera una descarga de la fuerza del aura desde su interior. Es infalible.
+Giải phóng tia sức mạnh hào quang từ bên trong. Không thể trượt.
+El usuario embistie al objetivo. Cuanto más alta sea la Defensa del usuario, más daño inflingirá.
+Người dùng lao vào mục tiêu. Phòng Thủ người dùng càng cao, gây càng nhiều sát thương.
+Tira al objetivo al suelo. También hiere al agresor.
+Ném mục tiêu xuống đất. Cũng gây thương tích cho kẻ tấn công.
+Potente ataque que también es capaz de destruir barreras como pantalla de luz y reflejo.
+Đòn mạnh cũng có thể phá hủy rào chắn như Light Screen và Reflect.
+Un golpe que drena energía. El Pokémon recupera la mitad de los PS arrebatados al objetivo.
+Một đòn hút năng lượng. Pokémon hồi phục một nửa HP đã hút từ mục tiêu.
+El usuario ataca el último, pero no falla.
+Người dùng tấn công cuối cùng, nhưng không thể trượt.
+Inflige gran daño a objetivos dormidos. Sin embargo, los bofetones también los despiertan.
+Gây sát thương lớn cho mục tiêu đang ngủ. Tuy nhiên, những cái tát cũng đánh thức chúng.
+Un veloz ataque a los pies que reduce la Velocidad del objetivo.
+Đòn tấn công nhanh vào chân làm giảm Tốc Độ mục tiêu.
+Lanza por los aires al objetivo y hace que salga otro Pokémon. Si es uno salvaje, acaba el combate.
+Tung mục tiêu lên không và làm Pokémon khác xuất hiện. Nếu là hoang dã, kết thúc chiến đấu.
+Ataca al objetivo con una onda de choque y puede llegar a paralizarlo.
+Tấn công mục tiêu bằng sóng xung kích và có thể làm tê liệt.
+Ataque que produce el doble de daño si el usuario es herido en el mismo turno.
+Đòn gây gấp đôi sát thương nếu người dùng bị thương tích trong cùng lượt.
+Una patada rápida y circular. También puede amedrentar al objetivo.
+Đòn đá nhanh và tròn. Cũng có thể làm mục tiêu run sợ.
+Lanza un golpe fulminante. Siempre resulta en un golpe crítico.
+Tung đòn chói lòa. Luôn là đòn chí mạng.
+Da un golpe cortante. Suele ser crítico.
+Tung đòn chém. Thường là đòn chí mạng.
+Puñetazo que se da rápido para golpear primero.
+Cú đấm nhanh để đánh trước.
+Cada vez que golpea se endurecen sus puños. Si acierta, el Ataque del usuario aumenta.
+Mỗi lần đánh trúng, nắm đấm cứng lại. Nếu đánh trúng, Tấn Công người dùng tăng.
+Ataca con puñetazos que pueden romper rocas. Puede bajar la Defensa del objetivo.
+Tấn công bằng những cú đấm có thể phá vỡ đá. Có thể giảm Phòng Thủ mục tiêu.
+Gira los puños y libera una onda de vacío contra el objetivo. Este movimiento siempre va primero.
+Xoay nắm đấm và tung sóng chân không vào mục tiêu. Chiêu này luôn đi trước.
+Una patada doble. Golpea dos veces.
+Đá đôi. Đánh hai lần.
+Empujones directos que golpean de dos a cinco veces seguidas.
+Đẩy thẳng đánh từ hai đến năm lần liên tiếp.
+Patea hasta tres veces seguidas y cada vez más fuerte.
+Đá liên tiếp tối đa ba lần, mỗi lần mạnh hơn.
+Devuelve un golpe físico por duplicado.
+Trả lại đòn vật lý với sức mạnh gấp đôi.
+El usuario se sacrifica causándole un daño al objetivo equivalente a sus propios PS perdidos.
+Người dùng hy sinh gây sát thương cho mục tiêu tương đương HP đã mất của chính mình.
+Patada baja. Cuanto más pesa el objetivo, más daño causa.
+Đá thấp. Mục tiêu càng nặng, gây càng nhiều sát thương.
+Ataque desesperado que causa más daño cuantos menos PS tenga el usuario.
+Đòn tuyệt vọng gây nhiều sát thương hơn khi người dùng càng ít HP.
+La gravedad derriba al objetivo. Se restarán tantos PS como nivel tenga el agresor.
+Trọng lực quật ngã mục tiêu. HP bị trừ bằng cấp độ của kẻ tấn công.
+Robustece el cuerpo para subir el Ataque y la Defensa.
+Củng cố cơ thể để tăng Tấn Công và Phòng Thủ.
+El usuario imparte indicaciones precisas a sus aliados, que ven aumentados su Ataque y su Defensa.
+Người dùng đưa ra chỉ dẫn chính xác cho đồng minh, tăng Tấn Công và Phòng Thủ của họ.
+Frena los ataques, pero puede fallar si se usa repetidamente.
+Chặn các đòn tấn công, nhưng có thể thất bại nếu dùng liên tục.
+El usuario usa un tatami para escudarse de los movimientos enemigos. Protege también a los aliados. No funciona contra ataques de estado.
+Người dùng dùng tatami làm khiên chống các chiêu kẻ thù. Cũng bảo vệ đồng minh. Không hiệu quả với đòn trạng thái.
+El usuario aumenta todas sus características, pero no puede huir ni ser cambiado por otro.
+Người dùng tăng tất cả chỉ số, nhưng không thể chạy trốn hoặc bị đổi bằng Pokémon khác.
+Retiene al objetivo para impedir su huida, a la vez que reduce su Defensa y Defensa Especial cada turno.
+Giữ mục tiêu ngăn chạy trốn, đồng thời giảm Phòng Thủ và Đặc Phòng mỗi lượt.
+Protege a el equipo de ataques con prioridad. Puede fallar si se utiliza repetidamente.
+Bảo vệ đội khỏi các đòn ưu tiên. Có thể thất bại nếu dùng liên tục.
+Golpea con una V de llamas. Baja la Defensa, la Def. Esp. y la Velocidad del usuario.
+Đánh bằng chữ V lửa. Giảm Phòng Thủ, Đặc Phòng và Tốc Độ người dùng.
+Explosión de fuego. El atacante debe descansar el siguiente turno.
+Vụ nổ lửa. Người tấn công phải nghỉ ngơi lượt tiếp theo.
+Furia explosiva. Cuanto menor sea el número de PS del usuario, menos daño hará el ataque.
+Cơn thịnh nộ nổ tung. Người dùng càng ít HP, đòn gây càng ít sát thương.
+Hace explotar su cabeza para atacar a todos a su alrededor, aunque también se hiere a sí mismo.
+Làm đầu nổ tung để tấn công tất cả xung quanh, dù cũng gây thương tích cho bản thân.
+Si le alcanza un ataque físico, la trampa del caparazón estalla y el atacante sufre daño.
+Nếu bị đòn vật lý, bẫy mai nổ tung và kẻ tấn công nhận sát thương.
+Ataca con una bella pero potente llama azul que rodea al objetivo. Puede quemarlo.
+Tấn công bằng ngọn lửa xanh đẹp nhưng mạnh bao quanh mục tiêu. Có thể gây bỏng.
+Usa hasta el último resquicio de llamas de su cuerpo para atacar, pero pierde el tipo Fuego.
+Dùng đến tia lửa cuối cùng trong cơ thể để tấn công, nhưng mất hệ Lửa.
+Ataque en toda regla que baja mucho el Ataque Especial de quien lo usa.
+Đòn tấn công toàn diện làm giảm mạnh Đặc Tấn người dùng.
+El Pokémon se cubre de llamas y carga contra el objetivo, aunque él también recibe daños.
+Pokémon bao quanh bằng lửa và lao vào mục tiêu, dù cũng nhận sát thương.
+Prende una pequeña piedra para crear una bola de fuego con la que ataca. Puede causar quemaduras.
+Châm một viên đá nhỏ để tạo ra quả cầu lửa tấn công. Có thể gây bỏng.
+Llama intensa que lo chamusca y puede causar quemaduras.
+Ngọn lửa mãnh liệt thiêu đốt và có thể gây bỏng.
+Llamarada gigantesca. Aumenta su potencia si es influenciada por una gran energía eléctrica.
+Ngọn lửa khổng lồ. Tăng sức mạnh nếu bị ảnh hưởng bởi năng lượng điện lớn.
+Ataca con una gran ráfaga de fuego que causa quemaduras.
+Tấn công bằng luồng lửa lớn gây bỏng.
+El rival queda atrapado en una tormenta de fuego que dura de dos a cinco turnos.
+Đối thủ bị bẫy trong bão lửa kéo dài từ hai đến năm lượt.
+Fuego místico de gran intensidad que puede causar quemaduras.
+Lửa huyền bí cường độ lớn có thể gây bỏng.
+Un infierno de llamas daña a los Pokémon de alrededor en combate. Puede quemar.
+Địa ngục lửa gây sát thương cho Pokémon xung quanh trong chiến đấu. Có thể gây bỏng.
+Provoca un viento abrasador que puede quemar al objetivo.
+Gây ra gió bỏng rát có thể đốt cháy mục tiêu.
+Ataca con una gran ráfaga de fuego que puede causar quemaduras.
+Tấn công bằng luồng lửa lớn có thể gây bỏng.
+Patada que suele ser un golpe crítico y puede causar quemaduras.
+Đòn đá thường là chí mạng và có thể gây bỏng.
+El Pokémon golpea envuelto en llamas. Puede aumentar el Ataque Especial de quien lo usa.
+Pokémon đánh khi bao quanh bằng lửa. Có thể tăng Đặc Tấn người dùng.
+Golpea al oponente con un látigo incandescente y reduce su Defensa.
+Đánh đối thủ bằng roi đỏ rực và giảm Phòng Thủ của nó.
+Ataca con columnas de fuego. Combinado con un Voto Planta crea un mar de llamas y aumenta su potencia.
+Tấn công bằng cột lửa. Kết hợp với Grass Pledge tạo ra biển lửa và tăng sức mạnh.
+Un infierno de llamas daña a los Pokémon adyacentes en combate. Puede quemar.
+Địa ngục lửa gây sát thương cho Pokémon lân cận trong chiến đấu. Có thể gây bỏng.
+Puñetazo ardiente. Puede quemar.
+Cú đấm đang cháy. Có thể gây bỏng.
+Lanza una llama a gran temperatura a su rival, la cual le baja el Ataque Especial.
+Tung ngọn lửa nhiệt độ cao vào đối thủ, làm giảm Đặc Tấn của nó.
+Causa quemaduras a los Pokémon cuyas características hayan aumentado en ese turno.
+Gây bỏng cho Pokémon có chỉ số đã tăng trong lượt đó.
+Golpea al objetivo con una llamarada que afecta a sus Pokémon adyacentes.
+Đánh mục tiêu bằng tia lửa ảnh hưởng đến các Pokémon lân cận của nó.
+Usa colmillos en llamas para morder. Puede hacer que el objetivo se amedrente o se queme.
+Dùng nanh lửa để cắn. Có thể làm mục tiêu run sợ hoặc bị bỏng.
+Ataca envuelto en fuego. Puede causar quemaduras.
+Tấn công khi bao quanh bằng lửa. Có thể gây bỏng.
+Llamas que golpean a los objetivos adyacentes. Si llevan Bayas, se quemarán y desaparecerán.
+Ngọn lửa đánh các mục tiêu lân cận. Nếu mang Berry, chúng sẽ cháy và biến mất.
+Llamas que golpean al objetivo y aumentan la Velocidad del atacante.
+Ngọn lửa đánh mục tiêu và tăng Tốc Độ người tấn công.
+Ataca con llamas pequeñas que pueden causar quemaduras.
+Tấn công bằng ngọn lửa nhỏ có thể gây bỏng.
+Un aro de fuego que atrapa al objetivo de cuatro a cinco turnos.
+Vòng lửa bẫy mục tiêu từ bốn đến năm lượt.
+Cuanto mayor sea su peso comparado con el del objetivo, más daño causará.
+Cân nặng người dùng càng lớn so với mục tiêu, gây càng nhiều sát thương.
+Intensifica el sol durante cinco turnos, lo que potencia los movimientos de tipo Fuego.
+Tăng cường ánh nắng trong năm lượt, tăng sức mạnh chiêu hệ Lửa.
+Siniestra llama morada que produce quemaduras.
+Ngọn lửa tím tối tăm gây bỏng.
+Ataque en dos turnos que suele ser crítico. Puede amedrentar al objetivo.
+Đòn tấn công hai lượt thường là chí mạng. Có thể làm mục tiêu run sợ.
+Pliega sus alas y ataca con un vuelo rasante. El Pokémon que lo usa también resulta dañado.
+Gập cánh và tấn công bằng chuyến bay sát mặt đất. Pokémon dùng chiêu cũng nhận sát thương.
+Se precipita desde el cielo a mucha velocidad, pero hace que bajen la Def. y Def. Esp.
+Lao xuống từ bầu trời với tốc độ lớn, nhưng làm Phòng Thủ và Đặc Phòng giảm.
+Golpea al objetivo con un fuerte torbellino que envuelve al rival y puede confundirlo.
+Đánh mục tiêu bằng lốc xoáy mạnh bao quanh đối thủ và có thể gây hỗn loạn.
+Lanza un chorro de aire que suele dar un golpe crítico.
+Tung luồng không khí thường là đòn chí mạng.
+Carga el pico antes de atacar. Quema al rival si recibe un ataque físico durante la carga.
+Nạp năng lượng mỏ trước khi tấn công. Gây bỏng đối thủ nếu nhận đòn vật lý trong lúc nạp.
+El primer turno el Pokémon alza el vuelo, para posteriormente en el segundo atacar a su objetivo.
+Lượt đầu Pokémon bay lên, sau đó lượt hai tấn công mục tiêu.
+Primer turno: bota. Segundo turno: golpea. Puede paralizar.
+Lượt đầu: nảy. Lượt hai: đánh. Có thể gây tê liệt.
+Picotazo giratorio y perforador muy potente.
+Mổ xoáy và xuyên thủng rất mạnh.
+Absorbe energía del Pokémon objetivo y recupera más de la mitad del daño inflingido.
+Hấp thụ năng lượng Pokémon mục tiêu và hồi phục hơn một nửa sát thương gây ra.
+Ataca con una hoja de aire que incluso corta el cielo. También puede amedrentar al objetivo.
+Tấn công bằng lưỡi không khí thậm chí cắt được bầu trời. Cũng có thể làm mục tiêu run sợ.
+Ataca con una onda sónica compuesta por palabras que ha aprendido. Puede confundir al objetivo.
+Tấn công bằng sóng âm gồm những từ đã học. Có thể gây hỗn loạn mục tiêu.
+El usuario lanza un ataque muy rápido e ineludible.
+Người dùng tung đòn rất nhanh và không thể tránh được.
+Viento cortante que azota. Suele ser un golpe crítico.
+Gió cắt quất vào. Thường là đòn chí mạng.
+Picotea al objetivo. Si este sostiene una Baya, la picotea también y obtiene sus efectos.
+Mổ vào mục tiêu. Nếu mục tiêu đang giữ Berry, cũng mổ vào đó và nhận hiệu ứng.
+1º turno: lanza al objetivo al aire. 2º: lo hace caer. En el aire no lo deja moverse.
+Lượt 1: tung mục tiêu lên không. Lượt 2: làm nó rơi xuống. Trên không không cho di chuyển.
+Golpea al objetivo con unas grandes alas.
+Đánh mục tiêu bằng đôi cánh lớn.
+Golpea ágilmente. Si el usuario no porta ningún objeto, el objetivo resulta seriamente dañado.
+Đánh nhanh nhẹn. Nếu người dùng không mang vật phẩm, mục tiêu bị tổn thương nặng.
+Ataca al adversario golpeándolo dos veces con las alas.
+Tấn công đối thủ bằng cách đánh hai lần bằng cánh.
+Crea un tornado con las alas y lo lanza contra el objetivo.
+Tạo ra lốc xoáy bằng cánh và tung vào mục tiêu.
+Ensarta al objetivo con un cuerno o pico punzante.
+Xuyên mục tiêu bằng sừng hoặc mỏ nhọn.
+Potente viento que barre el reflejo o pantalla de luz del objetivo y puede reducir su Evasión.
+Gió mạnh quét sạch Reflect hoặc Light Screen của mục tiêu và có thể giảm Né Tránh.
+Envuelve al objetivo con un manto de plumas para reducir mucho su Ataque.
+Bao quanh mục tiêu bằng tấm áo lông vũ để giảm mạnh Tấn Công.
+Contraataca con el mismo movimiento empleado por el objetivo.
+Phản công bằng chính chiêu mà mục tiêu đã dùng.
+Aterriza sobre la superficie para descansar. Recupera hasta la mitad del total de sus PS.
+Hạ xuống mặt đất để nghỉ ngơi. Hồi phục tối đa một nửa tổng HP.
+Fuerte remolino que duplica la Velocidad de los Pokémon de tu equipo durante cuatro turnos.
+Lốc xoáy mạnh tăng gấp đôi Tốc Độ của Pokémon trong đội trong bốn lượt.
+El usuario ataca lanzando una ráfaga de fantasmas que daña a ambos rivales.
+Người dùng tấn công bằng cách tung loạt ma gây sát thương cho cả hai đối thủ.
+En el primer turno, desaparece. En el segundo, golpea al objetivo aunque se esté protegiendo.
+Lượt đầu biến mất. Lượt hai đánh mục tiêu dù đang bảo vệ.
+El usuario ataca utilizando el objeto que lleva el rival. Si no tiene, falla.
+Người dùng tấn công bằng vật phẩm mà đối thủ đang mang. Nếu không có, thất bại.
+Ataca al objetivo con un rayo misterioso de energía lunar. Este movimiento ignora la habilidad del objetivo.
+Tấn công mục tiêu bằng tia năng lượng mặt trăng bí ẩn. Chiêu này bỏ qua ability mục tiêu.
+Desaparece en el primer turno y ataca en el segundo. Acierta aunque el objetivo se proteja.
+Biến mất lượt đầu và tấn công lượt hai. Đánh trúng dù mục tiêu đang bảo vệ.
+Se esconde en la sombra del objetivo y lo ataca tras robarle las mejoras en sus características.
+Ẩn trong bóng của mục tiêu và tấn công sau khi đánh cắp các tăng chỉ số của nó.
+Golpea al oponente con un hueso poseído por un espíritu. Puede reducir su Defensa.
+Đánh đối thủ bằng chiếc xương bị linh hồn chiếm. Có thể giảm Phòng Thủ.
+Lanza una bola oscura que puede bajar la Defensa Especial del objetivo.
+Tung quả cầu tối có thể giảm Đặc Phòng mục tiêu.
+Ataca al oponente y, al mismo tiempo, fija su sombra al terreno, impidiendo su huida.
+Tấn công đối thủ và đồng thời ghim bóng vào mặt đất, ngăn chạy trốn.
+Ataca con una garra afilada hecha de sombras. Suele ser crítico.
+Tấn công bằng móng vuốt sắc làm từ bóng tối. Thường là đòn chí mạng.
+Ataque que causa un gran daño a los objetivos que sufren problemas de estado.
+Đòn gây sát thương lớn cho mục tiêu đang bị trạng thái bất lợi.
+Produce un viento horripilante. Puede subir de golpe todas las características del usuario.
+Tạo ra gió rùng rợn. Có thể tăng đột ngột tất cả chỉ số người dùng.
+Puñetazo ineludible procedente de las sombras.
+Cú đấm không thể tránh đến từ bóng tối.
+Extiende su sombra y ataca al objetivo por la espalda. Este movimiento siempre va primero.
+Kéo dài bóng và tấn công mục tiêu từ phía sau. Chiêu này luôn đi trước.
+Impresiona tanto que puede amedrentar al objetivo.
+Ấn tượng đến mức có thể làm mục tiêu run sợ.
+Una lengua ataca al objetivo. Puede causar parálisis.
+Chiếc lưỡi tấn công mục tiêu. Có thể gây tê liệt.
+Produce un espejismo ante el objetivo, que pierde tantos PS como nivel tenga el agresor.
+Tạo ra ảo ảnh trước mục tiêu, mất HP bằng cấp độ kẻ tấn công.
+Rayo siniestro que confunde al objetivo.
+Tia tối tăm gây hỗn loạn mục tiêu.
+Un movimiento que tiene efectos distintos si el usuario es de tipo Fantasma o no.
+Chiêu có hiệu ứng khác nhau tùy người dùng là hệ Ma hay không.
+Si el usuario se debilita, el enemigo se debilita también.
+Nếu người dùng ngã ngựa, kẻ thù cũng ngã ngựa.
+Si el usuario se debilita al recibir un ataque, los PP de este último ataque serán eliminados.
+Nếu người dùng ngã ngựa khi nhận đòn, PP của đòn cuối đó bị xóa.
+El objetivo dormido sufre una pesadilla que le hace perder PS en cada turno.
+Mục tiêu đang ngủ bị ác mộng làm mất HP mỗi lượt.
+Da rienda suelta a su rencor para reducir cuatro PP del último movimiento usado por el rival.
+Trút hết oán hận để giảm bốn PP của chiêu cuối mà đối thủ đã dùng.
+Invita al objetivo a celebrar Halloween, volviéndolo de tipo Fantasma además de los suyos.
+Mời mục tiêu ăn mừng Halloween, làm nó thêm hệ Ma bên cạnh các hệ của nó.
+Golpea con una enorme planta. El atacante no puede moverse en el siguiente turno.
+Đánh bằng cây khổng lồ. Người tấn công không thể di chuyển lượt tiếp theo.
+Cae una lluvia de hojas afiladas. Baja mucho el Ataque Especial de quien lo usa.
+Mưa lá sắc rơi xuống. Giảm mạnh Đặc Tấn người dùng.
+Dedica un turno a concentrar energía en forma de cuchilla con la que ataca en el segundo turno.
+Dành một lượt tập trung năng lượng dạng lưỡi dao để tấn công ở lượt thứ hai.
+Lanza pétalos de dos a tres turnos y acaba confundiendo al atacante.
+Tung cánh hoa từ hai đến ba lượt và cuối cùng gây hỗn loạn cho kẻ tấn công.
+El usuario agita violentamente sus lianas o tentáculos para golpear al objetivo.
+Người dùng vung mạnh dây leo hoặc xúc tu để đánh mục tiêu.
+Una onda de choque se libera del cuerpo. Puede bajar la Defensa Especial del objetivo.
+Sóng xung kích được giải phóng từ cơ thể. Có thể giảm Đặc Phòng mục tiêu.
+Primer turno: absorbe luz. Segundo turno: ataca.
+Lượt đầu: hấp thụ ánh sáng. Lượt hai: tấn công.
+Arremete contra el rival con su robusto cuerpo. El agresor también sufre bastante daño.
+Lao vào đối thủ bằng cơ thể chắc chắn. Kẻ tấn công cũng nhận khá nhiều sát thương.
+Aúna fuerzas de la naturaleza y libera su ataque. Puede disminuir la Defensa Especial del objetivo.
+Kết hợp sức mạnh thiên nhiên và giải phóng đòn tấn công. Có thể giảm Đặc Phòng mục tiêu.
+Acuchilla con una hoja fina. Suele dar un golpe crítico.
+Chém bằng lưỡi mỏng. Thường là đòn chí mạng.
+El usuario desata un intenso vendaval de pétalos que daña a los Pokémon a su alrededor.
+Người dùng tung ra cơn lốc cánh hoa mãnh liệt gây sát thương cho Pokémon xung quanh.
+Ataca con el fluido corrosivo de una manzana ácida, y reduce la Defensa Especial.
+Tấn công bằng chất lỏng ăn mòn của táo chua, và giảm Đặc Phòng.
+El usuario controla un tocón mediante la percusión y al atacar reduce la Velocidad del objetivo.
+Người dùng điều khiển gốc cây bằng trống và khi tấn công giảm Tốc Độ mục tiêu.
+Ataca con columnas de hojas. Combinado con Voto Agua crea un pantano y aumenta su potencia.
+Tấn công bằng cột lá. Kết hợp với Water Pledge tạo ra đầm lầy và tăng sức mạnh.
+Causa daño dejando caer una manzana desde una gran altura. Baja la Defensa del objetivo.
+Gây sát thương bằng cách thả táo từ độ cao lớn. Giảm Phòng Thủ mục tiêu.
+Lanza al objetivo una descarga de semillas explosivas desde arriba.
+Tung xuống mục tiêu một loạt hạt nổ từ trên cao.
+Absorbe la mitad del daño producido.
+Hấp thụ một nửa sát thương gây ra.
+Ataca deslizándose sobre el terreno. Cuando hay campo de hierba tiene prioridad.
+Tấn công bằng cách trượt trên mặt đất. Khi có Grassy Terrain thì có ưu tiên.
+Lanza una patada con la fuerza del trópico que golpea al rival y reduce su Ataque.
+Tung đòn đá với sức mạnh nhiệt đới đánh đối thủ và giảm Tấn Công.
+Tritura con afiladas hojas y puede bajar la Precisión del objetivo.
+Nghiền nát bằng lá sắc và có thể giảm Độ Chính Xác mục tiêu.
+Esparce extrañas hojas que persiguen al objetivo. No se puede esquivar.
+Tán ra những lá kỳ lạ đuổi theo mục tiêu. Không thể tránh được.
+Pega con brazos de pinchos y puede amedrentar al objetivo.
+Đánh bằng cánh tay gai và có thể làm mục tiêu run sợ.
+Corta con hojas afiladas. Suele ser crítico.
+Cắt bằng lá sắc. Thường là đòn chí mạng.
+Azota al objetivo con ramas finas.
+Quất mục tiêu bằng những cành cây mỏng.
+Ataca pinchando al objetivo con una rama afilada.
+Tấn công bằng cách chọc mục tiêu bằng cành cây sắc.
+Ataca al oponente lanzando hojas.
+Tấn công đối thủ bằng cách tung lá.
+El usuario ensarta al objetivo en un cepo de cuatro a cinco turnos.
+Người dùng xuyên mục tiêu vào bẫy từ bốn đến năm lượt.
+Dispara rápido de dos a cinco ráfagas de semillas de manera consecutiva.
+Bắn nhanh từ hai đến năm loạt hạt giống liên tiếp.
+Enreda al objetivo con hierba y lo derriba. Cuanto más pesado es el objetivo, más daño inflige.
+Quấn mục tiêu bằng cỏ và quật ngã. Mục tiêu càng nặng, gây càng nhiều sát thương.
+Cura los problemas de estado del equipo con un suave aroma.
+Chữa trạng thái bất lợi của đội bằng hương thơm nhẹ nhàng.
+Cubre al Pokémon con una madeja protectora. Aumenta muchísimo la Defensa.
+Bao phủ Pokémon bằng cuộn chỉ bảo vệ. Tăng rất mạnh Phòng Thủ.
+Adhiere esporas al objetivo para reducir mucho su Velocidad.
+Dính bào tử vào mục tiêu để giảm mạnh Tốc Độ.
+Presa de la maldición del bosque, el rival pasa a ser de tipo Planta, además de los suyos.
+Bị lời nguyền rừng trù, đối thủ trở thành hệ Cỏ thêm vào các hệ của nó.
+Agradable melodía que adormece al objetivo.
+Giai điệu dễ chịu làm mục tiêu ngủ gật.
+Invoca un campo de hierba 5 turnos. Al final del turno los Pokémon en el suelo recuperan PS.
+Triệu hồi Grassy Terrain 5 lượt. Vào cuối lượt các Pokémon trên mặt đất hồi HP.
+Echa raíces para recuperar PS en cada turno, pero impide el relevo.
+Bén rễ để hồi HP mỗi lượt, nhưng ngăn đổi Pokémon.
+Restaura los PS y cura los problemas de estado del usuario y sus aliados.
+Hồi HP và chữa trạng thái bất lợi của người dùng và đồng minh.
+Planta semillas que absorben PS para recuperar la salud del usuario en cada turno.
+Trồng hạt giống hút HP để hồi sức người dùng mỗi lượt.
+Esparce polvo que duerme al objetivo.
+Tán ra bụi làm mục tiêu ngủ.
+Evita el ataque de su oponente y le inflige daño si ha entrado en contacto con él.
+Né đòn tấn công của đối thủ và gây sát thương nếu đã tiếp xúc.
+Esparce esporas que inducen al sueño.
+Tán ra bào tử gây ngủ.
+Baja el Ataque del rival y restaura una cantidad de PS equivalente al valor de Ataque del rival.
+Giảm Tấn Công đối thủ và hồi HP tương đương giá trị Tấn Công của đối thủ.
+Esparce polvo que paraliza al objetivo.
+Tán ra bụi làm tê liệt mục tiêu.
+Restaura PS del usuario. La cantidad varía según el clima.
+Hồi HP người dùng. Lượng hồi thay đổi theo thời tiết.
+Se planta una semilla en el objetivo que le causa pesar y le induce Insomnio.
+Trồng một hạt giống vào mục tiêu gây buồn bã và gây Insomnia.
+Manifiesta el poder latente de la tierra en forma de hojas afiladas y ataca al objetivo.
+Thể hiện sức mạnh tiềm ẩn của đất dưới dạng lá sắc và tấn công mục tiêu.
+Un terremoto que afecta a los Pokémon de alrededor en combate.
+Trận động đất ảnh hưởng đến các Pokémon xung quanh trong chiến đấu.
+Asesta un golpe devastador usando su cuerpo.
+Tung đòn tàn phá bằng cơ thể.
+Erupciona la tierra a los pies del rival. Puede disminuir la Defensa Especial.
+Phun trào đất dưới chân đối thủ. Có thể giảm Đặc Phòng.
+Acumula energía de la corteza terrestre y la concentra contra los oponentes, dañándolos.
+Tích tụ năng lượng từ vỏ trái đất và tập trung chống lại đối thủ, gây sát thương.
+Acierta incluso a Pokémon que estén en el aire y los hace caer al suelo.
+Đánh trúng ngay cả Pokémon đang trên không và làm chúng rơi xuống mặt đất.
+Ondas sísmicas que se propagan por el suelo a todos los rivales. Los alcanzados no podrán huir.
+Sóng địa chấn lan qua mặt đất đến tất cả đối thủ. Những ai bị trúng không thể chạy trốn.
+Primer turno: cava. Segundo turno: ataca. También sirve para salir de ciertas zonas.
+Lượt đầu: đào. Lượt hai: tấn công. Cũng dùng để thoát khỏi một số khu vực.
+El usuario golpea usando su cuerpo como un taladro. Suele ser crítico.
+Người dùng đánh bằng cách dùng cơ thể như máy khoan. Thường là đòn chí mạng.
+Usa la frustración para atacar, duplicando la potencia si ha fallado su último movimiento.
+Dùng sự thất vọng để tấn công, tăng gấp đôi sức mạnh nếu chiêu cuối thất bại.
+Ataca al objetivo arrojándole arena a temperaturas muy elevadas. Puede causar quemaduras.
+Tấn công mục tiêu bằng cát nhiệt độ rất cao. Có thể gây bỏng.
+Aporrea con un hueso. Puede amedrentar al objetivo.
+Đập bằng xương. Có thể làm mục tiêu run sợ.
+Ataca lanzando una compacta bola de fango. Puede bajar la Precisión del objetivo.
+Tấn công bằng cách tung quả cầu bùn dày đặc. Có thể giảm Độ Chính Xác mục tiêu.
+Ataca con una sacudida sísmica que afecta a los Pokémon adyacentes y baja su Velocidad.
+Tấn công bằng rung động địa chấn ảnh hưởng đến Pokémon lân cận và giảm Tốc Độ.
+El usuario lanza lodo al objetivo y reduce su Velocidad.
+Người dùng tung bùn vào mục tiêu và giảm Tốc Độ.
+Lanza un hueso a modo de bumerán que golpea dos veces.
+Tung xương như boomerang đánh hai lần.
+Enreda al objetivo en un remolino de arena de cuatro a cinco turnos.
+Quấn mục tiêu trong cơn lốc cát từ bốn đến năm lượt.
+Hueso en ristre, aporrea al objetivo de dos a cinco veces.
+Cầm xương, đập mục tiêu từ hai đến năm lần.
+Echa lodo en la cara para bajar la Precisión.
+Ném bùn vào mặt để giảm Độ Chính Xác.
+Abre una grieta en el suelo y mete al objetivo en ella. Fulmina en un golpe.
+Mở vết nứt trong đất và nhét mục tiêu vào. Ngã ngựa bằng một đòn.
+Sacudida sísmica de intensidad variable que afecta a los Pokémon adyacentes en combate.
+Rung động địa chấn cường độ thay đổi ảnh hưởng đến Pokémon lân cận trong chiến đấu.
+Se cubre de lodo y debilita los movimientos de tipo Eléctrico mientras está en combate.
+Phủ bùn lên người và làm suy yếu chiêu hệ Điện trong khi chiến đấu.
+Labra la tierra y consigue que aumente el Ataque y el Ataque Especial de los Pokémon Planta.
+Cày đất và làm tăng Tấn Công và Đặc Tấn của Pokémon hệ Cỏ.
+Arroja arena a la cara y baja la Precisión.
+Ném cát vào mặt và giảm Độ Chính Xác.
+Restaura la mitad de los PS máximos del usuario. Si hay tormentas de arena restaura más PS.
+Hồi một nửa HP tối đa người dùng. Nếu có Sandstorm hồi nhiều HP hơn.
+Esparce púas en el terreno rival. Las púas hieren a los Pokémon rivales que entran en combate.
+Rải gai trên sân đối thủ. Gai gây thương tích cho Pokémon đối thủ vào chiến đấu.
+Carga un bloque de hielo con electricidad en el 1º turno y ataca con él en el 2º. Puede paralizar.
+Nạp điện vào khối băng ở lượt 1 và tấn công bằng nó ở lượt 2. Có thể gây tê liệt.
+Ataca al objetivo en el segundo turno rodeándolo de un aire gélido. Puede causar quemaduras.
+Tấn công mục tiêu ở lượt thứ hai bằng cách bao quanh không khí lạnh giá. Có thể gây bỏng.
+El usuario ataca lanzando una poderosa lanza de hielo que daña a ambos rivales.
+Người dùng tấn công bằng cách tung ngọn giáo băng mạnh gây sát thương cho cả hai đối thủ.
+Tormenta de hielo que puede llegar a congelar.
+Bão tuyết có thể gây đóng băng.
+Un terrible puño golpea al contrincante, pero la Velocidad del usuario se ve reducida.
+Cú đấm khủng khiếp đánh đối thủ, nhưng Tốc Độ người dùng bị giảm.
+Rayo de hielo que puede llegar a congelar.
+Tia băng có thể gây đóng băng.
+Lanza grandes carámbanos. Puede amedrentar al objetivo.
+Tung những viên băng lớn. Có thể làm mục tiêu run sợ.
+Puñetazo helado. Puede congelar.
+Cú đấm băng. Có thể gây đóng băng.
+Enfría súbitamente al objetivo e incluso puede congelarlo. Es supereficaz contra Pokémon de tipo Agua.
+Làm lạnh đột ngột mục tiêu và thậm chí có thể đóng băng. Siêu hiệu quả chống Pokémon hệ Nước.
+Rayo multicolor que puede reducir el Ataque.
+Tia đa sắc có thể giảm Tấn Công.
+Ataque con aire helado que puede bajar la Velocidad del objetivo.
+Đòn không khí lạnh giá có thể giảm Tốc Độ mục tiêu.
+Usa colmillos helados para morder. Puede hacer que el objetivo se amedrente o congelarlo.
+Dùng nanh băng để cắn. Có thể làm mục tiêu run sợ hoặc đóng băng.
+Este ataque inflige el doble de daño a un objetivo que haya golpeado al usuario en ese mismo turno.
+Đòn này gây gấp đôi sát thương cho mục tiêu đã đánh người dùng trong cùng lượt.
+Ataque con aire helado. Siempre resulta en un golpe crítico.
+Đòn không khí lạnh giá. Luôn là đòn chí mạng.
+Ataque con aire helado que baja la Velocidad del objetivo.
+Đòn không khí lạnh giá giảm Tốc Độ mục tiêu.
+Crea bolas de hielo y las lanza a gran velocidad. Este movimiento siempre va primero.
+Tạo ra các quả cầu băng và tung chúng với tốc độ lớn. Chiêu này luôn đi trước.
+Lanza nieve que puede llegar a congelar.
+Tung tuyết có thể gây đóng băng.
+El atacante rueda contra el objetivo durante cinco turnos, cada vez con mayor fuerza.
+Kẻ tấn công lăn vào mục tiêu trong năm lượt, mỗi lần mạnh hơn.
+Ataca lanzando de dos a cinco ráfagas consecutivas de carámbanos.
+Tấn công bằng cách tung từ hai đến năm loạt băng liên tiếp.
+Ataque de frío polar que debilita al objetivo si le alcanza.
+Đòn lạnh cực địa làm ngã ngựa mục tiêu nếu đánh trúng.
+Reduce el daño de los ataques físicos y especiales que ejecuta el rival durante cinco turnos. Solo puede usarse cuando está nevando.
+Giảm sát thương từ đòn vật lý và đặc biệt của đối thủ trong năm lượt. Chỉ dùng được khi đang có tuyết rơi.
+Tormenta de nieve que dura cinco turnos. Aumenta la defensa de los Pokémon tipo Hielo en un 50%.
+Bão tuyết kéo dài năm lượt. Tăng Phòng Thủ Pokémon hệ Băng lên 50%.
+Neblina que elimina los cambios de características de todos los Pokémon en combate.
+Sương mù xóa bỏ các thay đổi chỉ số của tất cả Pokémon trong chiến đấu.
+Rodea de fina niebla al usuario y protege las características de su equipo durante cinco turnos.
+Bao quanh người dùng bằng sương mù mỏng và bảo vệ chỉ số đội trong năm lượt.
+El atacante explota y hiere a todos a su alrededor. El usuario se debilita de inmediato.
+Kẻ tấn công phát nổ và gây thương tích cho tất cả xung quanh. Người dùng ngã ngựa ngay lập tức.
+Carga contra el rival usando toda la fuerza que tiene. El Pokémon descansa el turno siguiente.
+Lao vào đối thủ dùng toàn bộ sức mạnh. Pokémon nghỉ ngơi lượt tiếp theo.
+Un rayo fulminante, pero el atacante deberá descansar en el siguiente turno.
+Tia sét chói lòa, nhưng người tấn công phải nghỉ ngơi ở lượt tiếp theo.
+Ataca a todos los Pokémon a su alrededor con una potentísima onda sonora.
+Tấn công tất cả Pokémon xung quanh bằng sóng âm cực mạnh.
+Este movimiento solo puede usarse tras haber usado los demás conocidos por el Pokémon.
+Chiêu này chỉ dùng được sau khi đã dùng tất cả các chiêu khác Pokémon biết.
+Primer turno: se prepara y sube la Defensa. Segundo turno: da el cabezazo.
+Lượt đầu: chuẩn bị và tăng Phòng Thủ. Lượt hai: húc đầu.
+Ataque arriesgado que también hiere al agresor.
+Đòn tấn công rủi ro cũng gây thương tích cho kẻ tấn công.
+Propina un tremendo cabezazo. También daña al usuario un poco.
+Tung cú húc đầu kinh khủng. Cũng gây thương tích nhẹ cho người dùng.
+Patada de extrema fuerza.
+Đòn đá cực mạnh.
+Se rodea de una potente energía con la que golpea al rival. El tipo depende del disco que lleva.
+Bao quanh bằng năng lượng mạnh và đánh đối thủ. Hệ phụ thuộc vào đĩa đang mang.
+Ataca al objetivo con un gran laser. El tipo del ataque lo determina el cartucho que porta el usuario.
+Tấn công mục tiêu bằng tia laser lớn. Hệ đòn được xác định bởi hộp mực người dùng mang.
+Arroja un huevo al objetivo con gran fuerza.
+Ném trứng vào mục tiêu với lực lớn.
+Emite incontables haces de luz. Varía según el tipo de tabla que lleve el usuario.
+Tỏa ra vô số chùm sáng. Thay đổi theo loại bảng người dùng mang.
+Grito desgarrador que inflige daño al objetivo.
+Tiếng hét xé lòng gây sát thương cho mục tiêu.
+Baile enérgico cuyo tipo será el primero del Pokémon que lo ejecuta. Si lo pierde, usará el segundo.
+Điệu nhảy sôi động có hệ là hệ đầu tiên của Pokémon thực hiện. Nếu mất hệ đó, sẽ dùng hệ thứ hai.
+Ataca con una gran embestida. Puede confundir al objetivo.
+Tấn công bằng một cú lao mạnh. Có thể gây hỗn loạn mục tiêu.
+Carga desmedida que también hiere al agresor.
+Lao vào quá mức cũng gây thương tích cho kẻ tấn công.
+Ataca de forma alborotada durante tres turnos. Mantiene despiertos a todos.
+Tấn công hỗn loạn trong ba lượt. Giữ cho tất cả thức dậy.
+Salta sobre el objetivo con su peso. Puede paralizar.
+Nhảy lên mục tiêu bằng trọng lượng của mình. Có thể gây tê liệt.
+Ataque muy rápido que siempre va en primer lugar.
+Đòn rất nhanh luôn đi trước.
+Ataque con finos colmillos. Puede amedrentar.
+Đòn bằng nanh mỏng. Có thể làm run sợ.
+Un puñetazo de gran potencia.
+Cú đấm sức mạnh lớn.
+Ataca con viento cortante. Suele ser crítico.
+Tấn công bằng gió cắt. Thường là đòn chí mạng.
+Golpea con las extremidades.
+Đánh bằng các chi.
+Potente puñetazo.
+Cú đấm mạnh mẽ.
+Ataque triple que puede paralizar, quemar o congelar al objetivo.
+Đòn ba lần có thể làm tê liệt, gây bỏng hoặc đóng băng mục tiêu.
+Hace trizas al objetivo con garras afiladas y puede bajar su Defensa.
+Xé tan mục tiêu bằng móng vuốt sắc và có thể giảm Phòng Thủ.
+Ataca conmoviendo a los rivales de alrededor con un antiguo canto. Puede dormirlos.
+Tấn công làm xúc động các đối thủ xung quanh bằng bài hát cổ xưa. Có thể làm ngủ.
+Busca los puntos débiles del objetivo y causa daño aunque cambien sus características.
+Tìm điểm yếu của mục tiêu và gây sát thương dù chỉ số thay đổi.
+Rítmicos puñetazos que pueden causar confusión.
+Cú đấm nhịp nhàng có thể gây hỗn loạn.
+Ataca con el doble de potencia si el usuario está quemado, paralizado o envenenado.
+Tấn công với gấp đôi sức mạnh nếu người dùng đang bị bỏng, tê liệt hoặc nhiễm độc.
+Lanza un potente cabezazo que puede amedrentar al objetivo.
+Tung cú húc đầu mạnh có thể làm mục tiêu run sợ.
+Si en el turno anterior han derrotado a un compañero, la potencia del ataque aumentará.
+Nếu lượt trước có đồng đội bị ngã ngựa, sức mạnh đòn tấn công tăng.
+Ataque con poder secreto cuyos efectos secundarios varían según el entorno de combate.
+Đòn sức mạnh bí ẩn có hiệu ứng phụ thay đổi theo môi trường chiến đấu.
+Ataca con cuchillas o con pinzas. Suele ser un golpe crítico.
+Tấn công bằng lưỡi dao hoặc kẹp. Thường là đòn chí mạng.
+Hace el doble de daño a objetivos paralizados, pero también cura la parálisis.
+Gây gấp đôi sát thương cho mục tiêu tê liệt, nhưng cũng chữa tê liệt.
+Ataca al objetivo con una cornada.
+Tấn công mục tiêu bằng cú húc sừng.
+Tremendo pisotón que puede amedrentar al objetivo.
+Cú giẫm kinh khủng có thể làm mục tiêu run sợ.
+Se acerca con ternura al objetivo, pero le ataca pudiendo robar el objeto que lleve.
+Tiếp cận mục tiêu âu yếm, nhưng tấn công có thể đánh cắp vật phẩm đang mang.
+Ataque único cuyo tipo y potencia varían según el agresor.
+Chiêu độc đáo có hệ và sức mạnh thay đổi theo kẻ tấn công.
+Un canto que ataca al objetivo. Cuantos más Pokémon lo usan, más aumenta de potencia.
+Bài hát tấn công mục tiêu. Càng nhiều Pokémon dùng, sức mạnh càng tăng.
+Lanza rayos en forma de estrella que no fallan nunca.
+Tung tia hình ngôi sao không bao giờ trượt.
+Atrapa con potentes pinzas.
+Bẫy bằng kẹp mạnh.
+Corta con garras, guadañas, etc. También sirve para cortar árboles finos.
+Cắt bằng móng vuốt, lưỡi hái, v.v. Cũng dùng để chặt cây nhỏ.
+Ataque giratorio que sube la Velocidad y elimina movimientos como atadura, drenadoras o púas.
+Đòn xoay tăng Tốc Độ và xóa các chiêu như Bind, Leech Seed hoặc Spikes.
+Fuerte ronquido que debe usarse dormido. Puede amedrentar al objetivo.
+Tiếng ngáy mạnh phải dùng khi ngủ. Có thể làm mục tiêu run sợ.
+Ataca aprovechando la energía del campo activo, que determina el tipo y la potencia del movimiento.
+Tấn công tận dụng năng lượng terrain đang hoạt động, xác định hệ và sức mạnh chiêu.
+El tipo y fuerza del ataque varían según el clima.
+Hệ và sức mạnh đòn thay đổi theo thời tiết.
+Un susurro que aumenta de potencia conforme el usuario y otros Pokémon lo van utilizando.
+Tiếng thì thầm tăng sức mạnh khi người dùng và Pokémon khác dùng nó.
+Ataca primero y, además, amedrenta al rival. Solo sirve en el primer turno.
+Tấn công trước và làm run sợ đối thủ. Chỉ hiệu quả ở lượt đầu tiên.
+Ataque moderado que no debilita al objetivo y le deja al menos un PS.
+Đòn vừa phải không ngã ngựa mục tiêu và để lại ít nhất 1 HP.
+El usuario se contiene a la hora de atacar y deja al Pokémon objetivo con al menos 1 PS.
+Người dùng kiềm chế khi tấn công và để lại ít nhất 1 HP cho Pokémon mục tiêu.
+Arroja monedas al objetivo. Las recupera al final del combate.
+Tung tiền xu vào mục tiêu. Lấy lại vào cuối chiến đấu.
+Golpea con las patas o la cola.
+Đánh bằng chân hoặc đuôi.
+Ataque rápido que permite golpear en primer lugar.
+Đòn nhanh cho phép đánh trước.
+Araña con afiladas garras.
+Cào bằng móng vuốt sắc.
+Embiste con el cuerpo.
+Lao vào bằng cơ thể.
+Golpea al objetivo dos veces seguidas con la cola u otras partes de su cuerpo.
+Đánh mục tiêu hai lần liên tiếp bằng đuôi hoặc các phần khác của cơ thể.
+Permite golpear a objetivos que usan Protección o Detección y anula dichos movimientos.
+Cho phép đánh mục tiêu đang dùng Protect hoặc Detect và vô hiệu hóa các chiêu đó.
+Golpea con la cola u otras partes de su cuerpo de dos a cinco veces seguidas.
+Đánh bằng đuôi hoặc các phần khác của cơ thể từ hai đến năm lần liên tiếp.
+Al usarse, aumenta el Ataque del usuario cada vez que es golpeado.
+Khi dùng, Tấn Công người dùng tăng mỗi khi bị đánh.
+Pega de dos a cinco veces seguidas.
+Đánh từ hai đến năm lần liên tiếp.
+Araña rápidamente de dos a cinco veces.
+Cào nhanh từ hai đến năm lần.
+Arroja esferas al objetivo entre dos y cinco veces seguidas.
+Tung quả cầu vào mục tiêu từ hai đến năm lần liên tiếp.
+Ata y oprime de cuatro a cinco turnos.
+Buộc và ép từ bốn đến năm lượt.
+Abofetea de dos a cinco veces seguidas.
+Tát từ hai đến năm lần liên tiếp.
+Cornea al objetivo de dos a cinco veces.
+Húc sừng mục tiêu từ hai đến năm lần.
+Oprime al objetivo de cuatro a cinco turnos con ramas o con su cuerpo.
+Ép mục tiêu từ bốn đến năm lượt bằng cành cây hoặc cơ thể.
+Constriñe para herir y puede bajar la Velocidad.
+Siết chặt để gây thương tích và có thể giảm Tốc Độ.
+Resiste dos golpes para liberar la energia acumulada.
+Chịu đựng hai đòn để giải phóng năng lượng tích lũy.
+Cuantos más PS le queden al objetivo, más fuerte será el ataque.
+Mục tiêu còn càng nhiều HP, đòn tấn công càng mạnh.
+Reduce los PS del objetivo para que igualen a los del atacante.
+Giảm HP mục tiêu để bằng với HP người tấn công.
+Ataque frenético. Cuantos menos PS tenga el usuario, más daño produce.
+Đòn điên cuồng. Người dùng càng ít HP, gây càng nhiều sát thương.
+Cuanto menor sea la amistad con el Entrenador, más poderoso será este ataque.
+Tình bạn với Huấn Luyện Viên càng thấp, đòn tấn công càng mạnh.
+Ataque con pinzas que debilita al oponente de un golpe si acierta.
+Đòn kẹp ngã ngựa đối thủ bằng một đòn nếu đánh trúng.
+Ataque con taladro que fulmina en un golpe al objetivo si le toca.
+Đòn khoan ngã ngựa mục tiêu bằng một đòn nếu chạm.
+La baya que lleva presta su fuerza para atacar. El tipo de ataque y su fuerza dependen de la baya.
+Berry đang mang cho mượn sức mạnh để tấn công. Hệ và sức mạnh phụ thuộc vào Berry.
+Regalo con bomba trampa. A veces restaura los PS.
+Quà tặng có bẫy bom. Đôi khi hồi HP.
+Cuanto mayor sea la amistad con el Entrenador, más poderoso será este ataque.
+Tình bạn với Huấn Luyện Viên càng cao, đòn tấn công càng mạnh.
+Lanza ondas de choque que restan 20 PS al objetivo.
+Tung sóng xung kích trừ 20 HP mục tiêu.
+Libera de una vez la energía acumulada con reserva.
+Giải phóng cùng một lúc năng lượng tích lũy bằng Stockpile.
+Finos colmillos que reducen a la mitad los PS del objetivo.
+Nanh mỏng giảm HP mục tiêu xuống một nửa.
+Cuantos menos PP tenga el movimiento, mayor será la fuerza para atacar.
+PP của chiêu càng ít, sức mạnh tấn công càng lớn.
+Estruja con fuerza al objetivo. Cuantos más PS tenga el objetivo, más fuerza tendrá el ataque.
+Siết mạnh mục tiêu. Mục tiêu càng nhiều HP, đòn càng mạnh.
+La presión en puntos clave del cuerpo potencia una de sus características al azar.
+Áp lực vào các điểm then chốt của cơ thể tăng một chỉ số ngẫu nhiên.
+Si el usuario es el más rápido, permite al objetivo usar un movimiento justo tras él.
+Nếu người dùng nhanh nhất, cho phép mục tiêu dùng chiêu ngay sau nó.
+Usa un movimiento de un miembro del equipo elegido al azar.
+Dùng chiêu của một thành viên đội được chọn ngẫu nhiên.
+Si el objetivo es del sexo opuesto, se enamorará y bajará la posibilidad de que ataque.
+Nếu mục tiêu khác giới, sẽ say nắng và giảm khả năng tấn công.
+Cambia el puesto con un compañero y le pasa los cambios de características.
+Đổi chỗ với đồng đội và chuyển các thay đổi chỉ số.
+Reduce la mitad de los PS máximos para mejorar al máximo el Ataque.
+Giảm một nửa HP tối đa để tăng Tấn Công lên tối đa.
+Entrega el objeto que lleva al objetivo en caso de que este no tenga ninguno.
+Trao vật phẩm đang mang cho mục tiêu nếu nó không có vật phẩm nào.
+Le corta el paso al objetivo para que no pueda escapar.
+Chặn đường mục tiêu để nó không thể thoát.
+Modifica el tipo del Pokémon según el terreno de combate donde esté.
+Thay đổi hệ Pokémon theo terrain chiến đấu đang ở.
+Si el objetivo es del sexo opuesto, queda embelesado y baja mucho su Ataque Especial.
+Nếu mục tiêu khác giới, bị mê hoặc và Đặc Tấn giảm mạnh.
+El Pokémon te felicita en un día muy especial para ti.
+Pokémon chúc mừng bạn vào một ngày rất đặc biệt.
+Desconcentra al oponente contándole un secreto, disminuyendo así su Ataque Especial.
+Làm mất tập trung đối thủ bằng cách kể bí mật, làm giảm Đặc Tấn.
+Cambia el tipo del usuario por el de uno de sus movimientos.
+Thay đổi hệ người dùng theo hệ của một trong những chiêu của nó.
+El usuario cambia de tipo para hacerse resistente al último tipo de movimiento usado por el objetivo.
+Người dùng thay đổi hệ để kháng hệ cuối cùng của chiêu mục tiêu đã dùng.
+Imita el movimiento usado justo antes. El movimiento falla si no se ha usado aún ninguno.
+Bắt chước chiêu vừa dùng trước đó. Thất bại nếu chưa có chiêu nào được dùng.
+Gracias a un poder misterioso, el usuario intercambia los efectos en los extremos del campo.
+Nhờ sức mạnh bí ẩn, người dùng hoán đổi hiệu ứng ở hai phía sân.
+Se enrosca para ocultar su punto débil. Sube la Defensa.
+Cuộn tròn để giấu điểm yếu. Tăng Phòng Thủ.
+Desactiva el último movimiento del objetivo durante cuatro turnos.
+Vô hiệu hóa chiêu cuối của mục tiêu trong bốn lượt.
+Crea copias de sí mismo para mejorar la Evasión.
+Tạo ra các bản sao của bản thân để cải thiện Né Tránh.
+El objetivo repite su último movimiento durante tres turnos.
+Mục tiêu lặp lại chiêu cuối trong ba lượt.
+Resiste cualquier ataque y deja al menos un PS. Puede fallar si se usa repetidamente.
+Chịu đựng bất kỳ đòn nào và để lại ít nhất 1 HP. Có thể thất bại nếu dùng liên tục.
+Una extraña danza que hace que el usuario y el objetivo tengan la misma habilidad.
+Điệu nhảy kỳ lạ làm người dùng và mục tiêu có cùng ability.
+Luz cegadora que baja la Precisión del objetivo.
+Ánh sáng chói làm giảm Độ Chính Xác mục tiêu.
+Concentra energía para aumentar las posibilidades de un golpe crítico.
+Tập trung năng lượng để tăng xác suất đòn chí mạng.
+Llama la atención para concentrar los ataques de todos los del equipo rival hacia sí mismo.
+Thu hút sự chú ý để tập trung tất cả đòn tấn công của đội đối thủ vào bản thân.
+Permite atacar con cualquier movimiento a objetivos de tipo Fantasma y golpear a Pokémon evasivos.
+Cho phép tấn công mục tiêu hệ Ma bằng bất kỳ chiêu nào và đánh Pokémon hay né tránh.
+Intimida y asusta al objetivo con la mirada para dejarlo paralizado.
+Uy hiếp và làm sợ mục tiêu bằng ánh mắt để tê liệt nó.
+Dulce gruñido que reduce el Ataque del contrincante.
+Tiếng gầm ngọt ngào làm giảm Tấn Công đối thủ.
+El cuerpo del usuario crece a marchas forzadas y aumenta el Ataque y el Ataque Especial.
+Cơ thể người dùng lớn nhanh và tăng Tấn Công và Đặc Tấn.
+Al usar este movimiento se consigue duplicar la recompensa recibida tras el combate.
+Khi dùng chiêu này, tiền thưởng nhận sau chiến đấu tăng gấp đôi.
+Tensa la musculatura del usuario para aumentar la Defensa.
+Căng cơ người dùng để tăng Phòng Thủ.
+Tañido que cura los problemas de estado de todos los Pokémon del equipo.
+Tiếng chuông chữa trạng thái bất lợi của tất cả Pokémon trong đội.
+El usuario ayuda a un aliado reforzando la potencia de su ataque.
+Người dùng giúp đồng minh bằng cách tăng cường sức mạnh đòn tấn công của nó.
+El Pokémon le da la mano a un aliado y ambos se sienten muy felices.
+Pokémon bắt tay đồng minh và cả hai đều cảm thấy rất hạnh phúc.
+Aullido que sube el ánimo y aumenta el Ataque.
+Tiếng hú nâng cao tinh thần và tăng Tấn Công.
+El usuario se concentra para que el siguiente ataque propine un golpe crítico.
+Người dùng tập trung để đòn tấn công tiếp theo là đòn chí mạng.
+Intimida al objetivo para bajar su Defensa.
+Uy hiếp mục tiêu để giảm Phòng Thủ của nó.
+Fija el blanco para que el siguiente ataque no falle.
+Xác định mục tiêu để đòn tấn công tiếp theo không thể trượt.
+Con una cara que asusta, da un beso al objetivo y lo adormece.
+Với khuôn mặt đáng sợ, hôn mục tiêu và làm nó ngủ gật.
+Lanza al cielo un conjuro que impide al objetivo asestar golpes críticos.
+Tung thần chú lên bầu trời ngăn mục tiêu đánh đòn chí mạng.
+Se adelanta al movimiento que pretende usar el objetivo y lo lanza antes con más fuerza. Si el usuario es más lento, falla.
+Đoán trước chiêu mục tiêu định dùng và tung nó trước với sức mạnh hơn. Nếu người dùng chậm hơn, thất bại.
+Impide al objetivo huir de la batalla.
+Ngăn mục tiêu chạy trốn khỏi chiến đấu.
+El usuario mueve un dedo y estimula su cerebro para usar al azar casi cualquier movimiento.
+Người dùng vẫy ngón tay và kích thích não để dùng ngẫu nhiên hầu hết mọi chiêu.
+Restaura la mitad de sus PS máximos. Fuera de combate puede transferir sus PS a un aliado.
+Hồi một nửa HP tối đa. Ngoài chiến đấu có thể chuyển HP cho đồng minh.
+Copia el último movimiento usado por el objetivo. Solo lo podrá usar si no es cambiado.
+Sao chép chiêu cuối mục tiêu đã dùng. Chỉ dùng được nếu không bị đổi Pokémon.
+El usuario adivina los movimientos del objetivo para hacer que su siguiente ataque no falle.
+Người dùng đoán chiêu mục tiêu để đòn tấn công tiếp theo không thể trượt.
+El usuario mengua para aumentar mucho la Evasión.
+Người dùng thu nhỏ lại để tăng mạnh Né Tránh.
+Usa el poder de la naturaleza. Su efecto varía según el entorno de combate.
+Dùng sức mạnh thiên nhiên. Hiệu ứng thay đổi theo môi trường chiến đấu.
+Intimida a su oponente con un rugido de guerra, bajando su Ataque y su Ataque Especial.
+Uy hiếp đối thủ bằng tiếng hét chiến đấu, giảm Tấn Công và Đặc Tấn.
+Suma los PS del usuario a los del objetivo y los reparte a partes iguales.
+Cộng HP người dùng với HP mục tiêu và chia đều.
+Si un Pokémon escucha este canto y no es cambiado por otro en tres turnos, acaba debilitándose.
+Nếu Pokémon nghe bài hát này và không bị đổi trong ba lượt, cuối cùng sẽ ngã ngựa.
+Se hace amigo de su oponente y consigue que no quiera combatir. Además, reduce su Ataque.
+Kết bạn với đối thủ và làm nó không muốn chiến đấu. Ngoài ra giảm Tấn Công.
+Se hipnotiza y copia cualquier cambio que haya en las características de su objetivo.
+Tự thôi miên và sao chép bất kỳ thay đổi chỉ số nào của mục tiêu.
+Restaura hasta la mitad de los PS máximos.
+Hồi đến một nửa HP tối đa.
+Recicla y así recupera el objeto equipado de un solo uso que ya ha sido empleado en el combate.
+Tái chế và hồi phục vật phẩm dùng một lần đã được dùng trong chiến đấu.
+Cambia el tipo del Pokémon al mismo tipo que el del objetivo.
+Thay đổi hệ Pokémon thành cùng hệ với mục tiêu.
+Descansa para curar parálisis, envenenamiento o quemaduras.
+Nghỉ ngơi để chữa tê liệt, nhiễm độc hoặc bỏng.
+Se lleva al objetivo, que es cambiado por otro Pokémon. Si es un Pokémon salvaje, acaba el combate.
+Đưa mục tiêu đi, bị đổi bằng Pokémon khác. Nếu là hoang dã, kết thúc chiến đấu.
+Crea un campo protector que evita problemas de estado durante cinco turnos.
+Tạo ra trường bảo vệ ngăn trạng thái bất lợi trong năm lượt.
+Asusta al objetivo para reducir mucho su Velocidad.
+Làm mục tiêu sợ hãi để giảm mạnh Tốc Độ.
+Alarido agudo que reduce mucho la Defensa del objetivo.
+Tiếng thét cao làm giảm mạnh Phòng Thủ mục tiêu.
+El perfil del usuario se hace más afilado y su Ataque mejora.
+Vóc dáng người dùng trở nên sắc nét hơn và Tấn Công cải thiện.
+Rompe su coraza y baja su Defensa y Def. Esp., pero aumenta mucho su Ataque, At. Esp. y Velocidad.
+Phá vỡ mai giáp và giảm Phòng Thủ và Đặc Phòng, nhưng tăng mạnh Tấn Công, Đặc Tấn và Tốc Độ.
+Envía una imagen desconcertante al oponente. Cambia la habilidad del oponente a Simple.
+Gửi hình ảnh gây bối rối cho đối thủ. Thay đổi ability đối thủ thành Simple.
+Cancioncilla que hace dormir profundamente al objetivo.
+Bài hát nhỏ làm mục tiêu ngủ sâu.
+Aprende de forma permanente el último movimiento del objetivo. Es de un solo uso.
+Học vĩnh viễn chiêu cuối của mục tiêu. Dùng một lần.
+El usuario se relaja y restaura la mitad de sus PS máximos.
+Người dùng thư giãn và hồi một nửa HP tối đa.
+Mientras duerme, usa uno de sus movimientos elegido al azar.
+Trong khi ngủ, dùng một trong các chiêu được chọn ngẫu nhiên.
+Baja la Precisión del objetivo con una nube de humo o tinta.
+Giảm Độ Chính Xác mục tiêu bằng đám mây khói hoặc mực.
+Restaura la mitad de los PS máximos del usuario. Fuera de combate transfiere PS a un aliado.
+Hồi một nửa HP tối đa người dùng. Ngoài chiến đấu chuyển HP cho đồng minh.
+No tiene ningún efecto. Solo salpica.
+Không có hiệu ứng gì. Chỉ bắn tung tóe.
+Convierte a un Pokémon en el foco de atención, haciendo que los ataques se dirijan hacia él.
+Biến một Pokémon thành tâm điểm chú ý, làm tất cả đòn tấn công hướng về nó.
+Acumula energía y sube la Defensa y la Defensa Especial. Puede utilizarse hasta tres veces.
+Tích lũy năng lượng và tăng Phòng Thủ và Đặc Phòng. Có thể dùng tối đa ba lần.
+El usuario se come la baya que lleve equipada y sube drásticamente su Defensa.
+Người dùng ăn Berry đang mang và tăng mạnh Phòng Thủ.
+Utiliza parte de los PS propios para crear un sustituto que actúa como señuelo.
+Dùng một phần HP của mình để tạo ra Substitute hoạt động như mồi nhử.
+Raras ondas sónicas que pueden confundir al objetivo.
+Sóng âm hiếm có thể gây hỗn loạn mục tiêu.
+Provoca confusión en el objetivo, pero también sube mucho su Ataque.
+Gây hỗn loạn mục tiêu, nhưng cũng tăng mạnh Tấn Công của nó.
+Absorbe la energía acumulada con reserva y restaura PS.
+Hấp thụ năng lượng tích lũy bằng Stockpile và hồi HP.
+Engatusa al rival para reducir su evasión. También atrae Pokémon salvajes.
+Dụ dỗ đối thủ để giảm Né Tránh. Cũng thu hút Pokémon hoang dã.
+Baile frenético que aumenta mucho el Ataque.
+Điệu nhảy điên cuồng tăng mạnh Tấn Công.
+Agita la cola para bajar la Defensa del contrincante.
+Vẫy đuôi để giảm Phòng Thủ đối thủ.
+Mira al objetivo para hacerle perder su espíritu combativo y reduce su Ataque y Ataque Especial.
+Nhìn mục tiêu làm nó mất tinh thần chiến đấu và giảm Tấn Công và Đặc Tấn.
+Invita a tomar el té a todos los presentes en el combate, haciendo que ingieran sus bayas equipadas.
+Mời tất cả mọi người trong chiến đấu uống trà, làm họ ăn Berry đang mang.
+Danza histérica que confunde a los Pokémon que están alrededor del usuario.
+Điệu nhảy cuồng loạn làm hỗn loạn các Pokémon xung quanh người dùng.
+Hace reír al objetivo para bajar el Ataque y la Defensa.
+Làm mục tiêu cười để giảm Tấn Công và Phòng Thủ.
+El usuario se transforma en una copia del objetivo, con los mismos movimientos.
+Người dùng biến hình thành bản sao mục tiêu với cùng các chiêu.
+Se lleva al rival, que es cambiado por otro Pokémon. Si es un Pokémon salvaje, acaba el combate.
+Đưa đối thủ đi, bị đổi bằng Pokémon khác. Nếu là hoang dã, kết thúc chiến đấu.
+Cumple el deseo de restaurar la mitad de los PS máximos en el siguiente turno.
+Thực hiện mong ước hồi một nửa HP tối đa ở lượt tiếp theo.
+Movimiento que aumenta el Ataque y el Ataque Especial de quien lo usa.
+Chiêu tăng Tấn Công và Đặc Tấn người dùng.
+Gran bostezo que induce al sueño al objetivo en el siguiente turno.
+Cái あくび lớn làm mục tiêu ngủ ở lượt tiếp theo.
+Causa daño a su oponente lanzándole un eructo. Para usarlo tiene que llevar una Baya y comérsela.
+Gây sát thương cho đối thủ bằng cách ợ vào nó. Để dùng phải mang Berry và ăn nó.
+Lanza contra el objetivo asquerosa basura. Puede envenenar al objetivo.
+Tung rác bẩn thỉu vào mục tiêu. Có thể gây nhiễm độc.
+Una onda tóxica que daña a los Pokémon de alrededor. Puede envenenar.
+Sóng độc gây sát thương cho Pokémon xung quanh. Có thể gây nhiễm độc.
+Lanza un ataque físico o especial en función de cuál inflija más daño. Puede envenenar.
+Tung đòn vật lý hoặc đặc biệt tùy cái nào gây nhiều sát thương hơn. Có thể gây nhiễm độc.
+Arroja residuos al objetivo. Puede llegar a envenenar.
+Ném rác thải vào mục tiêu. Có thể gây nhiễm độc.
+Pincha al rival con un tentáculo o brazo envenenado. Puede llegar a envenenar al rival.
+Chọc đối thủ bằng xúc tu hoặc cánh tay độc. Có thể gây nhiễm độc đối thủ.
+Tajo que puede envenenar al objetivo. Suele ser crítico.
+Vết chém có thể gây nhiễm độc mục tiêu. Thường là đòn chí mạng.
+Ataca cubriendo al objetivo con un líquido venenoso. El daño será doble si este ya está envenenado.
+Tấn công bằng cách phủ mục tiêu bằng chất lỏng độc. Sát thương gấp đôi nếu mục tiêu đã bị nhiễm độc.
+Ataca al objetivo con una extraña niebla que elimina sus cambios de características.
+Tấn công mục tiêu bằng sương mù kỳ lạ xóa bỏ các thay đổi chỉ số.
+Colmillos tóxicos que pueden envenenar gravemente al objetivo.
+Nanh độc có thể gây nhiễm độc nặng mục tiêu.
+Ataque con la cola que puede envenenar y dar un golpe crítico.
+Đòn đuôi có thể gây nhiễm độc và đánh chí mạng.
+Rocía con un ácido corrosivo. Puede bajar la Defensa Especial.
+Phun axit ăn mòn. Có thể giảm Đặc Phòng.
+Ataca con un líquido corrosivo, reduciendo mucho la Defensa Especial del objetivo.
+Tấn công bằng chất lỏng ăn mòn, giảm mạnh Đặc Phòng mục tiêu.
+El objetivo es atacado con gases tóxicos que pueden llegar a envenenar.
+Mục tiêu bị tấn công bằng khí độc có thể gây nhiễm độc.
+Lanza un aguijón tóxico que puede envenenar al objetivo.
+Tung ngòi độc có thể gây nhiễm độc mục tiêu.
+Transforma la estructura celular para hacerse líquido y aumenta mucho la Defensa.
+Biến đổi cấu trúc tế bào để thành chất lỏng và tăng mạnh Phòng Thủ.
+Protege de ataques y, al mismo tiempo, envenena al que use un movimiento de contacto contra él.
+Bảo vệ khỏi đòn tấn công và đồng thời gây nhiễm độc kẻ dùng đòn tiếp xúc chống lại nó.
+El usuario se concentra, lo que le permite aumentar su Ataque, Defensa y Precisión.
+Người dùng tập trung, cho phép tăng Tấn Công, Phòng Thủ và Độ Chính Xác.
+Libera un gas cáustico que envuelve a todos alrededor y derrite los objetos que lleven equipados.
+Giải phóng khí ăn mòn bao quanh tất cả và làm tan chảy vật phẩm đang mang.
+El usuario arroja sus jugos biliares al objetivo, lo que anula el efecto de la habilidad en uso.
+Người dùng ném dịch mật vào mục tiêu, vô hiệu hóa hiệu ứng ability đang dùng.
+Lanza una nube de gas tóxico al objetivo. Produce envenenamiento.
+Tung đám mây khí độc vào mục tiêu. Gây nhiễm độc.
+Polvo tóxico que envenena al objetivo.
+Bụi độc gây nhiễm độc mục tiêu.
+Cura los problemas de estado del Pokémon rival y a cambio recupera PS propios.
+Chữa trạng thái bất lợi của Pokémon đối thủ và đổi lại hồi HP của mình.
+Envenena gravemente al objetivo y causa un daño mayor en cada turno.
+Gây nhiễm độc nặng mục tiêu và gây sát thương nhiều hơn mỗi lượt.
+Lanza una trampa de púas tóxicas a los pies del objetivo. El veneno afecta a los Pokémon que entran.
+Tung bẫy gai độc dưới chân mục tiêu. Độc ảnh hưởng đến Pokémon vào chiến đấu.
+Ataca al oponente con hilillos venenosos que reducen su Velocidad y lo envenenan.
+Tấn công đối thủ bằng sợi chỉ độc làm giảm Tốc Độ và gây nhiễm độc.
+Disminuye el Ataque, el Ataque Especial y la Velocidad, pero solo a Pokémon ya envenenados.
+Giảm Tấn Công, Đặc Tấn và Tốc Độ, nhưng chỉ với Pokémon đã bị nhiễm độc.
+El usuario utiliza un prisma para emitir un rayo de gran potencia, pero no puede moverse en el turno siguiente.
+Người dùng dùng lăng kính để tung tia sức mạnh lớn, nhưng không thể di chuyển ở lượt tiếp theo.
+Concentra energía psíquica para golpear al objetivo dos turnos después.
+Tập trung năng lượng tâm linh để đánh mục tiêu sau hai lượt.
+Una extraña onda que daña a todos los Pokémon adyacentes del mismo tipo que el que la ejecuta.
+Sóng kỳ lạ gây sát thương cho tất cả Pokémon lân cận cùng hệ với người thực hiện.
+Restaura al usuario la mitad del daño causado a un objetivo dormido.
+Hồi người dùng một nửa sát thương gây cho mục tiêu đang ngủ.
+Compara sus valores de Ataque y Ataque Especial para infligir daño con el más alto de los dos.
+So sánh Tấn Công và Đặc Tấn của mình để gây sát thương bằng chỉ số cao hơn trong hai.
+Crea una onda psíquica que golpea al objetivo provocándole un daño físico.
+Tạo ra sóng tâm linh đánh mục tiêu gây sát thương vật lý.
+El usuario ataca disparando poderes psíquicos por los ojos. Puede congelar.
+Người dùng tấn công bằng cách bắn sức mạnh tâm linh qua mắt. Có thể gây đóng băng.
+Fuerte ataque telequinético que puede bajar la Defensa Especial del objetivo.
+Đòn thần giao cách cảm mạnh có thể giảm Đặc Phòng mục tiêu.
+Ataca con poderes psíquicos que además destruyen barreras como pantalla de luz y reflejo.
+Tấn công bằng sức mạnh tâm linh cũng phá hủy rào chắn như Light Screen và Reflect.
+El usuario ataca con su poder psíquico y reduce tres PP del último movimiento usado por el objetivo.
+Người dùng tấn công bằng sức mạnh tâm linh và giảm ba PP của chiêu cuối mục tiêu đã dùng.
+Ataca al objetivo con sus poderes psíquicos. En campo psíquico aumenta su potencia e inflige daño a todos los rivales.
+Tấn công mục tiêu bằng sức mạnh tâm linh. Trong Psychic Terrain tăng sức mạnh và gây sát thương cho tất cả đối thủ.
+Energía muy extraña que puede amedrentar al objetivo.
+Năng lượng rất kỳ lạ có thể làm mục tiêu run sợ.
+Golpea aunque el rival use Protección, Detección, Vastaguardia o Anticipo ese turno.
+Đánh trúng dù đối thủ dùng Protect, Detect, Wide Guard hoặc Quick Guard trong lượt đó.
+Crea una onda psíquica que golpea al objetivo y provoca un gran daño físico.
+Tạo ra sóng tâm linh đánh mục tiêu và gây sát thương vật lý lớn.
+Concentra su energía psíquica en la cabeza para golpear. Puede hacer que el objetivo se amedrente.
+Tập trung năng lượng tâm linh vào đầu để đánh. Có thể làm mục tiêu run sợ.
+Fogonazo de luz que puede bajar la Defensa Especial del objetivo.
+Tia sáng chói có thể giảm Đặc Phòng mục tiêu.
+Banco de niebla que puede bajar el Ataque Especial del objetivo.
+Đám sương mù có thể giảm Đặc Tấn mục tiêu.
+Ataca al objetivo con cuchillas formadas por energía psíquica. Suele ser crítico.
+Tấn công mục tiêu bằng những lưỡi dao hình thành từ năng lượng tâm linh. Thường là đòn chí mạng.
+Extraño rayo que puede causar confusión.
+Tia kỳ lạ có thể gây hỗn loạn.
+Grácil gesto que asesta un golpe tremendo al objetivo y puede amedrentarlo.
+Cử chỉ duyên dáng tung đòn kinh khủng vào mục tiêu và có thể làm run sợ.
+Débil ataque telequinético que puede causar confusión.
+Đòn thần giao cách cảm yếu có thể gây hỗn loạn.
+Cuanto más suban las características del usuario, mayor será el daño.
+Chỉ số người dùng tăng càng nhiều, sát thương càng lớn.
+Responde a un ataque especial ocasionando el doble del daño recibido.
+Phản đòn đặc biệt gây gấp đôi sát thương đã nhận.
+Ataque con una onda de energía de intensidad variable.
+Đòn tấn công bằng sóng năng lượng cường độ thay đổi.
+Relaja el cuerpo para ganar mucha Velocidad.
+Thư giãn cơ thể để tăng mạnh Tốc Độ.
+Un extraño poder que intercambia las posiciones del usuario y un aliado sobre el terreno de combate.
+Sức mạnh kỳ lạ hoán đổi vị trí người dùng và đồng minh trên sân chiến đấu.
+El usuario olvida sus preocupaciones y aumenta mucho la Defensa Especial.
+Người dùng quên đi lo lắng và tăng mạnh Đặc Phòng.
+Crea una barrera para aumentar mucho la Defensa.
+Tạo ra rào chắn để tăng mạnh Phòng Thủ.
+Aumenta la concentración y calma el espíritu para subir el Ataque Especial y la Defensa Especial.
+Tăng tập trung và làm bình tĩnh tinh thần để tăng Đặc Tấn và Đặc Phòng.
+Sube la Defensa y la Defensa Especial propias con energía mística.
+Tăng Phòng Thủ và Đặc Phòng của mình bằng năng lượng huyền bí.
+La gravedad aumenta durante cinco turnos, lo que impide acciones que impliquen volar o levitar.
+Trọng lực tăng trong năm lượt, ngăn các hành động liên quan đến bay hoặc lơ lửng.
+Hace la media de su Defensa y Def. Esp. con las de su objetivo y las comparte.
+Tính trung bình Phòng Thủ và Đặc Phòng của mình với mục tiêu và chia sẻ.
+Con su poder mental intercambia los cambios en Defensa y Def. Especial con el objetivo.
+Bằng sức mạnh tinh thần hoán đổi các thay đổi Phòng Thủ và Đặc Phòng với mục tiêu.
+Impide al objetivo usar movimientos, habilidades y objetos que recuperan PS durante cinco turnos.
+Ngăn mục tiêu dùng các chiêu, ability và vật phẩm hồi HP trong năm lượt.
+Una onda curativa restaura los PS del objetivo a la mitad de su máximo.
+Sóng chữa lành hồi HP mục tiêu lên một nửa tối đa.
+El Pokémon cae debilitado, pero su sustituto recupera su estado y los PS.
+Pokémon ngã ngựa, nhưng người thay thế hồi phục trạng thái và HP.
+Usa la fuerza mental para intercambiar con el objetivo los cambios en las características.
+Dùng sức mạnh tinh thần để hoán đổi với mục tiêu các thay đổi chỉ số.
+Ataque hipnótico que hace dormir profundamente al objetivo.
+Đòn thôi miên làm mục tiêu ngủ sâu.
+Impide a los contrincantes usar ataques conocidos por el usuario durante el combate.
+Ngăn đối thủ dùng các chiêu mà người dùng biết trong chiến đấu.
+Fuerza al objetivo a repetir inmediatamente su último movimiento.
+Buộc mục tiêu lặp lại ngay chiêu cuối của nó.
+Dobla una cuchara para distraer al objetivo y bajar su nivel de Precisión.
+Bẻ cong một chiếc thìa để làm mất tập trung mục tiêu và giảm Độ Chính Xác.
+Pared de luz que reduce durante cinco turnos el daño producido por los ataques especiales.
+Bức tường ánh sáng giảm sát thương từ đòn đặc biệt trong năm lượt.
+El usuario se debilita, pero el Pokémon que lo sustituye recupera su estado, los PS y los PP.
+Người dùng ngã ngựa, nhưng Pokémon thay thế hồi phục trạng thái, HP và PP.
+Barrera capaz de devolver al agresor movimientos como drenadoras y que alteran el estado.
+Rào chắn có thể trả lại cho kẻ tấn công các chiêu như Leech Seed và thay đổi trạng thái.
+El usuario lanza una nube de polvo mágico que convierte al objetivo en tipo Psíquico.
+Người dùng tung đám mây bụi ma thuật chuyển mục tiêu thành hệ Tâm Linh.
+Crea un espacio misterioso que inutiliza los objetos de los Pokémon durante cinco turnos.
+Tạo ra không gian bí ẩn vô hiệu hóa vật phẩm của Pokémon trong năm lượt.
+El usuario reposa y medita para potenciar el Ataque.
+Người dùng nghỉ ngơi và thiền định để tăng Tấn Công.
+Permite atacar con cualquier movimiento a objetivos de tipo Siniestro y golpear a Pokémon evasivos.
+Cho phép tấn công mục tiêu hệ Tối bằng bất kỳ chiêu nào và đánh Pokémon hay né tránh.
+Hace la media de su Ataque y Ataque Especial con los de su objetivo y los comparte.
+Tính trung bình Tấn Công và Đặc Tấn của mình với mục tiêu và chia sẻ.
+Intercambia los cambios en Ataque y At. Especial con el objetivo.
+Hoán đổi các thay đổi Tấn Công và Đặc Tấn với mục tiêu.
+Usa sus poderes mentales para intercambiar su característica de Ataque por Defensa.
+Dùng sức mạnh tinh thần để hoán đổi chỉ số Tấn Công lấy Phòng Thủ.
+Durante cinco turnos se potencian los movimientos Psíquico y los de prioridad fallan.
+Trong năm lượt, các chiêu Tâm Linh được tăng cường và các chiêu ưu tiên thất bại.
+Usa su poder mental para transferir al objetivo sus problemas de estado.
+Dùng sức mạnh tinh thần để chuyển trạng thái bất lợi của mình sang mục tiêu.
+Pared de luz que reduce durante cinco turnos el daño producido por los ataques físicos.
+Bức tường ánh sáng giảm sát thương từ đòn vật lý trong năm lượt.
+Restaura los PS y cura los problemas de estado del usuario. Duerme los dos próximos turnos.
+Hồi HP và chữa trạng thái bất lợi người dùng. Ngủ trong hai lượt tiếp theo.
+Imita al objetivo por completo y copia su habilidad.
+Bắt chước mục tiêu hoàn toàn và sao chép ability của nó.
+Usa el poder psíquico para intercambiar habilidades con el objetivo.
+Dùng sức mạnh tâm linh để hoán đổi ability với mục tiêu.
+Intercambia su Velocidad por la del oponente.
+Hoán đổi Tốc Độ của mình với đối thủ.
+Hace flotar al objetivo, haciéndolo blanco fácil de sus ataques durante tres turnos.
+Làm mục tiêu lơ lửng, biến nó thành mục tiêu dễ của các đòn tấn công trong ba lượt.
+Permite al usuario cambiarse por otro Pokémon del equipo, si es posible.
+Cho phép người dùng đổi sang Pokémon khác trong đội, nếu có thể.
+Engaña al objetivo desprevenido e intercambia objetos.
+Lừa mục tiêu bất ngờ và hoán đổi vật phẩm.
+Se crea un espacio extraño en el que los Pokémon lentos se mueven primero durante cinco turnos.
+Tạo ra không gian kỳ lạ nơi Pokémon chậm di chuyển trước trong năm lượt.
+Crea una zona que intercambia la Defensa y Def. Esp. de todos por 5 turnos.
+Tạo ra khu vực hoán đổi Phòng Thủ và Đặc Phòng của tất cả trong 5 lượt.
+Arriesga su vida y lanza un cabezazo con toda su fuerza. El agresor resulta seriamente dañado.
+Liều mạng và húc đầu với toàn bộ sức mạnh. Kẻ tấn công nhận sát thương nặng.
+Lanza una piedra enorme contra el objetivo, pero tiene que descansar el siguiente turno.
+Tung tảng đá khổng lồ vào mục tiêu, nhưng phải nghỉ ngơi lượt tiếp theo.
+1º turno: aumenta su At. Especial. 2º turno: lanza su ofensiva contra el objetivo.
+Lượt 1: tăng Đặc Tấn. Lượt 2: tung tấn công vào mục tiêu.
+Devastador vendaval de diamantes. Puede aumentar la Defensa del usuario.
+Cơn lốc kim cương tàn phá. Có thể tăng Phòng Thủ người dùng.
+Clava piedras muy afiladas al objetivo. Suele ser crítico.
+Cắm những viên đá rất sắc vào mục tiêu. Thường là đòn chí mạng.
+Ataca con un rayo de luz que centellea como si lo formaran miles de joyas.
+Tấn công bằng tia sáng lấp lánh như hàng nghìn viên đá quý.
+Lanza grandes pedruscos. Puede amedrentar al objetivo.
+Tung những tảng đá lớn. Có thể làm mục tiêu run sợ.
+Ataque prehistórico que puede subir todas las características.
+Đòn tiền sử có thể tăng tất cả chỉ số.
+Tira rocas que detienen al objetivo y bajan su Velocidad.
+Ném đá làm dừng mục tiêu và giảm Tốc Độ.
+Tira una pequeña roca al objetivo.
+Ném một viên đá nhỏ vào mục tiêu.
+Ataca lanzando una piedra o un proyectil. Estrella contra el suelo al objetivo si vuela.
+Tấn công bằng cách ném đá hoặc đạn. Đập mục tiêu xuống đất nếu đang bay.
+El usuario se lanza contra el objetivo a gran velocidad. Siempre ataca primero.
+Người dùng lao vào mục tiêu với tốc độ lớn. Luôn tấn công trước.
+Consiste en enrollarse y girar como una rueda por el campo de batalla.
+Cuộn tròn và lăn như bánh xe trên chiến trường.
+Lanza pedruscos al objetivo de dos a cinco veces consecutivas.
+Tung đá vào mục tiêu từ hai đến năm lần liên tiếp.
+Reduce la resistencia puliendo su cuerpo. Aumenta la Velocidad considerablemente.
+Giảm sức cản bằng cách đánh bóng cơ thể. Tăng đáng kể Tốc Độ.
+Tormenta de arena que dura cinco turnos y hiere a s, excepto a los de tipo Roca, Tierra y Acero.
+Bão cát kéo dài năm lượt và gây thương tích cho tất cả, trừ hệ Đá, Đất và Thép.
+Una trampa de rocas que flota en el aire y daña a los objetivos que entran en combate.
+Bẫy đá lơ lửng trong không khí và gây sát thương cho mục tiêu vào chiến đấu.
+Lanza alquitran sobre el objetivo, bajando su Velocidad y volviéndolo débil ante los movs. Fuego.
+Tung hắc ín lên mục tiêu, giảm Tốc Độ và làm nó yếu trước chiêu hệ Lửa.
+Protege a todo tu bando de golpes que dan a múltiples objetivos. Falla si se usa repetidamente.
+Bảo vệ toàn bộ phe của bạn khỏi đòn đánh nhiều mục tiêu. Thất bại nếu dùng liên tục.
+Concentra un haz de luz y ataca dos turnos después.
+Tập trung chùm sáng và tấn công sau hai lượt.
+El usuario lanza un rayo de metal que recolecta de su cuerpo. Esto daña al usuario.
+Người dùng tung tia kim loại thu thập từ cơ thể. Điều này gây sát thương cho người dùng.
+Lanza su ataque y destruye el campo activo. Falla si no hay ninguno en ese momento.
+Tung đòn tấn công và phá hủy terrain đang hoạt động. Thất bại nếu không có terrain nào.
+El usuario se convierte en un escudo gigante y arremete contra el objetivo.
+Người dùng biến thành khiên khổng lồ và lao vào mục tiêu.
+El usuario se convierte en una espada gigante para rebanar al objetivo.
+Người dùng biến thành kiếm khổng lồ để chém mục tiêu.
+Ataca con una cola férrea y puede bajar la Defensa del objetivo.
+Tấn công bằng chiếc đuôi sắt và có thể giảm Phòng Thủ mục tiêu.
+Ataca al objetivo con la potencia de un meteoro.
+Tấn công mục tiêu với sức mạnh của thiên thạch.
+Puñetazo que impacta como un meteorito y puede subir el Ataque del agresor.
+Cú đấm tác động như thiên thạch và có thể tăng Tấn Công người tấn công.
+Ataca lanzando un ancla al oponente, que queda atrapado y no puede huir.
+Tấn công bằng cách tung mỏ neo vào đối thủ, bị bẫy và không thể chạy trốn.
+El usuario concentra toda la luz del cuerpo y la libera. Puede bajar la Defensa Especial del objetivo.
+Người dùng tập trung toàn bộ ánh sáng cơ thể và giải phóng. Có thể giảm Đặc Phòng mục tiêu.
+Ataca con su dura cabeza de hierro. Puede hacer que el objetivo se amedrente.
+Tấn công bằng đầu sắt cứng. Có thể làm mục tiêu run sợ.
+Ensarta al adversario con su afilada cornamenta. Este movimiento acierta siempre.
+Xuyên đối thủ bằng gạc sắc. Chiêu này luôn trúng.
+Alas macizas que golpean al objetivo y pueden subir la Defensa del usuario.
+Đôi cánh chắc đánh mục tiêu và có thể tăng Phòng Thủ người dùng.
+Golpea dos veces seguidas con los puños pudiendo amedrentar al rival.
+Đánh liên tiếp hai lần bằng nắm đấm có thể làm đối thủ run sợ.
+El usuario libera un haz de energía desde su pulido cuerpo. Puede bajar la Precisión.
+Người dùng giải phóng chùm năng lượng từ cơ thể đánh bóng. Có thể giảm Độ Chính Xác.
+Lanza unas bombas de hierro que se pegan al adversario. Este movimiento acierta siempre.
+Tung bom sắt dính vào đối thủ. Chiêu này luôn trúng.
+Rota dos engranajes de hierro sobre el objetivo. Golpea dos veces.
+Xoay hai bánh răng sắt lên mục tiêu. Đánh hai lần.
+Ataque con garras de acero que puede aumentar el Ataque del usuario.
+Đòn móng vuốt thép có thể tăng Tấn Công người dùng.
+Fuerte puñetazo tan rápido como un proyectil. Este movimiento siempre va primero.
+Cú đấm mạnh nhanh như đạn. Chiêu này luôn đi trước.
+Embiste con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa.
+Tấn công bằng đòn xoáy mạnh. Người dùng càng chậm, gây càng nhiều sát thương.
+Devuelve al objetivo el último ataque recibido, pero con mucha más fuerza.
+Trả lại mục tiêu đòn tấn công cuối đã nhận, nhưng với sức mạnh lớn hơn nhiều.
+El usuario se sacude para hacerse más ligero y aumentar mucho su Velocidad.
+Người dùng lắc mình để trở nên nhẹ hơn và tăng mạnh Tốc Độ.
+Cambia de marcha y logra aumentar el Ataque y el Ataque Especial de los Pokémon aliados.
+Chuyển số và tăng Tấn Công và Đặc Tấn của Pokémon đồng minh.
+Fortalece el cuerpo como si fuera hierro y sube mucho la Defensa.
+Củng cố cơ thể như sắt và tăng mạnh Phòng Thủ.
+Protege al usuario de cualquier daño y baja el Ataque del rival si lo toca.
+Bảo vệ người dùng khỏi mọi sát thương và giảm Tấn Công đối thủ nếu chạm vào.
+Horrible chirrido metálico que baja mucho la Defensa Especial del objetivo.
+Tiếng kẽo kẹt kim loại khủng khiếp làm giảm mạnh Đặc Phòng mục tiêu.
+Al hacer girar los engranajes, el usuario mejora su Ataque y aumenta su Velocidad espectacularmente.
+Khi quay bánh răng, người dùng cải thiện Tấn Công và tăng Tốc Độ ngoạn mục.
+Disparo potente de agua. El atacante debe descansar el siguiente turno.
+Bắn nước mạnh. Người tấn công phải nghỉ ngơi lượt tiếp theo.
+Chorro de agua. Cuantos menos PS tenga el usuario, menos dañino será.
+Vòi nước. Người dùng càng ít HP, gây càng ít sát thương.
+Lanza una gran masa de agua a presión para atacar.
+Tung khối nước lớn có áp lực để tấn công.
+Ataca al objetivo con una infinidad de rayos de luz azulada.
+Tấn công mục tiêu bằng vô số tia sáng xanh.
+Envuelve al Pokémon oponente con vapor extremadamente caliente que puede llegar a quemarlo.
+Bao quanh Pokémon đối thủ bằng hơi nước cực nóng có thể gây bỏng.
+Golpea con fuerza con unas pinzas. Suele ser crítico.
+Đánh mạnh bằng kẹp. Thường là đòn chí mạng.
+Ataca agitando la cola como si fuera una ola rabiosa en una tormenta devastadora.
+Tấn công bằng cách vẫy đuôi như sóng dữ trong cơn bão tàn phá.
+Ataque con agua lodosa que puede bajar la Precisión.
+Đòn nước bùn có thể giảm Độ Chính Xác.
+Libera burbujas al cantar. Cura las quemaduras de los Pokémon que reciban daño.
+Giải phóng bong bóng khi hát. Chữa bỏng của Pokémon nhận sát thương.
+Inunda el campo de batalla con una ola gigante.
+Nhấn chìm chiến trường bằng một con sóng khổng lồ.
+Ataca al objetivo con sus branquias. Si ataca antes que el objetivo, duplica la potencia.
+Tấn công mục tiêu bằng mang của mình. Nếu tấn công trước mục tiêu, sức mạnh tăng gấp đôi.
+Ataca golpeando gracias a la fuerza del agua. También puede reducir la Defensa del objetivo.
+Tấn công bằng sức mạnh nước. Cũng có thể giảm Phòng Thủ mục tiêu.
+Primer turno: se sumerge en el mar. Segundo turno: emerge y ataca.
+Lượt đầu: lặn xuống biển. Lượt hai: nổi lên và tấn công.
+Ataca arrojando agua hirviendo al objetivo. Puede causar quemaduras.
+Tấn công bằng cách ném nước sôi vào mục tiêu. Có thể gây bỏng.
+Atacar al objetivo ignorando habilidades o movimientos que redirigen ataques.
+Tấn công mục tiêu bỏ qua các ability hoặc chiêu chuyển hướng đòn tấn công.
+Ataca con columnas de agua. Combinado con un Voto Fuego crea un arcoíris.
+Tấn công bằng cột nước. Kết hợp với Fire Pledge tạo ra cầu vồng.
+Embiste con un gran impulso que puede amedrentar. También sirve para remontar cascadas.
+Lao vào với tốc độ lớn có thể làm run sợ. Cũng dùng để leo lên thác nước.
+Una afilada vieira ataca al objetivo. También puede hacer disminuir su Defensa.
+Vỏ sò sắc tấn công mục tiêu. Cũng có thể giảm Phòng Thủ.
+Si al objetivo le queda la mitad o menos de sus PS, el ataque será el doble de fuerte.
+Nếu mục tiêu còn một nửa hoặc ít hơn HP, đòn tấn công mạnh gấp đôi.
+Diluvio de burbujas que puede bajar la Velocidad.
+Trận mưa bong bóng có thể giảm Tốc Độ.
+Dispara tinta a la cara. Puede bajar la Precisión.
+Bắn mực vào mặt. Có thể giảm Độ Chính Xác.
+Tras atacar, el usuario da paso a toda prisa a otro Pokémon del equipo.
+Sau khi tấn công, người dùng nhanh chóng nhường chỗ cho Pokémon khác trong đội.
+Ataca con un potente chorro de agua. Puede confundir al objetivo.
+Tấn công bằng vòi nước mạnh. Có thể gây hỗn loạn mục tiêu.
+Lanza burbujas al contrincante y puede reducir su Velocidad.
+Tung bong bóng vào đối thủ và có thể giảm Tốc Độ.
+Ataca disparando agua con gran potencia.
+Tấn công bằng cách bắn nước với sức mạnh lớn.
+Atrapa y atenaza con fuerza durante cuatro o cinco turnos.
+Bẫy và kẹp chặt trong bốn hoặc năm lượt.
+Una tromba de agua atrapa al objetivo durante cuatro o cinco turnos.
+Cơn lốc nước bẫy mục tiêu trong bốn hoặc năm lượt.
+El usuario golpea tres veces con movimientos fluidos. Siempre asesta golpes críticos.
+Người dùng đánh ba lần với các chuyển động linh hoạt. Luôn là đòn chí mạng.
+Golpea de dos a cinco veces con estrellas arrojadizas. El que lo usa siempre ataca primero.
+Đánh từ hai đến năm lần bằng sao ném. Người dùng luôn tấn công trước.
+Un manto de agua cubre al Pokémon que lo usa. Recupera algunos PS en cada turno.
+Lớp nước bao phủ Pokémon dùng chiêu. Hồi một ít HP mỗi lượt.
+El usuario rocia un agua misteriosa que recupera PS para él y sus aliados en combate.
+Người dùng phun nước bí ẩn hồi HP cho mình và đồng minh trong chiến đấu.
+Genera una fuerte lluvia que refuerza los movimientos de tipo Agua durante cinco turnos.
+Tạo ra cơn mưa lớn tăng sức mạnh chiêu hệ Nước trong năm lượt.
+Potente lluvia que transforma al objetivo en un Pokémon de tipo Agua.
+Cơn mưa mạnh biến mục tiêu thành Pokémon hệ Nước.
+El usuario se moja y, mientras esté en combate, los movimientos de tipo Fuego se debilitan.
+Người dùng bị ướt và trong khi chiến đấu, chiêu hệ Lửa bị suy yếu.
+El usuario se protege en su coraza y sube la Defensa.
+Người dùng bảo vệ trong mai và tăng Phòng Thủ.
+Ataca al punto débil del objetivo con unas garras letales que pueden envenenarlo, paralizarlo o dormirlo.
+Tấn công điểm yếu mục tiêu bằng móng vuốt chết người có thể gây nhiễm độc, tê liệt hoặc ngủ.
+Desata una tormenta de amor y odio con la que envuelve al objetivo. Puede reducir su Ataque.
+Tung ra cơn bão tình yêu và thù hận bao quanh mục tiêu. Có thể giảm Tấn Công.
+Ataca con unas violentas llamas de dos a tres turnos seguidos y después se queda confuso.
+Tấn công bằng ngọn lửa dữ dội từ hai đến ba lượt liên tiếp rồi bị hỗn loạn.
+El usuario se envuelve en agua y embiste contra el objetivo, pero también se hiere seriamente a sí mismo.
+Người dùng bao quanh bằng nước và lao vào mục tiêu, nhưng cũng gây thương tích nghiêm trọng cho bản thân.
+El usuario concentra clorofila y la dispara en forma de rayo, pero también se hiere a sí mismo.
+Người dùng tập trung chất diệp lục và bắn dạng tia, nhưng cũng gây thương tích cho bản thân.
+Ataca con unos carámbanos grandes como icebergs que pueden amedrentar al objetivo.
+Tấn công bằng những viên băng lớn như tảng băng trôi có thể làm mục tiêu run sợ.
+El usuario arremete con todas sus fuerzas, pero se reducen su Defensa y su Defensa Especial.
+Người dùng lao vào với toàn sức, nhưng Phòng Thủ và Đặc Phòng giảm.
+Dispara púas tóxicas que pueden envenenar al objetivo. Duplica la potencia si está envenenado.
+Bắn gai độc có thể gây nhiễm độc mục tiêu. Sức mạnh tăng gấp đôi nếu đã nhiễm độc.
+Corta con unas alas imbuidas de aura. Suele asestar un golpe crítico y aumenta la Velocidad.
+Cắt bằng đôi cánh thấm hào quang. Thường là đòn chí mạng và tăng Tốc Độ.
+Ataca al objetivo sometiéndolo a su frío rencor y reduce su Ataque.
+Tấn công mục tiêu bằng cơn thù hận lạnh giá và giảm Tấn Công.
+Asesta un talonazo y lanza tres flechas. Puede amedrentar o bajar la Defensa del objetivo. Alto índice de crítico.
+Tung cú đá gót và bắn ba mũi tên. Có thể làm run sợ hoặc giảm Phòng Thủ mục tiêu. Xác suất chí mạng cao.
+Viento muy frío que estremece el cuerpo y puede reducir la Velocidad del objetivo.
+Gió rất lạnh làm run rẩy cơ thể và có thể giảm Tốc Độ mục tiêu.
+Invoca una tormenta eléctrica que ataca al objetivo con fuertes vientos y relámpagos y puede paralizarlo.
+Triệu hồi bão điện tấn công mục tiêu bằng gió mạnh và sét và có thể làm tê liệt.
+Ataca envolviéndo al objetivo en unas arenas tórridas que pueden causar quemaduras.
+Tấn công bằng cách bao quanh mục tiêu trong cát bỏng rát có thể gây bỏng.
+Dedica una oración a la luna que restaura PS y los problemas de estado del bando del usuario.
+Dành lời cầu nguyện cho mặt trăng hồi HP và trạng thái bất lợi của phe người dùng.
+El usuario ataca envuelto en una energía psíquica que además aumenta su Defensa.
+Người dùng tấn công khi bao quanh bằng năng lượng tâm linh cũng tăng Phòng Thủ.
+Intercambia su Ataque por su Defensa.
+Hoán đổi Tấn Công của mình lấy Phòng Thủ.
+Ataca con un hacha de piedra y, al hacerlo, se deprenden fragmentos que rodean al objetivo.
+Tấn công bằng rìu đá và khi làm vậy, các mảnh vỡ bao quanh mục tiêu.
+Ataca desatando un misterioso poder, que también aumenta su Ataque Especial.
+Tấn công bằng cách giải phóng sức mạnh bí ẩn, cũng tăng Đặc Tấn.
+Ejecuta una danza frenética que invoca la victoria y aumenta el Ataque, la Defensa y la Velocidad.
+Thực hiện điệu nhảy điên cuồng triệu hồi chiến thắng và tăng Tấn Công, Phòng Thủ và Tốc Độ.
+La piel del usuario se vuelve dura como un escudo de acero, lo que aumenta mucho su Defensa.
+Da người dùng trở nên cứng như khiên thép, làm tăng mạnh Phòng Thủ.
+Bolas de fuego que pueden causar quemaduras. Duplica la potencia si ya tiene un cambio de estado.
+Quả cầu lửa có thể gây bỏng. Sức mạnh tăng gấp đôi nếu đã có trạng thái bất lợi.
+Ataca con una espada de forma brusca y, al hacerlo, se deprenden púas que rodean al bando enemigo.
+Tấn công bằng kiếm một cách thô bạo và khi làm vậy, gai bao quanh phe kẻ thù.
+El usuario se cura de problemas de estado. Aumenta su Ataque Especial y su Defensa Especial.
+Người dùng tự chữa trạng thái bất lợi. Tăng Đặc Tấn và Đặc Phòng.
+Corta al objetivo con agua a presión como si de una hoja se tratara. Suele ser crítico.
+Cắt mục tiêu bằng nước áp lực như lưỡi dao. Thường là đòn chí mạng.
+Ejecuta una elegante y fluida danza y le inflige daño. Aumenta la Velocidad del usuario.
+Thực hiện điệu nhảy thanh lịch và linh hoạt và gây sát thương. Tăng Tốc Độ người dùng.
+Arroja partes de su armadura como proyectiles ardientes. Reduce la Def. y la Def. Esp. del usuario.
+Ném các phần giáp như đạn cháy. Giảm Phòng Thủ và Đặc Phòng người dùng.
+Lanza una patada al aire y golpea con el talón. Si falla, se hiere a sí mismo. Puede confundir.
+Tung đá lên không và đánh bằng gót chân. Nếu thất bại, gây thương tích cho bản thân. Có thể gây hỗn loạn.
+Asesta una estocada llena de rencor. Recupera la mitad de los PS del daño que produce.
+Tung đòn đâm đầy oán hận. Hồi một nửa HP từ sát thương gây ra.
+Puede causar quemaduras.
+Có thể gây bỏng.
+Ataca al objetivo rociándolo con un agua gélida y desalentadora que reduce su Ataque.
+Tấn công mục tiêu bằng cách phun nước lạnh giá và chán nản làm giảm Tấn Công.
+Cuenta un chiste con una acogida tan fría que hace que nieve, y se cambia por un Pokémon del equipo.
+Kể một câu đùa được đón nhận lạnh đến mức tuyết rơi, và đổi bằng Pokémon trong đội.
+Choca contra el suelo mientras se transforma. La potencia aumenta si es supereficaz.
+Đập xuống đất trong khi biến hình. Sức mạnh tăng nếu siêu hiệu quả.
+Puede paralizar al objetivo.
+Có thể làm tê liệt mục tiêu.
+Devuelve al rival el último ataque recibido, pero con mucha más fuerza.
+Trả lại đối thủ đòn tấn công cuối đã nhận, nhưng với sức mạnh lớn hơn nhiều.
+Calca la esencia misma del objetivo para atribuir su habilidad a sí mismo y a sus aliados.
+Sao chép bản chất của mục tiêu để gán ability của nó cho bản thân và đồng minh.
+Libera toda la electricidad de su cuerpo para atacar. Pierde el tipo Eléctrico.
+Giải phóng toàn bộ điện trong cơ thể để tấn công. Mất hệ Điện.
+Se abalanza mientras se transforma y atraviesa al rival. La potencia aumenta si es supereficaz.
+Lao vào trong khi biến hình và xuyên qua đối thủ. Sức mạnh tăng nếu siêu hiệu quả.
+Aumenta mucho el Ataque, el Ataque Especial y la Velocidad del usuario a costa de parte de sus PS.
+Tăng mạnh Tấn Công, Đặc Tấn và Tốc Độ người dùng đổi lấy một phần HP.
+Lanza un ramo de flores trucado. No falla nunca y siempre asesta un golpe crítico.
+Tung bó hoa bị đánh tráo. Không bao giờ trượt và luôn là đòn chí mạng.
+Golpea con un enorme martillo. No se puede usar dos veces seguidas.
+Đánh bằng búa khổng lồ. Không thể dùng liên tiếp hai lần.
+En el turno siguiente los ataques del rival no fallarán y causarán el doble de daño.
+Ở lượt tiếp theo, các đòn của đối thủ không thể trượt và gây gấp đôi sát thương.
+Ataca rotando la parte puntiaguda de su cuerpo. Ignora movimientos como Protección.
+Tấn công bằng cách xoay phần nhọn của cơ thể. Bỏ qua các chiêu như Protect.
+Recubre las extremidades con una capa de hielo y golpea al rival. Si hay un campo lo rompe.
+Bao phủ các chi bằng lớp băng và đánh đối thủ. Nếu có terrain sẽ phá hủy nó.
+Envuelve el puño con un torrente y propina un golpe de alta prioridad.
+Bao quanh nắm đấm bằng dòng nước và tung đòn ưu tiên cao.
+Se postra en ademán de reverencia para que el objetivo baje la guardia y aprovecha para atacar. No falla.
+Cúi lạy để mục tiêu hạ thấp cảnh giác rồi tận dụng để tấn công. Không thể trượt.
+Venga a sus compañeros caídos. Cuantos más se hayan debilitado, mayor será la potencia.
+Báo thù cho đồng đội đã ngã ngựa. Càng nhiều ngã ngựa, sức mạnh càng lớn.
+Ataca proyectando una extraña luz que afecta a la mente y reduce mucho la Def Especial.
+Tấn công bằng cách chiếu ánh sáng kỳ lạ ảnh hưởng đến tâm trí và giảm mạnh Đặc Phòng.
+Puede confundir al objetivo.
+Có thể gây hỗn loạn mục tiêu.
+Ataca arrojando muchas monedas, pero reduce su At. Especial. Aumenta la recompensa.
+Tấn công bằng cách tung nhiều đồng xu, nhưng giảm Đặc Tấn. Tăng tiền thưởng.
+Ataque giratorio que envenena al objetivo y anula efectos como atadura, constricción y drenadoras.
+Đòn xoáy gây nhiễm độc mục tiêu và vô hiệu hóa hiệu ứng như Bind, Wrap và Leech Seed.
+Puede envenenar al objetivo.
+Có thể gây nhiễm độc mục tiêu.
+Si lleva un Tatsugiri en la boca, aumenta una de sus características en función de su forma.
+Nếu mang Tatsugiri trong miệng, tăng một trong các chỉ số tùy theo hình dạng của nó.
+Ejecuta un ataque conjunto que golpea al objetivo de una a diez veces seguidas.
+Thực hiện đòn tấn công kết hợp đánh mục tiêu từ một đến mười lần liên tiếp.
+Ataca abalanzándose sobre el objetivo y le reduce la Velocidad.
+Tấn công bằng cách lao vào mục tiêu và giảm Tốc Độ của nó.
+Convierte su rabia en energía. Cuantos más golpes haya recibido mayor será la potencia.
+Chuyển hóa cơn giận thành năng lượng. Càng nhiều đòn nhận được, sức mạnh càng lớn.
+Este movimiento cambia de tipo en función de la forma del usuario. Destruye barreras.
+Chiêu này thay đổi hệ tùy theo hình dạng người dùng. Phá hủy rào chắn.
+Oración que revive a un Pokémon del equipo que se haya debilitado y restaura la mitad de sus PS.
+Lời cầu nguyện hồi sức một Pokémon trong đội đã ngã ngựa và hồi một nửa HP.
+Provoca una catástrofe devastadora que reduce a la mitad los PS del objetivo.
+Gây ra thảm họa tàn phá giảm HP mục tiêu xuống một nửa.
+El objetivo pierde PS cada turno. Afecta especialmente a Pokémon de tipo Acero y tipo Agua.
+Mục tiêu mất HP mỗi lượt. Ảnh hưởng đặc biệt đến Pokémon hệ Thép và hệ Nước.
+El usuario se cambia por otro Pokémon del equipo dejando un sustituto a cambio de sus PS.
+Người dùng đổi bằng Pokémon khác trong đội để lại Substitute đổi lấy HP.
+Trampa sedosa que protege al usuario. Baja la Velocidad de quien lo toca.
+Bẫy tơ bảo vệ người dùng. Giảm Tốc Độ của ai chạm vào.
+Invoca una nevada durante 5 turnos que aumenta la Defensa de los Pokémon de tipo Hielo.
+Triệu hồi tuyết rơi trong 5 lượt tăng Phòng Thủ của Pokémon hệ Băng.
+Libera un extracto picante que aumenta mucho su Ataque, pero también reduce mucho su Defensa.
+Giải phóng chất chiết cay làm tăng mạnh Tấn Công, nhưng cũng giảm mạnh Phòng Thủ.
+Gira violentamente sobre sí. Reduce mucho la Velocidad del usuario.
+Xoay dữ dội trên chính mình. Giảm mạnh Tốc Độ người dùng.
+Aumenta el Ataque y la Velocidad. Limpia efectos de efectos como Púas, Trampa Rocas o Sustituto.
+Tăng Tấn Công và Tốc Độ. Xóa hiệu ứng như Spikes, Stealth Rock hoặc Substitute.
+Expele tórridas llamaradas como si entonara una canción. Aumenta el Ataque Especial.
+Phun ngọn lửa bỏng rát như thể đang hát một bài hát. Tăng Đặc Tấn.
+Ataca como si saltara desde la hierba alta. Aumenta su Velocidad.
+Tấn công như thể nhảy ra từ bãi cỏ cao. Tăng Tốc Độ.
+Ejecuta una inmersión triple en perfecta sincronía que golpea al objetivo tres veces seguidas.
+Thực hiện lặn ba lần đồng bộ hoàn hảo đánh mục tiêu ba lần liên tiếp.
+Emite dos misteriosos haces lumínicos por los ojos que infligen daño dos veces seguidas.
+Tỏa ra hai chùm sáng bí ẩn qua mắt gây sát thương hai lần liên tiếp.
+Puede dormir al objetivo.
+Có thể làm mục tiêu ngủ.
+Lanza un potente chorro de agua hirviendo al rival que aumenta su poder si hace sol.
+Tung vòi nước sôi mạnh vào đối thủ, tăng sức mạnh nếu nắng.
+El usuario desgarra al objetivo con una espada etérea cuyo poder aumenta en el terreno eléctrico.
+Người dùng xé mục tiêu bằng kiếm thanh tú có sức mạnh tăng trong Electric Terrain.
+Ataca con toda su fuerza a través de una luna roja. No puede usarse dos veces seguidas.
+Tấn công với toàn lực qua mặt trăng đỏ. Không thể dùng liên tiếp hai lần.
+Rocía al objetivo con té y recupera la mitad de los PS del daño que produce. Puede quemar.
+Phun trà vào mục tiêu và hồi một nửa HP từ sát thương gây ra. Có thể gây bỏng.
+Impregna al objetivo con su viscoso néctar, reduciendo su Velocidad durante tres turnos.
+Thấm mục tiêu bằng mật hoa nhớt, giảm Tốc Độ trong ba lượt.
+Golpea con un garrote. El tipo varía según la máscara que lleve. Suele ser crítico.
+Đánh bằng gậy. Hệ thay đổi theo mặt nạ đang mang. Thường là đòn chí mạng.
+1º turno: acumula electricidad y aumenta At. Esp. 2º turno: ataca. Si llueve ataca el 1º turno.
+Lượt 1: tích điện và tăng Đặc Tấn. Lượt 2: tấn công. Nếu mưa tấn công ở lượt 1.
+Si Terapagos lo usa en su Forma Astral, inflige daño a todos los rivales.
+Nếu Terapagos dùng ở Stellar Form, gây sát thương cho tất cả đối thủ.
+En ocasiones el resto de sus cabezas se unen al ataque haciendo el doble de daño.
+Đôi khi phần còn lại của các đầu tham gia tấn công gây gấp đôi sát thương.
+Emplea pelaje para protegerse de ataques y causar quemaduras si le tocan.
+Dùng lông để bảo vệ khỏi đòn tấn công và gây bỏng nếu bị chạm vào.
+Rayo que cae sobre el objetivo con prioridad. Falla si el objetivo no ataca.
+Tia sét rơi xuống mục tiêu với ưu tiên. Thất bại nếu mục tiêu không tấn công.
+Rebana al objetivo con la luz que ha acumulado en la testa. Golpea aunque el rival se proteja.
+Chém mục tiêu bằng ánh sáng tích lũy trong đầu. Đánh trúng dù đối thủ đang bảo vệ.
+Ráfaga de cuchillas formadas por partículas que inflige daño dos veces seguidas. No falla.
+Loạt lưỡi dao hình thành từ hạt gây sát thương hai lần liên tiếp. Không thể trượt.
+Oprime con los brazos o las pinzas. Cuantos más PS le queden al objetivo, más daño hace.
+Ép bằng cánh tay hoặc kẹp. Mục tiêu càng nhiều HP, gây càng nhiều sát thương.
+Bramido que aumenta la probabilidad de golpe crítico de aliados, y en dos niveles si es Dragón.
+Tiếng gầm tăng xác suất chí mạng của đồng minh, và hai bậc nếu là hệ Rồng.
+Canto angelical que confunde al objetivo si sus características han aumentado en ese turno.
+Bài hát thiên thần làm hỗn loạn mục tiêu nếu chỉ số của nó đã tăng trong lượt đó.
+Su potencia se duplica si el movimiento del usuario falló en el turno anterior.
+Sức mạnh tăng gấp đôi nếu chiêu người dùng thất bại ở lượt trước.
+Electrifica su cuerpo y salta en plancha sobre el objetivo. Si falla, se hiere a sí mismo.
+Tích điện cơ thể và nhảy người vào mục tiêu. Nếu thất bại, gây thương tích cho bản thân.
+Onda que impide al objetivo recuperar PS durante 2 turnos con movimientos, habilidades y objetos.
+Sóng ngăn mục tiêu hồi HP trong 2 lượt bằng chiêu, ability và vật phẩm.
+Si el objetivo usa movimientos de prioridad se anticipa golpeándolo antes y lo amedrenta.
+Nếu mục tiêu dùng chiêu ưu tiên, đoán trước và đánh trước làm run sợ.
+Apresa al objetivo con una cadena para minarle las fuerzas. Puede envenenar gravemente.
+Bắt mục tiêu bằng dây xích để làm suy yếu sức mạnh. Có thể gây nhiễm độc nặng.
+Movimiento cuyo tipo varia al del usuario en caso de que éste haya teracristalizado.
+Chiêu có hệ thay đổi theo hệ người dùng trong trường hợp đã Terastallize.
+Provoca un terrible escalofrío en el objetivo y lo congela.
+Gây ra cơn rùng mình khủng khiếp cho mục tiêu và đóng băng nó.
+Se desliza con un esquí y aumenta la Velocidad del atacante.
+Trượt bằng ván trượt và tăng Tốc Độ người tấn công.
+Muerde con unas fauces eficaces contra los Pokémon Bicho.
+Cắn bằng hàm hiệu quả chống Pokémon hệ Côn Trùng.
+Golpea hasta tres veces seguidas y cada vez más fuerte.
+Đánh liên tiếp tối đa ba lần, mỗi lần mạnh hơn.
+Cuanto mayor sea la amistad con el Entrenador, más poderoso será este ataque. No falla.
+Tình bạn với Huấn Luyện Viên càng cao, đòn tấn công càng mạnh. Không thể trượt.
+El usuario ataca disparando burbujas de agua al objetivo y absorbe la mitad del daño producido.
+Người dùng tấn công bằng cách bắn bong bóng nước vào mục tiêu và hấp thụ một nửa sát thương gây ra.
+El usuario dispara una descarga eléctrica para atacar al objetivo, siempre paraliza.
+Người dùng bắn tia điện để tấn công mục tiêu, luôn gây tê liệt.
+El usuario se cubre de fuego y carga contra el objetivo, siempre provoca quemadura.
+Người dùng bao quanh bằng lửa và lao vào mục tiêu, luôn gây bỏng.
+El usuario bombardea al objetivo con fuerza telequinética y levanta una Pantalla de Luz.
+Người dùng ném bom mục tiêu bằng sức mạnh thần giao cách cảm và dựng Light Screen.
+El usuario actúa mal, ataca al objetivo y levanta una pantalla de Reflejo.
+Người dùng hành động xấu, tấn công mục tiêu và dựng Reflect.
+El usuario esparce semillas para atacar al objetivo y coloca Drenadoras.
+Người dùng tán hạt giống để tấn công mục tiêu và đặt Leech Seed.
+Ataca con un cristal de neblina helada. Elimina los cambios de estadísticas de todos.
+Tấn công bằng tinh thể sương mù lạnh giá. Xóa bỏ các thay đổi chỉ số của tất cả.
+Ataca al objetivo envolviéndolo con un torbellino. Cura todos los problemas de estado del equipo.
+Tấn công mục tiêu bằng cách bao quanh bằng lốc xoáy. Chữa tất cả trạng thái bất lợi của đội.
+El usuario ataca con ráfagas eléctricas, siempre va en primer lugar y es golpe crítico.
+Người dùng tấn công bằng tia điện, luôn đi trước và là đòn chí mạng.
+El usuario carga una enorme onda eléctrica y golpea al Pokémon rival con ella. Puede paralizar.
+Người dùng nạp sóng điện khổng lồ và đánh Pokémon đối thủ bằng nó. Có thể gây tê liệt.
+El usuario flota en el aire y luego se lanza en picado para atacar al objetivo. Puede amedrentar.
+Người dùng lơ lửng trong không rồi lao xuống để tấn công mục tiêu. Có thể làm run sợ.
+Luz devastadora que pega de forma neutra a los Pokémon de tipo hada. Ignora cambios de Def. Esp. y Evasión.
+Ánh sáng tàn phá đánh trung lập vào Pokémon hệ Tiên. Bỏ qua thay đổi Đặc Phòng và Né Tránh.

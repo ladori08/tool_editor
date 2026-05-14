@@ -1,0 +1,616 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[TRAINER_SPEECHES_LOSE_F]
+¡Bah! ¡La suerte del principiante!
+Chậc! May mắn của kẻ mới thôi!
+¡Que no se te suba mucho a la cabeza!
+Đừng có mà tự cao quá đấy!
+¿Así que esto es un combate Pokémon?
+Vậy ra đây là một trận đấu Pokémon à?
+¡Oh, no! ¡Mi Pokémon no da para más!
+Ôi không! Pokémon của tôi không trụ nổi nữa!
+¡Me has hecho morder el polvo en un abrir y cerrar de ojos!
+Bạn đã đánh bại tôi chỉ trong chớp mắt!
+¿Será posible? ¡Ese era mi último Pokémon!
+Không thể nào! Đó là Pokémon cuối cùng của tôi!
+¡Parece que esto se te da muy bien!
+Có vẻ bạn rất giỏi việc này!
+Espera, ¿los años luz miden el tiempo? ¿O la distancia?
+Khoan đã, năm ánh sáng đo thời gian hay khoảng cách vậy?
+Tengo que ganar más... ¡Nunca estaré a la altura de Brock!
+Mình phải thắng nhiều hơn... Mình sẽ không bao giờ sánh được với Brock!
+¡Vaya! ¿Te crees muy valiente o qué?
+Ồ! Cậu nghĩ mình dũng cảm lắm à?
+...
+...
+¡Me has dejado de piedra! Tus Pokémon son duros como una roca... ¡Está bien! ¡Ya paro con los chistes! ¡Je, je, je!
+Bạn làm tôi sốc luôn! Pokémon của bạn cứng như đá... Được rồi! Tôi dừng đùa đây! He he!
+¡Eres de lo que no hay!
+Bạn đúng là hiếm có khó tìm!
+¡Veo que dominas bien la evolución!
+Tôi thấy bạn nắm rất rõ về tiến hóa!
+¡Ya no me siento tan cómodo!
+Tôi không còn thấy thoải mái nữa!
+¡Expectativas superadas! ¡Puedes continuar!
+Vượt ngoài mong đợi! Bạn có thể tiếp tục!
+Ahora disfrutaré del paisaje un poco más triste.
+Giờ tôi sẽ ngắm cảnh với tâm trạng buồn hơn một chút.
+¡Yo sí que me he puesto morado de rabia!
+Tôi tức đến tím mặt rồi!
+¡Y para colmo de males, he perdido!
+Đã vậy tôi còn thua nữa chứ!
+Me temo que no logro sacar un rendimiento óptimo de mis Pokémon.
+E là tôi không thể phát huy tối đa sức mạnh Pokémon của mình.
+¡Quería pasar por la cueva, no que pasaran por encima de mí!
+Tôi muốn đi qua hang, chứ không phải bị giẫm lên!
+¡Me has explorado a fondo!
+Bạn đã khai thác tôi đến tận cùng!
+En fin... tendré que compartir los fósiles.
+Thôi vậy... đành phải chia sẻ hóa thạch thôi.
+¿Eh? ¿Acaso no tienes miedo?
+Hả? Cậu không sợ sao?
+¡No debería especular en los combates Pokémon!
+Đáng lẽ tôi không nên chủ quan trong trận đấu Pokémon!
+¡Menudos humos!
+Đúng là kiêu căng thật!
+¿No te han dicho nunca que eres un incordio?
+Chưa ai nói bạn phiền phức à?
+Vaya... Yo diría que lo he hecho un poco mejor que la última vez. ¿Verdad?
+Hmm... Tôi nghĩ lần này mình làm tốt hơn lần trước một chút. Đúng không?
+¡Bah! En realidad me estaba dejando ganar.
+Chậc! Thật ra tôi chỉ nhường bạn thắng thôi.
+¡Tus Pokémon sí que hipnotizan!
+Pokémon của bạn đúng là mê hoặc thật!
+¿En serio? ¿Ya está?
+Thật à? Xong rồi sao?
+Las personas, cuando las empujas a su límite, se vuelven más fuertes.
+Con người khi bị đẩy đến giới hạn sẽ trở nên mạnh mẽ hơn.
+Se van a reír de mí en clase...
+Họ sẽ cười tôi trong lớp mất...
+¿Cómo? ¿La reina, destronada?
+Cái gì? Nữ hoàng bị lật đổ sao?
+¡Argh! ¡Se te dan bien los Pokémon!
+Argh! Bạn giỏi Pokémon thật đấy!
+¡Qué dureza!
+Cứng cỏi thật!
+¡Nunca tuve ninguna posibilidad!
+Tôi chẳng có cơ hội nào cả!
+He estado a la altura, ¿verdad?
+Tôi đã làm tốt rồi đúng không?
+Me has aguado el día...
+Bạn làm hỏng cả ngày của tôi rồi...
+Humillada y empapada, ¡qué poco me gusta!
+Bị bẽ mặt lại còn ướt sũng, thật khó chịu!
+¡Menudo machaque, colega!
+Đúng là bị hành tơi tả luôn!
+¡Menuda lluvia de humildad me ha caído! Me he quedado empapada...
+Một trận “mưa dạy đời” đổ xuống tôi! Tôi ướt sũng luôn rồi...
+¡Mi aventura ha sido muy corta!
+Chuyến phiêu lưu của tôi thật ngắn ngủi!
+Tal vez no sea tan especial como creía.
+Có lẽ tôi không đặc biệt như mình nghĩ.
+¡Mira! ¿Has visto qué Pokémon más raro acaba de pasar por aquí?
+Nhìn kìa! Bạn có thấy Pokémon kỳ lạ vừa đi qua không?
+¡Vaya! ¡Nos has ganado en un combate doble!
+Wow! Bạn đã đánh bại chúng tôi trong trận đôi!
+Mi gozo en un pozo...
+Niềm vui của tôi tan biến rồi...
+La energía... ¡provenía de ti!
+Nguồn năng lượng... đến từ bạn!
+¿Qué? ¿Cómo ha podido ocurrir?
+Cái gì? Sao chuyện này có thể xảy ra?
+Sí, creo que me ha quedado claro tu horóscopo. Con verte combatir, puedo saberlo.
+Ừ, tôi nghĩ mình đã hiểu rõ cung hoàng đạo của bạn rồi. Chỉ cần nhìn bạn chiến đấu là biết.
+¡Será posible! Menudos modales.
+Không thể nào! Phép tắc kiểu gì vậy?
+¡Qué mareo me ha dado de repente!
+Tự nhiên tôi thấy chóng mặt quá!
+¡Buen combate! Ando algo pez en la materia...
+Trận đấu hay đấy! Tôi còn hơi kém khoản này...
+¡Tocado y hundido!
+Trúng đòn và gục luôn!
+¡Mejor no haberte encontrado nunca!
+Đáng lẽ tôi không nên gặp bạn!
+¡Guau! ¡Me has callado la boca!
+Wow! Bạn làm tôi cứng họng luôn!
+Buf, he perdido porque se me han cruzado los cables.
+Phù, tôi thua vì đầu óc rối tung cả lên.
+¡Recórcholis! Se nota que has entrenado bien.
+Trời ơi! Rõ ràng bạn đã luyện tập rất tốt.
+¡Qué electrizante! ¡Es como si un relámpago me hubiera recorrido todo el cuerpo! Eres buen soldado.
+Thật là điện giật! Cứ như có tia sét chạy khắp người tôi vậy! Bạn là một chiến binh giỏi.
+¡Mi racha de victorias se ha ido a la porra! Tendremos que hacernos más fuertes.
+Chuỗi thắng của tôi tiêu tan rồi! Chúng ta phải mạnh hơn nữa.
+Tal vez tenga que hacer cambios en mi equipo.
+Có lẽ tôi phải thay đổi đội hình.
+Enhorabuena por tu victoria, ¡ja ja ja!
+Chúc mừng chiến thắng của bạn! Ha ha ha!
+¡No me quedan Pokémon! Me quedo de piedra...
+Tôi hết Pokémon rồi! Tôi đứng hình luôn...
+¡Tus Pokémon aprueban con buena nota!
+Pokémon của bạn đạt điểm rất cao!
+¡Qué mal trabajo he hecho!
+Tôi làm tệ quá!
+¡No puedes evitar la llegada del Nuevo Orden Mundial!
+Bạn không thể ngăn chặn sự xuất hiện của Trật Tự Thế Giới Mới đâu!
+¡Me gustan los que son como tú!
+Tôi thích những người như bạn!
+Me he venido muy arriba, ¿no?
+Tôi hơi tự tin quá rồi nhỉ?
+¡Qué envidia me das!
+Tôi ghen tị với bạn thật đấy!
+¡Tus actos hablan por sí solos!
+Hành động của bạn đã nói lên tất cả!
+¡Me has dejado huella!
+Bạn đã để lại ấn tượng sâu sắc!
+¡Menos combatir y más buscar la salida!
+Bớt chiến đấu lại và lo tìm đường ra đi!
+¡Interesante cuanto menos!
+Ít nhất thì cũng khá thú vị đấy!
+Al final seré yo el que llore, ¡me rindo!
+Cuối cùng người khóc lại là tôi... tôi đầu hàng!
+Entiendo. Este es mi límite, todo lo que puedo hacer.
+Tôi hiểu rồi. Đây là giới hạn của tôi.
+¡Bastaba con decir que no!
+Chỉ cần nói không là được rồi!
+Estaba claro que ponerme a combatir tan cansada no era la mejor idea.
+Rõ ràng là chiến đấu khi mệt như vậy không phải ý hay.
+Te lo has tomado en serio, ¿eh?
+Bạn nghiêm túc thật đấy nhỉ?
+¡Perdona! ¡Estaba poseída!
+Xin lỗi! Tôi bị nhập rồi!
+¿Se ha ido el espíritu?
+Linh hồn đã rời đi chưa?
+¡Ay! ¡Estaba fuera de mí!
+Ôi! Tôi mất kiểm soát rồi!
+¡Eres inocente!
+Bạn vô tội!
+¿Eh? ¿Qué? ¿Quién?
+Hả? Cái gì? Ai?
+¡Menuda pesadilla!
+Đúng là ác mộng!
+¡Uy! ¿Qué me ha pasado?
+Ơ! Chuyện gì vừa xảy ra vậy?
+¡Qué alma más fuerte!
+Linh hồn thật mạnh mẽ!
+¡Qué falta de respeto más grande!
+Thật là vô lễ!
+¿Por qué oponéis tanta resistencia?
+Tại sao các người chống cự dữ vậy?
+¡Buena contienda Pokémon! Empero no te salvará de tu derrota.
+Một trận Pokémon hay đấy! Nhưng nó không cứu được bạn khỏi thất bại đâu.
+¡Basta de ser cruel con mis Pokémon!
+Đừng tàn nhẫn với Pokémon của tôi nữa!
+¿Ni entre dos hemos podido contigo?
+Hai người mà vẫn không thắng nổi bạn sao?
+Tanto en Pokémon como en la ciencia, los cálculos son sumamente importantes...
+Trong Pokémon cũng như khoa học, tính toán là vô cùng quan trọng...
+¡Aaah, un fantasma!
+Aaa! Ma kìa!
+¡Más bien eres tú el que me ha pasado por encima!
+Phải nói là bạn đã nghiền nát tôi mới đúng!
+¡Está bien! ¡Perdona!
+Được rồi! Xin lỗi!
+¡Qué Pokémon más brutos tienes!
+Pokémon của bạn thô bạo thật!
+¡Eres un buen fastidio!
+Bạn đúng là phiền phức!
+¡Me niego a ver mi derrota!
+Tôi không chấp nhận thất bại!
+¡Nooo! ¡Mis pobres Pokémon de tipo Planta!
+Khônggg! Pokémon hệ Cỏ của tôi!
+¡Has plantado una semilla de grandeza con este combate! ¡Podrías llegar a participar incluso en la Liga Pokémon!
+Bạn đã gieo một hạt giống vĩ đại với trận đấu này! Bạn thậm chí có thể tham gia cả Pokémon League!
+¡Ahora sí que nos has hecho enfadar!
+Giờ thì bạn làm chúng tôi nổi giận rồi!
+¡Tu espíritu está en perfecta armonía!
+Tinh thần của bạn hoàn toàn hài hòa!
+¡Ah! ¡Venga ya!
+Ah! Thôi đi mà!
+¡Qué capacidad de intrusión!
+Khả năng xâm nhập thật ghê gớm!
+¡Me has dominado por completo!
+Bạn đã áp đảo tôi hoàn toàn!
+¡No estoy acostumbrado a perder!
+Tôi không quen với việc thua!
+¡No me pegues, por favor!
+Đừng đánh tôi, làm ơn!
+¡Qué rabia!
+Tức thật!
+¡Qué desastre!
+Thảm họa thật!
+¡Me rindo!
+Tôi đầu hàng!
+¡Qué el jefe me perdone!
+Mong sếp tha thứ cho tôi!
+¡Je, je! Me has caído bien, joven.
+He he! Ta thích cậu rồi đấy, nhóc.
+¡Se ha escapado! ¡Me cago en...!
+Nó chạy mất rồi! Chết tiệt!
+¡Las cosas no son tan fáciles!
+Mọi chuyện không dễ đâu!
+¿Sientes la conexión con el cosmos?
+Bạn có cảm nhận được sự kết nối với vũ trụ không?
+¡Vaya, he perdido la paciencia!
+Chà, tôi mất kiên nhẫn rồi!
+¡Has echado por tierra mis planes!
+Bạn đã phá hỏng kế hoạch của tôi!
+¡He perdido el ritmo! ¡Espero que mis Pokémon me perdonen!
+Tôi mất nhịp rồi! Mong Pokémon của tôi tha thứ!
+Qué inspirador, ¿no? El lenguaje de los Entrenadores es universal.
+Thật truyền cảm hứng nhỉ? Ngôn ngữ của các Huấn luyện viên là chung.
+¡Algún día alzaré el vuelo y seré invencible!
+Một ngày nào đó tôi sẽ bay cao và trở nên bất bại!
+¡Mis bellas criaturas celestiales han sido derrotadas!
+Những sinh vật thiên giới xinh đẹp của tôi đã bị đánh bại!
+¡Mi autoestima es leve como una pluma!
+Lòng tự trọng của tôi nhẹ như lông vũ!
+¡Vale! ¡Te daré permiso para quedarte!
+Được rồi! Tôi cho phép bạn ở lại!
+¡Menudo rugido el de tus Pokémon!
+Tiếng gầm của Pokémon bạn thật dữ dội!
+¡Ten más delicadeza!
+Nhẹ nhàng hơn chút đi!
+¡Ay! ¿Se ha hecho daño mi pobre Pokémon?
+Ôi! Pokémon tội nghiệp của tôi có bị thương không?
+Tus Pokémon también parecen bastante raros, ¿de dónde los has sacado?
+Pokémon của bạn cũng khá lạ đấy, bạn lấy chúng từ đâu vậy?
+¡Parecen fuegos de artificio!
+Chúng trông như pháo hoa vậy!
+¡Seguro que en estudiar no nos ganas!
+Chắc chắn khoản học hành thì bạn không thắng nổi tụi tôi đâu!
+¿Ya tienes a todos esos Pokémon evolucionados? ¡Impresionante!
+Bạn đã tiến hóa hết đống Pokémon đó rồi à? Ấn tượng thật!
+¡Qué momento más bonito para estar viva!
+Thật là khoảnh khắc tuyệt đẹp để được sống!
+¡Vaya! No esperaba perder.
+Chà! Tôi không ngờ lại thua.
+A mi brujería le queda mucho camino por delante.
+Phép thuật của tôi vẫn còn phải rèn luyện nhiều.
+Me has pintado la cara.
+Bạn đã cho tôi một trận ra trò.
+¡No! ¡Han fallado mis técnicas ninja!
+Không! Kỹ thuật ninja của tôi thất bại rồi!
+Veo que dominas todo tipo de estrategias, ¡bien hecho!
+Tôi thấy bạn thành thạo nhiều chiến thuật, làm tốt lắm!
+¡Me has dejado en el suelo!
+Bạn đã đánh gục tôi rồi!
+¡Definitivamente no eres alguien cualquiera!
+Bạn chắc chắn không phải người bình thường!
+Supongo que tu linaje no te define.
+Có lẽ xuất thân không định nghĩa con người bạn.
+¡Tus Pokémon son más temibles que el más mortal de los venenos!
+Pokémon của bạn còn đáng sợ hơn cả chất độc chết người!
+La fuerza bruta no lo es todo en los combates, pero eso tú ya lo sabías.
+Sức mạnh thuần túy không phải là tất cả trong trận đấu, nhưng bạn biết điều đó rồi.
+¡No esperaba encontrarme con esto hoy!
+Tôi không ngờ hôm nay lại gặp chuyện này!
+¡Cuanta más altitud, más dura es la caída. Eso dicen.
+Càng lên cao thì ngã càng đau, người ta nói vậy.
+¿Sabes? No tengo nada que demostrar.
+Bạn biết không? Tôi chẳng cần chứng minh gì cả.
+¡Veo que te mueves bien por el agua!
+Tôi thấy bạn di chuyển dưới nước rất tốt!
+¡Habrán sido imaginaciones mías!
+Chắc là do tôi tưởng tượng thôi!
+¡Eso me pasa por bocas!
+Đáng đời cái miệng của tôi!
+¡He estado demasiado lento!
+Tôi đã quá chậm!
+¡Mi dignidad sigue intacta aún con esta derrota!
+Dù thua nhưng phẩm giá của tôi vẫn còn!
+¡Sigue así! ¡Pronto podrás doblegar montañas!
+Cứ tiếp tục như vậy! Sớm thôi bạn sẽ chinh phục được núi non!
+Van tres y se cae el del médium.
+Ba người thì thằng đồng cốt lại ngã.
+¡Está bien! ¡Te estaba tomando el pelo!
+Được rồi! Tôi chỉ trêu bạn thôi!
+¡Esto no lo había visto!
+Tôi chưa từng thấy cái này!
+No todo el que anda errante está perdido.
+Không phải ai lang thang cũng bị lạc.
+Ojos que no ven, tropezón que te llevas.
+Không thấy thì dễ vấp ngã.
+Cuando el Honchkrow vuelva bajo... bueno, ya sabes.
+Khi Honchkrow bay xuống lại... thì, bạn hiểu mà.
+Ya veo, ya. Todo empieza a verse con más claridad, como nubes disipándose en el horizonte.
+Tôi hiểu rồi. Mọi thứ dần trở nên rõ ràng như mây tan nơi chân trời.
+¡Detenido me hallo!
+Ta đã bị chặn lại!
+Oye, tú no digas nada, ¿vale?
+Này, đừng nói gì nhé, được không?
+¡Regresa a la sombra!
+Hãy quay về bóng tối!
+Supongo que esto acaba con las negociaciones.
+Chắc là thương lượng kết thúc rồi.
+También soy el hermano más débil...
+Tôi cũng là đứa em yếu nhất...
+¡Mis hermanos se burlarán de mí!
+Anh em tôi sẽ cười nhạo tôi mất!
+¡La torta me la he llevado yo!
+Cú đau này tôi lãnh đủ rồi!
+No ha colado mi discursito, ¿no?
+Bài diễn thuyết của tôi không hiệu quả nhỉ?
+¡No somos invencibles!
+Chúng tôi không phải bất bại!
+¡Ayuda! ¡Rocket abatida!
+Cứu với! Rocket bị đánh bại rồi!
+¡El Team Rocket despega de nuevo!
+Team Rocket lại bay đi rồi!
+Pero el uniforme me queda divino, ¿verdad?
+Nhưng bộ đồng phục này hợp với tôi lắm đúng không?
+¡Has descubierto mi tapadera!
+Bạn đã phát hiện vỏ bọc của tôi!
+¡La ciencia no es cosa de risa! La risa la doy yo...
+Khoa học không phải chuyện đùa! Người gây cười là tôi...
+Ahora sí que veo las estrellas.
+Giờ thì tôi thấy sao rồi.
+¿Es que no tienes puntos débiles?
+Bạn không có điểm yếu sao?
+¡Mira qué fácil se ha resuelto el problema!
+Nhìn xem, vấn đề được giải quyết dễ dàng chưa!
+¡Perdóname, mamá!
+Mẹ ơi tha cho con!
+¿Mi temible Pokémon no ha sido suficiente?
+Pokémon đáng sợ của tôi vẫn chưa đủ sao?
+¿Cómo es posible? ¿Derrotado otra vez?
+Sao có thể? Lại thua nữa sao?
+¿Por qué defiendes a la compañía multimillonaria?
+Tại sao bạn lại bảo vệ tập đoàn tỷ đô?
+Ya puedes dejar de sudar, que has ganado.
+Bạn có thể ngừng lo rồi, bạn thắng rồi.
+¡Aargh! ¡Ya me estoy cansando de tus tonterías!
+Aargh! Tôi chán mấy trò nhảm của bạn rồi!
+¡Puagh! ¡No he podido más!
+Puagh! Tôi chịu hết nổi rồi!
+¡Uy! ¡Se me escapan las Pokéball!
+Ơ! Pokéball của tôi rơi mất rồi!
+¡La fuerza sin control no sirve de nada!
+Sức mạnh không kiểm soát thì vô ích!
+¡Esto también forma parte de mi entrenamiento!
+Đây cũng là một phần luyện tập của tôi!
+La ira no lleva a ningún buen puerto.
+Cơn giận không dẫn đến điều tốt đẹp.
+¡Aaah! ¡Se me ha partido el sedal!
+Aaa! Dây câu của tôi bị đứt rồi!
+¡Me hundo en las profundidades!
+Tôi đang chìm xuống đáy sâu!
+¿Ya hemos acabado?
+Xong rồi à?
+He perdido la concentración por culpa del frío, que lo sepas.
+Tôi mất tập trung vì lạnh đấy, biết chưa.
+Tal vez debería dar ejemplo y abrigarme un poco.
+Có lẽ tôi nên làm gương và mặc ấm hơn.
+¿Perder yo? ¡Si soy la favorita de mamá!
+Tôi mà thua á? Tôi là con cưng của mẹ mà!
+¡Se cree el ladrón que son todos de su condición!
+Kẻ trộm cứ nghĩ ai cũng giống mình!
+¡Pues para ser un fantasma, cómo repartes!
+Là ma mà đánh đau thật đấy!
+El auténtico laberinto es el de tu corazón.
+Mê cung thật sự nằm trong trái tim bạn.
+Puedes pasar, pero no curiosees demasiado, ¿eh?
+Bạn có thể đi qua, nhưng đừng tò mò quá nhé?
+¡Ten cuidado, hombre! El suelo podría romperse bajo nuestros pies.
+Cẩn thận! Mặt đất có thể sụp dưới chân chúng ta đấy!
+¡Me he encontrado con algo que no esperaba!
+Tôi đã gặp thứ không ngờ tới!
+¡Jo! Pero si siempre gano yo...
+Trời! Bình thường tôi luôn thắng mà...
+Mi mente no ha sabido dirigir el poder de las llamas.
+Tâm trí tôi không thể điều khiển sức mạnh của ngọn lửa.
+¡Te manejas bien con el fuego!
+Bạn điều khiển lửa rất tốt!
+¡El calor a ti nunca te molestó!
+Sức nóng chẳng làm bạn bận tâm chút nào!
+Tu poder se sale de la escala Kelvin.
+Sức mạnh của bạn vượt ngoài thang Kelvin.
+¡Qué combate tan asombroso! De tanto encender mi fuego, he quedado reducido a cenizas.
+Trận đấu thật kinh ngạc! Dùng lửa quá nhiều khiến tôi hóa thành tro rồi.
+¡Uff, uff! ¡Me falta el aliento!
+Hộc… hộc… tôi không thở nổi!
+¡No solo tienes talento sobre ruedas!
+Bạn không chỉ giỏi mỗi chuyện đó!
+¡Gracias por el empuje, colega!
+Cảm ơn cú thúc nhé, bạn!
+Pii, pii, piii...
+Pii, pii, piii...
+¿De dónde sales tú? ¡Me has pasado por encima como un tren!
+Bạn từ đâu ra vậy? Bạn nghiền nát tôi như tàu hỏa!
+¡Buen entrenamiento!
+Luyện tập tốt đấy!
+Yo no soy el peligro, ¡estoy en peligro!
+Tôi không phải mối nguy, tôi đang gặp nguy hiểm!
+¡Hora de retirarse, supongo!
+Chắc đến lúc rút lui rồi!
+¿Es demasiado tarde para negociar una rendición?
+Giờ đầu hàng có muộn quá không?
+Pues buena guardia he montado...
+Đúng là canh gác giỏi thật...
+Creo que voy a vomitar...
+Tôi nghĩ mình sắp nôn rồi...
+Me llevo una lección de humildad por bocazas.
+Cái miệng hại cái thân, tôi nhận một bài học rồi.
+Acabo de presenciar algo increíble.
+Tôi vừa chứng kiến điều невероятный.
+Ya veo. Crees en eso.
+Tôi hiểu rồi. Bạn tin vào điều đó.
+¡Por favor, no me hagas daño!
+Làm ơn đừng làm tôi đau!
+¡Esto no es lo que anhelaba!
+Đây không phải điều tôi mong muốn!
+¡La belleza de nuestras ilusiones jamás será derrotada!
+Vẻ đẹp của ảo tưởng chúng ta sẽ không bao giờ bị đánh bại!
+¡Gran Giovanni, perdóname!
+Ngài Giovanni vĩ đại, xin tha thứ cho tôi!
+¡Esto es toda una devastación!
+Đây đúng là một thảm họa!
+¡Noooo! ¡Por favor! ¡No le hagas eso a mis Pokémon cuquis!
+Khônggg! Làm ơn! Đừng làm vậy với Pokémon dễ thương của tôi!
+Me has dado una gran cura de humildad, eso lo reconozco. ¿Qué debería hacer ahora el gran Giovanni? Lo he apostado todo a esta operación...
+Bạn đã cho tôi một bài học lớn về sự khiêm tốn, tôi thừa nhận. Giờ Giovanni vĩ đại nên làm gì đây? Tôi đã đặt cược tất cả vào kế hoạch này...
+¡Para hacer esto, me podría haber jubilado!
+Làm thế này thì tôi thà nghỉ hưu còn hơn!
+Cuanto más alto subes, más dura es la caída...
+Càng lên cao thì ngã càng đau...
+Parece que me he quedado en fase de capullo.
+Có vẻ tôi vẫn đang ở giai đoạn kén.
+¡Te has puesto supergrande!
+Bạn trở nên khổng lồ rồi!
+Por perder, ya pierdo hasta en los combates Pokémon.
+Thua riết rồi, đến cả trận Pokémon tôi cũng thua.
+¿No has pensado en aceptar a alguien como pupilo tú también?
+Bạn chưa từng nghĩ đến việc nhận học trò sao?
+Al igual que un insecto puede levantar hasta 10 veces su peso, tú también has desplegado un poder 10 veces mayor del que aparentas. Y por eso te alabo y te reverencio.
+Giống như côn trùng có thể nâng gấp 10 lần trọng lượng, bạn cũng đã thể hiện sức mạnh gấp 10 lần vẻ ngoài. Vì thế tôi tôn vinh và kính phục bạn.
+¡Vaya! ¡Tu valor es realmente incalculable!
+Wow! Giá trị của bạn thật không thể đo đếm!
+Debería replantear mi estrategia.
+Tôi nên xem lại chiến lược của mình.
+Tú tampoco pareces muy normal.
+Bạn cũng chẳng bình thường đâu.
+¡Tal vez con un Pokémon solo no sea suficiente!
+Có lẽ một Pokémon là chưa đủ!
+¡Eres demasiado!
+Bạn quá mạnh!
+Mis Pokémon escaladores no alcanzan la altura óptima todavía.
+Pokémon leo núi của tôi vẫn chưa đạt độ cao tối ưu.
+¡Este combate era de prueba!
+Trận này chỉ là thử thôi!
+Aquí acaba mi viaje... por ahora.
+Chuyến hành trình của tôi kết thúc ở đây... tạm thời.
+¿De dónde sacas tanta fuerza? Parece inagotable.
+Bạn lấy đâu ra nhiều sức mạnh vậy? Có vẻ vô tận.
+He perdido, pero estoy feliz. He dado todo lo que he podido y más.
+Tôi thua nhưng tôi vui. Tôi đã cố hết sức và hơn thế nữa.
+¡Increíble! ¡Quiero entrenar contigo algún día!
+Tuyệt vời! Tôi muốn luyện tập cùng bạn một ngày nào đó!
+Me voy a casa con la lección bien aprendida.
+Tôi về nhà với bài học đã khắc ghi.
+Cuando el rival es de categoría, una se siente bien aunque pierda.
+Khi đối thủ đẳng cấp, thua cũng thấy vui.
+Eso es todo lo que tenía que decir. Al menos, por ahora.
+Đó là tất cả những gì tôi muốn nói. Ít nhất là lúc này.
+Eso es todo lo que tenía que decirte. Al menos, por ahora.
+Đó là tất cả những gì tôi muốn nói với bạn. Ít nhất là lúc này.
+Pensaba que ibas a dejarme fría, pero tus ataques han logrado fundir mis defensas. ¡Ji, ji, ji!
+Tôi tưởng bạn sẽ làm tôi lạnh đi, nhưng đòn của bạn đã làm tan chảy phòng thủ của tôi. Hi hi hi!
+Tus ataques mueven montañas. Tus defensas, conmueven el corazón.
+Đòn đánh của bạn dời núi. Phòng thủ của bạn lay động lòng người.
+¡Jo, jo, jo! ¡Veo que tengo ante a mí a alguien muy capaz! Puedo retirarme con tranquilidad.
+Ho ho ho! Ta thấy trước mặt là một người rất tài giỏi! Ta có thể yên tâm rút lui.
+Tienes un destino dorado en la cima de los Entrenadores, Aspirante. ¡Que nadie te haga pensar lo contrario!
+Ngươi có một định mệnh rực rỡ trên đỉnh cao Huấn luyện viên, Kẻ thách đấu. Đừng để ai khiến ngươi nghĩ khác!
+Este combate ha sido... ¡el mejor de toda mi vida! Y por eso te doy las gracias y además reconozco que eres mejor que yo. Contar contigo como rival ha sido lo mejor que me podía pasar.
+Trận đấu này... là tuyệt nhất đời tôi! Vì vậy tôi cảm ơn bạn và thừa nhận bạn giỏi hơn tôi. Có bạn làm đối thủ là điều tuyệt vời nhất với tôi.
+Maravilloso, ¡si es que la edad es solo un número cuando se trata de Pokémon!
+Tuyệt vời, tuổi tác chỉ là con số khi nói đến Pokémon!
+¡He perdido, pero ha sido un combate genial! ¡Esto solo puede significar que aún me queda trabajo para llegar a ser un Maestro Pokémon!
+Tôi thua nhưng đó là trận đấu tuyệt vời! Điều đó có nghĩa tôi vẫn còn phải cố gắng để trở thành Bậc thầy Pokémon!
+¡Ya veo que los jóvenes de Kanto os las gastáis bien!
+Ta thấy giới trẻ Kanto cũng ghê gớm đấy!
+¡Buah! ¡No esperaba encontrarme con un oponente tan tremendo en un sitio tan tranquilo!
+Chà! Không ngờ gặp đối thủ mạnh thế ở nơi yên tĩnh này!
+¡Te espera una carrera muy prometedora en esto! ¡De altos vuelos, diría yo!
+Bạn có một tương lai rất sáng trong lĩnh vực này! Bay cao đấy!
+¡Esto sí que es todo un giro de los acontecimientos! ¡Ja, ja, ja!
+Đúng là một bước ngoặt bất ngờ! Ha ha ha!
+¡Ostras! ¡Ya veo que llevas bastante ventaja en esto! ¿Dónde has aprendido tan bien?
+Ôi! Tôi thấy bạn có lợi thế lớn đấy! Bạn học ở đâu mà giỏi vậy?
+¡Esto sí que es un entrenamiento de categoría! ¡Me has obligado a ir con todo y más allá!
+Đây mới là luyện tập đẳng cấp! Bạn buộc tôi phải dốc toàn lực!
+¡Tú no entrenas Pokémon! ¡Tú haces arte, créeme!
+Bạn không chỉ huấn luyện Pokémon! Bạn tạo ra nghệ thuật!
+Aún siendo dos contra uno, no teníamos ninguna posibilidad. Sin duda, eres alguien fuera de serie.
+Dù 2 đấu 1, chúng tôi vẫn không có cơ hội. Bạn đúng là khác biệt.
+¡Auch! Creo que he tragado agua salada.
+Ái! Tôi nghĩ mình nuốt phải nước mặn rồi.
+Allá donde vayas, te irá bien.
+Bạn đi đâu cũng sẽ ổn thôi.
+¡Bien hecho! Aunque deberías relajarte más.
+Làm tốt lắm! Nhưng bạn nên thư giãn hơn.
+¡Un corazón de oro!
+Một trái tim vàng!
+Esta fuerza... es algo que no había visto nunca.
+Sức mạnh này... tôi chưa từng thấy.
+Cada primavera tiene un verde distinto.
+Mỗi mùa xuân lại có một sắc xanh khác.
+Tu ascenso es muy fructífero. ¡Enhorabuena!
+Sự tiến bộ của bạn rất đáng kể. Chúc mừng!
+¿Qué clase de entrenamiento has llevado a cabo?
+Bạn đã luyện tập kiểu gì vậy?
+¡Ay! ¡Me ha dado un calambre!
+Ái! Tôi bị chuột rút rồi!
+¡BUAAAAAAAAA!
+BUAAAAAAAAA!
+¡Vale, vale! ¡Hoy ganas tú!
+Được rồi! Hôm nay bạn thắng!
+¡Uff! ¡Se supone que esto era un viaje de placer!
+Phù! Đây đáng lẽ là chuyến đi thư giãn mà!
+Vaya, no esperaba esto en mi ronda de hoy.
+Chà, tôi không ngờ điều này trong lượt hôm nay.
+También me gusta disfrutar del tiempo libre, como todo el mundo.
+Tôi cũng thích tận hưởng thời gian rảnh như mọi người.
+¿Cómo sabías que iba a usar esa estrategia?
+Sao bạn biết tôi sẽ dùng chiến thuật đó?
+Era una pieza demasiado grande para mí.
+Đó là một quân bài quá lớn đối với tôi.
+Al final quien ha picado... ¡he sido yo!
+Cuối cùng người mắc bẫy... lại là tôi!
+¡Qué paliza!
+Đau quá!
+¡No estoy preparado para afrontar la verdad!
+Tôi chưa sẵn sàng đối mặt với sự thật!
+¡Jamás nos doblegaremos ante la plebe!
+Chúng ta sẽ không bao giờ khuất phục trước đám thường dân!
+No era la más indicada para montar guardia...
+Tôi không phải là người phù hợp nhất để canh gác...
+¡Aaaaaay!
+Áaaa!
+A mí me parecía un trato justo...
+Với tôi thì đó là một thỏa thuận công bằng...
+Tu estilo es muy particular y distinguido.
+Phong cách của bạn rất độc đáo và thanh lịch.
+¡Muy bien! ¡Guárdate tus secretos!
+Được thôi! Cứ giữ bí mật của bạn đi!
+¡Ja, ja, ja! Soy una perdedora.
+Ha ha ha! Tôi là kẻ thua cuộc.
+¡Gracias! No podría estar más contenta con este combate.
+Cảm ơn! Tôi không thể hài lòng hơn với trận đấu này.
+No has estado perdiendo el tiempo, según veo.
+Xem ra bạn không hề lãng phí thời gian.
+Podemos compartir este espacio.
+Chúng ta có thể chia sẻ không gian này.
+Magnífico. Has superado a tu maestro.
+Tuyệt vời. Bạn đã vượt qua cả thầy của mình.
+Tranqui, que también llevo dinero encima.
+Yên tâm, tôi cũng có mang theo tiền.
+¡No llegarás hasta nuestra señora tan fácilmente!
+Ngươi sẽ không dễ dàng đến được chỗ chủ nhân của bọn ta đâu!
+¡Somos la espada de la Isla Prisma!
+Chúng ta là thanh kiếm của Đảo Prisma!
+¿Cómo osas desafiar nuestros enormes poderes?
+Ngươi dám thách thức sức mạnh to lớn của bọn ta sao?
+¿Es que no te cansas nunca?
+Ngươi không bao giờ thấy mệt sao?
+¡Formidable! ¡Espeluznante! Y estoy seguro de que aún no has liberado toda tu fuerza.
+Thật tuyệt vời! Thật đáng kinh ngạc! Và tôi chắc rằng bạn vẫn chưa tung ra toàn bộ sức mạnh.
+Tienes el porte de un héroe, sin duda alguna.
+Bạn mang dáng dấp của một anh hùng, không còn nghi ngờ gì nữa.
+Al terminar un combate, siempre le invade a uno un viento de paz y de serenidad. Y por eso te estoy agradecido.
+Sau mỗi trận đấu, người ta luôn cảm nhận được sự bình yên và thanh thản. Và vì thế tôi rất biết ơn bạn.
+¡Increíble! Has podido hacer frente a mi colección de Pokémon rarísimos.
+Thật đáng kinh ngạc! Bạn đã đối đầu được với bộ sưu tập Pokémon cực hiếm của tôi.
+Has hecho frente al poder de las 3 aves legendarias... ¿y aún así te has hecho con la victoria? No, no eres una persona cualquiera. La forma en la que combates junto a tus Pokémon es digna de una deidad.
+Bạn đã đối mặt với sức mạnh của 3 Pokémon chim huyền thoại... mà vẫn giành chiến thắng sao? Không, bạn không phải người bình thường. Cách bạn chiến đấu cùng Pokémon xứng tầm một vị thần.
+Pelear contra ti sigue derritiendo todas mis defensas. ¡Ji, ji, ji!
+Đấu với bạn vẫn khiến mọi phòng thủ của tôi tan chảy. Hì hì hì!
+Tus ataques siguen moviendo montañas. Tus defensas, conmueven el corazón.
+Đòn tấn công của bạn vẫn có thể lay chuyển núi non. Phòng thủ của bạn thì làm rung động trái tim.
+¡Jo, jo, jo! ¡Sigues tan capaz como siempre! ¡No dejas de sorprenderme!
+Ho ho ho! Bạn vẫn lợi hại như mọi khi! Bạn luôn khiến tôi bất ngờ!
+Una vez más reafirmas por qué estás en la cima de los mejores Entrenadores de la región. ¡Bien hecho!
+Một lần nữa bạn khẳng định vì sao mình đứng trên đỉnh các Huấn luyện viên giỏi nhất vùng. Làm tốt lắm!
+Sigues superándome, pero contar con un rival como tú hace que me siga queriendo esforzar por ser mejor.
+Bạn vẫn vượt qua tôi, nhưng có một đối thủ như bạn khiến tôi muốn tiếp tục cố gắng để trở nên tốt hơn.

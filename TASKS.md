@@ -1,0 +1,1041 @@
+# TASKS
+
+## Persistent Rules (Added 2026-04-25, Reinforced 2026-04-26)
+- This rule is mandatory for every AI session working on this project.
+- Context bootstrap rule: new AI sessions should read `CURRENT_STATE.md` first, then open `TASKS.md`/`WORKLOG.md` only as needed.
+- For every user request that AI executes and is project-related (analyze/answer or implement), AI must log that request in both `WORKLOG.md` and `TASKS.md` in the same session.
+- Logging is required even when there is no code change.
+- Every logged request must include `Analyze`, `Implement`, and explicit outcome (`done` / `blocked` / `deferred`).
+- For analyze-only requests, `Implement` must explicitly say `No code changes`.
+- Important architecture explanations, design decisions, tradeoff analyses, and future-direction recommendations are project context and must be logged as analyze-only requests even when no implementation happens.
+- If a request is `blocked` or `deferred`, log the concrete blocker and next action.
+- Every session with code implementation must run compile check(s) and rebuild/deploy both release outputs:
+- `tools/PokemonIndigoSaveEditor.exe`
+- `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` is the project editor-tool checklist workbook. If work completes any tracked project/editor-tool checklist item, AI must update that Excel checklist in the same session, even when the completed work is analyze-only and has no code changes.
+- New-chat bootstrap requirement:
+- Any AI starting from a new chat must read `WORKLOG.md` and `TASKS.md` first and continue this logging policy before finishing its response.
+
+## Doing
+- [ ] User-side retest after enforcing parallel-only custom item mode:
+  - [ ] Apply/update a custom item and confirm `Data/items.dat` timestamp/content does not change.
+  - [ ] Confirm custom icon import saves to `tools/custom_item/assets/items/` and still displays in editor/game runtime.
+  - [ ] Confirm Party/Bag/held-item views no longer crash with manifest-only item IDs.
+- [ ] User-side Battle Overlay test:
+  - [ ] Open `Battle Overlay...` from the top toolbar.
+  - [ ] Confirm status reports `scripts_rxdata`, `Can apply: Yes`.
+  - [ ] Click `Apply/Update` and confirm a backup is created.
+  - [ ] Launch/restart game, enter battle, press `F7` to cycle OFF / COMPACT / DETAIL.
+  - [ ] Verify stat stages, weather/terrain, Reflect/Light Screen/Aurora Veil, volatile states, and custom item summaries are readable and do not overlap important UI.
+- [ ] User-side retest for corrected multi-stat move-derived custom item effects:
+  - [ ] Test `FIGHTERSPIRIT` / Hone Claws mapping: Attack + Accuracy should both rise by 1 stage.
+  - [ ] Test `FIGHTERSPIRIT` / Bulk Up mapping: Attack + Defense should both rise by 1 stage.
+  - [ ] Confirm UI pool detail shows `stats: ["ATTACK", "ACCURACY"]` and `stats: ["ATTACK", "DEFENSE"]`.
+- [ ] User-side smoke test Custom Effect Builder stat-stage UX:
+  - [ ] Create a custom effect with multiple stats selected, e.g. Attack + Accuracy.
+  - [ ] Create a custom effect with `Lower` direction and confirm preview/runtime compile says lowers.
+  - [ ] Create a custom effect with `Timing = End of turn` and confirm `Once per battle` is disabled/off.
+  - [ ] Confirm preview now shows compile-shape fields: effect id/name/category/effect type/hook/template/params/trigger timing/target/support/risk/mechanics.
+  - [ ] Confirm Category filters Effect Type choices correctly, including empty/blocked categories such as Status/Contact/Battle Field.
+  - [ ] Confirm duplicate effect IDs are blocked (built-in collision and custom collision).
+  - [ ] Add the saved custom effect to a custom item, apply it, and test in battle.
+- [ ] User-side retest after Party crash fix (`filename is nil` in `Item_Sprites`):
+  - [ ] Open Party screen on latest build and confirm crash is gone.
+  - [ ] Confirm slots holding manifest-only items (e.g. `FIGHTERSPIRIT`) now show fallback held-item icon instead of crashing.
+  - [ ] If new popup appears, send fresh `%APPDATA%\Pokemon Anil\errorlog.txt`.
+- [ ] User-side retest after Venusaur female sprite fallback fix:
+  - [ ] Launch game from clean boot and confirm startup popup `SDLError: Error loading image 'Graphics/Pokemon/Front/VENUSAUR_female.png'` is gone.
+  - [ ] If still failing, send fresh `%APPDATA%\Pokemon Anil\errorlog.txt` for next root-cause pass.
+- [ ] Manual GUI verification for manifest-first custom item mode:
+  - [ ] `Load Base Item` hides manifest custom IDs and orphan baked custom IDs.
+  - [ ] `Manifest Entries` shows manifest-only items.
+  - [ ] Held-item selectors still show vanilla + manifest custom items after `Apply Custom Item` without restart.
+- [ ] Verify Hotfix/Phase 2D foundation in GUI after copying patch and rebuilding/running from source:
+  - [ ] `Load Base Item` shows only vanilla/base game items and does not show custom items such as DRAGONSOUL/FIGHTERSPIRIT/ROCKYTOXICHELMET_CUSTOM.
+  - [ ] Custom items still appear in Party/Team Builder/Damage/Bag held-item selectors after `Apply Custom Item` without restarting the tool.
+  - [ ] Hook-based normalized pool selector can add selected pool effects and save them through `selected_effect_ids`.
+  - [ ] Legacy Item/Move/Ability selectors still load old custom item entries correctly.
+- [ ] In-game verify representative Phase 2A pool effects after applying `custom_item_phase2a_broad_effect_pool.zip`:
+  - [ ] `SITRUSBERRY_HEAL_THRESHOLD` / `ORANBERRY_HEAL_THRESHOLD`: HP threshold heal behavior.
+  - [ ] Status cure berries: Lum/Cheri/Chesto/Pecha/Rawst/Aspear/Persim.
+  - [ ] Pinch berries: Liechi/Ganlon/Salac/Petaya/Apicot stat raise at low HP.
+  - [ ] Damage modifiers: Expert Belt, Muscle Band, Wise Glasses, selected type-boosting items.
+  - [ ] Speed/weight modifiers: Choice Scarf, Iron Ball, Float Stone.
+  - [ ] On-hit/contact effects: Rocky Helmet, Weakness Policy, Absorb Bulb/Cell Battery/Luminous Moss/Snowball.
+  - [ ] End-of-round effects: Flame Orb, Toxic Orb, Black Sludge branches.
+  - [ ] Confirm `advanced` effects are shown/recorded but not auto-compiled in Phase 2A.
+- [ ] In-game verify all 6 Hook Engine Phase 1 pool effects on DRAGONSOUL (build `2026-04-28 11:57`):
+  - [ ] `LEFTOVERS_HEAL_1_16`: HP restores 1/16 max HP each end-of-round.
+  - [ ] `LIFE_ORB_DAMAGE_BOOST`: moves deal ~30% more damage (recoil suppressed in Phase 1).
+  - [ ] `DRAINING_KISS_HEAL_75`: holder recovers 75% of damage dealt.
+  - [ ] `SWORDSDANCE_AFTER_MOVE`: Attack +2 once per battle after using a move.
+  - [ ] `NASTYPLOT_AFTER_MOVE`: Special Attack +2 once per battle after using a move.
+  - [ ] `CHLOROPHYLL_SPEED_IN_SUN`: Speed doubled in Sun or Harsh Sun.
+  - [ ] `SHEER_FORCE_MODIFIER`: damage boost + addl-effect suppression via ability bridge.
+- [ ] Manual GUI/in-save verification for new Party editor controls:
+- [ ] `Field Status` dropdown writes expected `@status/@statusCount` values after `Apply`.
+- [ ] Preview HP bar drag updates current HP and persists after `Apply`.
+- [ ] In-game verify `SHEDSKIN` on `DRAGONSOUL` after `triggerEndOfRoundHealing` bridge patch (test with paralysis for >=10 end-of-round cycles and send fresh `%APPDATA%\\Pokemon Anil\\errorlog.txt` if unexpected).
+- [ ] Reproduce map 11/event 96 on build `2026-04-25 15:16` (item-activity recursion fix) and send fresh `%APPDATA%\\Pokemon Anil\\errorlog.txt` + `%APPDATA%\\Pokemon Anil\\custom_item_system_stack_trace.log`.
+- [ ] Reproduce map 11/event 96 on latest build and send `%APPDATA%\\Pokemon Anil\\custom_item_system_stack_trace.log` generated by in-rescue logger (not TracePoint).
+- [ ] Reproduce map 11/event 96 once after `SystemStackError` trace patch and send `%APPDATA%\\Pokemon Anil\\custom_item_system_stack_trace.log` to identify first/root frame.
+- [ ] Reproduce map 11/event 96 once after interpreter-level VOE script lock patch; then inspect `%APPDATA%\\Pokemon Anil\\custom_item_vowe_reentry.log` to confirm blocked re-entry and verify stack overflow stops.
+- [ ] In-game repro on map 11/event 96 after VOE re-entry guard patch to confirm `SystemStackError: stack level too deep` is gone.
+- [ ] Reproduce once after `Interpreter nil-backtrace guard` patch to confirm old popup `undefined method '[]' for nil:NilClass` is gone.
+- [ ] Reproduce startup crash `NoMethodError: undefined method '[]' for nil:NilClass` with full backtrace capture (hold `Ctrl` when closing error popup) to identify true source frame.
+- [ ] In-game verify `ability_active_bridge` with at least one newly auto-mapped ability (non-`CONTRARY`, non-`SHEERFORCE`).
+- [ ] In-game verify `move_additional_effect_bridge` with representative move effects (`SPORE`, `ACID`, one `FlinchTarget` move, one `None` function move).
+- [ ] Test `Dragon's Soul` in battle and confirm effect list.
+- [ ] Update `WORKLOG.md` with in-game result.
+- [ ] Manual GUI smoke test: `CustomItem -> Auto Setup (Game+Save)` button flow on at least 1 compatible game and 1 incompatible game.
+- [ ] Smoke-test CustomItem GUI icon import flow and wheel scroll behavior.
+- [ ] Manual test CustomItem effect picker UX:
+- [ ] Effect dropdown/add list shows name-only labels (no `ID | Name`).
+- [ ] Hover tooltip shows description for dropdown popdown entries and added list entries.
+- [ ] Manual test CustomItem wording:
+- [ ] Effect description + tooltip include direct numeric mechanics lines like Party tab.
+- [ ] In-game test `SHEERFORCE` custom-item runtime behavior (damage boost + addl-effect suppression interactions).
+
+## Next
+- [ ] Design/implement Custom Effect authoring system:
+  - [x] Save approved design direction in `CUSTOM_EFFECT_BUILDER_PLAN.md`.
+  - [x] Create Excel checklist tracker `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx`.
+  - [x] Add rule that the Excel checklist must be updated whenever any checklist item is completed, including analyze-only work.
+  - [x] Add a custom effect manifest parallel to custom item manifest.
+  - [x] Let user create reusable effects from GUI by choosing field-by-field from curated dropdowns/wizard steps instead of editing raw hook/template/params.
+  - [x] Support multi-stat raise/lower stat-stage authoring in Builder v1.
+  - [x] Disable irrelevant Builder v1 fields based on the selected Effect Type.
+  - [x] Link Category to compatible Builder v1 Effect Type choices and block unsupported category saves.
+  - [x] Add Builder v2 category expansion matrix (Status/Contact/Battle Field desired types, hooks/templates, risk, and reason not in v1).
+  - [ ] Support applying/validating the same custom effects across multiple compatible Pokemon Essentials-style games.
+  - [ ] Add inline field explanations when space allows, otherwise tooltip explanations.
+  - [x] Add dropdown-list hover tooltips while browsing/searching list rows before selection.
+  - [x] Apply dropdown-list hover tooltip behavior globally to all non-species tooltip-enabled dropdowns in the tool.
+  - [x] Replace tooltip-enabled native `ttk.Combobox` popdown hover attempts with a reusable editor-owned searchable picker/detail dropdown.
+  - [x] Prototype the new picker on CustomItem effect/effect-pool dropdowns, Party Held Item, and Bag Item before migrating all non-species tooltip-enabled contexts.
+  - [x] Cache tooltip/detail text by combo+label so row hover is a map lookup after first resolution.
+  - [x] Validate effects against allowed runtime templates before they can be used by custom items.
+  - [x] Expose user-created effects in CustomItem effect pool selector.
+  - [x] Keep custom effects parallel-only; do not modify vanilla item/move/ability data unless explicitly using a separate migration tool.
+- [ ] Design battle-state visibility solution:
+  - [ ] Add runtime telemetry writer for current battle state to a parallel file.
+  - [ ] Add optional Save Editor Battle Monitor tab that reads/polls telemetry.
+  - [x] Implement initial user-preferred in-game overlay/toggle payload: grouped columns for stat stages, weather/terrain, screens/walls, field/side effects, battler volatile states, and custom item effect activity.
+  - [ ] Overlay should be clearer than sample image: readable labels, compact columns, colored severity, turn counters, and exact mechanical summaries such as rain Water x1.5 / Fire x0.5 / Thunder always-hit, Reflect physical damage reduction, Light Screen special damage reduction, Aurora Veil both damage reduction.
+  - [ ] Keep telemetry/overlay parallel-only and non-invasive to vanilla behavior.
+  - [ ] Design/apply multi-game overlay installer button:
+    - [x] Split overlay into shared payload + per-game adapter/install strategy.
+    - [x] Add compatibility detection for Indigo-style `Scripts.rxdata` and Fusion-style `.rb` runtime script layouts.
+    - [x] Button backs up touched script files, applies/updates/removes overlay idempotently for `scripts_rxdata`, and reports unsupported layouts safely.
+    - [x] Do not assume one patch path works for every Pokemon Essentials fangame.
+    - [ ] Implement actual Fusion-style `rb_file` apply adapter after confirming script load order.
+  - [ ] User-side in-game verification after applying overlay from the GUI.
+- [ ] Harden fixed runtime bridge v1:
+  - [ ] In-game retest `DRAGONSOUL`: Leftovers, Draining Kiss, Fake Out flinch, Swords Dance, Nasty Plot, Speed Boost.
+  - [ ] In-game retest `FIGHTERSPIRIT`: Party open, item name/icon, damage boost, drain, stat raises, ability bridge effects.
+  - [ ] Add/verify bridge support for remaining supported/partial pool templates when selected by user.
+  - [x] Add lightweight generated Ruby block/static inspection to the custom-item runtime patch report.
+  - [ ] Add real `ruby -c` syntax inspection if a compatible Ruby executable becomes available.
+- [ ] User-side smoke test Phase 3 CustomItem runtime safety:
+  - [ ] Open CustomItem -> `Runtime Patch...`.
+  - [ ] Confirm report says patch installed, bridge v2, patch before `Main`, installed source current, and static inspection OK.
+  - [ ] Only if needed, test `Remove Patch` then `Rollback` and confirm report returns to installed/current.
+- [ ] Decide whether to remove manifest-linked baked `DRAGONSOUL` from `Data/items.dat` in a separate explicit cleanup/migration:
+  - [ ] Only run after confirming manifest/runtime/held-item behavior is solid.
+  - [ ] Must create timestamped backup and re-verify game/tool behavior.
+- [ ] Add one-click "Rebuild custom item scripts" action to save editor GUI (optional hardening).
+- [ ] Install `rg` (`ripgrep`) for faster code search in future sessions (optional).
+- [ ] Add `rb_file` adapter mode for Custom Item patcher (for games like Infinite Fusion where runtime scripts live in `Data/Scripts/*.rb` and `Scripts.rxdata` only contains boot stubs).
+- [ ] Extend game-data loader for move `FunctionCode` from `.dat` object attribute `@function_code` (not only PBS metadata).
+
+## Done (2026-05-11)
+- [x] Link Custom Effect Builder Category to compatible Effect Type choices.
+  - [x] Analyze: previous Category was only metadata, which allowed confusing combinations such as Category `Healing` with Effect Type `Damage multiplier`.
+  - [x] Analyze: safest v1 behavior is to filter Effect Type by Category while keeping Effect Type as the actual runtime compiler selector.
+  - [x] Implement: `Category` now filters `Effect Type` choices in the Custom Effects dialog.
+  - [x] Implement: supported v1 mappings are Damage -> Damage multiplier, Healing -> Heal holder / Drain damage dealt, Stat -> Change holder stat stage, Speed -> Speed multiplier, End Turn -> Heal holder / Change holder stat stage.
+  - [x] Implement: Status, Contact, and Battle Field currently show no supported Builder v1 Effect Type and saving is blocked with a warning.
+  - [x] Implement: category help text now updates dynamically and explains which Effect Types are available for the selected Category.
+  - [x] Verification: compile check passed for GUI, patcher, effect pool, hook compiler, and game data modules.
+  - [x] Verification: hidden-Tk smoke test passed for category mapping and UI category switching.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-11 10:19:59`, `11,547,594` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-11 10:20:02`, `13,511,141` bytes).
+  - [x] Verification: `Data/items.dat`, `Data/Scripts.rxdata`, and `custom_effect_manifest.json` were not modified by this UI task.
+  - [x] Request outcome: `done`; user-side GUI smoke test remains `deferred`.
+- [x] Analyze Custom Effect Builder category purpose.
+  - [x] Analyze: checked GUI/backend source and confirmed `Category` is saved as grouping metadata while `Effect Type` controls runtime hook/template compilation.
+  - [x] Analyze: documented intended category meanings for Damage, Healing, Stat, Status, Speed, Contact, End Turn, and Battle Field.
+  - [x] Implement: No code changes; updated `CURRENT_STATE.md`, `TASKS.md`, `WORKLOG.md`, and checklist workbook.
+  - [x] Verification: source inspection confirmed `compile_custom_effect_authoring(...)` branches on `effect_type`, not `category`.
+  - [x] Request outcome: `done`.
+
+## Done (2026-05-12)
+- [x] Harden Custom Effect Builder v1 end-to-end compile path and validation.
+  - [x] Analyze: audited Wizard -> validation -> `custom_effect_manifest.json` -> normalized pool merge -> Add To Current Item -> `selected_effect_ids` save -> `upsert_custom_item` resolve -> runtime data/patch generation flow.
+  - [x] Implement: `effect_pool.py` now enforces strict param validation for Builder v1 (`multiplier > 0`, heal fraction numerator/denominator `> 0`, drain percent `> 0`, stat stages `1..6`, at least one selected stat, speed multiplier `> 0`).
+  - [x] Implement: backend duplicate guards now block collisions with built-in pool IDs and duplicate custom IDs (unless editing the same custom effect ID).
+  - [x] Implement: backend now validates category/effect-type compatibility for known Builder v1 categories.
+  - [x] Implement: Builder preview now shows compile-shape details (effect id, name, category, effect type, generated hook/template/params, trigger timing, target, support_status, risk_level, mechanics summary).
+  - [x] Implement: fixed runtime bridge stat handlers now honor `direction` (`raise`/`lower`) and `stats` list for both after-move and end-of-round stat-stage templates.
+  - [x] Implement: runtime-data dedupe key for stat-stage pool effects now includes direction to prevent incorrect raise/lower dedupe collisions.
+  - [x] Implement: updated `CUSTOM_EFFECT_BUILDER_PLAN.md` with Builder v2 category expansion matrix for Status/Contact/Battle Field.
+  - [x] Verification: compile check passed for GUI/effect_pool/hook_compiler/patcher/game_data modules.
+  - [x] Verification: hidden-Tk GUI smoke passed for preview compile-shape and once-per-battle disable on End Turn stat effects.
+  - [x] Verification: temp-root smoke passed all 7 requested cases, including unsupported Status category save block.
+  - [x] Verification: temp-root integration confirmed saved custom effects merge into normalized pool, resolve via `selected_effect_ids`, and are included in `resolved_pool_effects` during `upsert_custom_item`.
+  - [x] Verification: real `tools/custom_item/data/custom_effect_manifest.json` remains clean (`0` effects).
+  - [x] Verification: no vanilla data writes (`Data/items.dat`, `Data/moves.dat`, `Data/abilities.dat`, `Data/Scripts.rxdata` timestamps unchanged).
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-12 18:09:29`, `11,552,528` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-12 18:09:32`, `13,516,243` bytes).
+  - [x] Request outcome: `done`; user-side in-game retest remains `deferred`.
+
+## Done (2026-05-08)
+- [x] Harden Custom Effect Builder stat-stage wizard UX.
+  - [x] Analyze: the previous wizard could imply all fields were active even when only one template used them; stat effects also needed multi-stat selection, lower-stat direction, and clearer timing semantics.
+  - [x] Analyze: `Category` is organizational only; `Effect Type` controls the compiled runtime template. Heal Fraction is ignored unless Effect Type is `Heal holder`, so Damage/Contact category alone does not activate healing.
+  - [x] Analyze: `Once per battle` only applies to after-move stat-stage effects. End-of-turn stat-stage effects are repeatable each end turn by design, as long as the selected stat stage can still change.
+  - [x] Implement: Custom Effect Builder stat effects now expose multi-stat checkboxes, Raise/Lower direction, and `After holder uses a move` / `End of turn` timing.
+  - [x] Implement: irrelevant fields are disabled based on selected Effect Type, and `Once per battle` is disabled/off for end-of-turn stat effects.
+  - [x] Implement: preview/mechanics text now says Raises vs Lowers correctly for after-move and end-of-turn stat-stage templates.
+  - [x] Implement: adjusted the Custom Effects dialog layout so help text, description, preview, and field rows do not overlap.
+  - [x] Verification: `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/patcher.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/pokemon_indigo_game_data.py` passed.
+  - [x] Verification: custom stat-effect compile smoke passed for raise multi-stat after move, lower multi-stat after move, raise multi-stat end turn, and lower multi-stat end turn.
+  - [x] Verification: `Data/items.dat` and `Data/Scripts.rxdata` timestamps remained unchanged by this GUI/compiler task.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-08 16:31:10`, `11,545,239` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-08 16:31:13`, `13,508,178` bytes).
+  - [x] Request outcome: `done`; user-side in-game smoke testing remains `deferred`.
+- [x] Implement Custom Effect Builder v1 foundation.
+  - [x] Analyze: Custom Effect plan requires a parallel manifest, field-driven GUI authoring, validation against safe runtime templates, pool exposure, and no vanilla data writes.
+  - [x] Implement: added `tools/custom_item/data/custom_effect_manifest.json` as the parallel custom-effect source of truth.
+  - [x] Implement: extended `tools/custom_item/effect_pool.py` with custom effect manifest load/save/list/upsert/delete, Builder v1 compiler, validation, and in-memory merge into the normalized effect pool.
+  - [x] Implement: added `Custom Effects...` dialog in the CustomItem normalized pool section for Damage multiplier, Heal holder, Drain damage dealt, Raise holder stat stage, and Speed multiplier effects.
+  - [x] Implement: saved custom effects can be added to the current custom item through the existing hook-based pool selection, so Apply Custom Item still uses `custom_item_runtime.rb` and the fixed runtime bridge.
+  - [x] Verification: compile checks passed for GUI, game-data, custom item patcher, effect pool, and hook compiler modules.
+  - [x] Verification: temp-root custom effect upsert -> pool merge -> hook compiler -> delete test passed without modifying the real project manifest.
+  - [x] Verification: temp-root compile covered all five Builder v1 templates: damage, heal, drain, stat raise, and speed.
+  - [x] Verification: real `custom_effect_manifest.json` remains empty (`0` effects); `Data/items.dat` and `Data/Scripts.rxdata` timestamps unchanged by this task.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-08 10:48:33`, `11,538,409` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-08 10:48:36`, `13,501,182` bytes).
+  - [x] Implement: updated `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` after completing tracked Builder v1 items.
+  - [x] Request outcome: `done` for Builder v1 foundation; multi-game compatibility report UI and richer Builder v2 effect families remain `deferred`.
+
+## Done (2026-05-07)
+- [x] Audit Custom Effect plan presence in state/log.
+  - [x] Analyze: `CURRENT_STATE.md` already contains the Custom Effect authoring direction, saved plan/checklist references, multi-game/tooltip requirements, and recommended next phase.
+  - [x] Analyze: `WORKLOG.md` session `2026-05-06 (Analyze: Custom Effect Authoring Proposal)` contains the source analysis and `CUSTOM_EFFECT_BUILDER_PLAN.md` contains detailed builder flow, compiled shape, milestones, and acceptance criteria.
+  - [x] Implement: No code changes; added a short state clarification pointing future sessions to the detailed plan/log.
+  - [x] Verification: confirmed `TASKS.md` `Next` tracks the remaining implementation items: `custom_effect_manifest.json`, GUI field-by-field builder, validation, pool exposure, multi-game support, explanations/tooltips, and parallel-only rule.
+  - [x] Request outcome: `done`.
+- [x] Audit state/log after release build cleanup hardening.
+  - [x] Analyze: checked `CURRENT_STATE.md`, `TASKS.md`, and `WORKLOG.md` for the build-hardening entry and compared it with `tools/build_save_editor_exe.ps1`.
+  - [x] Analyze: log/state entries match the current script: no `Get-CimInstance` / `Win32_Process` references remain, cleanup uses bounded `Get-Process` checks plus guarded retry deletion, and no local editor/build blocker process was active.
+  - [x] Implement: No code changes; updated project state/log for this audit-only request.
+  - [x] Verification: PowerShell parser check passed for `tools/build_save_editor_exe.ps1`; current release outputs exist at `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 17:40:27`, `11,516,770` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 17:40:30`, `13,478,932` bytes).
+  - [x] Request outcome: `done`.
+- [x] Auto-hide title-bar status after 20 seconds.
+  - [x] Analyze: user wanted title-bar status to be temporary, leaving only the app icon and base tool name after 20 seconds.
+  - [x] Implement: added a 20-second title status timeout using a lightweight poller that restores the native window title to `Pokemon Indigo Save Editor` after expiry.
+  - [x] Implement: new status updates refresh the visible-until timestamp, so the latest status gets its own display window.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke confirmed title shows `Pokemon Indigo Save Editor - Temporary status` while active and returns to `Pokemon Indigo Save Editor` after forced expiry.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 15:57:24`, `11,516,453` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 15:57:26`, `13,479,499` bytes).
+  - [x] Request outcome: `done`; user-side visual retest recommended for the 20-second timeout.
+- [x] Move global status text into the native window title.
+  - [x] Analyze: user wanted the status line on the same row/level as the app icon and editor name; that area is the native Windows title bar, so the safe implementation is updating the window title text rather than placing a Tk label there.
+  - [x] Implement: added a base window title and changed `set_status()` to set `Pokemon Indigo Save Editor - <status>`.
+  - [x] Implement: removed the in-content status label from the top toolbar area so it no longer consumes vertical UI space.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke confirmed no `status_label` widget exists and `set_status()` updates the root title with the status text.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 15:39:25`, `11,516,308` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 15:39:28`, `13,478,691` bytes).
+  - [x] Request outcome: `done`; user-side visual retest recommended on the title bar.
+- [x] Move global status text to the top toolbar area and widen tabs.
+  - [x] Analyze: user wanted the status line moved from between toolbar and tabs up into the top blank area, and wanted tabs to feel wider/more readable without needing extra height.
+  - [x] Implement: moved `status_var` label into the top toolbar frame at row 0, centered and stretched across the available width.
+  - [x] Implement: shifted Save File/action rows down inside the toolbar frame and removed the old separate status label above the notebook.
+  - [x] Implement: configured `TNotebook.Tab` padding to `(14, 2)` for wider tabs with minimal height change.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke confirmed status label is in toolbar row 0 and notebook tab padding is `(14, 2)`.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 15:34:35`, `11,515,903` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 15:34:37`, `13,478,076` bytes).
+  - [x] Request outcome: `done`; user-side visual retest recommended.
+- [x] Simplify main tab layout before Custom Effect work.
+  - [x] Analyze: user wanted the unused `Advanced` and `Switches/Vars` tabs removed and the `Legality` tab converted into a compact button.
+  - [x] Implement: stopped adding `Switches/Vars`, raw `Advanced`, and `Legality` tabs to the main notebook.
+  - [x] Implement: added top-toolbar `Legality Check...` button that opens the legality report in a dialog with `Run Again` and `Close`.
+  - [x] Implement: guarded `refresh_all_tabs()` so it no longer assumes removed Switch/Variable/Advanced widgets exist.
+  - [x] Implement: kept `CustomItem` visible as a normal tab instead of hiding it behind advanced mode.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke confirmed notebook tabs are `Trainer`, `Party`, `Team Builder`, `Damage`, `Bag`, `Dex`, `CustomItem`, and `Legality Check` opens a dialog.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 15:13:30`, `11,516,129` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 15:13:32`, `13,478,036` bytes).
+  - [x] Request outcome: `done`; user-side visual retest recommended on the main tab bar.
+- [x] Analyze remaining Custom Item work after SearchableTooltipPicker fix.
+  - [x] Analyze: checked `CURRENT_STATE.md`, `TASKS.md`, Custom Item runtime patch report, manifest, effect pool, and baked custom item detector.
+  - [x] Analyze: runtime patch report is `ok`; bridge v2 is installed/current, patch is before `Main`, manifest has 2 items, runtime data exists, and warnings are none.
+  - [x] Analyze: effect pool has 172 entries: 53 supported, 96 partial, 23 advanced; advanced effects remain intentionally not auto-compiled.
+  - [x] Analyze: baked detector shows manifest-linked baked `DRAGONSOUL` remains in `Data/items.dat`, with no orphan baked item IDs.
+  - [x] Implement: No code changes.
+  - [x] Request outcome: `done`; recommendation is to treat current Custom Item core as tool-side complete and prioritize user-side validation plus optional cleanup/hardening.
+- [x] Suppress legacy floating tooltip while SearchableTooltipPicker is active.
+  - [x] Analyze: user screenshot showed the editor-owned picker was open, but the old Party floating tooltip still appeared on top of the picker for Party Ability.
+  - [x] Analyze: `_register_description_widget` focus/hover handlers and the legacy combo-context tooltip path could still call `_show_party_tooltip` for non-species picker comboboxes.
+  - [x] Implement: Party/Bag description focus/hover now updates the description state but suppresses floating tooltip windows when the event widget uses `SearchableTooltipPicker`.
+  - [x] Implement: legacy combo-context tooltip display, Tcl popdown motion handling, and tooltip polling now explicitly no-op for picker-managed comboboxes.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke confirmed `pk_item_combo`, `bag_item_combo`, and `custom_item_base_source_combo` still open the picker and do not show `_party_tooltip_window` after focus.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 14:16:00`, `11,514,611` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 14:16:03`, `13,476,957` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on Party Ability picker.
+- [x] Fix Spanish detail descriptions in SearchableTooltipPicker.
+  - [x] Analyze: user reported Spanish still visible after label fix; smoke test confirmed the picker side detail panel still showed Spanish descriptions for `Anger Shell`, `Absorb`, and `Ability Shield`.
+  - [x] Implement: picker fast detail path now translates raw item/move/ability descriptions through `Text_english_game/*_DESCRIPTIONS.txt` before display.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke test confirmed picker details show English descriptions for `Anger Shell`, `Absorb`, and `Ability Shield`.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 13:57:46`, `11,513,523` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 13:57:49`, `13,475,087` bytes).
+  - [x] Request outcome: `done`; user-side retest needed on picker detail panel.
+- [x] Fix Spanish labels in SearchableTooltipPicker.
+  - [x] Analyze: user reported picker rows were showing Spanish labels. Smoke test confirmed ability picker rows such as `Abalorio Debacle`, `Acometida`, `Camorrista`, `Coleóptero`, and `Coraza Ira`.
+  - [x] Implement: added cached `Text_english_game/*_NAMES.txt` translation-file lookup for picker-visible item/move/ability names.
+  - [x] Implement: ability, move, and item English label helpers now translate localized display names before falling back, and ability helper handles localized labels returned from `abs_en.txt`.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke test confirmed ability picker rows now include `Beads of Ruin`, `Blitz`, `Permafrost`, `Striker`, `Insectate`, and `Anger Shell`, with no tested Spanish labels in the first 45 rows.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 11:55:34`, `11,513,105` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 11:55:36`, `13,475,372` bytes).
+  - [x] Request outcome: `done`; user-side retest needed on the visible picker rows.
+- [x] Fix SearchableTooltipPicker v1 lag and Party activation gap.
+  - [x] Analyze: user reported CustomItem still had cursor/editor lag and Party still did not show the picker.
+  - [x] Analyze: measured first detail generation at about 180-300ms for several item/move/ability rows because the picker rendered row-0 detail synchronously on open/search and used the heavy mechanics-summary tooltip path.
+  - [x] Implement: non-species tooltip combobox clicks now always open the editor-owned picker and return `break`, suppressing the native combobox popdown more reliably on Party and other tabs.
+  - [x] Implement: picker open/search is lazy and no longer renders row detail on open unless the typed value exactly matches a row.
+  - [x] Implement: picker detail uses the fast description path and caches by combo+label; CustomItem effect move/ability first-detail timing dropped from about 177-291ms to about 0.02-0.03ms in hidden smoke tests.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke test confirmed `species_contexts = 0`, Party picker opens with 806 rows and no initial heavy detail render, and first-detail timings are about 0.02-0.03ms for tested Party/CustomItem rows.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 11:35:50`, `11,511,481` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 11:35:52`, `13,474,656` bytes).
+  - [x] Request outcome: `done`; user-side retest needed on CustomItem and Party.
+- [x] Implement SearchableTooltipPicker v1 for non-species tooltip dropdowns.
+  - [x] Analyze: user approved the editor-owned searchable picker direction and requested species be removed from current tooltip fields while all other tooltip fields keep tooltip behavior.
+  - [x] Implement: species tooltip contexts are skipped, and Party species description-widget hover/focus tooltip binding is disabled while normal species search/description updates remain.
+  - [x] Implement: non-species tooltip-enabled comboboxes now open an editor-owned `Toplevel` picker with listbox, scrollbar, and side detail panel instead of relying on native `ttk.Combobox` popdown hover.
+  - [x] Implement: picker row hover updates detail before selection; typing/searching filters the list and exact/full matches show detail before focus-out/selection confirmation.
+  - [x] Implement: tooltip/detail text uses the shared resolver and caches by combo+label after first resolution; no cache prewarm runs when opening the picker.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: hidden Tk smoke test built the app, confirmed `species_contexts = 0`, opened Party Held Item picker with 806 rows, and populated detail text.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 11:07:19`, `11,511,250` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 11:07:22`, `13,473,852` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on CustomItem, Party Held Item, and Bag Item.
+- [x] Analyze alternate solution for dropdown-list hover tooltips after native/popup regressions.
+  - [x] Analyze: user requirement is still unmet; text resolution works, but native `ttk.Combobox` popdown hover is unreliable on Tk `8.6.12`/win32 and the hacked custom popup/prewarm path caused freezes.
+  - [x] Analyze: inspected the current tooltip stack and counted 29 registered tooltip-enabled combobox contexts across Party, Team Builder, Damage, Bag, and CustomItem.
+  - [x] Implement: No code changes; documented the recommended architecture shift to a reusable editor-owned searchable picker/detail dropdown with precomputed tooltip cache.
+  - [x] Verification: analysis-only; no compile/rebuild required because source behavior was not changed.
+  - [x] Request outcome: `done`; recommended next implementation is a controlled picker prototype, not another native popdown patch.
+- [x] Restore CustomItem-only dropdown hover tooltip path after rollback.
+  - [x] Analyze: after disabling the global custom popup/prewarm approach, CustomItem effect dropdowns lost the previously working tooltip bridge too.
+  - [x] Implement: kept native combobox behavior globally, but re-enabled the Tcl popdown tooltip bridge only for CustomItem effect and normalized effect-pool combobox contexts.
+  - [x] Implement: left typed/full-value combobox tooltip behavior intact and did not re-enable the freezing custom popup/prewarm path for Party/Bag/global dropdowns.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 10:20:23`, `11,506,712` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 10:20:25`, `13,469,613` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed in CustomItem tab.
+- [x] Disable custom tooltip popup dropdown after UX regression.
+  - [x] Analyze: user reported the custom popup/prewarm approach was worse: opening dropdown could freeze the editor and Party still did not show row tooltip.
+  - [x] Implement: disabled arrow-click interception for tooltip-enabled comboboxes, returning dropdowns to native `ttk.Combobox` behavior.
+  - [x] Implement: disabled Tcl popdown rebind from combobox activity so dropdown open no longer runs custom popup/prewarm/list-wide tooltip work.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 08:55:28`, `11,507,403` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 08:55:30`, `13,469,712` bytes).
+  - [x] Request outcome: `done`; dropdown-list hover tooltip remains pending for a different design.
+- [x] Prewarm popup tooltip cache in small chunks.
+  - [x] Analyze: user observed first hover on a row can lag, but revisiting the same row is fast, matching cache-miss behavior.
+  - [x] Implement: when custom tooltip popup opens, schedule cache prewarming for visible/nearby rows first, then remaining rows in small chunks.
+  - [x] Implement: prewarm stops automatically when the popup closes and uses the fast popup tooltip path.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 08:51:41`, `11,506,478` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 08:51:43`, `13,469,306` bytes).
+  - [x] Request outcome: `done`; user-side retest needed for first-hover responsiveness.
+- [x] Use fast popup tooltip path to avoid hover stalls.
+  - [x] Analyze: popup hover was still expensive because the full combo tooltip path computed numeric summaries/mechanics and entity-description fallbacks synchronously on row changes.
+  - [x] Implement: popup hover now uses `_fast_combo_popup_tooltip_text`, which reads direct catalog/manifest descriptions and skips mechanics summary parsing.
+  - [x] Implement: added `_combo_popup_fast_tooltip_cache` with invalidation on combo value/context changes.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 08:34:09`, `11,505,236` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 08:34:12`, `13,468,156` bytes).
+  - [x] Request outcome: `done`; user-side retest needed for Party/Bag visibility and hover responsiveness.
+- [x] Fix popup tooltip performance and Bag item resolver.
+  - [x] Analyze: user reported Party/Bag item dropdowns showed no tooltip and working tabs could stall when moving across rows.
+  - [x] Implement: added combo tooltip text cache keyed by combo+label and invalidated it when combo values/context change.
+  - [x] Implement: popup hover now avoids recomputing tooltip text while the pointer remains on the same row.
+  - [x] Implement: Bag item tooltip context now resolves through `_bag_item_label_to_id` via `resolve_selected_bag_item_id` instead of trying to resolve English labels directly.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 08:16:53`, `11,505,020` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 08:16:57`, `13,467,372` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on Party and Bag item dropdowns.
+- [x] Fix custom popup tooltip row tracking.
+  - [x] Analyze: user reported custom popup tooltip felt locked to the first/current row, likely because the tooltip window was appearing under the pointer and stealing subsequent listbox hover events.
+  - [x] Implement: custom popup row lookup now uses Tk `@x,y` indexing instead of nearest-row guessing.
+  - [x] Implement: tooltip for popup rows now appears beside the popup list and updates on every motion, avoiding cursor/list overlap.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 02:03:34`, `11,500,143` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 02:03:36`, `13,462,414` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on Held Item dropdown.
+- [x] Replace tooltip-enabled combobox arrow dropdown with custom hoverable popup list.
+  - [x] Analyze: native `ttk.Combobox` dropdown hover remained unreliable and Tcl/polling attempts degraded smoothness; typed/full-value tooltip path already worked.
+  - [x] Implement: for comboboxes with registered tooltip context, clicking the arrow area now opens a custom `tk.Listbox` popup owned by the editor instead of relying on the native popdown.
+  - [x] Implement: custom popup list rows show the shared tooltip on hover and commit selection through the same combobox selected-event path.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 01:55:56`, `11,503,213` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 01:55:59`, `13,465,625` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on Held Item dropdown.
+- [x] Re-apply Tcl combobox popdown hover binding after dropdown opens.
+  - [x] Analyze: typed/full-value tooltip works and Tcl bridge was added, but hover still did not show; likely Tk posts/rebuilds/resets internal popdown bindings when the dropdown opens.
+  - [x] Implement: `_on_combo_tooltip_activity` now ensures Tcl popdown tooltip binding is applied after combobox activity/open, including delayed re-apply after click.
+  - [x] Implement: Tcl commands are reused per combo/listbox path and binding scripts are only appended if missing, avoiding duplicate callback buildup.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 01:42:37`, `11,499,850` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 01:42:39`, `13,462,465` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on Held Item dropdown.
+- [x] Add Tcl-level combobox popdown hover tooltip bridge.
+  - [x] Analyze: user confirmed typed/full-value tooltip appears, so tooltip text resolution/display is OK; only hover events inside the open dropdown list were not reaching the tooltip path.
+  - [x] Implement: bound the internal `ttk::combobox::PopdownWindow` listbox directly at Tcl level for `<Motion>/<Leave>/<Unmap>/<ButtonPress>`.
+  - [x] Implement: added `_on_combo_popdown_tcl_motion` to resolve the row from Tcl `%x/%y/%X/%Y` coordinates and show the shared combo tooltip near the pointer.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 01:29:24`, `11,499,970` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 01:29:26`, `13,461,515` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on Held Item dropdown.
+- [x] Fix global combobox tooltip poll being canceled when dropdown opens.
+  - [x] Analyze: user screenshot still showed no Held Item dropdown tooltip after the polling rewrite, indicating the poll was not staying active while the popdown was open.
+  - [x] Analyze: opening a `ttk.Combobox` popdown can trigger combobox `FocusOut`; previous code immediately stopped tooltip polling on `FocusOut`, so the hover poll could be canceled before reading any row.
+  - [x] Implement: changed combobox tooltip `FocusOut` handling to delay the check and keep/restart polling when the popdown is still open.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-07 01:19:26`, `11,497,459` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-07 01:19:28`, `13,460,322` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on Held Item dropdown.
+
+## Done (2026-05-06)
+- [x] Revise global combobox tooltip implementation after failed hover test.
+  - [x] Analyze: user screenshot showed the previous event-driven popdown hover approach did not display tooltip on Held Item rows and could leave tooltip state stuck.
+  - [x] Implement: removed the per-text delayed tooltip timers and removed reliance on popdown listbox `<Motion>/<Leave>` for tooltip display.
+  - [x] Implement: replaced hover detection with a bounded polling loop while the combobox has focus/dropdown open; it reads pointer position over the popdown listbox, resolves the hovered row, and hides on select/Escape/focus-out/popdown close.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 23:40:34`, `11,496,400` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 23:40:36`, `13,458,916` bytes).
+  - [x] Request outcome: `done`; user-side visual retest needed on the exact dropdown.
+- [x] Implement global combobox tooltip while browsing/searching.
+  - [x] Analyze: existing popdown hover tooltip logic was CustomItem-effect-specific, while typed/search text did not show a tooltip until selection/focus confirmation.
+  - [x] Implement: added shared combobox tooltip context registration/resolution for tooltip-enabled dropdowns.
+  - [x] Implement: popdown row hover now shows item/move/ability/nature/species/custom-effect details before selection; typed/search text that resolves to a full label can show the same tooltip before focus-out/selection confirmation.
+  - [x] Implement: registered initial contexts for Party, Team Builder, Damage, Bag item, CustomItem base source, legacy effect source, and normalized effect pool dropdowns.
+  - [x] Verification: compile checks passed for GUI/game-data/custom-item modules.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 22:42:57`, `11,494,704` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 22:43:00`, `13,457,457` bytes).
+  - [x] Implement: updated `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` with the completed global tooltip checklist rows.
+  - [x] Request outcome: `done`; GUI visual hover smoke test remains user-side.
+- [x] Harden supported/partial pool compiler coverage for Custom Item runtime effects.
+  - [x] Analyze: scan found 172 pool effects (`53` supported, `96` partial, `23` advanced); compiler already covered many Phase 2 groups but full compile exposed Black Sludge param alias gaps and Python f-string logging bugs.
+  - [x] Implement: updated `tools/custom_item/hook_compiler.py` to accept `required_type`/`excluded_type` aliases for Black Sludge-style type branches.
+  - [x] Implement: fixed Python f-string escaping for generated Ruby `#{e}` error logging in weather/status heal compiler paths.
+  - [x] Verification: synthetic compile generated handlers for HP threshold berries, status cure berries, pinch stat berries, Rocky Helmet/contact, Weakness Policy/on-hit, Flame/Toxic Orb, and Black Sludge Poison/non-Poison branches.
+  - [x] Verification: compiling all supported/partial pool effects excluding intentionally ability-bridge-routed `SHEER_FORCE_MODIFIER` produced `not_compiled_count=0`.
+  - [x] Verification: compile checks passed; current runtime patch inspect remains `ok`, source current, zero warnings.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 21:10:09`, `11,488,655` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 21:10:12`, `13,451,136` bytes).
+  - [x] Request outcome: `done`; in-game validation remains user-side/pending.
+- [x] Expand Excel checklist into full project editor-tool tracker.
+  - [x] Analyze: user wanted the existing Excel checklist to include everything already done before, not only the Custom Effect Builder plan.
+  - [x] Implement: regenerated `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` as a project-wide workbook sourced from `TASKS.md`, while keeping Custom Effect Builder plan rows.
+  - [x] Implement: workbook now has `Summary`, `Project Checklist`, `Custom Effect Builder`, and `Legend` sheets with 714 project rows and 67 Custom Effect Builder plan/milestone rows.
+  - [x] Implement: updated checklist rule wording so the workbook is the project editor-tool checklist and must be updated for all tracked project/editor-tool completions, including analyze-only work.
+  - [x] Request outcome: `done`.
+- [x] Analyze-only solution proposal: reusable custom effect authoring.
+  - [x] Analyze: user wants to create new effects with a workflow similar to creating custom items, so effects should become reusable manifest entries rather than one-off hardcoded patcher edits.
+  - [x] Analyze: revised requirement is field-by-field selection from curated lists such as trigger timing and effect type, not raw hook/template editing.
+  - [x] Analyze: added requirements for multi-game compatibility, inline/tooltip field explanations, and dropdown-row hover tooltips globally across the tool.
+  - [x] Implement: saved plan in `CUSTOM_EFFECT_BUILDER_PLAN.md` and Excel checklist in `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx`; no runtime code changes.
+  - [x] Implement: added persistent rule to update the Excel checklist whenever a checklist item is completed, including analyze-only completions.
+  - [x] Request outcome: `done`; implementation remains pending user approval.
+- [x] Fix CustomItem manual description not showing in Party Held Item tooltip.
+  - [x] Analyze: manifest saved the user's `FIGHTERSPIRIT` prose + `Mechanics:` description, but Party held-item tooltip rebuilt a mechanics-only string whenever effect mappings existed.
+  - [x] Implement: changed manifest custom item tooltip text to prefer saved `item_spec.description` and only fallback to generated mechanics if description is empty.
+  - [x] Implement: effect selection changes no longer forcibly overwrite manually edited Description text; explicit `Regenerate Description` still overwrites on demand.
+  - [x] Verification: compile checks passed; manifest contains the user's `FIGHTERSPIRIT` prose; runtime patch inspect remains `ok` with source match and zero warnings.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 16:47:22`, `11,489,927` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 16:47:24`, `13,452,067` bytes).
+  - [x] Request outcome: `done`; GUI hover visual confirmation remains user-side after reopening latest build.
+- [x] Implement Phase 3 CustomItem Runtime Safety + Backup/Restore initial version.
+  - [x] Analyze: custom item apply/delete already had transactional snapshots, but there was no user-facing runtime patch report or safe remove/restore flow for `ZZ_CustomItemPatch`.
+  - [x] Implement: added `inspect_custom_item_runtime_patch()` with manifest/runtime/script status, patch index vs `Main`, bridge version, generated-source match, warnings, compiled effect summary, and lightweight Ruby block inspection.
+  - [x] Implement: added `remove_custom_item_runtime_patch()` to remove `ZZ_CustomItemPatch` from `Data/Scripts.rxdata` with rollback snapshots while keeping manifest/runtime data by default.
+  - [x] Implement: added `format_custom_item_patch_report()` and wired CustomItem tab button `Runtime Patch...` with Refresh, Remove Patch, and Rollback actions.
+  - [x] Verification: compile checks passed for `tools/custom_item/patcher.py`, `tools/pokemon_indigo_save_editor_gui.py`, `tools/custom_item/effect_pool.py`, `tools/custom_item/hook_compiler.py`, and `tools/pokemon_indigo_game_data.py`.
+  - [x] Verification: current real game root report is OK: patch installed at index `452`, `Main` index `453`, bridge v2 installed, source current, runtime data exists, static inspection OK.
+  - [x] Verification: temporary copied-root cycle passed: inspect -> remove -> no-op second remove -> rollback -> remove -> reapply; reapply restored patch before `Main` and matched generated source.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 16:28:00`, `11,487,961` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 16:28:02`, `13,449,511` bytes).
+  - [x] Request outcome: `done`; GUI visual smoke test remains user-side.
+- [x] Harden release build process cleanup to avoid Windows process-scan hangs.
+  - [x] Analyze: previous lock-cleanup pass used `Get-CimInstance Win32_Process`, and local checks showed WMI/tasklist-style process detail queries could timeout for 20s+ on this machine.
+  - [x] Implement: updated `tools/build_save_editor_exe.ps1` so `Stop-LocalBuildBlockers` uses bounded `Get-Process` name checks instead of WMI/CIM command-line scans.
+  - [x] Implement: process cleanup now skips the current script process, stops only matching local tool executables under `tools`, logs stopped PIDs, waits briefly, and keeps guarded retry deletion for `tools/dist`, `tools/build`, and the generated spec.
+  - [x] Verification: PowerShell parser check passed for `tools/build_save_editor_exe.ps1`.
+  - [x] Verification: `tools\build_release.bat` completed successfully without the prior hang.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 16:19:41`, `11,479,193` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 16:19:43`, `13,441,618` bytes).
+  - [x] Request outcome: `done`.
+- [x] Fix custom held-item descriptions and switch generated custom descriptions to mechanics-only.
+  - [x] Analyze: Party selected held-item description used vanilla item description lookup, and combobox popdown hover only supported CustomItem effect picker tooltips.
+  - [x] Implement: added manifest-aware custom item description formatter sourced from `effect_spec/resolved_pool_effects`.
+  - [x] Implement: Party held-item selected tooltip and Party held-item dropdown popdown hover now show custom item mechanics for manifest items.
+  - [x] Implement: CustomItem description generator now emits only `Mechanics:` bullet lines such as stat stage raises, damage multipliers, drain/heal amounts, and flinch chance.
+  - [x] Implement: migrated current `DRAGONSOUL` and `FIGHTERSPIRIT` manifest/runtime descriptions to mechanics-only text.
+  - [x] Verification: compile checks passed; manifest no longer contains `Auto-generated from selected effects`; `Data/items.dat` unchanged after this task.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 15:42:41`, `11,476,859` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 15:42:43`, `13,439,589` bytes).
+  - [x] Request outcome: `done`; visual hover confirmation remains user-side.
+- [x] Cleanup orphan baked custom item and fix Party held-item manifest visibility.
+  - [x] Analyze: detector found orphan baked `ROCKYTOXICHELMET`; Party Held Item initial dropdown was built from `catalogs.items_by_id` only, so baked custom items appeared but manifest-only items could be missing.
+  - [x] Implement: ran explicit orphan cleanup through `cleanup_baked_custom_items(..., remove_orphans=True, remove_manifest_linked=False, dry_run=False)`.
+  - [x] Implement: updated Party initial held-item source to silent-load manifest, detect baked custom items, and use merged vanilla + manifest held-item options.
+  - [x] Implement: fixed manifest item label/pocket helper to read `entry.item_spec`, so `FIGHTERSPIRIT` displays as `Fighter's Spirit`.
+  - [x] Verification: `ROCKYTOXICHELMET` removed from `Data/items.dat`; backup created at `tools/custom_item/backups/pre-custom-item-cleanup/Data/items.dat.20260506-150635.bak`.
+  - [x] Verification: detector now reports orphan baked none and baked+manifest `DRAGONSOUL`.
+  - [x] Verification: Party held-item option data contains `Dragon's Soul` and `Fighter's Spirit`, and does not contain `ROCKYTOXICHELMET`.
+  - [x] Verification: compile checks passed; rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 15:08:13`, `11,474,162` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 15:08:15`, `13,436,384` bytes).
+  - [x] Request outcome: `done`; optional manifest-linked `DRAGONSOUL` cleanup remains separate/deferred.
+- [x] Analyze-only explanation: orphan baked custom item cleanup.
+  - [x] Analyze: cleanup means removing legacy custom-generated item records from `Data/items.dat` when they are no longer present in `custom_item_manifest.json`.
+  - [x] Implement: No code changes.
+  - [x] Request outcome: `done`; actual cleanup execution remains `deferred` until user explicitly approves editing `Data/items.dat`.
+- [x] Fix save dialog custom item warning for manifest-only custom items.
+  - [x] Analyze: `normalize_known_ids()` used vanilla-only `canonical_item_id`, while Legality already treated manifest custom IDs as valid.
+  - [x] Implement: added a silent manifest cache refresh and a manifest-aware item resolver for save normalization.
+  - [x] Implement: Party held items and Bag entries now accept manifest item IDs such as `FIGHTERSPIRIT`; true unknown item IDs remain unresolved.
+  - [x] Verification: compile checks passed; helper resolves `FIGHTERSPIRIT`/lowercase `fighterspirit` to `FIGHTERSPIRIT` and keeps `NOT_A_REAL_ITEM` unknown.
+  - [x] Verification: `Data/items.dat` unchanged (`2026-05-02 13:59:33`); rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 14:45:00`, `11,473,933` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 14:45:02`, `13,436,301` bytes).
+  - [x] Request outcome: `done`; user-side confirmation of the popup text is still `deferred`.
+- [x] Improve CustomItem Description editor usability.
+  - [x] Analyze: long generated effect descriptions were cramped in the 4-line text box and had no dedicated scrollbar in the editor row.
+  - [x] Implement: wrapped the Description text widget in its own frame, added a vertical scrollbar, and increased text height from 4 to 6 lines.
+  - [x] Verification: compile checks passed.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 11:45:09`, `11,473,084` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 11:45:11`, `13,435,871` bytes).
+  - [x] Request outcome: `done`.
+- [x] Fix move-derived multi-stat boost pool mappings.
+  - [x] Analyze: game source confirms `HONECLAWS` uses `RaiseUserAtkAcc1` (`ATTACK + ACCURACY`) and `BULKUP` uses `RaiseUserAtkDef1` (`ATTACK + DEFENSE`); tool pool was Attack-only.
+  - [x] Implement: updated pool entries for Hone Claws, Bulk Up, Calm Mind, Dragon Dance, Coil, and Quiver Dance to use `stats: [...]`.
+  - [x] Implement: bumped fixed runtime bridge to v2 and added multi-stat handling for `raise_user_stat_stage`.
+  - [x] Implement: updated hook compiler multi-stat support for legacy/combined compiler paths.
+  - [x] Implement: regenerated custom item runtime/manifest; `FIGHTERSPIRIT` now carries Hone Claws Attack+Accuracy and Bulk Up Attack+Defense runtime params.
+  - [x] Verification: compile checks passed; `ZZ_CustomItemPatch` in `Data/Scripts.rxdata` contains bridge v2 and `stat_list`; `Data/items.dat` unchanged.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` and `tools/installer/dist/PokemonSaveEditor_Setup.exe`.
+  - [x] Request outcome: `done`; in-game retest remains `deferred` to user.
+- [x] Implement Battle Overlay Installer v1.
+  - [x] Analyze: overlay should be a separate runtime UI installer, not part of custom item manifest/data writing; multi-game support needs adapter detection.
+  - [x] Implement: added `tools/battle_overlay_patcher.py` with inspect/apply/remove APIs; added top-toolbar `Battle Overlay...` dialog in `tools/pokemon_indigo_save_editor_gui.py`.
+  - [x] Implement: `scripts_rxdata` adapter can install/update/remove `ZZ_BattleStateOverlay` with timestamped backups.
+  - [x] Implement: `rb_file`/Fusion-style layouts are detected and reported but not applied until safe load order is known.
+  - [x] Verification: compile checks passed; apply/already-current/remove test passed on a temporary copy of `Data/Scripts.rxdata`.
+  - [x] Verification: rebuilt `tools/PokemonIndigoSaveEditor.exe` and `tools/installer/dist/PokemonSaveEditor_Setup.exe`.
+  - [x] Request outcome: `done` for installer/button v1; real-game overlay application and in-battle UI polish remain `deferred` to user-side test.
+
+## Done (2026-05-05)
+- [x] Analyze-only diagnosis: `Saved` popup unresolved `party[4].item:FIGHTERSPIRIT`.
+  - [x] Analyze: warning comes from save-editor `normalize_known_ids()` using vanilla-only `canonical_item_id`; game can still load/use manifest-only custom item through fixed runtime bridge.
+  - [x] Implement: No code changes.
+  - [x] Request outcome: `done`; code fix added to `Next`.
+- [x] Analyze-only solution design: live battle stat/stage/screen visibility.
+  - [x] Analyze: live battle stat stages and side/field screens are runtime memory, not reliable normal save data; best options are runtime telemetry file + tool Battle Monitor tab, or an in-game overlay.
+  - [x] Implement: No code changes.
+  - [x] Request outcome: `done`; design/implementation task added to `Next`.
+- [x] Analyze-only refinement: user-preferred in-game grouped battle overlay.
+  - [x] Analyze: user wants Pokemon Showdown-like in-battle labels but clearer, grouped by related effect categories with mechanical summaries.
+  - [x] Implement: No code changes.
+  - [x] Request outcome: `done`; refined overlay requirements added to `Next`.
+- [x] Analyze-only feasibility: one-click multi-game overlay installer button.
+  - [x] Analyze: feasible for similar Pokemon Essentials games if the overlay is split into shared runtime payload plus per-game adapter; Indigo can patch `Scripts.rxdata`, Fusion-like layouts should use an `.rb` file adapter.
+  - [x] Implement: No code changes.
+  - [x] Request outcome: `done`; multi-game overlay installer requirements added to `Next`.
+- [x] Implement fixed runtime bridge v1 for Custom Item Engine.
+  - [x] `tools/custom_item/patcher.py`:
+    - [x] Added `FIXED_RUNTIME_BRIDGE_VERSION = 1`.
+    - [x] Added parallel runtime data export path: `tools/custom_item/data/custom_item_runtime.rb`.
+    - [x] Added stable `ZZ_CustomItemPatch` bridge that reads runtime data at game boot/runtime.
+    - [x] Added runtime parallel `GameData::Item.try_get` fallback so manifest-only items can resolve as item objects without writing `Data/items.dat`.
+    - [x] Added runtime icon lookup from `tools/custom_item/assets/items/<ITEM_ID>.png`.
+    - [x] Added bridge registration for clone source buckets, ability bridge, move additional-effect bridge, end-of-round healing, after-move drain/stat/flinch effects, Speed Boost-style end-of-round stat raise, conditional damage multipliers, and speed multipliers.
+    - [x] Changed Apply/Delete flow to write `custom_item_runtime.rb` and update `Data/Scripts.rxdata` only when fixed bridge source is missing/outdated.
+    - [x] Added runtime data rollback snapshot support.
+  - [x] Verification:
+    - [x] Compile check passed: `python -m py_compile tools/custom_item/patcher.py tools/custom_item/hook_compiler.py tools/custom_item/effect_pool.py tools/pokemon_indigo_save_editor_gui.py tools/pokemon_indigo_game_data.py`.
+    - [x] Re-applied current manifest items and generated `tools/custom_item/data/custom_item_runtime.rb`.
+    - [x] Static verify: generated `ZZ_CustomItemPatch` contains fixed bridge/version/runtime reader and no hardcoded `:DRAGONSOUL` / `:FIGHTERSPIRIT` item entries.
+    - [x] Static verify: second Apply after bridge install returned `scripts_updated=False` for `DRAGONSOUL` and `FIGHTERSPIRIT`.
+    - [x] Static verify: `Data/items.dat` timestamp unchanged (`2026-05-02 13:59:33`).
+  - [x] Rebuild release outputs:
+    - [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-05-05 16:52:45`, `11,452,679` bytes)
+    - [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-05 16:52:47`, `13,414,307` bytes)
+  - [x] Request outcome: `done` for fixed runtime bridge v1; in-game bridge verification remains in `Next`/`Doing`.
+- [x] Analyze-only architecture explanation: fixed runtime bridge model.
+  - [x] Analyze: documented target model where `ZZ_CustomItemPatch` becomes a stable runtime reader/hook bridge and custom item changes live in parallel data files.
+  - [x] Implement: No code changes.
+  - [x] Request outcome: `done`; actual fixed runtime bridge implementation remains in `Next`.
+- [x] Logging rule update for important architecture explanations:
+  - [x] Analyze: current rules covered analyze-only requests but did not explicitly call out design explanations / architecture decisions as log-worthy project context.
+  - [x] Implement: updated `CURRENT_STATE.md` and `TASKS.md` rule text so future sessions must log important architecture explanations even without code changes.
+  - [x] Request outcome: `done`.
+- [x] Enforced parallel-only custom item persistence (no direct `items.dat` writes/removals in normal APIs).
+  - [x] `tools/custom_item/patcher.py`:
+    - [x] Added `ENFORCE_PARALLEL_CUSTOM_ITEM_MODE = True`.
+    - [x] Blocked `upsert_custom_item(..., bake_to_items_dat=True)` with explicit error.
+    - [x] Blocked `delete_custom_item(..., remove_from_items_dat=True)` with explicit error.
+    - [x] Blocked legacy APIs `upsert_custom_item_baked` and `delete_custom_item_baked`.
+    - [x] Added runtime parallel icon lookup helper in generated `ZZ_CustomItemPatch`:
+      - [x] resolve from `tools/custom_item/assets/items/<ITEM_ID>.png`
+      - [x] fallback remains `Graphics/UI/Party/icon_item` and `Graphics/Items/000`.
+  - [x] `tools/pokemon_indigo_save_editor_gui.py`:
+    - [x] Custom icon import destination changed from `Graphics/Items` to `tools/custom_item/assets/items`.
+    - [x] Item icon preview lookup now checks parallel icon path first.
+    - [x] UI copy updated to reflect enforced parallel-only mode.
+  - [x] Re-applied manifest items to regenerate `Data/Scripts.rxdata` with new runtime guard.
+  - [x] Compile check passed:
+    - [x] `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/patcher.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/pokemon_indigo_game_data.py`
+  - [x] Rebuild release outputs:
+    - [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-05-05 16:31:20`, `11,440,993` bytes)
+    - [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-05 16:31:22`, `13,403,775` bytes)
+  - [x] Request outcome: `done` (parallel-only policy enforced in code paths currently used by GUI/app flow).
+- [x] Party crash fix: `RuntimeError` / `Item_Sprites` / `filename is nil` when opening Pokemon Party.
+  - [x] Analyze: save inspection confirmed party held item IDs include manifest-only `:FIGHTERSPIRIT` (not in `Data/items.dat`), causing `GameData::Item.held_icon_filename` to return `nil`.
+  - [x] Implement: added runtime compatibility guard in generated `ZZ_CustomItemPatch` to fallback item icon paths:
+    - [x] `GameData::Item.held_icon_filename` -> fallback `Graphics/UI/Party/icon_item`
+    - [x] `GameData::Item.icon_filename` -> fallback `Graphics/Items/000`
+  - [x] Re-applied manifest items to regenerate `Data/Scripts.rxdata` patch with the new guard.
+  - [x] Verification:
+    - [x] Compile check passed: `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/patcher.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/pokemon_indigo_game_data.py`
+    - [x] Static verify passed: `ZZ_CustomItemPatch` now contains `custom_item_patch_held_icon_filename_old` and fallback paths.
+  - [x] Rebuild release outputs:
+    - [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-05-05 16:20:29`, `11,441,182` bytes)
+    - [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-05 16:20:31`, `13,403,739` bytes)
+  - [x] Request outcome: `done` for runtime crash mitigation; user-side in-game confirmation remains in `Doing`.
+- [x] Startup crash triage: `SDLError` on `Graphics/Pokemon/Front/VENUSAUR_female.png`.
+  - [x] Analyze: confirmed file exists but runtime crashed while loading the Venusaur female front sprite during title-intro flow.
+  - [x] Implement: backup + fallback replacement done (saved `Graphics/Pokemon/Front/VENUSAUR_female.png.bak_20260505_155647`, replaced active `VENUSAUR_female.png` with stable `VENUSAUR.png` copy).
+  - [x] Verification: replacement file loads via local image decode check; no Python source code changes in this task.
+  - [x] Request outcome: `done` for immediate crash mitigation; user-side boot verification remains in `Doing`.
+- [x] CustomItem UX: auto-generate `Item ID` from `Name` while typing.
+  - [x] Added Name -> Item ID slug generation with compact normalization (removes patterns like `'s`, strips special chars, uppercase alnum).
+  - [x] Added safe auto-sync behavior:
+    - [x] Auto-sync active for new/default flows.
+    - [x] Auto-sync disabled after manual Item ID edit (manual override).
+    - [x] Existing manifest entries keep stable Item ID when loaded.
+  - [x] Compile check passed: `python -m py_compile tools/pokemon_indigo_save_editor_gui.py`.
+  - [x] Rebuild release outputs:
+    - [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-05-05 15:31:28`, `11,439,409` bytes)
+    - [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-05 15:31:30`, `13,401,574` bytes)
+- [x] User request (auto-generate Item ID from Name; compact `'s` style cleanup) -> `done`.
+- [x] Fixed custom/base item separation to manifest-first mode and baked-item filtering:
+  - [x] `upsert_custom_item` default no longer writes `Data/items.dat` (`bake_to_items_dat=False`).
+  - [x] `delete_custom_item` default no longer removes from `Data/items.dat` (`remove_from_items_dat=False`).
+  - [x] Added explicit legacy bake modes: `upsert_custom_item_baked`, `delete_custom_item_baked`.
+  - [x] Added baked/orphan detection and cleanup utilities in patcher:
+    - [x] `detect_baked_custom_items`
+    - [x] `cleanup_baked_custom_items` (dry-run tested)
+  - [x] Added GUI helpers and routing:
+    - [x] `get_vanilla_item_options`
+    - [x] `get_custom_manifest_item_options`
+    - [x] `get_merged_held_item_options`
+    - [x] `detect_baked_custom_items`
+    - [x] `refresh_base_item_dropdowns`
+    - [x] `refresh_custom_manifest_list`
+    - [x] `refresh_held_item_dropdowns`
+  - [x] Added `Load Base Item` guard for blocked IDs (manifest custom + orphan baked custom).
+  - [x] Data verify result: detected `DRAGONSOUL` as baked+manifest and `ROCKYTOXICHELMET` as orphan baked in `Data/items.dat`.
+  - [x] Compile checks passed for required Python files.
+  - [x] Rebuilt release outputs:
+    - [x] `tools/PokemonIndigoSaveEditor.exe`
+    - [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] User request (fix baked custom/base separation + manifest mismatch handling + logs/state updates) -> `done`; manual user-side GUI/in-game verification and optional destructive cleanup execution -> `deferred`.
+- [x] Created `CURRENT_STATE.md` as context entry point for new AI sessions.
+- [x] Added context optimization rule in `TASKS.md` to read `CURRENT_STATE.md` first.
+- [x] User request (create CURRENT_STATE.md + update logs without runtime/source changes) -> `done`.
+- [x] Phase 2D Effect Library polish/configuration pass:
+  - [x] Added per-effect params configuration for selected normalized pool effects.
+  - [x] Saved non-default configured params through `selected_effect_params` alongside `selected_effect_ids`.
+  - [x] Merged configured params into pool effect definitions before runtime compilation.
+  - [x] Added params summary text to selected pool effect labels and detail panel.
+  - [x] Added `Configure` and `Reset Params` actions for selected pool effects.
+  - [x] Blocked Add for `advanced` and `unsupported` pool effects with explicit UI warning instead of adding them to compiled selected effects.
+  - [x] Compile check passed for modified Python files.
+  - [x] Rebuilt release outputs:
+    - [x] `tools/PokemonIndigoSaveEditor.exe`
+    - [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] User request (continue coding from prompt and update logs/prompt file) -> `done`; manual GUI/in-game verification and full Phase 2D replacement polish -> `deferred`.
+- [x] Read `custom_item_phase_prompts_vi.txt`, `TASKS.md`, and `WORKLOG.md` at user request to bootstrap current chat context.
+- [x] Analyze: confirmed current Custom Item Engine status, mandatory logging rules, active deferred GUI/in-game verification tasks, and remaining Phase 2D polish direction.
+- [x] Implement: No code changes.
+- [x] User request (read three project files) -> `done`.
+
+## Done (2026-05-03)
+- [x] Hotfix UI/cache separation for Custom Item tab:
+  - [x] `Load Base Item` now uses vanilla/base-game item sources only.
+  - [x] Manifest custom items are filtered out of the base item source dropdown and legacy item-effect source picker.
+  - [x] `_custom_load_base_item` now rejects manifest custom items as a safety guard.
+  - [x] Existing held-item live refresh behavior remains available for Party/Team Builder/Damage/Bag selectors.
+- [x] Phase 2D foundation implemented:
+  - [x] Added hook-based normalized pool effect library UI with Search/Source/Status/Hook filters.
+  - [x] Added normalized pool effect selection list and detail text.
+  - [x] GUI now saves direct pool selections via `selected_effect_ids`.
+  - [x] Auto-generated description includes normalized pool effect details.
+  - [x] Legacy Item/Move/Ability effect selectors retained for compatibility.
+- [x] Added `tools/custom_item/data/custom_effect_phase_plan.json` for advanced/unsupported effect planning.
+- [x] Compile check passed for modified Python files.
+- [x] Updated `custom_item_phase_prompts_vi.txt` to reflect completed hotfix and Phase 2D foundation; remaining phase prompts kept for future work.
+- [x] User request (hotfix + next phase + log/prompt updates) -> `done`; full Phase 2D polish/replacement UI and in-game verification -> `deferred`.
+
+## Done (2026-04-29)
+- [x] Recreated and logged `DRAGONSOUL` selected-effect runtime fix patch after previous download session expired.
+- [x] Treated user-selected `DRAGONSOUL` effect list as a concrete test case:
+  - [x] Items: `LEFTOVERS`, `BIGROOT`
+  - [x] Moves: `DRAININGKISS`, `FAKEOUT`, `NASTYPLOT`, `SWORDSDANCE`
+  - [x] Ability: `SPEEDBOOST`
+- [x] Added normalized pool effect `BIG_ROOT_DRAIN_MULTIPLIER`.
+- [x] Added normalized pool effect `SPEEDBOOST_END_OF_ROUND`.
+- [x] Added legacy source-to-pool aliases in `patcher.py` so current UI selections route into the hook-based engine.
+- [x] Kept `FAKEOUT` on legacy bridge because user reported it was already working.
+- [x] Added combined `AfterMoveUseFromUser` compiler path so `DRAININGKISS`, `BIGROOT`, `SWORDSDANCE`, and `NASTYPLOT` do not overwrite each other.
+- [x] Added `raise_user_stat_stage_end_of_round` compiler path for Speed Boost-style end-of-round stat raise.
+- [x] Fixed `speed_multiplier_if_weather` / `SpeedCalc` generated signature to use `proc { |item, battler, mult| ... next new_mult }`.
+- [x] Updated `custom_item_manifest.json` for `DRAGONSOUL` to include resolved pool effects for the selected test case and leave `FAKEOUT` as legacy bridge.
+- [x] Compile check passed: `python3 -S -m py_compile tools/custom_item/patcher.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py`.
+- [x] Full release rebuild/deploy -> `deferred` because uploaded mini package lacks full Windows build context.
+- [x] In-game retest after re-apply runtime patch -> `deferred` pending user test.
+
+## Done (2026-04-29)
+- [x] Implement Custom Item Effect Engine Phase 2A broad effect pool and routing groundwork.
+- [x] Expanded `tools/custom_item/data/custom_effect_pool.json` to 69 entries: 27 supported, 32 partial, 10 advanced.
+- [x] Added dynamic legacy UI routing in `tools/custom_item/patcher.py` so Item/Move/Ability selections can map into normalized pool effects by source kind/id.
+- [x] Allowed one source selection to route to multiple pool effects, e.g. paired branch effects such as Black Sludge-style behavior.
+- [x] Marked high-risk battle-flow effects as `advanced` and prevented auto-compilation in Phase 2A.
+- [x] Fixed generic `speed_multiplier` compiler signature in `tools/custom_item/hook_compiler.py` to use `proc { |item, battler, mult| next new_mult }`.
+- [x] Compile checks passed: `python3 -S -m py_compile tools/custom_item/patcher.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py`.
+- [x] User request (fix/expand remaining effects carefully and update logs) -> `done` for Phase 2A; literal full advanced battle-flow coverage -> `deferred`.
+
+## Done (2026-04-29)
+- [x] Fix no-restart custom item visibility after Apply Custom Item.
+  - [x] Merge custom manifest item entries into Party held-item dropdowns.
+  - [x] Merge custom manifest item entries into Team Builder item dropdowns and inline team-card item dropdowns.
+  - [x] Merge custom manifest item entries into Damage tab item dropdowns.
+  - [x] Merge custom manifest item entries into Bag pocket dropdown based on custom item pocket.
+  - [x] Refresh affected item option widgets immediately after custom item apply/delete/rollback.
+  - [x] Resolve/display custom manifest item IDs without waiting for full game-data remap or tool restart.
+- [x] Phase 2B ability-effect pool expansion.
+  - [x] Add supported weather speed ability effects: Swift Swim, Sand Rush, Slush Rush.
+  - [x] Add supported weather/status heal effects: Rain Dish, Ice Body, Poison Heal.
+  - [x] Add partial offensive modifiers: Huge Power, Pure Power, Technician, Adaptability, Guts.
+  - [x] Add partial defensive modifiers: Filter, Solid Rock, Thick Fat Fire/Ice branches.
+  - [x] Add advanced markers for high-risk battle-flow abilities: Intimidate, Moxie, Magic Guard, Wonder Guard, Prankster.
+  - [x] Extend hook compiler templates for weather/status healing and conditional ability-style damage modifiers.
+- [x] User request (no-restart dropdown refresh + Phase 2B) -> `done`; user-machine GUI/in-game verification -> `deferred`.
+
+## Done (2026-05-01)
+- [x] Phase 2C: Expand hook-based Custom Item Effect Engine with move-derived effect pool coverage.
+- [x] Confirmed `CHLOROPHYLL_SPEED_IN_SUN` already exists from Phase 2B and remains available as a `speed_calc` ability-derived effect.
+- [x] Expanded `custom_effect_pool.json` to 172 total entries: 90 move, 59 item, 23 ability.
+- [x] Added representative move-derived entries for self stat boosts, target stat drops, status application, flinch, drain, self-heal, recoil, weather start, and terrain start effects.
+- [x] Marked battle-flow-heavy moves (Protect/Substitute/Transform/Trick Room/multi-turn style moves) as `advanced` rather than auto-compiling them.
+- [x] Updated `hook_compiler.py` combined `AfterMoveUseFromUser` handler so multiple move-derived after-move effects for one custom item do not overwrite each other.
+- [x] Added combined after-move compiler support for `lower_target_stat_stage`, `apply_status_target`, `flinch_target`, `heal_user_fraction`, `recoil_percent_damage_dealt`, `start_weather`, and `start_terrain`.
+- [x] Compile check passed: `python3 -m py_compile patcher.py effect_pool.py hook_compiler.py pokemon_indigo_save_editor_gui.py`.
+- [x] Full Windows EXE rebuild/deploy -> `deferred` (not possible in this environment; user should rebuild or run GUI from source after copying patch).
+- [x] User request (continue Phase 2C and update logs) -> `done`; in-game verification -> `deferred`.
+
+## Done (2026-04-28)
+- [x] Implement Hook-based Custom Item Effect Engine (Phase 1):
+  - [x] Create `tools/custom_item/data/custom_effect_pool.json` with 7 normalized Phase 1 effects.
+  - [x] Create `tools/custom_item/effect_pool.py` (EffectPool class, loader, validator).
+  - [x] Create `tools/custom_item/hook_compiler.py` (compile_pool_effects + 5 template generators).
+  - [x] Edit `tools/custom_item/patcher.py`: pool resolution in `_resolve_effect_spec`, compiler dispatch in `_build_custom_script_source`, `sheer_force_modifier` routed through ability_active_bridge, coverage analyzer fixed to separate native vs bridge support.
+  - [x] Edit `tools/custom_item/__init__.py`: export `effect_pool` and `hook_compiler`.
+  - [x] Re-apply DRAGONSOUL with `selected_effect_ids` for all 7 pool effects.
+- [x] Compile checks: `patcher.py`, `effect_pool.py`, `hook_compiler.py` -> pass.
+- [x] DRAGONSOUL apply check: `unsupported_reason=""`, all 7 effects resolved.
+- [x] Patch inspection: all 6 compiler-generated pool effects present in `ZZ_CustomItemPatch`; SHEERFORCE in ability bridge; once_per_battle trackers and defined? guards in place.
+- [x] Rebuild release outputs after Hook Engine Phase 1:
+  - [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-28 11:57`, `10,658,731` bytes)
+  - [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-28 11:57`, `12,620,430` bytes)
+- [x] User request (Hook-based Custom Item Effect Engine Phase 1 + rebuild) -> `done`.
+- [x] In-game runtime verification of 6 pool effects on DRAGONSOUL -> `deferred` pending user test.
+
+## Done (2026-04-26)
+- [x] Deep-audit native battle effect pipeline (moves/abilities/items) and compare with current Custom Item logic.
+- [x] Confirmed native battle call paths from live scripts:
+- [x] move effect flow (`pbProcessMoveHit`, `pbEffectAgainstTarget`, `pbEffectGeneral`, `pbAdditionalEffectChance`, `pbAdditionalEffect`)
+- [x] ability/item registries and trigger dispatch (`Battle::AbilityEffects`, `Battle::ItemEffects`, handler hash trigger/copy)
+- [x] active-state checks (`hasActiveAbility?`, `itemActive?`)
+- [x] Compared against Custom Item runtime implementation in `ZZ_CustomItemPatch` + generator `tools/custom_item/patcher.py`.
+- [x] Identified major mismatch points:
+- [x] ability bridge scope is narrow (currently only `hasActiveAbility?` + `triggerEndOfRoundHealing` replay)
+- [x] generic move bridge wrapper does not preserve `pbProcessMoveHit` return value
+- [x] coverage analyzer over-claims generic move support and contains dead `runtime_move_missing_function_codes` counter
+- [x] User request (research + compare + classify reasonable/unreasonable points, including suspicious-point analysis) -> `done`.
+- [x] Clarify move grouping model from latest analysis/export (question: grouped by battle-call path or not).
+- [x] Confirmed current move grouping in Custom Item workflow is by mapping path:
+- [x] direct move runtime template (`move_runtime_templates`)
+- [x] function-code template (`move_function_runtime_templates`)
+- [x] generic bridge (`move_additional_effect_bridge`)
+- [x] item fallback clone (`move_item_fallback`)
+- [x] Confirmed this differs from item/ability bucket registries (`ItemHandlers` / `Battle::ItemEffects` / `Battle::AbilityEffects`) used in script scans.
+- [x] User request (clarify move grouping model) -> `done`.
+- [x] Build categorized Excel summary for game effect-call logic (item/move/ability) from live runtime/project data.
+- [x] Parse `Data/Scripts.rxdata` and extract call categories:
+- [x] `ItemHandlers::*` registries
+- [x] `Battle::ItemEffects::*` registries
+- [x] `Battle::AbilityEffects::*` registries
+- [x] `Battle::AbilityEffects.trigger*` call methods
+- [x] Recompute current runtime mapping coverage before export:
+- [x] abilities `328` total, `117` supported, runtime-scan required `115`, required-missing `0`
+- [x] moves `851` total, `851` supported, required-missing `0`
+- [x] Export workbook: `tools/effect_logic_summary.xlsx` (11 sheets, category-split + call-flow + detail tables).
+- [x] Export metadata snapshot: `tools/effect_logic_summary.meta.json`.
+- [x] User request (summarize logic to categorized Excel) -> `done`.
+- [x] Read `WORKLOG.md` and `TASKS.md` at user request to bootstrap this chat context (2026-04-28).
+- [x] Confirmed persistent rules from both files (mandatory per-request dual logging, including analyze-only requests).
+- [x] Log this read-only request in both `WORKLOG.md` and `TASKS.md` with `Implement: No code changes`.
+- [x] User request (read `WORKLOG.md` + `TASKS.md`) -> `done`.
+- [x] Read `WORKLOG.md` and `TASKS.md` at user request to bootstrap new chat session (2026-04-28).
+- [x] User request (read `WORKLOG.md` + `TASKS.md`) -> `done`.
+- [x] Clarified new-chat behavior: file rules cannot guarantee platform-level auto-read; AI must explicitly read `WORKLOG.md` and `TASKS.md` at chat start.
+- [x] Logged clarification request in both `WORKLOG.md` and `TASKS.md` per reinforced mandatory policy.
+- [x] Reinforce persistent logging rules in both `WORKLOG.md` and `TASKS.md` so logging is mandatory for every executed project-related request (analyze/answer or implement), not only end-of-session summaries.
+- [x] Clarify that logging is still mandatory when no code changes are made.
+- [x] Clarify required per-request fields: `Analyze`, `Implement`, and explicit outcome (`done` / `blocked` / `deferred`).
+- [x] Add explicit analyze-only requirement: `Implement` must state `No code changes`.
+- [x] Add new-chat bootstrap note in both files: any AI in new chat must read both files first and continue this logging policy.
+- [x] User request (tighten mandatory logging + enforce new-chat understanding) -> `done`.
+- [x] Audit-only check completed for `DRAGONSOUL` custom effects (`CHLOROPHYLL`, `SWORDSDANCE`, `NASTYPLOT`, `SITRUSBERRY`) by reviewing manifest, runtime template catalog, live `ZZ_CustomItemPatch`, and base battle scripts.
+- [x] Confirmed `CHLOROPHYLL` is currently unsupported for `DRAGONSOUL`:
+- [x] manifest contains `Unsupported ability mapping: CHLOROPHYLL...`.
+- [x] active runtime bridge map in `ZZ_CustomItemPatch` has no `:CHLOROPHYLL` entry for `:DRAGONSOUL`.
+- [x] Confirmed `SWORDSDANCE` / `NASTYPLOT` currently do not trigger through existing bridge:
+- [x] both are status self-buff moves (`RaiseUserAttack2` / `RaiseUserSpAtk2`) without addl-effect chance path.
+- [x] current `move_additional_effect_bridge` requires damage + additional-effect chance > 0, so these moves are skipped.
+- [x] Confirmed `SITRUSBERRY` behavior triggering once is expected in current design:
+- [x] copied `HPHeal` handler consumes held item on successful trigger (`pbHeldItemTriggered` -> `pbConsumeItem`).
+- [x] User request (check + report only, no edits) -> `done`.
+- [x] Runtime fix implementation for findings -> `deferred` (not requested in this turn).
+- [x] Read `TASKS.md` + `WORKLOG.md` and analyze user-requested 3 topics:
+- [x] path to solve all built-in game effects in Custom Item runtime,
+- [x] unified single-file effect pool idea across move/item/ability,
+- [x] custom new-effect creation + battle mapping approach.
+- [x] Confirmed current blockers from live code/data review:
+- [x] generic move bridge in `pbProcessMoveHit` does not preserve base return value and only replays additional-effect path.
+- [x] coverage metric over-claims move support by counting generic bridge as full runtime support.
+- [x] runtime ability scan autofill is `hasActiveAbility?`-centric and misses many `Battle::AbilityEffects.trigger*` call-path abilities.
+- [x] dat loader currently does not merge move `@function_code` metadata from `Data/moves.dat`.
+- [x] Architecture conclusion: one pooled effect file is feasible only if each entry stores runtime hook/contract metadata; untyped pool alone cannot execute safely.
+- [x] Implement: No code changes (analysis-only request); logged in both `WORKLOG.md` and `TASKS.md`.
+- [x] User request 1 (analyze full built-in effect solution path) -> `done`.
+- [x] User request 2 (unified effect pool idea) -> `done`.
+- [x] User request 3 (custom new-effect mapping idea) -> `done`.
+
+## Done (2026-04-25)
+- [x] Implement Party editor `Field Status` selector in Main section.
+- [x] Add Party status mapping logic:
+- [x] UI label <-> save mapping for `None/Sleep/Poison/Toxic/Burn/Paralysis/Freeze/Frostbite`.
+- [x] load selected slot -> populate status selector from `@status/@statusCount`.
+- [x] apply/create pokemon -> write `@status` and `@statusCount`.
+- [x] Implement Party current HP controls:
+- [x] add `Current HP` + readonly `Max HP` fields in Main section.
+- [x] make Preview HP bar draggable (`Button-1` + `B1-Motion`) to set current HP.
+- [x] clamp/sync current HP input against computed total HP.
+- [x] apply/create pokemon now respects editor HP value via forced HP override in stat-apply routine.
+- [x] Compile check: `python -m py_compile tools/pokemon_indigo_save_editor_gui.py`.
+- [x] Rebuild release outputs after Party status/HP drag feature:
+- [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-25 16:48:22`, `11,382,108` bytes)
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-25 16:48:26`, `13,343,666` bytes)
+- [x] User request (add Field Status + draggable HP bar in Party) -> `done`; on-user-machine smoke verification -> `deferred` pending test run.
+- [x] Analyze user report: `DRAGONSOUL` with `SHEDSKIN` did not cure `PARALYSIS` after ~30 turns.
+- [x] Confirm root cause in battle engine flow:
+- [x] `SHEDSKIN` cures status via `Battle::AbilityEffects::EndOfRoundHealing`.
+- [x] End-of-round phase calls `triggerEndOfRoundHealing(battler.ability, ...)`, not `hasActiveAbility?(:SHEDSKIN)`.
+- [x] Existing `ability_active_bridge` only patched `hasActiveAbility?`, so `SHEDSKIN` handler path was skipped.
+- [x] Implement runtime bridge extension in `ability_active_bridge` template:
+- [x] add helper `ability_active_bridge_ability_ids_for(battler, ignore_fainted=false)`.
+- [x] wrap `Battle::AbilityEffects.triggerEndOfRoundHealing` and replay handler for bridged abilities from item mapping.
+- [x] preserve original trigger return value to avoid behavior drift in wrapped method.
+- [x] keep duplicate guard to avoid re-trigger when natural ability already matches.
+- [x] Re-apply `DRAGONSOUL` and verify `unsupported_reason` remains empty.
+- [x] Verify generated `ZZ_CustomItemPatch` includes:
+- [x] `:SHEDSKIN => [:DRAGONSOUL]`
+- [x] `ability_active_bridge_ability_ids_for`
+- [x] `custom_item_patch_triggerEndOfRoundHealing_bridge_old` wrapper.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after Shed Skin bridge fix:
+- [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-25 16:15:24`, `11,378,847` bytes)
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-25 16:15:28`, `13,340,131` bytes)
+- [x] User request (check why Shed Skin effect not curing and fix) -> `done`; in-game confirmation on user machine -> `deferred` pending one repro.
+- [x] Review latest user files (`errorlog.txt`, `custom_item_system_stack_trace.log`, latest screenshot) and confirm persistent failure is still `SystemStackError` at `map 11 / event 96` with wrapper frame `ZZ_CustomItemPatch:45:execute_script`.
+- [x] Identify root recursion path in runtime templates:
+- [x] generated custom-item bridges called `battler.itemActive?`
+- [x] base `itemActive?` calls `hasActiveAbility?(:KLUTZ)`
+- [x] custom-item runtime overrides `hasActiveAbility?`
+- [x] => recursive loop (`hasActiveAbility?` <-> `itemActive?`) causing `stack level too deep`.
+- [x] Add non-recursive runtime helper in generated script: `CustomItemPatch.custom_item_effect_item_active?(...)`.
+- [x] Replace direct `itemActive?` usage in all affected templates:
+- [x] `ability_contrary`
+- [x] `ability_sheer_force`
+- [x] `ability_active_bridge`
+- [x] `move_additional_effect_bridge`
+- [x] Re-apply `DRAGONSOUL` after recursion fix and verify regenerated `ZZ_CustomItemPatch` includes helper and no `.itemActive?` calls.
+- [x] Verify `unsupported_reason` remains empty after re-apply.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after recursion fix:
+- [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-25 15:16:52`, `11,378,013` bytes)
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-25 15:16:56`, `13,338,825` bytes)
+- [x] User request (check latest logs/images, find root, continue fix) -> `done`; in-game confirmation on user machine -> `deferred` pending one repro on latest build.
+- [x] Confirm user report: `custom_item_system_stack_trace.log` was missing while `custom_item_no_method_trace.log` existed.
+- [x] Determine cause: `TracePoint(:raise)` diagnostics are unreliable in this runtime path; no deterministic file output.
+- [x] Replace `SystemStackError` diagnostics with deterministic in-rescue logger inside `Interpreter#execute_script`.
+- [x] New logger writes `%APPDATA%\\Pokemon Anil\\custom_item_system_stack_trace.log` with timestamp, map/event context, script body, and full exception backtrace.
+- [x] Re-apply `DRAGONSOUL` after in-rescue logger patch and verify `unsupported_reason` remains empty.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after in-rescue logger patch:
+- [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-25 15:06:02`, `11,376,351` bytes)
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-25 15:06:06`, `13,337,302` bytes)
+- [x] User request (why no trace file + continue debug) -> `done`; exact first-frame root remains `deferred` pending one repro on latest build.
+- [x] Review newest screenshot and confirm `SystemStackError` persists (same VOE event script), with top frame now `451:ZZ_CustomItemPatch:45:in execute_script`.
+- [x] Verify `%APPDATA%\\Pokemon Anil\\custom_item_vowe_reentry.log` not created -> current re-entry lock path has not been triggered in failing repro.
+- [x] Add first-hit runtime diagnostic for `SystemStackError` using `TracePoint(:raise)` in generated `ZZ_CustomItemPatch`.
+- [x] Diagnostic output path: `%APPDATA%\\Pokemon Anil\\custom_item_system_stack_trace.log` (captures `tp.path/tp.lineno/tp.method` + up to 400 frames).
+- [x] Re-apply `DRAGONSOUL` after `SystemStackError` trace instrumentation and verify `unsupported_reason` remains empty.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after stack-trace instrumentation:
+- [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-25 14:35:35`, `11,376,894` bytes)
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-25 14:35:38`, `13,338,470` bytes)
+- [x] User request (check latest screenshot/root path) -> `done`; exact first-frame root still `deferred` pending one repro with new trace file.
+- [x] Validate latest user screenshot/log (`2026-04-25 14:18:28`) and confirm persistent failure is still `SystemStackError` at same VOE spawned event script (`map 11 / event 96`).
+- [x] Identify probable root cause: re-entry of the same spawned-event script path (`pbSingleOrDoubleWildBattle`) during map/interpreter update cycle, not old nil-backtrace reporter issue.
+- [x] Add interpreter-level lock for VOE spawned battle script calls in generated `ZZ_CustomItemPatch`:
+- [x] lock key: `[map_id, @event_id]` stored in `$game_temp.@custom_item_patch_vowe_script_lock`
+- [x] when re-entry detected, short-circuit script eval (`return false`)
+- [x] emit diagnostic line to `%APPDATA%\\Pokemon Anil\\custom_item_vowe_reentry.log` on blocked re-entry.
+- [x] Re-apply `DRAGONSOUL` after interpreter-level VOE script lock patch and verify `unsupported_reason` remains empty.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after interpreter-level VOE script lock patch:
+- [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-25 14:22:54`, `11,376,385` bytes)
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-25 14:22:58`, `13,337,820` bytes)
+- [x] User request (identify root + continue fix) -> `done`; final in-game confirmation remains `deferred` pending one repro on updated build.
+- [x] Inspect latest screenshot and confirm surfaced underlying error is now `SystemStackError: stack level too deep` at map 11/event 96 (VOE spawned-battle script), not prior nil-backtrace reporter crash.
+- [x] Trace plugin source from `Data/PluginScripts.rxdata` and identify spawn battle entrypoint (`Visible Overworld Wild Encounters` -> `pbSingleOrDoubleWildBattle`).
+- [x] Add runtime compatibility guard for VOE spawned-battle re-entry in generated `ZZ_CustomItemPatch`:
+- [x] `CustomItemPatch.install_vowe_spawn_battle_guard`
+- [x] Wrap `pbSingleOrDoubleWildBattle` with lock flag `@custom_item_patch_vowe_battle_lock` in `$game_temp`.
+- [x] Auto-install guard after plugin load by wrapping `PluginManager.runPlugins`, plus retry on `EventHandlers :on_enter_map`.
+- [x] Increase interpreter compatibility backtrace capture depth from `10` to `50` frames for future error diagnostics.
+- [x] Re-apply `DRAGONSOUL` after VOE guard patch and verify `unsupported_reason` remains empty.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after VOE guard patch:
+- [x] `tools/PokemonIndigoSaveEditor.exe` (`2026-04-25 14:15:48`, `11,375,914` bytes)
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-04-25 14:15:51`, `13,336,908` bytes)
+- [x] User request (latest screenshot error check/fix) -> `done`; post-patch in-game confirmation on user machine -> `deferred` pending repro.
+- [x] Capture root frame for recurring popup via temporary tracer: failure occurs in `Interpreter.execute_script` at `038:Interpreter:159` (`e.backtrace[0, 10]` without nil guard).
+- [x] Replace temporary tracer with stable runtime compatibility patch that rewrites `Interpreter#execute_script` error-path using nil-safe backtrace handling.
+- [x] Keep fallback caller trace when `e.backtrace` is unavailable, so event-script errors still report context instead of crashing inside reporter.
+- [x] Re-apply `DRAGONSOUL` after interpreter-guard patch and verify `unsupported_reason` remains empty.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after interpreter nil-backtrace guard fix:
+- [x] `tools/PokemonIndigoSaveEditor.exe`
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] Original recurring popup root-cause identified and patched in runtime layer -> `done`; gameplay-level underlying event error (if any) still needs one post-fix repro to confirm surfaced message.
+- [x] Review follow-up startup crash screenshot (same `NoMethodError: undefined method '[]' for nil:NilClass`) and confirm `errorlog.txt` still has empty backtrace section.
+- [x] Add startup nil-`[]` diagnostic tracer to generated `ZZ_CustomItemPatch` and write first-hit context to `%APPDATA%\\Pokemon Anil\\custom_item_no_method_trace.log`.
+- [x] Wrap drain runtime template registration (`Battle::ItemEffects::AfterMoveUseFromUser.add`) with `begin/rescue` to avoid hard crash during script-load phase.
+- [x] Re-apply `DRAGONSOUL` after diagnostic/hardening patch and verify `unsupported_reason` remains empty.
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after startup-crash diagnostic/hardening update:
+- [x] `tools/PokemonIndigoSaveEditor.exe`
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] Startup crash exact root frame remains unresolved until next repro creates `custom_item_no_method_trace.log` -> `blocked` pending trace file.
+- [x] Review user-provided error screenshots and correlate with current manifest/template state.
+- [x] Diagnose `Effect Mapping Warning` root cause for `SHEDSKIN` (missing runtime-template entry).
+- [x] Expand runtime ability scanner to include both `hasActiveAbility?` and `has_active_ability?` patterns.
+- [x] Re-run runtime mapper apply and auto-add missing ability runtime templates (`+27`, including `SHEDSKIN`).
+- [x] Re-apply `DRAGONSOUL` and verify `unsupported_reason` is now empty.
+- [x] Harden generated runtime bridges with nil-safe map guards (`ABILITY_ACTIVE_BRIDGE_ITEMS` / `MOVE_ADDITIONAL_EFFECT_BRIDGE_ITEMS`).
+- [x] Compile check: `python -m py_compile tools/custom_item/patcher.py`.
+- [x] Rebuild release outputs after patcher/runtime-mapping fix:
+- [x] `tools/PokemonIndigoSaveEditor.exe`
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] Startup crash root-cause frame remains unresolved from existing `errorlog.txt` because backtrace was not captured -> `blocked` pending full trace capture on next repro.
+- [x] Review prior progress from `WORKLOG.md` and `TASKS.md`.
+- [x] Add persistent logging rule to track both analyze + implement across sessions.
+- [x] Implement name-only labels for CustomItem effect lists (item/move/ability).
+- [x] Implement effect description tooltip on hover for dropdown popdown + added list.
+- [x] Compile check: `python -m py_compile tools/pokemon_indigo_save_editor_gui.py`.
+- [x] Rebuild release outputs on request:
+- [x] `tools/PokemonIndigoSaveEditor.exe`
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] Align CustomItem effect text with Party style (`base + Mechanics (Known)` numeric block).
+- [x] Keep generated CustomItem effect description multiline for direct numeric readability.
+- [x] Rebuild release after wording update (resolved temporary dist EXE lock and rebuilt successfully).
+- [x] Investigate warning `Unsupported ability mapping: SHEERFORCE`.
+- [x] Add runtime template support `ability_sheer_force` in custom item patcher.
+- [x] Merge default effect-template mappings with local catalog (backward-compatible for older catalog files).
+- [x] Update `tools/custom_item_effect_templates.json` with `SHEERFORCE`.
+- [x] Re-apply `DRAGONSOUL` and verify `unsupported_reason` is empty.
+- [x] Rebuild release after `SHEERFORCE` patcher fix (handled dist EXE lock, then build success).
+- [x] Improve unsupported warning detail with explicit missing-map root-cause text (ability/move).
+- [x] Rebuild release after unsupported-root-cause diagnostic update.
+- [x] Add persistent logging requirement: every user request needs explicit outcome (`done` / `blocked` / `deferred`).
+- [x] Add mandatory post-implement build/deploy rule (always rebuild both EXE + Setup after code changes).
+- [x] Implement runtime coverage analyzer + catalog autofill API in `tools/pokemon_indigo_custom_item_patcher.py`.
+- [x] Add generic runtime ability bridge template (`ability_active_bridge`) for scalable ability mapping across games sharing same battle engine pattern.
+- [x] Add CLI runtime mapper tool: `tools/custom_item_runtime_mapper.py`.
+- [x] Run autofill and update `tools/custom_item_effect_templates.json`:
+- [x] Runtime ability scan: `88`
+- [x] Auto-added ability runtime mappings: `86`
+- [x] Runtime ability missing after apply: `0`
+- [x] Runtime move-gap scan completed: `832` moves across `460` missing function-code mappings (queued as deferred follow-up).
+- [x] Re-apply `DRAGONSOUL` and verify `unsupported_reason` remains empty after runtime-bridge refactor.
+- [x] Re-run full effect need-map scan and export reports:
+- [x] `tools/runtime_effect_need_map_report_full.json`
+- [x] `tools/runtime_effect_need_map_report.md`
+- [x] Implement generic move runtime bridge template `move_additional_effect_bridge` in patcher.
+- [x] Auto-resolve unmapped move effects with `FunctionCode` to generic bridge (while preserving explicit higher-priority templates).
+- [x] Re-run mapper coverage after generic bridge:
+- [x] `coverage_move=851/851`
+- [x] `runtime_move_missing=0`
+- [x] Export post-change reports:
+- [x] `tools/runtime_mapper_report_apply_after_generic_bridge.json`
+- [x] `tools/runtime_effect_need_map_report_full_after_generic_bridge.json`
+- [x] `tools/runtime_effect_need_map_report_after_generic_bridge.md`
+- [x] Compile checks:
+- [x] `python -m py_compile tools/pokemon_indigo_custom_item_patcher.py`
+- [x] `python -m py_compile tools/custom_item_runtime_mapper.py`
+- [x] Rebuild release outputs after patcher implementation:
+- [x] `tools/PokemonIndigoSaveEditor.exe`
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] Consolidate Custom Item logic into `tools/custom_item/` package:
+- [x] Code modules: `tools/custom_item/patcher.py`, `tools/custom_item/runtime_mapper.py`
+- [x] Data files: `tools/custom_item/data/custom_item_manifest.json`, `tools/custom_item/data/custom_item_effect_templates.json`
+- [x] Backups: `tools/custom_item/backups`
+- [x] Add compatibility shims:
+- [x] `tools/pokemon_indigo_custom_item_patcher.py`
+- [x] `tools/custom_item_runtime_mapper.py`
+- [x] Update GUI to import package-first Custom Item patcher.
+- [x] Update patch capability manifest/backup paths to new Custom Item folder.
+- [x] Compile checks after module restructure:
+- [x] `python -m py_compile tools/custom_item/patcher.py`
+- [x] `python -m py_compile tools/custom_item/runtime_mapper.py`
+- [x] `python -m py_compile tools/pokemon_indigo_custom_item_patcher.py`
+- [x] `python -m py_compile tools/custom_item_runtime_mapper.py`
+- [x] Run runtime mapper dry-run after refactor and verify coverage unchanged.
+- [x] Rebuild release outputs after Custom Item module refactor:
+- [x] `tools/PokemonIndigoSaveEditor.exe`
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+- [x] Probe cross-game compatibility on user target path: `D:\InfiniteFusion`.
+- [x] Export capability + compatibility reports:
+- [x] `tools/infinitefusion_patch_capability.profile.json`
+- [x] `tools/infinitefusion_patch_adapter.lock.json`
+- [x] `tools/infinitefusion_custom_item_compat_report.json`
+- [x] `tools/infinitefusion_custom_item_compat_report.md`
+- [x] Add one-click Custom Item controller module:
+- [x] `tools/custom_item/controller.py`
+- [x] Add workspace bootstrap helper in patcher: `ensure_custom_item_workspace(...)`.
+- [x] Add CLI bootstrap entry: `tools/custom_item_bootstrap.py`.
+- [x] Add GUI button `Auto Setup (Game+Save)` in CustomItem tab.
+- [x] Wire GUI handler to run: profile mapper + patch capability probe + adapter rebuild + runtime autofill in one flow.
+- [x] Compile checks after controller integration:
+- [x] `python -m py_compile tools/custom_item/patcher.py`
+- [x] `python -m py_compile tools/custom_item/controller.py`
+- [x] `python -m py_compile tools/custom_item/runtime_mapper.py`
+- [x] `python -m py_compile tools/custom_item_bootstrap.py`
+- [x] `python -m py_compile tools/pokemon_indigo_save_editor_gui.py`
+- [x] Rebuild release outputs after one-click controller integration:
+- [x] `tools/PokemonIndigoSaveEditor.exe`
+- [x] `tools/installer/dist/PokemonSaveEditor_Setup.exe`
+
+## Done (2026-04-24)
+- [x] Recover lost context after forced restart.
+- [x] Find `Dragon's Soul` manifest/effect data.
+- [x] Verify `ZZ_CustomItemPatch` code exists in `Data/Scripts.rxdata`.
+- [x] Identify root cause: patch script was placed after `Main`.
+- [x] Fix patcher insertion order logic in `tools/pokemon_indigo_custom_item_patcher.py`.
+- [x] Re-apply patch entry so `ZZ_CustomItemPatch` is before `Main`.
+- [x] Create session persistence files and log directory.
+- [x] Add bag icon file for `DRAGONSOUL` (`Graphics/Items/DRAGONSOUL.png`).
+- [x] Add CustomItem icon picker/import UI with auto-scale to game icon size.
+- [x] Add global scroll canvas for CustomItem tab and preserve inner list/text scrolling.
+- [x] Verify `tools/build_release.bat` builds both EXE + installer outputs.
+- [x] Harden EXE build script to auto-stop local running editor processes before clean/build.

@@ -1,0 +1,86 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[PHONE_MESSAGES]
+¡Hola! Soy \TN.
+Xin chào! Tôi là \TN.
+¡Buen día, \PN! ¡Hola! Soy \TN.
+Chào buổi sáng, \PN! Xin chào! Tôi là \TN.
+¿Cómo estás? ¡\PN, hola! Soy \TN. ¿No está bonito el día?
+Bạn khỏe không? \PN, xin chào! Tôi là \TN. Hôm nay đẹp trời nhỉ?
+¡\PN, buen día! Soy yo, \TN. ¿Tienes un minuto?
+\PN, chào buổi sáng! Là tôi đây, \TN. Bạn có một chút thời gian không?
+Hola, \PN. Soy \TN. ¿Cómo van las cosas?
+Xin chào, \PN. Tôi là \TN. Mọi chuyện thế nào rồi?
+Buenos días, \PN. Soy \TN. ¿Te desperté?
+Chào buổi sáng, \PN. Tôi là \TN. Tôi có làm bạn thức giấc không?
+¡Buenas tardes, \PN! Soy \TN.
+Chào buổi chiều, \PN! Tôi là \TN.
+¡\PN, buenas noches! ¡Hola! Soy \TN.
+\PN, chào buổi tối! Xin chào! Tôi là \TN.
+¿Cómo están tus Pokémon?\m¡Mi \TP está lleno de energía! ¡Es un puñado!\mOh sí, logré vencer a un \TE difícil.\mNecesito fortalecer mi equipo.
+Pokémon của bạn thế nào rồi?\m\TP của tôi tràn đầy năng lượng! Nó đúng là mạnh thật!\mỒ đúng rồi, tôi đã đánh bại một \TE khó nhằn.\mTôi cần phải tăng cường đội hình của mình.
+Mi \TP se ve realmente genial. Ojalá pudiera mostrártelo.\m¡Oye, escucha! Casi atrapo un \TE el otro día.\m¡Oh, estuvo tan cerca!
+\TP của tôi trông thật tuyệt. Giá mà tôi có thể cho bạn xem.\mNày, nghe này! Hôm trước tôi suýt bắt được một \TE.\mÔi, thiếu chút nữa thôi!
+¿Cómo están tus Pokémon?\m¡Mi \TP está lleno de energía! ¡Es un puñado!
+Pokémon của bạn thế nào rồi?\m\TP của tôi tràn đầy năng lượng! Nó đúng là mạnh thật!
+¿Cómo están tus Pokémon?\mSiempre mantengo a mi \TP en buena forma yendo a los Centros Pokémon.
+Pokémon của bạn thế nào rồi?\mTôi luôn giữ \TP của mình trong trạng thái tốt bằng cách thường xuyên đến Trung tâm Pokémon.
+Mi \TP se ve realmente genial. Ojalá pudiera mostrártelo.
+\TP của tôi trông thật tuyệt. Giá mà tôi có thể cho bạn xem.
+Vestí a mi \TP y se ve aún más lindo que antes.
+Tôi đã cho \TP mặc đồ và giờ nó còn dễ thương hơn trước.
+Oh sí, logré vencer a un \TE difícil.\mNecesito fortalecer mi equipo.
+Ồ đúng rồi, tôi đã đánh bại một \TE khó nhằn.\mTôi cần phải tăng cường đội hình của mình.
+¡Tienes que escuchar esto! Luché contra \TE el otro día.\m¡Fue fácil! Tenía ventaja de tipo.
+Bạn phải nghe chuyện này! Hôm trước tôi đã đấu với \TE.\mDễ lắm! Tôi có lợi thế hệ.
+¡Oye, escucha! Casi atrapo a \TE el otro día.\mOh, estuvo tan cerca.
+Này, nghe này! Hôm trước tôi suýt bắt được \TE.\mÔi, thiếu chút nữa thôi.
+Adivina qué pasó el otro día. Volví a perder la captura de \TE.\mQuizás no soy muy bueno en esto.
+Đoán xem hôm trước chuyện gì xảy ra. Tôi lại thất bại khi bắt \TE.\mCó lẽ tôi không giỏi việc này lắm.
+¿Quieres luchar? No va a ser como la última vez que nos encontramos.\mEstaré esperándote alrededor de \TM.
+Bạn có muốn chiến đấu không? Lần này sẽ không như lần trước đâu.\mTôi sẽ đợi bạn ở khu vực \TM.
+¿Quieres luchar? ¡Esta vez voy a ganar!\mEstaré esperándote alrededor de \TM.\m¡Búscame, ¿de acuerdo? Mi \TP estará esperándote.
+Bạn có muốn chiến đấu không? Lần này tôi sẽ thắng!\mTôi sẽ đợi bạn ở khu vực \TM.\mHãy tìm tôi nhé? \TP của tôi sẽ chờ bạn.
+¡Hola! Soy \TN...\m¿Cómo va, \PN?
+Xin chào! Tôi là \TN...\mBạn thế nào rồi, \PN?
+Mi \TP se parece cada vez más a mí. ¡Se está volviendo más lindo!
+\TP của tôi ngày càng giống tôi hơn. Nó đang trở nên dễ thương hơn!
+¿Y sabes? Ahora podemos derrotar a \TE fácilmente.\mDebería desafiar al Gimnasio de Cedolan.
+Bạn biết không? Giờ chúng tôi có thể dễ dàng đánh bại \TE.\mTôi nên thử thách Nhà thi đấu Cedolan.
+¿Y sabes? Acabamos de fallar en vencer a \TE por un margen pequeño.\mSupongo que los niveles de mis Pokémon aún no son lo suficientemente altos...
+Bạn biết không? Chúng tôi vừa suýt thắng \TE nhưng thất bại sát nút.\mCó lẽ cấp độ Pokémon của tôi vẫn chưa đủ cao...
+Debes ser mucho mejor ahora, ¿verdad?\m¿Qué tal si me muestras tu técnica en una verdadera batalla conmigo?\mEstaré esperando en \TM.
+Giờ bạn chắc đã mạnh hơn nhiều rồi, đúng không?\mSao không cho tôi xem kỹ năng của bạn trong một trận chiến thật sự?\mTôi sẽ đợi ở \TM.
+¿Dónde estás? ¡Tengamos nuestra batalla pronto!\mEstaré esperando en \TM.
+Bạn đang ở đâu? Hãy sớm chiến đấu thôi!\mTôi sẽ đợi ở \TM.
+¡Nos vemos luego!
+Hẹn gặp lại!
+¡Soy \TN!
+Tôi là \TN!
+¡Hola, soy \TN!
+Xin chào, tôi là \TN!
+¡Soy \TN! ¡Buenos días, \PN!
+Tôi là \TN! Chào buổi sáng, \PN!
+¡Hola, soy \TN! ¡Buenos días, \PN!
+Xin chào, tôi là \TN! Chào buổi sáng, \PN!
+¡Soy \TN! ¡Buenas tardes, \PN!
+Tôi là \TN! Chào buổi chiều, \PN!
+¡Hola, soy \TN! ¡Buenas tardes, \PN!
+Xin chào, tôi là \TN! Chào buổi chiều, \PN!
+¡Soy \TN! ¡Buenas noches, \PN!
+Tôi là \TN! Chào buổi tối, \PN!
+¡Hola, soy \TN! ¡Buenas noches, \PN!
+Xin chào, tôi là \TN! Chào buổi tối, \PN!
+Mi \TP y yo nos estamos sincronizando más entre nosotros.
+\TP và tôi đang ngày càng ăn ý hơn.
+Luchamos contra un \TE salvaje y logramos vencerlo en una batalla reñida.\m¡Nos estamos acostumbrando!
+Chúng tôi đã chiến đấu với một \TE hoang dã và giành chiến thắng trong một trận đấu sát sao.\mChúng tôi đang dần quen hơn!
+Pero, ¿sabes qué? Todavía no he atrapado a \TE.\mEstá empezando a ser frustrante...
+Nhưng bạn biết không? Tôi vẫn chưa bắt được \TE.\mBắt đầu thấy khó chịu rồi...
+¿Quieres ser mi compañero de práctica de nuevo?\mEstaré esperando en \TM...\m¿Podrías tomarlo un poco más fácil conmigo la próxima vez?
+Bạn có muốn lại làm bạn luyện tập với tôi không?\mTôi sẽ đợi ở \TM...\mLần sau bạn có thể nhẹ tay hơn với tôi không?
+¿Cuándo podré verte?\m¡No olvides, \TM!
+Khi nào tôi mới gặp lại bạn?\mĐừng quên, \TM!
+¡Adiós! ¡Hablemos de nuevo!
+Tạm biệt! Hẹn nói chuyện lại!

@@ -1,0 +1,856 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[SPECIES_FORM_NAMES]
+Forma Letra A
+Letter A
+Forma Normal
+Normal Form
+Forma Tronco Planta
+Plant Cloak
+Forma Encapotada
+Sunshine Form
+Forma Mar Oeste
+West Sea
+Forma Tierra
+Land Forme
+Tipo Normal
+Normal Type
+Forma Raya Blanca
+White-Striped Form
+Modo Normal
+Normal Mode
+Forma Primavera
+Spring Form
+Forma Avatar
+Incarnate Forme
+Forma Habitual
+Incarnate Forme
+Forma Lírica
+Aria Forme
+Motivo Floral
+Flower Trim
+Forma Flor Roja
+Red Flower
+Motivo Flor Roja
+Red Flower
+Forma Salvaje
+Wild Form
+Forma Macho
+Male
+Forma Escudo
+Shield Form
+Tamaño Pequeño
+Small Size
+Modo Relajado
+Relaxed Mode
+Forma 50%
+50% Forme
+Forma Contenido
+Confined Form
+Forma Estilo Apasionado
+Pa'u Style
+Forma Diurna
+Midday Form
+Forma Individual
+Solo Form
+Forma Meteorito
+Meteor Form
+Forma Encubierta
+Disguised Form
+Forma Aguda
+Amped Form
+Forma Falsificada
+Phony Form
+Forma Crema de Vainilla Confite Fresa
+Vanilla Cream (Strawberry Sweet)
+Forma Cara de Hielo
+Ice Face
+Forma Saciada
+Hangry Mode
+Forma Guerrero Avezado
+Hero of Many Battles
+Estilo Brusco
+Single Strike Style
+Forma Familia de Cuatro
+Family of Four
+Forma Plumaje Verde
+Green Plumage
+Forma Ingenua
+Curly Form
+Forma Curvada
+Two-Segment Form
+Forma Binodular
+Roaming Form
+Forma Cofre
+Chest Form
+Forma Fraudulenta
+Unremarkable Form
+Forma Mediocre
+Zero Form
+Forma Máscara Turquesa
+Teal Mask
+Mega Venusaur X
+Mega Venusaur
+Mega Charizard X
+Mega Charizard X
+Mega Charizard Y
+Mega Charizard Y
+Mega Blastoise X
+Mega Blastoise
+Mega Beedrill
+Mega Beedrill
+Mega Pidgeot
+Mega Pidgeot
+Forma Alola
+Alolan Form
+Forma Coqueta
+Cosplay Pikachu
+Forma Aristócrata
+Pikachu Belle
+Forma Enmascarada
+Pikachu Libre
+Forma Erudita
+Pikachu, Ph. D
+Forma Superstar
+Pikachu Pop Star
+Forma Roquera
+Pikachu Rock Star
+Forma Gorra Original
+Original Cap
+Forma Gorra Hoenn
+Hoenn Cap
+Forma Gorra Sinnoh
+Sinnoh Cap
+Forma Gorra Teselia
+Unova Cap
+Forma Gorra Kalos
+Kalos Cap
+Forma Gorra Alola
+Alola Cap
+Forma Gorra Compañero
+Partner Cap
+Forma Gorra Trotamundos
+World Cap
+Forma Amarillo
+Partner Pikachu
+Mega Pikachu
+Mega Pikachu Max
+Forma Galar
+Galarian Form
+Mega Alakazam
+Mega Alakazam
+Mega Slowbro
+Mega Slowbro
+Mega Gengar X
+Mega Gengar
+Mega Kangaskhan
+Mega Kangaskhan
+Mega Pinsir
+Mega Pinsir
+Mega Gyarados
+Mega Gyarados
+Mega Aerodactyl
+Mega Aerodactyl
+Mega Mewtwo X
+Mega Mewtwo X
+Mega Mewtwo Y
+Mega Mewtwo Y
+Mega Armadura
+Armored Mewtwo
+Forma Picoreja
+Spiky-eared
+Mega Ampharos
+Mega Ampharos
+Forma Letra B
+Letter B
+Forma Letra C
+Letter C
+Forma Letra D
+Letter D
+Forma Letra E
+Letter E
+Forma Letra F
+Letter F
+Forma Letra G
+Letter G
+Forma Letra H
+Letter H
+Forma Letra I
+Letter I
+Forma Letra J
+Letter J
+Forma Letra K
+Letter K
+Forma Letra L
+Letter L
+Forma Letra M
+Letter M
+Forma Letra N
+Letter N
+Forma Letra O
+Letter O
+Forma Letra P
+Letter P
+Forma Letra Q
+Letter Q
+Forma Letra R
+Letter R
+Forma Letra S
+Letter S
+Forma Letra T
+Letter T
+Forma Letra U
+Letter U
+Forma Letra V
+Letter V
+Forma Letra W
+Letter W
+Forma Letra X
+Letter X
+Forma Letra Y
+Letter Y
+Forma Letra Z
+Letter Z
+Forma Signo ?
+Question Mark
+Forma Signo !
+Exclamation Mark
+Mega Steelix
+Mega Steelix
+Mega Scizor
+Mega Scizor
+Mega Heracross
+Mega Heracross
+Mega Houndoom
+Mega Houndoom
+Mega Tyranitar
+Mega Tyranitar
+Mega Sceptile
+Mega Sceptile
+Mega Blaziken
+Mega Blaziken
+Mega Swampert
+Mega Swampert
+Mega Gardevoir
+Mega Gardevoir
+Mega Sableye
+Mega Sableye
+Mega Mawile
+Mega Mawile
+Mega Aggron
+Mega Aggron
+Mega Medicham
+Mega Medicham
+Mega Manectric
+Mega Manectric
+Mega Sharpedo
+Mega Sharpedo
+Mega Camerupt
+Mega Camerupt
+Mega Altaria
+Mega Altaria
+Forma Sol
+Sunny Form
+Forma Lluvia
+Rainy Form
+Forma Nieve
+Snowy Form
+Mega Banette
+Mega Banette
+Mega Absol
+Mega Absol
+Mega Glalie
+Mega Glalie
+Mega Salamence
+Mega Salamence
+Mega Metagross
+Mega Metagross
+Mega Latias
+Mega Latias
+Mega Latios
+Mega Latios
+Forma Primigenia
+Primal Reversion
+Mega Rayquaza
+Mega Rayquaza
+Forma Ataque
+Attack Forme
+Forma Defensa
+Defense Forme
+Forma Velocidad
+Speed Forme
+Forma Tronco Arena
+Sandy Cloak
+Forma Tronco Basura
+Trash Cloak
+Forma Soleada
+Sunshine Form
+Forma Mar Este
+East Sea
+Mega Lopunny
+Mega Lopunny
+Mega Garchomp
+Mega Garchomp
+Mega Lucario
+Mega Lucario
+Mega Abomasnow
+Mega Abomasnow
+Mega Gallade
+Mega Gallade
+Forma Calor
+Heat Rotom
+Forma Lavado
+Wash Rotom
+Forma Frío
+Frost Rotom
+Forma Ventilador
+Fan Rotom
+Forma Corte
+Mow Rotom
+Forma Origen
+Origin Forme
+Forma Cielo
+Sky Forme
+Tipo Lucha
+Fighting Type
+Tipo Volador
+Flying Type
+Tipo Veneno
+Poison Type
+Tipo Tierra
+Ground Type
+Tipo Roca
+Rock Type
+Tipo Bicho
+Bug Type
+Tipo Fantasma
+Ghost Type
+Tipo Acero
+Steel Type
+Tipo Desconocido
+Unknown Type
+Tipo Fuego
+Fire Type
+Tipo Agua
+Water Type
+Tipo Planta
+Grass Type
+Tipo Eléctrico
+Electric Type
+Tipo Psíquico
+Psychic Type
+Tipo Hielo
+Ice Type
+Tipo Dragón
+Dragon Type
+Tipo Siniestro
+Dark Type
+Tipo Hada
+Fairy Type
+Mega Audino
+Mega Audino
+Forma Daruma
+Zen Mode
+Forma Daruma de Galar
+Galarian Zen Mode
+Forma Verano
+Summer Form
+Forma Otoño
+Autumn Form
+Forma Invierno
+Winter Form
+Forma Tótem
+Totem-sized
+Forma Blanca
+White Kyurem
+Forma Negra
+Black Kyurem
+Forma Brío
+Step Form
+Forma Danza
+Pirouette Forme
+Forma FulgoROM
+Shock Drive
+Forma PiroROM
+Burn Drive
+Forma CrioROM
+Chill Drive
+Forma HidroROM
+Douse Drive
+Battle Bond
+Battle Bond
+Greninja Ash
+Ash-Greninja
+Motivo Isleño
+Archipelago Pattern
+Motivo Continental
+Continental Pattern
+Motivo Oriental
+Elegant Pattern
+Motivo Vergel
+Garden Pattern
+Motivo Estepa
+High Plains Pattern
+Motivo Polar
+Icy Snow Pattern
+Motivo Jungla
+Jungle Pattern
+Motivo Marino
+Marine Pattern
+Motivo Moderno
+Modern Pattern
+Motivo Monzón
+Monsoon Pattern
+Motivo Océano
+Ocean Pattern
+Motivo Taiga
+River Pattern
+Motivo Oasis
+Sandstorm Pattern
+Motivo Desierto
+Savanna Pattern
+Motivo Pantano
+Sun Pattern
+Motivo Solar
+Sun Pattern
+Motivo Tundra
+Tundra Pattern
+Motivo Fantasía
+Fancy Pattern
+Motivo Poké Ball
+Poké Ball Pattern
+Forma Flor Amarilla
+Yellow Flower
+Forma Flor Naranja
+Orange Flower
+Forma Flor Azul
+Blue Flower
+Forma Flor Blanca
+White Flower
+Forma Flor Eterna
+Eternal Flower
+Forma Corte Corazón
+Heart Trim
+Forma Corte Estrella
+Star Trim
+Forma Corte Rombo
+Diamond Trim
+Forma Corte Señorita
+Debutante Trim
+Forma Corte Dama
+Matron Trim
+Forma Corte Caballero
+Dandy Trim
+Forma Corte Aristocrático
+La Reine Trim
+Forma Corte Kabuki
+Kabuki Trim
+Forma Forma Corte Faraónico
+Pharaoh Trim
+Forma Hembra
+Female
+Forma Filo
+Blade Forme
+Tamaño Normal
+Average Size
+Tamaño Grande
+Large Size
+Tamaño Extragrande
+Super Size
+Modo Activo
+Active Mode
+Forma 10%
+10% Forme
+Forma Completa
+Complete Forme
+Mega Diancie
+Mega Diancie
+Forma Desatada
+Unbound
+Estilo Animado
+Pom-Pom Style
+Estilo Plácido
+Pa'u Style
+Estilo Refinado
+Sensu Style
+Forma Nocturna
+Midnight Form
+Forma Crepuscular
+Dusk Form
+Forma Banco
+School Form
+Forma Núcleo Rojo
+Red Core
+Forma Núcleo Naranja
+Orange Core
+Forma Núcleo Amarillo
+Yellow Core
+Forma Núcleo Verde
+Green Core
+Forma Núcleo Azul
+Blue Core
+Forma Núcleo Añil
+Indigo Core
+Forma Núcleo Violeta
+Violet Core
+Forma Descubierta
+No Disguise
+Forma Melena Crepuscular
+Dusk Mane
+Forma Alas del Alba
+Dawn Wings
+Forma Ultra-Necrozma
+Ultra Necrozma
+Forma Color Vetusta
+Original Color
+Forma Tragatodo
+Gulping Form
+Forma Engulletodo
+Gorging Form
+Forma Grave
+Low Key Form
+Forma Genuina
+Antique Form
+Forma Crema de Vainilla Confite corazón
+Vanilla Cream (Love Sweet)
+Forma Crema de Vainilla Confite flor
+Vanilla Cream (Flower Sweet)
+Forma Crema de Vainilla Confite estrella
+Vanilla Cream (Star Sweet)
+Forma Crema de Vainilla Confite trébol
+Vanilla Cream (Clover Sweet)
+Forma Crema de Vainilla Confite fruto
+Vanilla Cream (Berry Sweet)
+Forma Crema de Vainilla Confite lazo
+Vanilla Cream (Ribbon Sweet)
+Forma Crema Rosa Confite fresa
+Ruby Cream (Strawberry Sweet)
+Forma Crema Rosa Confite corazón
+Ruby Cream (Love Sweet)
+Forma Crema Rosa Confite flor
+Ruby Cream (Flower Sweet)
+Forma Crema Rosa Confite estrella
+Ruby Cream (Star Sweet)
+Forma Crema Rosa Confite trébol
+Ruby Cream (Clover Sweet)
+Forma Crema Rosa Confite fruto
+Ruby Cream (Berry Sweet)
+Forma Crema Rosa Confite lazo
+Ruby Cream (Ribbon Sweet)
+Forma Crema de Té Confite fresa
+Matcha Cream (Strawberry Sweet)
+Forma Crema de Té Confite corazón
+Matcha Cream (Love Sweet)
+Forma Crema de Té Confite flor
+Matcha Cream (Flower Sweet)
+Forma Crema de Té Confite estrella
+Matcha Cream (Star Sweet)
+Forma Crema de Té Confite trébol
+Matcha Cream (Clover Sweet)
+Forma Crema de Té Confite fruto
+Matcha Cream (Berry Sweet)
+Forma Crema de Té Confite lazo
+Matcha Cream (Ribbon Sweet)
+Forma Crema de Menta Confite fresa
+Mint Cream (Strawberry Sweet)
+Forma Crema de Menta Confite corazón
+Mint Cream (Love Sweet)
+Forma Crema de Menta Confite flor
+Mint Cream (Flower Sweet)
+Forma Crema de Menta Confite estrella
+Mint Cream (Star Sweet)
+Forma Crema de Menta Confite trébol
+Mint Cream (Clover Sweet)
+Forma Crema de Menta Confite fruto
+Mint Cream (Berry Sweet)
+Forma Crema de Menta Confite lazo
+Mint Cream (Ribbon Sweet)
+Forma Crema de Limón Confite fresa
+Lemon Cream (Strawberry Sweet)
+Forma Crema de Limón Confite corazón
+Lemon Cream (Love Sweet)
+Forma Crema de Limón Confite flor
+Lemon Cream (Flower Sweet)
+Forma Crema de Limón Confite estrella
+Lemon Cream (Star Sweet)
+Forma Crema de Limón Confite trébol
+Lemon Cream (Clover Sweet)
+Forma Crema de Limón Confite fruto
+Lemon Cream (Berry Sweet)
+Forma Crema de Limón Confite lazo
+Lemon Cream (Ribbon Sweet)
+Forma Crema Salada Confite fresa
+Salted Cream (Strawberry Sweet)
+Forma Crema Salada Confite corazón
+Salted Cream (Love Sweet)
+Forma Crema Salada Confite flor
+Salted Cream (Flower Sweet)
+Forma Crema Salada Confite estrella
+Salted Cream (Star Sweet)
+Forma Crema Salada Confite trébol
+Salted Cream (Clover Sweet)
+Forma Crema Salada Confite fruto
+Salted Cream (Berry Sweet)
+Forma Crema Salada Confite lazo
+Salted Cream (Ribbon Sweet)
+Forma Mezcla Rosa Confite fresa
+Ruby Swirl (Strawberry Sweet)
+Forma Mezcla Rosa Confite corazón
+Ruby Swirl (Love Sweet)
+Forma Mezcla Rosa Confite flor
+Ruby Swirl (Flower Sweet)
+Forma Mezcla Rosa Confite estrella
+Ruby Swirl (Star Sweet)
+Forma Mezcla Rosa Confite trébol
+Ruby Swirl (Clover Sweet)
+Forma Mezcla Rosa Confite fruto
+Ruby Swirl (Berry Sweet)
+Forma Mezcla Rosa Confite lazo
+Ruby Swirl (Ribbon Sweet)
+Forma Mezcla Caramelo Confite fresa
+Caramel Swirl (Strawberry Sweet)
+Forma Mezcla Caramelo Confite corazón
+Caramel Swirl (Love Sweet)
+Forma Mezcla Caramelo Confite flor
+Caramel Swirl (Flower Sweet)
+Forma Mezcla Caramelo Confite estrella
+Caramel Swirl (Star Sweet)
+Forma Mezcla Caramelo Confite trébol
+Caramel Swirl (Clover Sweet)
+Forma Mezcla Caramelo Confite fruto
+Caramel Swirl (Berry Sweet)
+Forma Mezcla Caramelo Confite lazo
+Caramel Swirl (Ribbon Sweet)
+Forma Mezcla Tres Sabores Confite fresa
+Rainbow Swirl (Strawberry Sweet)
+Forma Mezcla Tres Sabores Confite corazón
+Rainbow Swirl (Love Sweet)
+Forma Mezcla Tres Sabores Confite flor
+Rainbow Swirl (Flower Sweet)
+Forma Mezcla Tres Sabores Confite estrella
+Rainbow Swirl (Star Sweet)
+Forma Mezcla Tres Sabores Confite trébol
+Rainbow Swirl (Clover Sweet)
+Forma Mezcla Tres Sabores Confite fruto
+Rainbow Swirl (Berry Sweet)
+Forma Mezcla Tres Sabores Confite lazo
+Rainbow Swirl (Ribbon Sweet)
+Forma Cara Deshielo
+Noice Face
+Forma Voraz
+Hangry Mode
+Forma Espada Suprema
+Crowned Sword
+Forma Escudo Supremo
+Crowned Shield
+Estilo Fluido
+Rapid Strike Style
+Forma Jinete Glacial
+Ice Rider
+Forma Jinete Espectral
+Shadow Rider
+Forma Hisui
+Hisuian Form
+Forma Paldea (Combatiente)
+Combat Breed
+Forma Paldea (Ardiente)
+Blaze Breed
+Forma Paldea (Acuática)
+Aqua Breed
+Forma Paldea
+Paldean Form
+Forma Raya Roja
+Red-Striped Form
+Forma Raya Azul
+Blue-Striped Form
+Forma Luna Carmesí
+Bloodmoon Form
+Forma Trinodular
+Three-Segment Form
+Forma Heroica
+Hero Form
+Familia de Tres
+Family of Three
+Forma Lánguida
+Droopy Form
+Forma Recta
+Stretchy Form
+Plumaje Azul
+Blue Plumage
+Plumaje Amarillo
+Yellow Plumage
+Plumaje Blanco
+White Plumage
+Forma Andante
+Roaming Form
+Forma Opulenta
+Masterpiece Form
+Forma Exquisita
+Masterpiece Form
+Máscara Fuente
+Wellspring Mask
+Máscara Horno
+Hearthflame Mask
+Máscara Cimiento
+Cornerstone Mask
+Forma Teracristal
+Terastal Form
+Forma Astral
+Stellar Form
+Forma papá
+Dada Form
+Mega Venusaur Y
+Mega Venusaur Max
+Mega Blastoise Y
+Mega Blastoise Max
+Mega Gengar Y
+Mega Gengar Max
+Eevee Lets Go
+Partner Eevee
+Mega Kingler
+Mega Kingler Max
+Mega Lapras
+Mega Lapras Max
+Mega Machamp
+Mega Machamp Max
+Mega Garbodor
+Mega Garbodor Max
+Mega Corviknight
+Mega Corviknight Max
+Mega Orbeetle
+Mega Orbeetle Max
+Mega Butterfree
+Mega Butterfree Max
+Mega Drednaw
+Mega Drednaw Max
+Mega Coalossal
+Mega Coalossal Max
+Mega Flapple
+Mega Flapple Max
+Mega Appletun
+Mega Appletun Max
+Mega Sandconda
+Mega Sandconda Max
+Mega Toxtricity
+Mega Toxtricity Max
+Mega Centiskorch
+Mega Centiskorch Max
+Mega Hatterene
+Mega Hatterene Max
+Mega Grimmsnarl
+Mega Grimmsnarl Max
+Mega Alcremie
+Mega Alcremie Max
+Mega Copperajah
+Mega Copperajah Max
+Mega Duraludon
+Mega Duraludon Max
+Mega Eevee
+Mega Eevee Max
+Mega Jumpluff
+Mega Jumpluff
+Mega Rillaboom
+Mega Rillaboom Max
+Mega Cinderace
+Mega Cinderace Max
+Mega Inteleon
+Mega Inteleon Max
+Mega Snorlax
+Mega Snorlax Max
+Mega Clefable
+Mega Clefable
+Mega Starmie
+Mega Starmie
+Mega Victreebel
+Mega Victreebel
+Mega Dragonite
+Mega Dragonite
+Mega Meganium
+Mega Meganium
+Mega Feraligatr
+Mega Feraligatr
+Mega Skarmory
+Mega Skarmory
+Mega Froslass
+Mega Froslass
+Mega Emboar
+Mega Emboar
+Mega Excadrill
+Mega Excadrill
+Mega Scolipede
+Mega Scolipede
+Mega Scrafty
+Mega Scrafty
+Mega Eelektross
+Mega Eelektross
+Mega Chandelure
+Mega Chandelure
+Mega Chesnaught
+Mega Chesnaught
+Mega Delphox
+Mega Delphox
+Mega Greninja
+Mega Greninja
+Mega Pyroar
+Mega Pyroar
+Mega Malamar
+Mega Malamar
+Mega Barbaracle
+Mega Barbaracle
+Mega Dragalge
+Mega Dragalge
+Mega Hawlucha
+Mega Hawlucha
+Mega Drampa
+Mega Drampa
+Mega Falinks
+Mega Falinks
+Mega Floette
+Mega Floette
+Mega Zygarde
+Mega Zygarde
+Mega Staraptor
+Mega Staraptor
+Mega Lucario Z
+Mega Lucario Z
+Mega Crabominable
+Mega Crabominable
+Mega Magearna
+Mega Magearna
+Mega Magearna Forma Color Vetusta
+Mega Magearna Original Color
+Mega Absol Z
+Mega Absol Z
+Mega Chimecho
+Mega Chimecho
+Mega Garchomp Z
+Mega Garchomp Z
+Mega Golurk
+Mega Golurk
+Mega Tatsugiri Forma Curvada
+Mega Tatsugiri Curly Form
+Mega Tatsugiri Forma Lánguida
+Mega Tatsugiri Droopy Form
+Mega Tatsugiri Forma Recta
+Mega Tatsugiri Stretchy Form
+Mega Meowstic
+Mega Meowstic
+Mega Baxcalibur
+Mega Baxcalibur
+Mega Scovillain
+Mega Scovillain
+Mega Glimmora
+Mega Glimmora
+Mega Golisopod
+Mega Golisopod
+Mega Zeraora
+Mega Zeraora
+Mega Heatran
+Mega Heatran
+Mega Darkrai
+Mega Darkrai
+Mega Raichu x
+Mega Raichu X
+Mega Raichu Y
+Mega Raichu Y

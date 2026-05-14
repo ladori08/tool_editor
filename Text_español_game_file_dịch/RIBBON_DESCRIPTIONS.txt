@@ -1,0 +1,160 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[RIBBON_DESCRIPTIONS]
+¡Ganador de la categoría Normal del Concurso Carisma!
+Quán quân hạng Normal của Cuộc thi Carisma!
+¡Ganador de la categoría Alto del Concurso Carisma!
+Quán quân hạng Cao của Cuộc thi Carisma!
+¡Ganador de la categoría Avanzado del Concurso Carisma!
+Quán quân hạng Nâng cao của Cuộc thi Carisma!
+¡Ganador de la categoría Experto del Concurso Carisma!
+Quán quân hạng Chuyên gia của Cuộc thi Carisma!
+¡Ganador de la categoría Normal del Concurso de Belleza!
+Quán quân hạng Normal của Cuộc thi Sắc đẹp!
+¡Ganador de la categoría Alto del Concurso de Belleza!
+Quán quân hạng Cao của Cuộc thi Sắc đẹp!
+¡Ganador de la categoría Avanzado del Concurso de Belleza!
+Quán quân hạng Nâng cao của Cuộc thi Sắc đẹp!
+¡Ganador de la categoría Experto del Concurso de Belleza!
+Quán quân hạng Chuyên gia của Cuộc thi Sắc đẹp!
+¡Ganador de la categoría Normal del Concurso de Dulzura!
+Quán quân hạng Normal của Cuộc thi Dễ thương!
+¡Ganador de la categoría Alto del Concurso de Dulzura!
+Quán quân hạng Cao của Cuộc thi Dễ thương!
+¡Ganador de la categoría Avanzado del Concurso de Dulzura!
+Quán quân hạng Nâng cao của Cuộc thi Dễ thương!
+¡Ganador de la categoría Experto del Concurso de Dulzura!
+Quán quân hạng Chuyên gia của Cuộc thi Dễ thương!
+¡Ganador de la categoría Normal del Concurso de Ingenio!
+Quán quân hạng Normal của Cuộc thi Thông minh!
+¡Ganador de la categoría Alto del Concurso de Ingenio!
+Quán quân hạng Cao của Cuộc thi Thông minh!
+¡Ganador de la categoría Avanzado del Concurso de Ingenio!
+Quán quân hạng Nâng cao của Cuộc thi Thông minh!
+¡Ganador de la categoría Experto del Concurso de Ingenio!
+Quán quân hạng Chuyên gia của Cuộc thi Thông minh!
+¡Ganador de la categoría Normal del Concurso de Dureza!
+Quán quân hạng Normal của Cuộc thi Mạnh mẽ!
+¡Ganador de la categoría Alto del Concurso de Dureza!
+Quán quân hạng Cao của Cuộc thi Mạnh mẽ!
+¡Ganador de la categoría Avanzado del Concurso de Dureza!
+Quán quân hạng Nâng cao của Cuộc thi Mạnh mẽ!
+¡Ganador de la categoría Experto del Concurso de Dureza!
+Quán quân hạng Chuyên gia của Cuộc thi Mạnh mẽ!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Carisma!
+Quán quân hạng Normal của Siêu cuộc thi Carisma!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Carisma!
+Quán quân hạng Khó của Siêu cuộc thi Carisma!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Carisma!
+Quán quân hạng Cao cấp của Siêu cuộc thi Carisma!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Carisma!
+Quán quân hạng Chuyên gia của Siêu cuộc thi Carisma!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Belleza!
+Quán quân hạng Normal của Siêu cuộc thi Sắc đẹp!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Belleza!
+Quán quân hạng Khó của Siêu cuộc thi Sắc đẹp!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Belleza!
+Quán quân hạng Cao cấp của Siêu cuộc thi Sắc đẹp!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Belleza!
+Quán quân hạng Chuyên gia của Siêu cuộc thi Sắc đẹp!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Dulzura!
+Quán quân hạng Normal của Siêu cuộc thi Dễ thương!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Dulzura!
+Quán quân hạng Khó của Siêu cuộc thi Dễ thương!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Dulzura!
+Quán quân hạng Cao cấp của Siêu cuộc thi Dễ thương!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Dulzura!
+Quán quân hạng Chuyên gia của Siêu cuộc thi Dễ thương!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Ingenio!
+Quán quân hạng Normal của Siêu cuộc thi Thông minh!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Ingenio!
+Quán quân hạng Khó của Siêu cuộc thi Thông minh!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Ingenio!
+Quán quân hạng Cao cấp của Siêu cuộc thi Thông minh!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Ingenio!
+Quán quân hạng Chuyên gia của Siêu cuộc thi Thông minh!
+¡Ganador de la categoría Normal del Súper concurso de Categoría Dureza!
+Quán quân hạng Normal của Siêu cuộc thi Mạnh mẽ!
+¡Ganador de la categoría Difícil del Súper concurso de Categoría Dureza!
+Quán quân hạng Khó của Siêu cuộc thi Mạnh mẽ!
+¡Ganador de la categoría Superior del Súper concurso de Categoría Dureza!
+Quán quân hạng Cao cấp của Siêu cuộc thi Mạnh mẽ!
+¡Ganador de la categoría Experto del Súper concurso de Categoría Dureza!
+Quán quân hạng Chuyên gia của Siêu cuộc thi Mạnh mẽ!
+Cinta otorgada por superar el desafío de nivel 50 de la Torre Batalla.
+Ruy băng nhận được khi vượt qua thử thách cấp 50 của Tháp Chiến Đấu.
+Cinta otorgada por superar el desafío de nivel 100 de la Torre Batalla.
+Ruy băng nhận được khi vượt qua thử thách cấp 100 của Tháp Chiến Đấu.
+Cinta obtenida por vencer por primera vez al Amo Torre en la Torre Batalla.
+Ruy băng nhận được khi lần đầu đánh bại Tower Tycoon tại Tháp Chiến Đấu.
+Cinta obtenida por vencer por segunda vez al Amo Torre en la Torre Batalla.
+Ruy băng nhận được khi lần thứ hai đánh bại Tower Tycoon tại Tháp Chiến Đấu.
+Una cinta otorgada por completar el desafío de Doble de la Torre Batalla.
+Ruy băng nhận được khi hoàn thành thử thách Đôi của Tháp Chiến Đấu.
+Una cinta otorgada por completar el desafío Multi de la Torre Batalla.
+Ruy băng nhận được khi hoàn thành thử thách Multi của Tháp Chiến Đấu.
+Una cinta otorgada por completar el desafío Multi Conexión de la Torre Batalla.
+Ruy băng nhận được khi hoàn thành thử thách Multi Kết nối của Tháp Chiến Đấu.
+Una cinta otorgada por completar el desafío de la Torre Batalla Wi-Fi.
+Ruy băng nhận được khi hoàn thành thử thách Wi-Fi của Tháp Chiến Đấu.
+Cinta por superar la Liga Pokémon e ingresar al Salón de la Fama.
+Ruy băng nhận được khi vượt qua Liên đoàn Pokémon và vào Hall of Fame.
+Cinta otorgada por vencer al Campeón e ingresar al Salón de la Fama de Sinnoh.
+Ruy băng nhận được khi đánh bại Nhà Vô Địch và vào Hall of Fame của Sinnoh.
+Una cinta otorgada por establecer un récord increíble.
+Ruy băng nhận được khi lập kỷ lục ấn tượng.
+Una cinta otorgada por establecer un récord histórico.
+Ruy băng nhận được khi lập kỷ lục lịch sử.
+Una cinta otorgada por establecer un récord legendario.
+Ruy băng nhận được khi lập kỷ lục huyền thoại.
+Una cinta extremadamente bonita y extravagante.
+Một ruy băng cực kỳ đẹp và lộng lẫy.
+Una cinta increíblemente majestuosa y con un aire aristocrático.
+Một ruy băng vô cùng uy nghi và mang vẻ quý tộc.
+Una cinta preciosa y majestuosa que es de lo más fabulosa y maravillosa.
+Một ruy băng tuyệt đẹp và uy nghi, vô cùng lộng lẫy và tuyệt vời.
+Una cinta para recordar un evento vigorizante que creó energía vital.
+Một ruy băng để ghi nhớ một sự kiện tiếp thêm sinh lực.
+Una cinta para recordar un evento excionante que hizo la vida más interesante.
+Một ruy băng để ghi nhớ một sự kiện thú vị làm cuộc sống thêm hấp dẫn.
+Una cinta para recordar sentimientos tristes que añadieron interés a la vida.
+Một ruy băng để ghi nhớ những cảm xúc buồn đã làm cuộc sống thêm ý nghĩa.
+Una cinta para recordar descuidos que ayudaron a tomar decisiones vitales.
+Một ruy băng để ghi nhớ những sơ suất đã giúp đưa ra quyết định quan trọng.
+Una cinta para recordar una anécdota refrescante que añadió chispa a la vida.
+Một ruy băng để ghi nhớ một kỷ niệm tươi mới làm cuộc sống thêm sinh động.
+Una cinta para recordar un sueño profundo que hizo que la vida fuera calmada.
+Một ruy băng để ghi nhớ một giấc ngủ sâu giúp cuộc sống trở nên bình yên.
+Una cinta para recordar que las sonrisas mejoran la calidad de vida.
+Một ruy băng để ghi nhớ rằng nụ cười giúp cải thiện chất lượng cuộc sống.
+Una cinta otorgada a un Pokémon que deja huellas de primera.
+Ruy băng trao cho Pokémon để lại dấu ấn xuất sắc.
+Cinta otorgada por ser elegido como supermodelo en Hoenn.
+Ruy băng nhận được khi được chọn làm siêu mẫu tại Hoenn.
+Cinta otorgada por ser un excelente trabajador.
+Ruy băng nhận được vì là một người làm việc xuất sắc.
+Una cinta para celebrar un cumpleaños.
+Một ruy băng để kỷ niệm sinh nhật.
+Una cinta para conmemorar un día especial.
+Một ruy băng để kỷ niệm một ngày đặc biệt.
+Una cinta que proclama amor por los Pokémon.
+Một ruy băng thể hiện tình yêu dành cho Pokémon.
+Cinta de vacaciones especiales.
+Ruy băng kỳ nghỉ đặc biệt.
+Una cinta conmemorativa obtenida en un lugar misterioso.
+Một ruy băng kỷ niệm nhận được tại một nơi bí ẩn.
+Una cinta otorgada por superar todos los desafíos difíciles.
+Ruy băng nhận được khi vượt qua mọi thử thách khó khăn.
+Cinta de Campeón.
+Ruy băng Nhà Vô Địch.
+Cinta de Campeón de Competición de Batalla.
+Ruy băng Nhà Vô Địch Giải Đấu Chiến Đấu.
+Cinta de Campeón Regional del Campeonato Mundial de Videojuegos Pokémon.
+Ruy băng Nhà Vô Địch Khu Vực của Giải Vô Địch Thế Giới Pokémon.
+Una cinta otorgada por ganar 100 combates seguidos.
+Ruy băng nhận được khi thắng 100 trận liên tiếp.
+Cinta de Campeón Nacional del Campeonato Mundial de Videojuegos Pokémon.
+Ruy băng Nhà Vô Địch Quốc Gia của Giải Vô Địch Thế Giới Pokémon.
+Cinta de Campeón Mundial del Campeonato Mundial de Videojuegos Pokémon.
+Ruy băng Nhà Vô Địch Thế Giới của Giải Vô Địch Thế Giới Pokémon.

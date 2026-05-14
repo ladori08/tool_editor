@@ -1,0 +1,68 @@
+CHARMANDER (Charmander) (F) @ Charizardite Y
+Ability: Solar Power
+Level: 8
+Shiny: Yes
+Happiness: 132
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Timid Nature
+- Scratch
+- Growl
+- Ember
+- Tackle
+
+LUCARIO (Lucario) (M) @ Shell Bell
+Ability: Justified
+Level: 14
+Happiness: 72
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Jolly Nature
+- Drain Punch
+- Extreme Speed
+- Meteor Mash
+- Swords Dance
+
+CHIMCHAR (Chimchar) (M)
+Ability: Iron Fist
+Level: 11
+Happiness: 106
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Naive Nature
+- Scratch
+- Leer
+- Ember
+- Taunt
+
+AEGISLASH (Aegislash) (M) @ Leftovers
+Ability: Stance Change
+Level: 14
+Happiness: 104
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Adamant Nature
+- King's Shield
+- Head Smash
+- Iron Head
+- Screech
+
+Mareep (F)
+Ability: Static
+Level: 4
+Happiness: 72
+EVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 6 HP / 31 Atk / 26 Def / 9 SpA / 26 SpD / 9 Spe
+Naughty Nature
+- Tackle
+- Growl
+- Thunder Wave
+
+Pidgey (F)
+Ability: Tangled Feet
+Level: 3
+Happiness: 70
+EVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 21 HP / 12 Atk / 5 Def / 29 SpA / 10 SpD / 11 Spe
+Quiet Nature
+- Tackle

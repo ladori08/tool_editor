@@ -1,0 +1,228 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[MAP_NAMES]
+Intro
+Intro
+Pueblo Paleta
+Pallet Town
+Ruta 1
+Route 1
+Ciudad Verde
+Viridian City
+Ruta 20
+Route 24
+Ruta 2 Sur
+Route 2 South
+Ruta 2 Norte
+Route 2 North
+Bosque Verde
+Viridian Forest
+Ciudad Plateada
+Pewter City
+Ruta 3
+Route 3
+Monte Moon
+Mt. Moon
+Monte Moon Exterior
+Mt. Moon (Exterior)
+Ruta 4
+Route 4
+Ciudad Celeste
+Cerulean City
+Ruta 5
+Route 5
+Ruta 6
+Route 6
+Ciudad Carmín
+Vermilion City
+Ruta 15
+Route 11
+Túnel Diglett
+Diglett's Cave
+Ruta 9
+Route 9
+Ruta 10 Norte
+Route 10 North
+Ruta 10 Sur
+Route 10 South
+Túnel Roca
+Rock Tunnel
+Pueblo Lavanda
+Lavender Town
+Casa
+Home
+Laboratorio
+Laboratory
+Centro Pokémon
+Pokémon Center
+Escuela
+School
+Transición
+Gate
+Casino Azulona
+Celadon Game Corner
+Museo Pokémon
+Pokémon Museum
+Gimnasio Pokémon
+Pokémon Gym
+Caravana
+Trailer
+Guardería
+Day Care
+Subterráneo
+Underground Path
+S.S Anne
+S.S. Anne
+Tienda de Bicis
+Bike Shop
+Cafetería
+Café
+Casa de Bill
+Bill's House
+Club de Fans Pokémon
+Pokémon Fan Club
+Torre Pokémon
+Pokémon Tower
+Refugio Fuji
+Fuji Shelter
+Ruta 8
+Route 8
+Ruta 7
+Route 7
+Ciudad Azulona
+Celadon City
+Centro Comercial
+Department Store
+Restaurante de Ramen
+Ramen Restaurant
+Edificio Azulona
+Celadon Building
+Guarida Rocket
+Rocket Hideout
+Ruta 12
+Route 12
+Ruta 11
+Route 16
+Pueblo Marengo
+Marengo Town
+Ruta 13
+Route 13
+Ruta 14
+Route 14
+Ciudad Fucsia
+Fuchsia City
+Ruta 16
+Route 18
+Ruta 17
+Route 19
+Ciudad Azafrán
+Saffron City
+Silph S.A
+Silph Co.
+Intro de verdad
+Real Intro
+Intro de verdad de la buena
+Really Good Intro
+Ruta 18
+Route 20
+Ruta 19
+Route 21
+Ruta 21
+Route 25
+Camino de Bicis
+Route 17 (Cycling Road)
+Zona Safari
+Route 15 (Safari Zone)
+Isla Canela
+Cinnabar Island
+Dojo Azafrán
+Fighting Dojo
+Laboratorio Canela
+Cinnabar Lab
+Mansión Quemada
+Pokémon Mansion
+Islas Espuma
+Seafoam Islands
+Liga Pokémon
+Pokémon League
+Tienda Exótica
+Regional Shop
+Casa del Guarda
+Guard House
+Casa del Sr. Psíquico
+Mr. Psychic's House
+Estación del Magnetotrén
+Magnet Train Station
+Granja Marengo
+Marengo Farm
+Central Energía
+Power Plant
+Volcán Canela
+Cinnabar Volcano
+Ruta 22
+Route 22
+Cataratas Tohjo
+Tohjo Falls
+Ruta 23
+Route 26
+Monte Plateado
+Mt. Silver
+Ruta 25
+Route 23
+Ciudad Añil
+Indigo City
+Cueva Celeste
+Cerulean Cave
+Bosque Celeste
+Cerulean Forest
+Claro Secreto
+Secret Clearing
+Hostal Añil
+Indigo Hotel
+Villa Ámbar
+Amber Village
+Ruta 26
+Route I
+Villa Azabache
+Azabache Village
+Cabo Azabache
+Cape Azabache
+Ruta 27
+Route II
+Islote Recuerdo
+Memorial Islet
+Ruta 28
+Route III
+Villa Magenta
+Magenta Village
+Ruta 29
+Route IV
+Ruta 30
+Route V
+Cabo Magenta
+Cape Magenta
+Cueva Glaciada
+Glacial Cave
+Bosque Arcoiris
+Rainbow Forest
+Cueva Perdida
+Lost Cave
+Dojo Magenta
+Magenta Dojo
+Créditos
+Credits
+Créditos 2
+Credits 2
+Créditos 3
+Credits 3
+Créditos 4
+Credits 4
+Escena
+Scene
+Almacén Secreto
+Secret Path
+Almacén Rocket
+Rocket Warehouse
+Torre Batalla
+Battle Tower

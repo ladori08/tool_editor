@@ -1,0 +1,667 @@
+{
+  "profile_version": 1,
+  "created_at_utc": "2026-05-06T08:17:02Z",
+  "game_root": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5",
+  "save_path": "C:\\Users\\Admin\\AppData\\Roaming\\Pokemon Anil\\Partida 1.rxdata",
+  "game_probe": {
+    "tracked_file_count": 76,
+    "tracked_files": [
+      {
+        "path": "Data/abilities.dat",
+        "size": 52651,
+        "mtime_ns": 1774304585000000000,
+        "sha256": "33f787bdf6aad6d84fd9e22bcc1739a69f5f3290ca10d0d4e101ef003f1f562f"
+      },
+      {
+        "path": "Data/berry_plants.dat",
+        "size": 2788,
+        "mtime_ns": 1774304585000000000,
+        "sha256": "383280968cf40fa62f311b4cd7b408544deb7f9acfd6f1cbc95ba3ccdffa86ef"
+      },
+      {
+        "path": "Data/data_for_showdown/abs_en.txt",
+        "size": 6715,
+        "mtime_ns": 1768220393000000000,
+        "sha256": "73f8042f8862a9277da12a2ec58853c04ed3013e2bdd86c288f2169ff2a0f188"
+      },
+      {
+        "path": "Data/data_for_showdown/items_en.txt",
+        "size": 16563,
+        "mtime_ns": 1768220393000000000,
+        "sha256": "7141c2df726187c8dbd2b0017e8e5b3032a3975c36637e8d065d423ee514f0f4"
+      },
+      {
+        "path": "Data/data_for_showdown/moves_en.txt",
+        "size": 20382,
+        "mtime_ns": 1768220393000000000,
+        "sha256": "43bd4b2641ae953cd213276b21a7ee9aed9d5673d48bf5478a2b6b43678e5bd3"
+      },
+      {
+        "path": "Data/data_for_showdown/stats_en.txt",
+        "size": 0,
+        "mtime_ns": 1768220393000000000,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "Data/dungeon_parameters.dat",
+        "size": 706,
+        "mtime_ns": 1774304594000000000,
+        "sha256": "294581e70355d469640bd594042dc6388a426fdb2469e3179a89caf12df4976b"
+      },
+      {
+        "path": "Data/dungeon_tilesets.dat",
+        "size": 1202,
+        "mtime_ns": 1774304594000000000,
+        "sha256": "fb3d0759bfc123c3820abbf80e2c1aac9ed0f47618856ebe69d7cc1be0359ed8"
+      },
+      {
+        "path": "Data/encounters.dat",
+        "size": 33376,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "ffef3ec1312584be49d8a5dfe52ecb5c6550c5fc9c6f539505e7a853e1094a93"
+      },
+      {
+        "path": "Data/items.dat",
+        "size": 200928,
+        "mtime_ns": 1778054795271575200,
+        "sha256": "fb40f33d358942f71cbd75ce8b4eaa2b2ed45cc8c08c4d45f2974fc8d2f90863"
+      },
+      {
+        "path": "Data/map_connections.dat",
+        "size": 4,
+        "mtime_ns": 1774304585000000000,
+        "sha256": "9140c85f1b09e03f67249bac40beb16b5b512b8915f702f44937b9011ff7205d"
+      },
+      {
+        "path": "Data/map_metadata.dat",
+        "size": 32133,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "623ba075571d8c77c96d383b0ae77777599a8270b8919d9ae8f885aafc86b671"
+      },
+      {
+        "path": "Data/messages_core.dat",
+        "size": 500,
+        "mtime_ns": 1774304597000000000,
+        "sha256": "5f3cf6cf09c3b424b29c7d914b2e5f753b816fbd84840841c7d6678e8b46c6de"
+      },
+      {
+        "path": "Data/messages_english_game.dat",
+        "size": 2269684,
+        "mtime_ns": 1775275148000000000,
+        "sha256": "4836007754a2f3f794a299b10f3cbd0c215aaceac3f5bbadbf3301ad1a53cafb"
+      },
+      {
+        "path": "Data/messages_game.dat",
+        "size": 2416617,
+        "mtime_ns": 1774304597000000000,
+        "sha256": "12af6dd9ae2f11ba6b79d6b25d65e7de12449a7987bc20f08ea7d11db27bbcef"
+      },
+      {
+        "path": "Data/messages_viet_game.dat",
+        "size": 2514275,
+        "mtime_ns": 1775338547091533800,
+        "sha256": "4ae74aadf3ac1e5612305977f76d5eb80a19017b72e9849b85cb7300d3a5de04"
+      },
+      {
+        "path": "Data/metadata.dat",
+        "size": 391,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "ca62d4e16ec9ac1b02d177a426d761d5aea162a73d1a3bb65ed4e8b0c2458c7a"
+      },
+      {
+        "path": "Data/move2anim.dat",
+        "size": 14905,
+        "mtime_ns": 1774304594000000000,
+        "sha256": "1af7a95dc417e271c6ae92efcc18df661ae0eb6e2db126f0430b60c673ab093d"
+      },
+      {
+        "path": "Data/moves.dat",
+        "size": 202415,
+        "mtime_ns": 1774304585000000000,
+        "sha256": "faac7d47eb5798c763496c84ae3c5f6e60e58500b0324c9648acfbeb7d1fcfc3"
+      },
+      {
+        "path": "Data/phone.dat",
+        "size": 3506,
+        "mtime_ns": 1774304594000000000,
+        "sha256": "ca9fe6f4c887ea1bd95478b4c9096407bc213904c75325758a29624592ef2a6b"
+      },
+      {
+        "path": "Data/player_metadata.dat",
+        "size": 2369,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "32556e6eb38d0cdb5857f9aa3315faec70ba182a95bfccd264b4c10e462539ef"
+      },
+      {
+        "path": "Data/PluginScripts.rxdata",
+        "size": 779863,
+        "mtime_ns": 1774823454000000000,
+        "sha256": "5e23e979da0dcf9972633239e5827758892073085932e693c65d6a39f84e55d9"
+      },
+      {
+        "path": "Data/regional_dexes.dat",
+        "size": 9919,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "da71a47973895bc45c0bcd08d48436e6e7d38c107b3ebe340f7f50cf9c75acb9"
+      },
+      {
+        "path": "Data/ribbons.dat",
+        "size": 10742,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "df6abf6dfa2fe74d9c7b13244cb17bd4adf27521651bcaec3ac62aa5d30b5d12"
+      },
+      {
+        "path": "Data/Scripts.rxdata",
+        "size": 1270741,
+        "mtime_ns": 1778039964238959200,
+        "sha256": "06d3bbca2a79104ef11a67dbed74ef101a02de3f8461ede43497a9a049b2ab75"
+      },
+      {
+        "path": "Data/species.dat",
+        "size": 1208399,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "d051363a47f47099f8e0a77cc7d5ff042ac73d31dd968601a51c4b5e62a3cc7b"
+      },
+      {
+        "path": "Data/species_metrics.dat",
+        "size": 135985,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "4e60ad98b9b9bba8d37dbce6c69400c7ee31d5e189eba6d6243b308ee0775f0d"
+      },
+      {
+        "path": "Data/town_map.dat",
+        "size": 5040,
+        "mtime_ns": 1774304585000000000,
+        "sha256": "b6066cc2169a85278d5f151fa476cec8c74e5966db35958a7875ad197c2a2884"
+      },
+      {
+        "path": "Data/trainer_lists.dat",
+        "size": 114471,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "e43d60435de666db7b23a854f3863007ffa140487e30cbe43b21f2bd514e2771"
+      },
+      {
+        "path": "Data/trainer_types.dat",
+        "size": 17040,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "23c63f55cac8768fd8f3b6c3864ae32556e3250e78e65c2f66bfff273e59ad97"
+      },
+      {
+        "path": "Data/trainers.dat",
+        "size": 174908,
+        "mtime_ns": 1774304593000000000,
+        "sha256": "450715fd4dd999d1192f1ade640a4b54dbac6bd29066bcc70778aaf001d2a0d4"
+      },
+      {
+        "path": "Data/types.dat",
+        "size": 1519,
+        "mtime_ns": 1774304585000000000,
+        "sha256": "0d8702706acb8170a2b70d601e8146ed5a08d318ce25a85cec2c93aee0861755"
+      },
+      {
+        "path": "Game.ini",
+        "size": 93,
+        "mtime_ns": 1775339172772113900,
+        "sha256": "ff9e9173f04944328778fab6e2d88b305f4799905aca127fe5bd955b034a0e2c"
+      },
+      {
+        "path": "mkxp.json",
+        "size": 6065,
+        "mtime_ns": 1771572132000000000,
+        "sha256": "203d143067727e3ba4e8ccb1f4dade8436dc66790ceb93ea86388ea81454db4f"
+      },
+      {
+        "path": "PBS/abilities.txt",
+        "size": 59815,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "1fc6c99a1765c5e55235894ef9ab534170dbae4824b83d48c418a248a7f48d95"
+      },
+      {
+        "path": "PBS/battle_facility_lists.txt",
+        "size": 819,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "fabf3384d466129620b58c7a475ddf8371179c378d61e0c01360180a12680efe"
+      },
+      {
+        "path": "PBS/battle_tower_pokemon.txt",
+        "size": 62566,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "735b7f06c69d4370a8a89aa86cedcbf5ede1b5f8a4efc5efcfbbee06395cf751"
+      },
+      {
+        "path": "PBS/battle_tower_trainers.txt",
+        "size": 104,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "36426cf5e3cb0aa1275c8d88bb99d429be1f1922269b3b9cc9631dc51f002ffa"
+      },
+      {
+        "path": "PBS/berry_plants.txt",
+        "size": 6464,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "afd5e62c4e453c6281d6d57a6284928e597de790a61d1a8ff1edeae17600aabc"
+      },
+      {
+        "path": "PBS/cup_fancy_pkmn.txt",
+        "size": 43865,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "86a3fda02e135a9cef87bb769dedadc6c191ea1f61f347d2affee109d5d88660"
+      },
+      {
+        "path": "PBS/cup_fancy_pkmn_single.txt",
+        "size": 17912,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "ff840765c13cc6253bc88b95bc4bac75746790e8eb387fdda4b843e6e5fec664"
+      },
+      {
+        "path": "PBS/cup_fancy_trainers.txt",
+        "size": 104,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "36426cf5e3cb0aa1275c8d88bb99d429be1f1922269b3b9cc9631dc51f002ffa"
+      },
+      {
+        "path": "PBS/cup_fancy_trainers_single.txt",
+        "size": 104,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "36426cf5e3cb0aa1275c8d88bb99d429be1f1922269b3b9cc9631dc51f002ffa"
+      },
+      {
+        "path": "PBS/cup_little_pkmn.txt",
+        "size": 26075,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "f4aef36d99261e546d1b89e83c44a26caa9c99e5ff2e15fddb6d23f250786305"
+      },
+      {
+        "path": "PBS/cup_little_trainers.txt",
+        "size": 104,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "36426cf5e3cb0aa1275c8d88bb99d429be1f1922269b3b9cc9631dc51f002ffa"
+      },
+      {
+        "path": "PBS/cup_pika_pkmn.txt",
+        "size": 20264,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "948c28e00f8d28052e9c89056339ddcf3a47ea5a453824b260f0a4fc12341cca"
+      },
+      {
+        "path": "PBS/cup_pika_trainers.txt",
+        "size": 104,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "36426cf5e3cb0aa1275c8d88bb99d429be1f1922269b3b9cc9631dc51f002ffa"
+      },
+      {
+        "path": "PBS/cup_poke_pkmn.txt",
+        "size": 25987,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "2a2582ded3a5f491c3778f893d34fbbcde671a1c0af4ef31615e59ee1e309437"
+      },
+      {
+        "path": "PBS/cup_poke_trainers.txt",
+        "size": 104,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "36426cf5e3cb0aa1275c8d88bb99d429be1f1922269b3b9cc9631dc51f002ffa"
+      },
+      {
+        "path": "PBS/dungeon_parameters.txt",
+        "size": 647,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "2aa31b3e785eca522e8754bce9e8f84c2e6c91c6c35bcdb268cf57f501b5212c"
+      },
+      {
+        "path": "PBS/dungeon_tilesets.txt",
+        "size": 667,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "75fc3705769ec9fb6c41fd9a22163c21b88e98549c9387adc5a6d298ab694592"
+      },
+      {
+        "path": "PBS/encounters.txt",
+        "size": 55444,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "2d72e607ad8de59477d6d1b6ab37cd4590bff7e321fb5361f25b58e4bc37f25e"
+      },
+      {
+        "path": "PBS/items.txt",
+        "size": 224181,
+        "mtime_ns": 1774309360000000000,
+        "sha256": "d792d16e10fd46040511166127141151d6b39467ce14d851b342f9b318ecec5b"
+      },
+      {
+        "path": "PBS/map_connections.txt",
+        "size": 103,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "7d794443eff52539e42731827edb8a3852d6bf8447851c689533d58b67ba5e32"
+      },
+      {
+        "path": "PBS/map_metadata.txt",
+        "size": 37441,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "af26b33e49b31ec9e008d922e223c42629b92e612964553189a9ffa7eb6b91dc"
+      },
+      {
+        "path": "PBS/metadata.txt",
+        "size": 3297,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "f992cd710ed6b9a4b1f25655bec75ef9ff4e2f7010524f0b44adceeea9a19eef"
+      },
+      {
+        "path": "PBS/moves.txt",
+        "size": 270011,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "6378ba17f558402b416d369f1a27ecd7e983664903d8f2f356046734ed064266"
+      },
+      {
+        "path": "PBS/phone.txt",
+        "size": 3461,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "39f2ae8173268794d24051375ba87115406242738f11911c5ab5bc4cf86f1582"
+      },
+      {
+        "path": "PBS/pokemon.txt",
+        "size": 1543062,
+        "mtime_ns": 1773965584000000000,
+        "sha256": "08f65c1145e009a0a307ab46f614aadcf07308c5777d799060ce866eb3f72fd4"
+      },
+      {
+        "path": "PBS/pokemon_forms.txt",
+        "size": 178644,
+        "mtime_ns": 1773804814000000000,
+        "sha256": "1253bddc5251fcf666a4cf55a6a8ee9be395a792fa4debed5a17afe12bbc32ab"
+      },
+      {
+        "path": "PBS/pokemon_metrics.txt",
+        "size": 123958,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "d60db6d72a9b811e198372c71f29758f8b7651264985d4f72300dffe7333d249"
+      },
+      {
+        "path": "PBS/pokemon_metrics_female.txt",
+        "size": 1798,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "166f7e6665feef3165e9d99e24deff1844a7ac7706819407e6b936a292556341"
+      },
+      {
+        "path": "PBS/pokemon_metrics_forms.txt",
+        "size": 22109,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "2e930897ed5832e924ea7479e48635bea64de06856a7c6e05f19122dbfff925d"
+      },
+      {
+        "path": "PBS/pokemon_metrics_Gen_9_Pack.txt",
+        "size": 19801,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "f6dfefc44a772fc2c0e99de7a30bd13aaa980741b445e4ed7d5883b3e8019db2"
+      },
+      {
+        "path": "PBS/pokemon_metrics_gmax.txt",
+        "size": 4240,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "4426cffafca5f22d109b25fae06fbbeef0074df102a0af0c2e9d7946a44081a5"
+      },
+      {
+        "path": "PBS/regional_dexes.txt",
+        "size": 9270,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "9b0505b75c21fd5275d4a06a6acbf45cb2611a3a7ef917f00b1871089c789fb2"
+      },
+      {
+        "path": "PBS/ribbons.txt",
+        "size": 13671,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "50d2cc62fd1caf9e40bb24a46cf0482ad256e45419f2fcad03894da21bc8709d"
+      },
+      {
+        "path": "PBS/Shadow Pokémon backup/items_shadow_pkmn.txt",
+        "size": 1290,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "3a5c54d67da21e83ea599763acdf9f6f446a8c84d560aee1742988430210ac12"
+      },
+      {
+        "path": "PBS/Shadow Pokémon backup/moves_shadow_pkmn.txt",
+        "size": 4902,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "a6ddfb7a37acc3127435049a63b64096ee3a9fb5cbf2e33742ba989f13b6509f"
+      },
+      {
+        "path": "PBS/Shadow Pokémon backup/shadow_pokemon.txt",
+        "size": 11778,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "a6f048dd901ca7e1ec2d4a863c89ba435100abcba467fba4e702be2c3398882b"
+      },
+      {
+        "path": "PBS/Shadow Pokémon backup/types_shadow_pkmn.txt",
+        "size": 187,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "dba7819723ce089a6551a2fbd72f51fc466261d2fa761b8fe446a0f9c42a5586"
+      },
+      {
+        "path": "PBS/town_map.txt",
+        "size": 5219,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "ff7eafd66cd43b037dae0acf025ba128a4794dbd96b1586f4875b49537f67758"
+      },
+      {
+        "path": "PBS/trainer_types.txt",
+        "size": 25118,
+        "mtime_ns": 1773964748000000000,
+        "sha256": "f8b8e9ad93deff50eb2df821b9d7b904946a13c46c59d842eba0b0c8b36a6f04"
+      },
+      {
+        "path": "PBS/trainers.txt",
+        "size": 230633,
+        "mtime_ns": 1774304578000000000,
+        "sha256": "9e7119eaf477f4f04589145ddfcf94235ed7dd194a0395dcbf73316103f68f6d"
+      },
+      {
+        "path": "PBS/types.txt",
+        "size": 2979,
+        "mtime_ns": 1768556168000000000,
+        "sha256": "160c1a140bb8680d9720a2c170c1e00498ddc0fb1a9c94e19312292843a68001"
+      },
+      {
+        "path": "preload.rb",
+        "size": 312,
+        "mtime_ns": 1768556070000000000,
+        "sha256": "41ea5c021bb576ba8049d94b4c3c49eadafd76a483aef44d529181bf0ec4f76c"
+      }
+    ],
+    "fast_fingerprint": "8bf994829123bbd9e2c174cba25799d9637d889e0f1ff1bf979ea87a403afff0",
+    "deep_fingerprint": "be3f9b22a8aaabd137d74cc809801e25b5f31f1ea313c6dc2921fb8dc64bc228",
+    "tracked_exact_files": [
+      "Game.ini",
+      "mkxp.json",
+      "preload.rb",
+      "Data/Scripts.rxdata",
+      "Data/PluginScripts.rxdata",
+      "Data/messages_core.dat",
+      "Data/messages_game.dat",
+      "Data/messages_english_game.dat"
+    ],
+    "tracked_patterns": [
+      {
+        "base": "Data",
+        "pattern": "*.dat"
+      },
+      {
+        "base": "PBS",
+        "pattern": "*.txt"
+      },
+      {
+        "base": "Data/data_for_showdown",
+        "pattern": "*.txt"
+      }
+    ]
+  },
+  "save_probe": {
+    "path": "C:\\Users\\Admin\\AppData\\Roaming\\Pokemon Anil\\Partida 1.rxdata",
+    "size": 240076,
+    "mtime_ns": 1778054454579554000,
+    "party_size": 6,
+    "box_count": 50,
+    "max_box_size_seen": 30,
+    "schema_basis": {
+      "root_keys": [
+        "bag",
+        "essentials_version",
+        "frame_count",
+        "game_player",
+        "game_screen",
+        "game_system",
+        "game_version",
+        "global_metadata",
+        "item_log",
+        "map_factory",
+        "map_metadata",
+        "player",
+        "pokemon_system",
+        "randomized_data",
+        "self_switches",
+        "stats",
+        "storage_system",
+        "switches",
+        "variables"
+      ],
+      "root_kinds": {
+        "bag": "PokemonBag",
+        "essentials_version": "str",
+        "frame_count": "int",
+        "game_player": "Game_Player",
+        "game_screen": "Game_Screen",
+        "game_system": "Game_System",
+        "game_version": "str",
+        "global_metadata": "PokemonGlobalMetadata",
+        "item_log": "ItemLog",
+        "map_factory": "PokemonMapFactory",
+        "map_metadata": "PokemonMapMetadata",
+        "player": "Player",
+        "pokemon_system": "PokemonSystem",
+        "randomized_data": "Hash",
+        "self_switches": "Game_SelfSwitches",
+        "stats": "GameStats",
+        "storage_system": "PokemonStorage",
+        "switches": "Game_Switches",
+        "variables": "Game_Variables"
+      },
+      "player_attr_keys": [
+        "@badges",
+        "@battle_points",
+        "@character_ID",
+        "@coins",
+        "@connecting_online",
+        "@gender",
+        "@halloffame",
+        "@has_pokedex",
+        "@has_pokegear",
+        "@has_running_shoes",
+        "@id",
+        "@language",
+        "@last_save_slot",
+        "@last_time_saved",
+        "@money",
+        "@mystery_gift_unlocked",
+        "@mystery_gifts",
+        "@name",
+        "@outfit",
+        "@party",
+        "@pokedex",
+        "@save_slot",
+        "@score",
+        "@seen_storage_creator",
+        "@soot",
+        "@stars",
+        "@tclass",
+        "@trainer_type"
+      ],
+      "storage_attr_keys": [
+        "@boxes",
+        "@boxmode",
+        "@currentBox",
+        "@unlockedWallpapers"
+      ],
+      "bag_attr_keys": [],
+      "pokemon_attr_keys": [
+        "@ability",
+        "@ability_index",
+        "@attack",
+        "@beauty",
+        "@cool",
+        "@cute",
+        "@defense",
+        "@ev",
+        "@evo_crest_count",
+        "@evo_move_count",
+        "@evo_recoil_count",
+        "@evo_step_count",
+        "@exp",
+        "@expshare",
+        "@first_moves",
+        "@forced_form",
+        "@form",
+        "@fused",
+        "@gender",
+        "@happiness",
+        "@hatched_map",
+        "@hp",
+        "@hyper_mode",
+        "@immunities",
+        "@item",
+        "@iv",
+        "@ivMaxed",
+        "@last_update_time",
+        "@legacy_data",
+        "@level",
+        "@mail",
+        "@markings",
+        "@moves",
+        "@name",
+        "@nature",
+        "@nature_for_stats",
+        "@obtain_level",
+        "@obtain_map",
+        "@obtain_method",
+        "@obtain_text",
+        "@owner",
+        "@personalID",
+        "@poke_ball",
+        "@pokerus",
+        "@randomized",
+        "@ready_to_evolve",
+        "@ribbons",
+        "@sheen",
+        "@shiny",
+        "@shiny_leaf",
+        "@smart",
+        "@spatk",
+        "@spdef",
+        "@species",
+        "@speed",
+        "@status",
+        "@statusCount",
+        "@steps_to_hatch",
+        "@super_shiny",
+        "@timeEggHatched",
+        "@timeReceived",
+        "@time_form_set",
+        "@totalhp",
+        "@tough"
+      ]
+    },
+    "schema_hash": "74a8ea22d90fb09557379fa0449d31c1c1dc28d65fcb8cfa1f0a49fb374b9294"
+  },
+  "catalog_summary": {
+    "species_count": 1520,
+    "moves_count": 851,
+    "items_count": 888,
+    "abilities_count": 328,
+    "species_form_profiles_count": 1520,
+    "growth_rate_tables_count": 6,
+    "pocket_names": [
+      "Objetos",
+      "Medicinas",
+      "Poké Balls",
+      "MTs & MOs",
+      "Bayas",
+      "Mega Piedras",
+      "Obj. Batalla",
+      "Obj. Clave"
+    ]
+  }
+}

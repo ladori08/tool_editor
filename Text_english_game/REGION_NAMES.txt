@@ -1,0 +1,8 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[REGION_NAMES]
+Kanto
+Kanto
+Tiall
+Tiall

@@ -1,0 +1,130 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[TRAINER_TYPE_NAMES]
+Entrenador
+Pokémon Trainer
+Entrenadora
+Pokémon Trainer
+Rival
+Rival
+Cazabichos
+Bug Catcher
+Campista
+Camper
+Líder
+Gym Leader
+Chico
+Youngster
+Chica
+Lass
+Cerebrito
+Super Nerd
+Montañero
+Hiker
+Recluta Rocket
+Rocket Grunt
+Comandante Rocket
+Rocket Executive
+Nadador
+Swimmer
+Nadadora
+Swimmer
+Fotógrafa
+Photographer
+Campistas
+Campers
+Brujita
+Hex Maniac
+Caballero
+Gentleman
+Dama
+Lady
+Marinero
+Sailor
+Mecánico
+Engineer
+Mecánica
+Engineer
+Pescadora
+Fisherwoman
+Exorcista
+Channeler
+Damisela
+Lady
+Jefe Rocket
+Rocket Boss
+Motorista
+Biker
+Cuerpo y Mente
+Brains and Brawn
+Motoristas
+Bikers
+Maestra
+Teacher
+Ornitólogo
+Bird Keeper
+Ninja
+Ninja
+Líderes
+Gym Leaders
+Karateka
+Black Belt
+Medium
+Psychic
+Científico
+Scientist
+Pescador
+Fisherman
+Ladrón
+Burglar
+Científica
+Scientist
+Élite Rocket
+Rocket Elite
+Veterano
+Veteran
+Veterana
+Veteran
+Alto Mando
+Elite Four
+Campeón
+Champion
+Maestro Pokémon
+Pokémon Master
+Profesor
+Professor
+Aspirante
+Pokémon Trainer
+Líder Exótico
+Visiting Leader
+Líder Exótica
+Visiting Leader
+Líderes Exóticos
+Visiting Leaders
+Guardián Prisma
+Prism Guardian
+Guardiana Prisma
+Prism Guardian
+Guardianes Prisma
+Prism Guardians
+Pokémaniaco
+Poké Maniac
+Cazalegendarios
+Legend Hunter
+Contendiente
+Challenger
+Don Prodigio
+Don Prodigio
+Modelo
+Model
+Jugón
+Gambler
+Chico Malo
+Punk Guy
+Calvo
+Roughneck
+Técnico
+Rocker
+Pokémaníaco
+Poké Maniac

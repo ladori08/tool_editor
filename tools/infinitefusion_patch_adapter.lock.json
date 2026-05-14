@@ -1,0 +1,45 @@
+{
+  "adapter_version": 1,
+  "generated_at_utc": "2026-04-25T04:52:07Z",
+  "game_root": "D:\\InfiniteFusion",
+  "adapter_id": "essentials_packed_rxdata",
+  "capability_profile_path": "D:\\InfiniteFusion\\tools\\patch_capability.profile.json",
+  "levels": {
+    "A_metadata_item_data": true,
+    "B_clone_existing_effects": false,
+    "C_ruby_injection": false
+  },
+  "strategies": {
+    "metadata_patch": {
+      "enabled": true,
+      "target": "Data/items.dat",
+      "transactional": true
+    },
+    "effect_clone": {
+      "enabled": false,
+      "item_handlers_registry": true,
+      "battle_item_effects_registry": false,
+      "item_handler_buckets": [
+        "BattleUseOnBattler",
+        "BattleUseOnPokemon",
+        "CanUseInBattle",
+        "ConfirmUseInField",
+        "UseFromBag",
+        "UseInBattle",
+        "UseInField",
+        "UseOnPokemon",
+        "UseText"
+      ],
+      "battle_item_effect_buckets": []
+    },
+    "ruby_injection": {
+      "enabled": false,
+      "target": "Data/Scripts.rxdata",
+      "mode": "rxdata_script_entry_patch"
+    },
+    "custom_item_manifest": {
+      "path": "tools/custom_item/data/custom_item_manifest.json",
+      "backup_root": "tools/custom_item/backups"
+    }
+  }
+}

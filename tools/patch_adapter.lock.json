@@ -1,0 +1,79 @@
+{
+  "adapter_version": 1,
+  "generated_at_utc": "2026-05-06T04:47:48Z",
+  "game_root": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5",
+  "adapter_id": "essentials_packed_rxdata",
+  "capability_profile_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\patch_capability.profile.json",
+  "levels": {
+    "A_metadata_item_data": true,
+    "B_clone_existing_effects": true,
+    "C_ruby_injection": true
+  },
+  "strategies": {
+    "metadata_patch": {
+      "enabled": true,
+      "target": "Data/items.dat",
+      "transactional": true
+    },
+    "effect_clone": {
+      "enabled": true,
+      "item_handlers_registry": true,
+      "battle_item_effects_registry": true,
+      "item_handler_buckets": [
+        "BattleUseOnBattler",
+        "BattleUseOnPokemon",
+        "CanUseInBattle",
+        "ConfirmUseInField",
+        "UseFromBag",
+        "UseInBattle",
+        "UseInField",
+        "UseOnPokemon",
+        "UseOnPokemonMaximum",
+        "UseText"
+      ],
+      "battle_item_effect_buckets": [
+        "AccuracyCalcFromTarget",
+        "AccuracyCalcFromUser",
+        "AfterMoveUseFromTarget",
+        "AfterMoveUseFromUser",
+        "CertainEscapeFromBattle",
+        "CertainSwitching",
+        "CriticalCalcFromUser",
+        "DamageCalcFromTarget",
+        "DamageCalcFromUser",
+        "EVGainModifier",
+        "EndOfRoundEffect",
+        "EndOfRoundHealing",
+        "ExpGainModifier",
+        "HPHeal",
+        "OnBeingHit",
+        "OnBeingHitPositiveBerry",
+        "OnEndOfUsingMove",
+        "OnEndOfUsingMoveStatRestore",
+        "OnIntimidated",
+        "OnMissingTarget",
+        "OnOpposingStatGain",
+        "OnStatLoss",
+        "OnSwitchIn",
+        "PriorityBracketChange",
+        "PriorityBracketUse",
+        "SpeedCalc",
+        "StatLossImmunity",
+        "StatusCure",
+        "TerrainExtender",
+        "TerrainStatBoost",
+        "WeatherExtender",
+        "WeightCalc"
+      ]
+    },
+    "ruby_injection": {
+      "enabled": true,
+      "target": "Data/Scripts.rxdata",
+      "mode": "rxdata_script_entry_patch"
+    },
+    "custom_item_manifest": {
+      "path": "tools/custom_item/data/custom_item_manifest.json",
+      "backup_root": "tools/custom_item/backups"
+    }
+  }
+}

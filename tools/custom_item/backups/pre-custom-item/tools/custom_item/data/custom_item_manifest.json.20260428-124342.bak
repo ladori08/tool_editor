@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "updated_at_utc": "2026-04-28T04:53:23Z",
+  "items": {
+    "DRAGONSOUL": {
+      "item_spec": {
+        "id": "DRAGONSOUL",
+        "name": "Dragon's Soul",
+        "name_plural": "Dragon's Souls",
+        "pocket": 1,
+        "price": 20000,
+        "sell_price": 20000,
+        "bp_price": 50,
+        "field_use": 0,
+        "battle_use": 0,
+        "flags": [],
+        "move_id": "",
+        "description": "A mystical gem that channels the dragon's power. Restores HP each round. Boosts move power. Drains HP from attacks. Raises Attack and Sp. Atk once per battle. Doubles Speed in sunlight. Applies Sheer Force and Shed Skin effects.",
+        "consumable": false,
+        "show_quantity": true
+      },
+      "effect_spec": {
+        "mode": "composite",
+        "source_item_id": "",
+        "resolved_source_item_ids": [],
+        "selected_item_effect_ids": [],
+        "selected_move_effect_ids": [],
+        "selected_ability_effect_ids": [
+          "SHEDSKIN",
+          "SPEEDBOOST"
+        ],
+        "selected_effect_ids": [
+          "LEFTOVERS_HEAL_1_16",
+          "LIFE_ORB_DAMAGE_BOOST",
+          "DRAINING_KISS_HEAL_75",
+          "SWORDSDANCE_AFTER_MOVE",
+          "NASTYPLOT_AFTER_MOVE",
+          "CHLOROPHYLL_SPEED_IN_SUN",
+          "SHEER_FORCE_MODIFIER"
+        ],
+        "resolved_templates": [
+          {
+            "source_kind": "ability",
+            "source_id": "SHEDSKIN",
+            "template_key": "ability_active_bridge"
+          },
+          {
+            "source_kind": "ability",
+            "source_id": "SPEEDBOOST",
+            "template_key": "ability_active_bridge"
+          }
+        ],
+        "resolved_pool_effects": [
+          {
+            "id": "LEFTOVERS_HEAL_1_16",
+            "source_kind": "item",
+            "source_id": "LEFTOVERS",
+            "display_name": "Leftovers Healing",
+            "description": "Restores 1/16 of max HP at the end of each round.",
+            "hook": "end_of_round",
+            "template": "heal_fraction_max_hp",
+            "target": "self",
+            "params": {
+              "fraction_numerator": 1,
+              "fraction_denominator": 16
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::EndOfRoundHealing.add. Non-invasive per-item registration."
+          },
+          {
+            "id": "LIFE_ORB_DAMAGE_BOOST",
+            "source_kind": "item",
+            "source_id": "LIFEORB",
+            "display_name": "Life Orb Damage Boost",
+            "description": "Boosts the power of moves by 30%. Recoil is suppressed in Phase 1.",
+            "hook": "damage_calc",
+            "template": "damage_multiplier",
+            "target": "move",
+            "params": {
+              "multiplier": 1.3,
+              "recoil_enabled": false
+            },
+            "support_status": "partial",
+            "risk_level": "medium",
+            "notes": "Uses Battle::ItemEffects::DamageCalcFromUser.add if available. Recoil not implemented in Phase 1. Falls back silently if bucket does not exist."
+          },
+          {
+            "id": "DRAINING_KISS_HEAL_75",
+            "source_kind": "move",
+            "source_id": "DRAININGKISS",
+            "display_name": "Draining Kiss Heal (75%)",
+            "description": "Restores 75% of damage dealt as HP after the holder deals damage.",
+            "hook": "after_damage_dealt",
+            "template": "heal_percent_damage_dealt",
+            "target": "self",
+            "params": {
+              "percent": 75
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::AfterMoveUseFromUser.add. Replaces legacy drain_damage_three_quarters template."
+          },
+          {
+            "id": "SWORDSDANCE_AFTER_MOVE",
+            "source_kind": "move",
+            "source_id": "SWORDSDANCE",
+            "display_name": "Swords Dance Effect",
+            "description": "Raises the holder's Attack by 2 stages once per battle after successfully using a move.",
+            "hook": "after_move_use",
+            "template": "raise_user_stat_stage",
+            "target": "self",
+            "params": {
+              "stat": "ATTACK",
+              "stages": 2,
+              "trigger": "after_successful_move",
+              "once_per_battle": true
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::AfterMoveUseFromUser.add. once_per_battle tracked via battler instance variable. Replaces unsupported move_additional_effect_bridge for status self-buff moves."
+          },
+          {
+            "id": "NASTYPLOT_AFTER_MOVE",
+            "source_kind": "move",
+            "source_id": "NASTYPLOT",
+            "display_name": "Nasty Plot Effect",
+            "description": "Raises the holder's Special Attack by 2 stages once per battle after successfully using a move.",
+            "hook": "after_move_use",
+            "template": "raise_user_stat_stage",
+            "target": "self",
+            "params": {
+              "stat": "SPECIAL_ATTACK",
+              "stages": 2,
+              "trigger": "after_successful_move",
+              "once_per_battle": true
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::AfterMoveUseFromUser.add. once_per_battle tracked via battler instance variable. Replaces unsupported move_additional_effect_bridge for status self-buff moves."
+          },
+          {
+            "id": "CHLOROPHYLL_SPEED_IN_SUN",
+            "source_kind": "ability",
+            "source_id": "CHLOROPHYLL",
+            "display_name": "Chlorophyll Speed Boost",
+            "description": "Doubles the holder's Speed during harsh sunlight or extremely harsh sunlight.",
+            "hook": "speed_calc",
+            "template": "speed_multiplier_if_weather",
+            "target": "self",
+            "params": {
+              "weather": [
+                "Sun",
+                "HarshSun"
+              ],
+              "multiplier": 2.0
+            },
+            "support_status": "supported",
+            "risk_level": "medium",
+            "notes": "Uses Battle::ItemEffects::SpeedCalc.add if available. Falls back silently if bucket does not exist. Weather matched via battle.field.weather symbol."
+          },
+          {
+            "id": "SHEER_FORCE_MODIFIER",
+            "source_kind": "ability",
+            "source_id": "SHEERFORCE",
+            "display_name": "Sheer Force Modifier",
+            "description": "Boosts move power by 30% and suppresses additional effects, like Sheer Force ability.",
+            "hook": "damage_calc",
+            "template": "sheer_force_modifier",
+            "target": "move",
+            "params": {
+              "multiplier": 1.3,
+              "only_moves_with_additional_effect": true,
+              "suppress_additional_effects": true,
+              "suppress_life_orb_recoil": true
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Routed through ability_active_bridge in patcher: adds SHEERFORCE to bridge map so hasActiveAbility?(:SHEERFORCE) returns true when item is held. All game-engine side effects (damage boost, effect suppression) follow automatically."
+          }
+        ],
+        "unsupported_reasons": [],
+        "unsupported_reason": ""
+      },
+      "updated_at_utc": "2026-04-28T04:53:23Z"
+    }
+  },
+  "last_transaction": {
+    "stamp": "20260428-115323",
+    "kind": "upsert",
+    "item_id": "DRAGONSOUL",
+    "patched_files": [
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\Data\\items.dat.20260428-115323.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\Data\\Scripts.rxdata.20260428-115323.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\data\\custom_item_manifest.json",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\tools\\custom_item\\data\\custom_item_manifest.json.20260428-115323.bak"
+      }
+    ]
+  },
+  "last_rollback": {
+    "rolled_back_at_utc": "2026-04-24T06:18:13Z",
+    "restored_files": [
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_manifest.json"
+    ],
+    "from_transaction_stamp": "20260424-131813",
+    "from_transaction_kind": "upsert",
+    "from_item_id": "ZZUNSUPPORTEDTEST"
+  }
+}

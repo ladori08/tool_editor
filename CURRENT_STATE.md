@@ -1,0 +1,298 @@
+# CURRENT_STATE — Custom Item Engine
+
+## Purpose
+- This file is a short summary for new AI sessions.
+- AI should read this file before `WORKLOG.md` and `TASKS.md`.
+- `WORKLOG.md` is the detailed history archive.
+- `TASKS.md` is the active task tracker.
+
+## Context Optimization Rule
+- Read `CURRENT_STATE.md` first.
+- Only read `TASKS.md` sections `Doing` / `Next` / `Blocked` if needed.
+- Only read `WORKLOG.md` when detailed history is required.
+- Do not scan the entire repository if the task does not require it.
+- Only open source files directly related to the current task.
+- After each task, update `CURRENT_STATE.md`, `TASKS.md`, and append a concise entry to `WORKLOG.md`.
+- Important architecture explanations / decisions count as project context even when no code changes are made; log them as analyze-only entries.
+- `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` is now the project editor-tool checklist workbook, not only a Custom Effect plan tracker. If a request completes any tracked project/editor-tool item, update that Excel checklist in the same session, including analyze-only completions.
+
+## Current Phase
+- Phase 1 Hook-based Engine Foundation: done.
+- Phase 2A Broad Item Effect Pool: done initial version.
+- Phase 2B Ability Effect Pool + live refresh: done initial version.
+- Phase 2C Move FunctionCode Effect Pool: done initial version.
+- Phase 2D UI hotfix/foundation: done initial version.
+- Phase 2E Fixed Runtime Bridge v1: done initial version.
+- Battle Overlay Installer v1: done initial tool-side implementation.
+- Fixed Runtime Bridge v2: done initial multi-stat `raise_user_stat_stage` support.
+- Save normalizer manifest-awareness: done initial version.
+- Phase 3 Runtime Safety + Backup/Restore: done initial version.
+- Global non-species dropdown tooltip UX: done initial `SearchableTooltipPicker` version.
+- Custom Effect Builder v1 foundation: done initial version.
+- Custom Effect Builder v1 stat wizard UX hardening: done initial version.
+- Custom Effect Builder category -> effect-type filtering: done initial version.
+- Custom Effect Builder v1 compile-path/validation hardening: done initial version.
+- Next recommended phase: Custom Effect Builder v1 user-side smoke test plus Builder v2 expansion and user-side runtime/overlay verification.
+- Custom Item core status after review on `2026-05-07 14:25`: tool-side Custom Item engine is largely complete for the current scope. Runtime patch inspect reports `ok`, bridge v2 installed/current, patch before `Main`, 2 manifest items, and no warnings. Remaining Custom Item work is mostly user-side GUI/in-game validation, optional cleanup of manifest-linked baked `DRAGONSOUL`, bridge hardening as new selected effects need coverage, and the separate Custom Effect authoring phase.
+
+## Confirmed Working Effects
+- Leftovers
+- Draining Kiss
+- Fake Out
+- Swords Dance
+- Nasty Plot
+- Speed Boost
+
+Notes:
+- Power-up Punch test: Monferno dealt 44 damage and recovered 33 HP via Draining Kiss-style heal.
+- Leftovers end-of-round heal is working.
+- Fake Out flinch is working.
+- After patch fixes, Swords Dance / Nasty Plot / Speed Boost are working.
+
+## Current Known UI Rules
+- `Load Base Item` dropdown must show only vanilla/base items.
+- Custom items must not appear in `Load Base Item`.
+- Orphan baked custom items detected in `items.dat` must not appear in `Load Base Item`.
+- Held-item dropdowns may show vanilla + custom items.
+- Custom held-item descriptions/tooltips must support manifest-only custom items and show concise mechanics text.
+- `Manifest Entries` must only show custom items.
+- `Apply Custom Item` must live-refresh affected dropdowns so restart is not required.
+- Party `Held Item` dropdown must initialize from merged vanilla + manifest custom items, not from `items.dat` alone.
+- In CustomItem editor, `Item ID` can auto-generate from `Name` (compact slug, removes patterns like `'s`) until user manually edits Item ID.
+- In CustomItem editor, `Description` uses a dedicated vertical scrollbar and a taller text box for long generated effect summaries.
+- CustomItem generated descriptions are now mechanics-only (`Mechanics:` bullet list), not copied source flavor text.
+- Runtime guard: Party held-item icon now falls back to `Graphics/UI/Party/icon_item` if an item ID resolves to no held icon file, to prevent crash on Party open.
+- Save/load ID normalization treats manifest-only custom item IDs as known, so `Saved` popups should not report `party[x].item:<CUSTOM_ID>` or bag entries for current manifest items.
+- Top toolbar has `Battle Overlay...` for inspecting/applying/removing the in-game battle overlay runtime patch.
+- Top toolbar has `Legality Check...`, which opens the legality/consistency report in a dialog. The old `Legality` tab is no longer shown.
+- CustomItem tab has `Runtime Patch...` for inspecting/removing/rolling back `ZZ_CustomItemPatch` without deleting manifest custom items.
+- CustomItem tab has `Custom Effects...` in the normalized pool section. It opens Builder v1 for creating reusable custom effects from safe fields rather than raw hook/template/params.
+- UI cleanup on `2026-05-07`: `Switches/Vars` and raw `Advanced` tabs are no longer added to the main notebook. CustomItem remains visible as a normal tab. Advanced-only maintenance toolbar buttons can still be toggled by the existing advanced mode preference, but the raw Advanced tab itself is hidden/removed from normal navigation.
+- Top status layout update on `2026-05-07`: global status text is appended to the native window title (`Pokemon Indigo Save Editor - <status>`) so it appears on the same line as the app icon/name, then automatically clears after 20 seconds and returns to `Pokemon Indigo Save Editor`. The separate in-content status label was removed. Notebook tab style uses wider horizontal padding (`TNotebook.Tab` padding `(14, 2)`) for easier scanning without materially increasing tab height.
+- Proposed next architecture: reusable Custom Effect authoring, parallel to Custom Item authoring. User-facing creation should be wizard/dropdown-driven: choose trigger timing, effect family, target, condition, amount/stat/type/status/etc.; the tool compiles those choices into internal hook/template/params. Custom effects should live in `tools/custom_item/data/custom_effect_manifest.json`, be validated against safe runtime templates/hooks, then appear inside the CustomItem normalized effect pool as user-created reusable effects.
+- Implemented Custom Effect Builder v1 foundation on `2026-05-08`: `custom_effect_manifest.json` exists, Builder v1 can save/delete custom effects, validates against allowed v1 templates, merges user-created effects into the normalized pool, and can add a saved custom effect to the current custom item.
+- Custom Effect Builder stat-stage UX hardening on `2026-05-08`: stat effects now support multiple selected stats, Raise/Lower direction, `After holder uses a move` vs `End of turn` timing, disabled irrelevant fields, and preview text that says Raises/Lowers correctly.
+- Custom Effect Builder v1 validation hardening on `2026-05-12`:
+  - strict parameter validation (no silent clamp for invalid values)
+  - duplicate ID guards (built-in pool collision + custom collision)
+  - category/effect-type compatibility validation in backend and GUI save path
+  - unsupported categories (`Status` / `Contact` / `Battle Field`) remain visible but blocked in Builder v1.
+- Custom Effect Builder preview now reports compile-shape fields explicitly: effect id/name/category/effect type/generated hook/generated template/generated params/trigger timing/target/support_status/risk_level/mechanics summary.
+- For stat custom effects, `Once per battle` only applies to after-move timing. End-of-turn timing is intentionally repeatable each end turn if the holder can still change the selected stat stage(s).
+- In Custom Effect Builder, `Category` now filters available `Effect Type` choices, but `Effect Type` still controls which runtime template is compiled.
+- Current category -> supported Builder v1 Effect Type mapping:
+  - `Damage`: `Damage multiplier`
+  - `Healing`: `Heal holder`, `Drain damage dealt`
+  - `Stat`: `Change holder stat stage`
+  - `Speed`: `Speed multiplier`
+  - `End Turn`: `Heal holder`, `Change holder stat stage`
+  - `Status`, `Contact`, `Battle Field`: no supported Builder v1 effect type yet; UI shows no selectable type and blocks save for those categories.
+- Category filtering is UX/safety only; it does not create runtime behavior by itself. For example, Heal Fraction still only compiles when Effect Type is `Heal holder`.
+- Custom Effect Builder category taxonomy is for grouping/search/planning, not runtime behavior:
+  - `Damage`: outgoing damage multipliers or damage-condition effects.
+  - `Healing`: direct/end-turn healing and drain/lifesteal-style recovery.
+  - `Stat`: stat stage raise/lower effects and future stat multipliers.
+  - `Status`: burn/poison/paralysis/sleep/freeze/confusion/cure-style effects.
+  - `Speed`: speed multipliers or speed-order modifiers.
+  - `Contact`: on-contact / on-being-hit / contact punishment effects.
+  - `End Turn`: effects checked at end of round/turn, such as Leftovers/Speed Boost/Orb-style effects.
+  - `Battle Field`: weather, terrain, screens, rooms, hazards, and side/field conditions.
+- Fixed runtime bridge stat-stage runtime handlers now honor both `direction` (`raise`/`lower`) and multi-stat `stats` lists for after-move and end-of-round stat templates.
+- Latest rebuild after Builder v1 compile-path/validation hardening: `tools/PokemonIndigoSaveEditor.exe` (`2026-05-12 18:09:29`, `11,552,528` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-12 18:09:32`, `13,516,243` bytes).
+- Saved detailed plan: `CUSTOM_EFFECT_BUILDER_PLAN.md`.
+- Saved Excel checklist: `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` (project editor-tool checklist workbook).
+- Current workbook scope after latest update: `Summary`, `Project Checklist`, `Custom Effect Builder`, and `Legend` sheets; generated from `TASKS.md` with 990 project checklist rows plus 157 Custom Effect Builder plan/milestone rows as of `2026-05-12`.
+- Checklist update rule: always update `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` when completing any tracked project/editor-tool item, including analyze-only work, and keep it aligned with `CURRENT_STATE.md`, `TASKS.md`, and `WORKLOG.md`.
+- Additional approved planning requirements:
+- Custom effects should be reusable/validated across multiple compatible Pokemon Essentials-style games.
+- Field labels should have inline explanations when space allows, otherwise tooltip explanations.
+- Dropdown list rows should show tooltip descriptions while hovering/searching before selection. Species fields are intentionally excluded from tooltip-enabled dropdowns; all remaining tooltip-enabled dropdowns should use the editor-owned picker path.
+- Custom Effect plan audit on `2026-05-07`: plan exists and is clear enough for implementation bootstrap. Read `CUSTOM_EFFECT_BUILDER_PLAN.md` for detailed flow/milestones, `TASKS.md` `Next` for current open checklist items, and `WORKLOG.md` session `2026-05-06 (Analyze: Custom Effect Authoring Proposal)` for the original analysis.
+- Tooltip-enabled comboboxes now use `SearchableTooltipPicker` v1: the native `ttk.Combobox` popdown is not used for non-species tooltip contexts. Clicking anywhere in the field or typing opens an editor-owned `Toplevel` with a listbox and side detail panel. Hovering rows updates the detail before selection, and full typed/search matches show detail before focus-out/selection confirmation. Picker open/search is lazy: it does not generate row detail on open unless the typed value exactly matches a row.
+- Picker-managed Party/Bag comboboxes must not show the legacy floating `_party_tooltip_window` while the picker is active. Description focus/hover may still update the persistent description panel, but row detail should live in the picker side panel for non-species tooltip dropdowns.
+- Picker-visible item/move/ability labels should prefer English names. Ability labels now use `Text_english_game/ABILITY_NAMES.txt` as a Spanish-to-English translation map before falling back to internal IDs, so labels like `Abalorio Debacle`, `Acometida`, `Coraza Ira`, `Camorrista`, and `Coleoptero` render as `Beads of Ruin`, `Blitz`, `Anger Shell`, `Striker`, and `Insectate`.
+- Picker detail/description text should also prefer English. The picker fast detail path now maps raw item/move/ability descriptions through `Text_english_game/ITEM_DESCRIPTIONS.txt`, `MOVE_DESCRIPTIONS.txt`, and `ABILITY_DESCRIPTIONS.txt` before showing them in the side detail panel.
+
+## Current Architecture Rules
+- Do not directly modify vanilla item/move/ability behavior unless required.
+- Default `Apply Custom Item` is manifest-first and must not write `Data/items.dat`.
+- Legacy bake-to-`items.dat` is explicit mode only, not default.
+- Parallel-only mode is now enforced in patcher APIs: custom item upsert/delete cannot write or remove entries in `Data/items.dat`.
+- Custom item icon import now targets parallel storage: `tools/custom_item/assets/items/<ITEM_ID>.png` (not `Graphics/Items`).
+- Fixed runtime bridge v1 is installed: `ZZ_CustomItemPatch` is stable/versioned and reads `tools/custom_item/data/custom_item_runtime.rb` at runtime.
+- Apply Custom Item now writes manifest + `custom_item_runtime.rb`; it only updates `Data/Scripts.rxdata` when the fixed bridge is missing or its version/source changes.
+- Battle overlay installer is separate from custom items:
+- `tools/battle_overlay_patcher.py` installs script entry `ZZ_BattleStateOverlay` only when the user clicks `Battle Overlay...` -> `Apply/Update`.
+- Overlay install/remove creates timestamped backups under `tools/battle_overlay/backups/`.
+- Overlay is runtime UI only; it must not write `items.dat`, `moves.dat`, `abilities.dat`, custom item manifest, or save data.
+- Current multi-game support is adapter-based:
+- `scripts_rxdata` adapter can apply/remove on Indigo-style packed `Data/Scripts.rxdata`.
+- `rb_file` / Fusion-style loose script layouts are detected and reported, but apply is intentionally deferred until a safe per-game load-order adapter is implemented.
+- Custom effects must run only when the Pokemon is actively holding a custom item.
+- Runtime hooks must preserve original return values unless hook contract requires otherwise.
+- Do not call `itemActive?` directly in custom runtime paths where recursion risk exists.
+- Use `custom_item_effect_item_active?` helper.
+- Effect pool entries must include `hook` / `template` / `params` / `support_status` / `risk_level`.
+- User-created Custom Effects are stored in parallel file `tools/custom_item/data/custom_effect_manifest.json`; they are compiled into normalized pool effect entries in memory and must not write vanilla `items.dat`, `moves.dat`, `abilities.dat`, or `Scripts.rxdata` by themselves.
+- Builder v1 allowed templates are intentionally narrow: damage multiplier, conditional damage multiplier, end-turn holder heal fraction, drain percent damage dealt, after-move/end-turn holder stat stage change, and speed multiplier.
+- Builder v1 custom effect validation is now strict and blocking: invalid params, duplicate IDs, and category/effect-type mismatches are rejected at save-time and backend upsert-time.
+- `supported` = expected to compile/run.
+- `partial` = runs, but not yet vanilla-perfect for all edge cases.
+- `advanced` = identified, but not auto-compiled.
+- `unsupported` = no safe hook/template yet.
+
+## Current Key Files
+- `tools/custom_item/patcher.py`
+- `tools/custom_item/effect_pool.py`
+- `tools/custom_item/hook_compiler.py`
+- `tools/custom_item/data/custom_effect_pool.json`
+- `tools/custom_item/data/custom_effect_manifest.json`
+- `tools/custom_item/data/custom_item_manifest.json`
+- `tools/custom_item/data/custom_item_runtime.rb`
+- `tools/custom_item/data/custom_effect_phase_plan.json`
+- `tools/battle_overlay_patcher.py`
+- `tools/pokemon_indigo_save_editor_gui.py`
+- `tools/pokemon_indigo_game_data.py`
+- `WORKLOG.md`
+- `TASKS.md`
+
+## Important Runtime/Data Files
+- `Data/Scripts.rxdata`
+- `Data/PluginScripts.rxdata`
+- `Data/moves.dat`
+- `Data/items.dat`
+- `Data/abilities.dat`
+
+## Current Known Limitations
+- The system is not yet 100% vanilla-perfect across all game effects.
+- Custom Effect Builder v1 currently supports only the safe starter families: damage multiplier, heal holder by max-HP fraction, drain damage dealt, raise/lower holder stat stage, and speed multiplier.
+- Custom Effect Builder stat-stage GUI/runtime support still needs user-side in-game smoke testing for created custom effects, especially lower-stat and end-of-turn custom stat effects.
+- Builder v2 planning matrix is documented for `Status`, `Contact`, and `Battle Field` in `CUSTOM_EFFECT_BUILDER_PLAN.md`; these categories remain intentionally blocked in Builder v1 until safe hook/template coverage is promoted.
+- Custom Effect Builder v1 has initial per-game validation through the same effect-pool/compiler path, but a full multi-game compatibility report UI is still deferred.
+- Save dialog custom item warning fix is implemented: `normalize_known_ids()` now uses a manifest-aware item resolver for Party held items and Bag entries while keeping true unknown item IDs reported.
+- Orphan baked custom item cleanup was executed on `2026-05-06 15:06:35`; `ROCKYTOXICHELMET` was removed from `Data/items.dat` with backup `tools/custom_item/backups/pre-custom-item-cleanup/Data/items.dat.20260506-150635.bak`.
+- Orphan baked custom cleanup means removing old custom-generated item entries that are still inside vanilla `Data/items.dat` but are no longer present in `custom_item_manifest.json`. It is a legacy-data migration step, not part of normal Apply Custom Item flow, and must only run explicitly with backup because it edits game data.
+- Current detector snapshot after cleanup: baked+manifest `DRAGONSOUL`, orphan baked none.
+- Latest baked custom item detector review on `2026-05-07 14:25`: manifest item IDs are `DRAGONSOUL` and `FIGHTERSPIRIT`; `DRAGONSOUL` is still manifest-linked baked in `Data/items.dat`; orphan baked item IDs are empty. Do not remove manifest-linked baked `DRAGONSOUL` without explicit cleanup/migration approval and backup.
+- Party held-item dropdown root cause/fix: initial Party dropdown previously used only `catalogs.items_by_id`, so baked custom items appeared while manifest-only items could be absent until refresh. It now silently loads manifest/detects baked items and uses merged held-item options on initial build. Manifest item labels now read `entry.item_spec`, so `FIGHTERSPIRIT` displays as `Fighter's Spirit`.
+- Held-item hover/description fix: Party selected-item tooltip and Party held-item dropdown popdown hover now use manifest-aware custom item descriptions. Existing `DRAGONSOUL`/`FIGHTERSPIRIT` manifest descriptions were migrated to mechanics-only text.
+- Custom held-item tooltip now uses the saved manifest `item_spec.description` first, so user-written flavor/prose plus `Mechanics:` text appears in Party Held Item hover. It only falls back to generated mechanics when the saved description is empty.
+- CustomItem effect selection no longer forcibly overwrites a manually edited Description; it auto-updates only when the description is blank or still matches the previous generated text. The `Regenerate Description` button remains the explicit overwrite path.
+- Dropdown tooltip implementation note: native `ttk.Combobox` popdown hover proved unreliable on this Windows/Tk stack. The earlier popup/prewarm attempt was disabled because it froze dropdown open and still failed Party hover. `SearchableTooltipPicker` v1 replaces that approach for non-species tooltip contexts with a controlled picker and side detail panel; do not re-enable native popdown hover/Tcl bridge/prewarm as the primary path.
+- Dropdown tooltip architecture update after re-analysis on `2026-05-07`: native `ttk.Combobox` popdown hover is no longer the global solution. `SearchableTooltipPicker` v1 is implemented for non-species tooltip contexts using the existing combobox entry plus an editor-owned `Toplevel` listbox/detail panel. It avoids Tcl popdown hover binding, polling native popdown rows, tooltip windows under the cursor, and cache prewarming on open. Tooltip/detail text uses the fast description path first and is cached by combo+label after first resolution. Species tooltip contexts are skipped.
+- Custom popup tooltip placement note: popup row lookup uses Tk `@x,y` indexing, and row tooltip is positioned beside the popup list rather than under the cursor so the tooltip window does not steal hover events from the listbox.
+- Popup tooltip performance note: tooltip text is cached per combo+label and invalidated when combo values/context change; popup motion skips recomputation while staying on the same row. Bag item labels resolve through `_bag_item_label_to_id` via `resolve_selected_bag_item_id`.
+- Popup hover responsiveness note: custom popup hover now uses `_fast_combo_popup_tooltip_text`, which reads direct catalog/manifest descriptions and skips numeric mechanics summary parsing. The heavier `_tooltip_text_for_combo_label` remains available for non-popup/full tooltip paths.
+- Popup cache prewarm note: when a tooltip popup opens, `_schedule_combo_popup_tooltip_prewarm` warms visible/nearby row tooltips first and then the remaining rows in small chunks using `after`, so first-hover cache misses should be less noticeable without freezing popup open.
+- Runtime/assets note: startup `SDLError` can also come from corrupted/incompatible sprite PNG files (outside custom-item runtime flow). Keep asset backups before manual sprite edits/imports.
+- Manifest-only custom item IDs not present in `Data/items.dat` still rely on runtime compatibility fallbacks (e.g., generic held-item icon) rather than full native item registry injection.
+- Runtime now resolves custom item icons from `tools/custom_item/assets/items` when present; fallback remains `Graphics/UI/Party/icon_item` / `Graphics/Items/000`.
+- Phase 3 runtime safety status:
+- `inspect_custom_item_runtime_patch()` reports manifest item count, runtime data presence, patch entry position relative to `Main`, installed/expected bridge version, generated-source match, compiled effect summary, warnings, and lightweight Ruby block static inspection.
+- `remove_custom_item_runtime_patch()` removes `ZZ_CustomItemPatch` from `Data/Scripts.rxdata` with a rollback snapshot; by default it keeps manifest and `custom_item_runtime.rb` so applying any custom item can reinstall the bridge.
+- `rollback_last_custom_item_transaction()` can restore the last runtime patch removal because remove uses the same snapshot system as apply/delete.
+- Verification on a temporary copied game root passed: inspect -> remove -> no-op second remove -> rollback -> remove -> reapply; reapply restored the patch before `Main` and matched generated source.
+- Fixed runtime bridge v1 currently covers the key generic runtime paths needed by current test items: parallel item lookup, icon lookup, clone source buckets, ability bridge, move additional-effect bridge, end-of-round healing, after-move drain/stat/flinch effects, Speed Boost-style end-of-round stat raise, conditional damage multipliers, and speed multipliers.
+- Fixed runtime bridge v2 adds multi-stat support for `raise_user_stat_stage` pool params via `stats: [...]`.
+- Corrected move-derived multi-stat boost pool entries:
+- Hone Claws: Attack + Accuracy +1.
+- Bulk Up: Attack + Defense +1.
+- Calm Mind: Sp. Atk + Sp. Def +1.
+- Dragon Dance: Attack + Speed +1.
+- Coil: Attack + Defense + Accuracy +1.
+- Quiver Dance: Sp. Atk + Sp. Def + Speed +1.
+- `FIGHTERSPIRIT` runtime data was regenerated; Hone Claws and Bulk Up are no longer deduped into a single Attack-only effect.
+- User-side in-game retest pending for Hone Claws/Bulk Up multi-stat behavior.
+- Battle Overlay Installer v1 status:
+- GUI button and installer are implemented/rebuilt.
+- Current real `Data/Scripts.rxdata` status after implementation: overlay adapter available, overlay not installed yet (`active=False`) because apply was only tested on a temporary copy.
+- Temporary copy verification passed: apply -> already-current second apply -> remove.
+- In-game overlay user-side test is still pending after applying through the button.
+- Overlay v1 uses F7 in battle to cycle OFF / COMPACT / DETAIL.
+- Overlay v1 currently targets stat stages, weather/terrain notes, Reflect/Light Screen/Aurora Veil and other side effects, volatile battler states, and custom item runtime summary.
+- Fusion-style `rb_file` apply is not enabled yet; current behavior is detect/report only.
+- Some Phase 2 pool templates are still not implemented in fixed bridge v1 and may need bridge capability updates before they can run without regenerating bridge code.
+- Runtime bridge coverage hardening slice `2026-05-06 21:10`:
+- `hook_compiler.py` now accepts both canonical and legacy pool param names for Black Sludge-style type checks: `require_type` / `required_type` and `require_not_type` / `excluded_type`.
+- Fixed Python f-string escaping in weather/status heal generator error logging, so compiling all supported/partial pool effects no longer crashes on `#{e}`.
+- Synthetic compile coverage: 148 supported/partial pool effects compile with `not_compiled_count=0` after excluding `SHEER_FORCE_MODIFIER`, which is intentionally routed through the ability bridge instead of direct pool compiler.
+- Verified generated handlers for berry HP heal, status cure berries, pinch stat berries, Rocky Helmet/contact, Weakness Policy/on-hit stat raise, Flame/Toxic Orb end-turn status, and Black Sludge Poison/non-Poison branches.
+- Advanced effects are not auto-compiled until safe hook/template coverage exists.
+- Advanced groups currently include:
+- Focus Sash
+- Air Balloon
+- Full Choice Lock
+- Protect / Detect
+- Substitute
+- Transform / Imposter
+- Trick Room
+- Encore / Taunt / Torment
+- Destiny Bond
+- Illusion
+- Wonder Guard
+- Magic Guard
+- Prankster
+- Levitate
+- Weather setters on switch-in when safe hooks are not confirmed
+- Multi-turn / semi-invulnerable moves such as Fly / Dig / Solar Beam
+
+## Next Recommended Task
+- Fixed runtime bridge coverage hardening and user-side validation:
+- test `DRAGONSOUL` / `FIGHTERSPIRIT` in-game on latest build
+- verify `Runtime Patch...` inspect/remove/rollback from GUI if needed
+- expand bridge coverage for remaining supported/partial pool templates as they are selected
+- add a real Ruby syntax check if a compatible Ruby executable becomes available
+- If approved, implement Custom Effect authoring before or alongside bridge hardening so new bridge handlers immediately become user-creatable effect templates.
+
+Near-term maintenance:
+- Decide whether to also remove manifest-linked baked `DRAGONSOUL` from `Data/items.dat` in a separate explicit cleanup/migration. This is not orphan cleanup and should only happen after confirming runtime/held-item behavior is solid.
+- Harden fixed runtime bridge v1:
+- user-side boot/party/battle test with `DRAGONSOUL` and `FIGHTERSPIRIT`
+- expand bridge coverage for remaining supported/partial pool templates as needed
+- add static Ruby syntax inspection if a Ruby runtime becomes available
+- Analyze/implement battle-state visibility:
+- external save data alone cannot reliably show live in-battle stat stages/side screens because battle state is runtime memory, not normal save data.
+- user prefers an in-game battle HUD overlay similar to Pokemon Showdown-style status labels, but clearer and grouped into related columns.
+- preferred visible solution: in-game toggleable overlay with grouped columns for stat stages, weather/terrain, screens/walls, field/side conditions, battler volatile states, and custom item effects.
+- recommended architecture still writes optional runtime telemetry to a parallel file for debugging/tool display, while the in-game overlay reads current battle memory directly.
+- Multi-game overlay direction:
+- feasible as a tool button, but only if implemented as a shared overlay payload plus per-game adapter/install strategy.
+- Indigo-style `Scripts.rxdata` games can use the existing fixed runtime bridge/patcher approach.
+- Fusion-style games that expose runtime scripts as `.rb` files should use an `rb_file` adapter instead of assuming `Scripts.rxdata` insertion.
+- The button should run compatibility detection, backup touched script files, install/update/remove the overlay module idempotently, and report unsupported games instead of forcing a patch.
+- Implemented initial button/installer:
+- `Battle Overlay...` can inspect status and apply/update/remove the overlay for Indigo-style `Scripts.rxdata` games.
+- Next overlay tasks:
+- user applies overlay from the GUI and tests a battle.
+- validate actual placement/readability in battle UI.
+- refine labels/positions if they overlap battle art/message windows.
+- implement safe Fusion-style `rb_file` apply adapter once load order is confirmed.
+- Release build pipeline hardening:
+- `tools/build_release.bat` still delegates EXE build to `tools/build_save_editor_exe.ps1`, then builds the installer.
+- `tools/build_save_editor_exe.ps1` now avoids `Get-CimInstance Win32_Process` / WMI process scans because they can hang on this machine.
+- Build cleanup uses bounded `Get-Process` checks for local tool processes (`PokemonIndigoSaveEditor`, local venv Python/PyInstaller/Inno helpers), stops only executables under `tools`, waits briefly for unlock, and retries removal of `tools/dist`, `tools/build`, and the generated spec file.
+- Latest release build after this hardening completed successfully: `tools/PokemonIndigoSaveEditor.exe` (`2026-05-06 16:19:41`, `11,479,193` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-06 16:19:43`, `13,441,618` bytes).
+- Latest state/log audit on `2026-05-07`: `CURRENT_STATE.md`, `TASKS.md`, and `WORKLOG.md` contain the build-hardening entry; current script parser check passes; no local editor/build blocker process was detected.
+
+## Latest User Preferences
+- User prefers careful and detailed execution.
+- User wants a full custom item system, implemented in safe phases.
+- User wants to avoid changing vanilla behavior.
+- User wants `WORKLOG.md` and `TASKS.md` always updated per rules.
+- User prefers Vietnamese prompts.
+- User wants new Codex/AI sessions to continue without losing context.
+- User is interested in applying the battle overlay to similar Pokemon Essentials-based games via a save-editor button, including games with different script storage/remap models such as Pokemon Fusion.
+
+## How Future AI Should Work
+- Read `CURRENT_STATE.md` first.
+- For code tasks, only open files relevant to the task.
+- If history is needed, search `WORKLOG.md` instead of reading everything.
+- If the user asks for an important architecture explanation, decision, or tradeoff analysis, update `CURRENT_STATE.md` / `TASKS.md` and append an analyze-only `WORKLOG.md` entry even if no code changed.
+- After task completion:
+- update `CURRENT_STATE.md`
+- update `TASKS.md`
+- append a concise `WORKLOG.md` entry
+- If there are code changes:
+- run compile checks
+- rebuild EXE/installer if build context is available
+- if rebuild is not possible, log the exact reason

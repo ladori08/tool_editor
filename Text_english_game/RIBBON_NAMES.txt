@@ -1,0 +1,144 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[RIBBON_NAMES]
+Cinta Carisma
+Cool Ribbon
+Cinta Carisma Alto
+Cool Ribbon Super
+Cinta Carisma Avanzado
+Cool Ribbon Hyper
+Cinta Carisma Experto
+Cool Ribbon Master
+Cinta Belleza
+Beauty Ribbon
+Cinta Belleza Alto
+Beauty Ribbon Super
+Cinta Belleza Avanzado
+Beauty Ribbon Hyper
+Cinta Belleza Experto
+Beauty Ribbon Master
+Cinta Dulzura
+Cute Ribbon
+Cinta Dulzura Alto
+Cute Ribbon Super
+Cinta Dulzura Avanzado
+Cute Ribbon Hyper
+Cinta Dulzura Experto
+Cute Ribbon Master
+Cinta Ingenio
+Smart Ribbon
+Cinta Ingenio Alto
+Smart Ribbon Super
+Cinta Ingenio Avanzado
+Smart Ribbon Hyper
+Cinta Ingenio Experto
+Smart Ribbon Master
+Cinta Dureza
+Tough Ribbon
+Cinta Dureza Alto
+Tough Ribbon Super
+Cinta Dureza Avanzado
+Tough Ribbon Hyper
+Cinta Dureza Experto
+Tough Ribbon Master
+Cinta Carisma Difícil
+Cool Ribbon Great
+Cinta Carisma Superior
+Cool Ribbon Ultra
+Cinta de Belleza
+Beauty Ribbon
+Cinta Belleza Difícil
+Beauty Ribbon Great
+Cinta Belleza Superior
+Beauty Ribbon Ultra
+Cinta Dulzura Difícil
+Cute Ribbon Great
+Cinta Dulzura Superior
+Cute Ribbon Ultra
+Cinta Ingenio Difícil
+Smart Ribbon Great
+Cinta Ingenio Superior
+Smart Ribbon Ultra
+Cinta Dureza Difícil
+Tough Ribbon Great
+Cinta Dureza Superior
+Tough Ribbon Ultra
+Cinta Ganador
+Winning Ribbon
+Cinta Victoria
+Victory Ribbon
+Cinta Habilidad
+Ability Ribbon
+Cinta Gran Habilidad
+Great Ability Ribbon
+Cinta Doble Habilidad
+Double Ability Ribbon
+Cinta Habilidad Múltiple
+Multi Ability Ribbon
+Cinta Habilidad Par
+Pair Ability Ribbon
+Cinta Habilidad Mundial
+World Ability Ribbon
+Cinta Campeón
+Champion Ribbon
+Cinta Récord
+Record Ribbon
+Cinta Evento
+Event Ribbon
+Cinta Leyenda
+Legend Ribbon
+Cinta Maravilla
+Gorgeous Ribbon
+Cinta Realeza
+Royal Ribbon
+Cinta Realeza Maravilla
+Gorgeous Royal Ribbon
+Cinta Alerta
+Alert Ribbon
+Cinta Impacto
+Shock Ribbon
+Cinta Abatimiento
+Downcast Ribbon
+Cinta Descuido
+Careless Ribbon
+Cinta Relax
+Relax Ribbon
+Cinta Cabezada
+Snooze Ribbon
+Cinta Sonrisa
+Smile Ribbon
+Cinta Huella
+Footprint Ribbon
+Cinta Artista
+Artist Ribbon
+Cinta Esfuerzo
+Effort Ribbon
+Cinta Cumpleaños
+Birthday Ribbon
+Cinta Especial
+Special Ribbon
+Cinta Clásica
+Classic Ribbon
+Cinta Principal
+Premier Ribbon
+Cinta Recuerdo
+Souvenir Ribbon
+Cinta Deseo
+Wishing Ribbon
+Cinta Nacional
+National Ribbon
+Cinta Campo
+Country Ribbon
+Cinta de Campeón de Torneo
+Battle Champion Ribbon
+Cinta Campeón de Área
+Regional Champion Ribbon
+Cinta Planeta
+Earth Ribbon
+Cinta Mundo
+World Ribbon
+Cinta Campeón Nacional
+National Champion Ribbon
+Cinta Campeón Mundial
+World Champion Ribbon

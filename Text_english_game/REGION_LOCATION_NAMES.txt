@@ -1,0 +1,136 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[REGION_LOCATION_NAMES]
+Pueblo Paleta
+Pallet Town
+Ruta 1
+Route 1
+Ciudad Verde
+Viridian City
+Ruta 2 (Sur)
+Route 2 (South)
+Bosque Verde
+Viridian Forest
+Ruta 2 (Norte)
+Route 2 (North)
+Ciudad Plateada
+Pewter City
+Ruta 3
+Route 3
+Monte Moon
+Mt. Moon
+Monte Moon Exterior
+Mt. Moon (Exterior)
+Ruta 4
+Route 4
+Ciudad Celeste
+Cerulean City
+Ruta 20
+Route 24
+Ruta 21
+Route 25
+Cueva Celeste
+Cerulean Cave
+Ruta 9
+Route 9
+Túnel Roca
+Rock Tunnel
+Ruta 10 (Norte)
+Route 10 (North)
+Ruta 10 (Sur)
+Route 10 (South)
+Central Energía
+Power Plant
+Ruta 5
+Route 5
+Ruta 6
+Route 6
+Ciudad Carmín
+Vermilion City
+Ruta 15
+Route 11
+Túnel Diglett
+Diglett Cave
+Pueblo Lavanda
+Lavender Town
+Ruta 8
+Route 8
+Ruta 7
+Route 7
+Ciudad Azulona
+Celadon City
+Ruta 11
+Route 16
+Ruta 12
+Route 12
+Pueblo Marengo
+Marengo Town
+Ruta 13
+Route 13
+Ruta 14
+Route 14
+Ciudad Fucsia
+Fuchsia City
+Zona Safari
+Route 15 (Safari Zone)
+Ruta 16
+Route 18
+Ruta 17
+Route 19
+Ciudad Azafrán
+Saffron City
+Ruta 19
+Route 21
+Ruta 18
+Route 20
+Camino de Bicis
+Route 17 (Cycling Road)
+Isla Canela
+Cinnabar Island
+Volcán Canela
+Cinnabar Volcano
+Ruta 22
+Route 22
+Ruta 23
+Route 26
+Ruta 24
+Route 27
+Cataratas Tohjo
+Tohjo Falls
+Ruta 25 (Sur)
+Route 28
+Monte Plateado
+Mt. Silver
+Ruta 25 (Norte)
+Route 23
+Ciudad Añil
+Indigo City
+Ruta 26
+Route I
+Villa Azabache
+Azabache Village
+Cabo Azabache
+Cape Azabache
+Ruta 27
+Route II
+Islote Recuerdo
+Memorial Islet
+Villa Ámbar
+Amber Village
+Almacén Secreto
+Secret Path
+Ruta 28
+Route III
+Villa Magenta
+Magenta Village
+Cabo Magenta
+Cape Magenta
+Ruta 29
+Route IV
+Ruta 30
+Route V
+Bosque Arcoíris
+Rainbow Forest
+Aquí
+Here

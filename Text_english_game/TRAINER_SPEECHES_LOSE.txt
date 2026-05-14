@@ -1,0 +1,616 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[TRAINER_SPEECHES_LOSE]
+¡Bah! ¡La suerte del principiante!
+Bah! Beginner's luck!
+¡Que no se te suba mucho a la cabeza!
+Don't let this get to your head!
+¿Así que esto es un combate Pokémon?
+So, this is what a Pokémon battle feels like?
+¡Oh, no! ¡Mi Pokémon no da para más!
+Oh no! My Pokémon can't keep going!
+¡Me has hecho morder el polvo en un abrir y cerrar de ojos!
+You squashed me in the blink of an eye!
+¿Será posible? ¡Ese era mi último Pokémon!
+How's this possible? That was my last Pokémon!
+¡Parece que esto se te da muy bien!
+You seem to be quite good at this!
+Espera, ¿los años luz miden el tiempo? ¿O la distancia?
+I need to win more... I'll live up to Brock's example!
+Tengo que ganar más... ¡Nunca estaré a la altura de Brock!
+Wait, do light-years measure time? Or distance?
+¡Vaya! ¿Te crees muy valiente o qué?
+Hey! Do you think you're brave or something?
+...
+...
+¡Me has dejado de piedra! Tus Pokémon son duros como una roca... ¡Está bien! ¡Ya paro con los chistes! ¡Je, je, je!
+You've completely rocked my world! Your Pokémon are boulder than I expected... Okay, okay! I'll stop with the jokes! Hahaha!
+¡Eres de lo que no hay!
+You're something else!
+¡Veo que dominas bien la evolución!
+I see you have a good handle on evolution!
+¡Ya no me siento tan cómodo!
+I don't feel so comfy anymore!
+¡Expectativas superadas! ¡Puedes continuar!
+Expectations exceeded! You can continue!
+Ahora disfrutaré del paisaje un poco más triste.
+Now I will enjoy the landscape a little sadder.
+¡Yo sí que me he puesto morado de rabia!
+I'm seeing red!
+¡Y para colmo de males, he perdido!
+And to make matters worse, I lost!
+Me temo que no logro sacar un rendimiento óptimo de mis Pokémon.
+I'm afraid I can't get the best performance out of my Pokémon.
+¡Quería pasar por la cueva, no que pasaran por encima de mí!
+I wanted to trample through the cave, not get trampled over!
+¡Me has explorado a fondo!
+You've thoroughly explored me!
+En fin... tendré que compartir los fósiles.
+Fine... I guess I'll have to share the fossils.
+¿Eh? ¿Acaso no tienes miedo?
+Huh? You're not scared?
+¡No debería especular en los combates Pokémon!
+Ugh! Breaking and entering AND winning?
+¡Menudos humos!
+Such arrogance!
+¿No te han dicho nunca que eres un incordio?
+Has anyone informed you what an insufferable pest you are?
+Vaya... Yo diría que lo he hecho un poco mejor que la última vez. ¿Verdad?
+Hey, I think I did better than last time, didn't I?
+¡Bah! En realidad me estaba dejando ganar.
+Bah! I was just letting you win.
+¡Tus Pokémon sí que hipnotizan!
+Your Pokémon are truly mesmerizing!
+¿En serio? ¿Ya está?
+Seriously? That's it?
+Las personas, cuando las empujas a su límite, se vuelven más fuertes.
+People become stronger when pushed to their limits.
+Se van a reír de mí en clase...
+They're going to laugh at me in class now...
+¿Cómo? ¿La reina, destronada?
+What? The queen... dethroned?
+¡Argh! ¡Se te dan bien los Pokémon!
+Aargh! You're really good with Pokémon!
+¡Qué dureza!
+That was brutal!
+¡Nunca tuve ninguna posibilidad!
+I never stood a chance!
+He estado a la altura, ¿verdad?
+I've lived up to the challenge, haven't I?
+Me has aguado el día...
+You really put a damper on my day...
+Humillada y empapada, ¡qué poco me gusta!
+Humiliated and soaked... I really don't like this!
+¡Menudo machaque, colega!
+Yikes, that was a beatdown!
+¡Menuda lluvia de humildad me ha caído! Me he quedado empapada...
+That battle sure rained on my parade... I'm drenched in defeat.
+¡Mi aventura ha sido muy corta!
+My adventure ended way too soon!
+Tal vez no sea tan especial como creía.
+Maybe it's not as special as I thought.
+¡Mira! ¿Has visto qué Pokémon más raro acaba de pasar por aquí?
+Look! Did you see that super rare Pokémon that just passed by?
+¡Vaya! ¡Nos has ganado en un combate doble!
+Wow! You beat us in a double battle!
+Mi gozo en un pozo...
+All my hopes down the drain...
+La energía... ¡provenía de ti!
+The energy... it came from you!
+¿Qué? ¿Cómo ha podido ocurrir?
+What? How could that happen?
+Sí, creo que me ha quedado claro tu horóscopo. Con verte combatir, puedo saberlo.
+Yes, I think I've got your sign figured out. Just by watching you battle, I can tell.
+¡Será posible! Menudos modales.
+This can't be! Such bad manners.
+¡Qué mareo me ha dado de repente!
+I suddenly started feeling dizzy!
+¡Buen combate! Ando algo pez en la materia...
+Good battle! I feel like a fish out of the water, though...
+¡Tocado y hundido!
+Hook, line and sinker!
+¡Mejor no haberte encontrado nunca!
+I wish I'd never found you!
+¡Guau! ¡Me has callado la boca!
+Wow! You've shut my mouth!
+Buf, he perdido porque se me han cruzado los cables.
+Phew, I lost because I got my wires crossed.
+¡Recórcholis! Se nota que has entrenado bien.
+How shocking! It's clear you've trained hard.
+¡Qué electrizante! ¡Es como si un relámpago me hubiera recorrido todo el cuerpo! Eres buen soldado.
+That was electrifying! It's like a lightning bolt ran through me! You're a real trooper!
+¡Mi racha de victorias se ha ido a la porra! Tendremos que hacernos más fuertes.
+My winning streak is over! We'll have to train harder.
+Tal vez tenga que hacer cambios en mi equipo.
+I might need to make some changes to my team.
+Enhorabuena por tu victoria, ¡ja ja ja!
+Ha ha ha! Congratulations on your victory!
+¡No me quedan Pokémon! Me quedo de piedra...
+I'm out of Pokémon! I'm speechless...
+¡Tus Pokémon aprueban con buena nota!
+Your Pokémon pass with flying colors!
+¡Qué mal trabajo he hecho!
+What a terrible job I have done!
+¡No puedes evitar la llegada del Nuevo Orden Mundial!
+You can't prevent the arrival of the New World Order!
+¡Me gustan los que son como tú!
+I like people like you!
+Me he venido muy arriba, ¿no?
+I got a little carried away, huh?
+¡Qué envidia me das!
+I'm so jealous of you!
+¡Tus actos hablan por sí solos!
+You could have just said no!
+¡Me has dejado huella!
+You've left your mark!
+¡Menos combatir y más buscar la salida!
+Less fighting and more looking for the exit!
+¡Interesante cuanto menos!
+See, now that was interesting!
+Al final seré yo el que llore, ¡me rindo!
+In the end, I'm the one crying. I give up!
+Entiendo. Este es mi límite, todo lo que puedo hacer.
+It's clear now. This is my limit, and it's just not enough.
+¡Bastaba con decir que no!
+It would've been enough to say no!
+Estaba claro que ponerme a combatir tan cansada no era la mejor idea.
+It was clear that starting to fight so tired was not the best idea.
+Te lo has tomado en serio, ¿eh?
+That really got to you, eh?
+¡Perdona! ¡Estaba poseída!
+Sorry! I was possessed!
+¿Se ha ido el espíritu?
+Is the spirit gone?
+¡Ay! ¡Estaba fuera de mí!
+...What was I doing? Who am I?
+¡Eres inocente!
+You're innocent!
+¿Eh? ¿Qué? ¿Quién?
+Huh? What? Who?
+¡Menuda pesadilla!
+What a nightmare!
+¡Uy! ¿Qué me ha pasado?
+Whoa! What happened to me?
+¡Qué alma más fuerte!
+What a powerful soul!
+¡Qué falta de respeto más grande!
+Such a blatant lack of respect!
+¿Por qué oponéis tanta resistencia?
+Why are you fighting back so much?
+¡Buena contienda Pokémon! Empero no te salvará de tu derrota.
+That was a good battle! However, it will not save you from your defeat.
+¡Basta de ser cruel con mis Pokémon!
+Stop being so mean to my Pokémon!
+¿Ni entre dos hemos podido contigo?
+Even the two of us together couldn't take you down?
+Tanto en Pokémon como en la ciencia, los cálculos son sumamente importantes...
+In both Pokémon and science, calculations are absolutely essential...
+¡Aaah, un fantasma!
+Aaah, a ghost!
+¡Más bien eres tú el que me ha pasado por encima!
+Actually, you're the one who's run me over!
+¡Está bien! ¡Perdona!
+Alright! I'm sorry!
+¡Qué Pokémon más brutos tienes!
+Your Pokémon are brutes!
+¡Eres un buen fastidio!
+You're such a nuisance!
+¡Me niego a ver mi derrota!
+I refuse to accept defeat!
+¡Nooo! ¡Mis pobres Pokémon de tipo Planta!
+Nooo! My poor Grass-type Pokémon!
+¡Has plantado una semilla de grandeza con este combate! ¡Podrías llegar a participar incluso en la Liga Pokémon!
+You've sown a seed of greatness with this battle! You might even make it to the Pokémon League!
+¡Ahora sí que nos has hecho enfadar!
+Now you've really ticked us off!
+¡Tu espíritu está en perfecta armonía!
+Your spirit is perfectly in harmony!
+¡Ah! ¡Venga ya!
+Ah! Come on!
+¡Qué capacidad de intrusión!
+What impressive infiltration skills!
+¡Me has dominado por completo!
+You completely dominated me!
+¡No estoy acostumbrado a perder!
+I'm not used to losing!
+¡No me pegues, por favor!
+Please don't hurt me!
+¡Qué rabia!
+How infuriating!
+¡Qué desastre!
+What a disaster!
+¡Me rindo!
+I surrender!
+¡Qué el jefe me perdone!
+May the boss forgive me!
+¡Je, je! Me has caído bien, joven.
+Ha! That was a truly intense fight! I like you, kid.
+¡Se ha escapado! ¡Me cago en...!
+It got away! Dang it...!
+¡Las cosas no son tan fáciles!
+Things can't be that easy!
+¿Sientes la conexión con el cosmos?
+Do you feel a connection with the cosmos?
+¡Vaya, he perdido la paciencia!
+Oh no, I lost my patience!
+¡Has echado por tierra mis planes!
+You've grounded my whole strategy!
+¡He perdido el ritmo! ¡Espero que mis Pokémon me perdonen!
+I've lost my rhythm! I hope my Pokémon forgive me!
+Qué inspirador, ¿no? El lenguaje de los Entrenadores es universal.
+Actions speak louder than words. A battle is the only language Trainers need.
+¡Algún día alzaré el vuelo y seré invencible!
+One day, I'll take flight and become invincible!
+¡Mis bellas criaturas celestiales han sido derrotadas!
+My beautiful celestial creatures have been defeated!
+¡Mi autoestima es leve como una pluma!
+My self-esteem is in the featherweight category now!
+¡Vale! ¡Te daré permiso para quedarte!
+Alright, fine! I'll let you stay!
+¡Menudo rugido el de tus Pokémon!
+What a roar from your Pokémon!
+¡Ten más delicadeza!
+Be gentler!
+¡Ay! ¿Se ha hecho daño mi pobre Pokémon?
+Oh no! Did my poor Pokémon get hurt?
+Tus Pokémon también parecen bastante raros, ¿de dónde los has sacado?
+Your Pokémon look pretty rare too. Where did you get them?
+¡Parecen fuegos de artificio!
+They look like fireworks!
+¡Seguro que en estudiar no nos ganas!
+You definitely can't beat us when it comes to studying!
+¿Ya tienes a todos esos Pokémon evolucionados? ¡Impresionante!
+Whoa, you've already evolved all those Pokémon? Impressive!
+¡Qué momento más bonito para estar viva!
+What a wonderful time to be alive!
+¡Vaya! No esperaba perder.
+Oh! I didn't expect to lose.
+A mi brujería le queda mucho camino por delante.
+Looks like my hexes still need some work.
+Me has pintado la cara.
+You wiped the floor with me.
+¡No! ¡Han fallado mis técnicas ninja!
+No! My ninja techniques have failed!
+Veo que dominas todo tipo de estrategias, ¡bien hecho!
+I can see you've mastered all kinds of strategies. Nicely done!
+¡Me has dejado en el suelo!
+You've knocked me flat!
+¡Definitivamente no eres alguien cualquiera!
+You definitely aren't just anyone!
+Supongo que tu linaje no te define.
+I guess your lineage doesn't define you.
+¡Tus Pokémon son más temibles que el más mortal de los venenos!
+Your Pokémon are deadlier than the most lethal of poisons!
+La fuerza bruta no lo es todo en los combates, pero eso tú ya lo sabías.
+Brute force isn't everything in battle, but you already knew that.
+¡No esperaba encontrarme con esto hoy!
+I didn't expect to encounter this today!
+¡Cuanta más altitud, más dura es la caída. Eso dicen.
+The higher the you are, the harder you fall. So they say.
+¿Sabes? No tengo nada que demostrar.
+You know what? I have nothing to prove.
+¡Veo que te mueves bien por el agua!
+I see you move well through the water!
+¡Habrán sido imaginaciones mías!
+It must have been my imagination!
+¡Eso me pasa por bocas!
+That's what I get for running my mouth!
+¡He estado demasiado lento!
+I was way too slow!
+¡Mi dignidad sigue intacta aún con esta derrota!
+My dignity remains intact even with this defeat!
+¡Sigue así! ¡Pronto podrás doblegar montañas!
+Keep it up! Soon you will be able to conquer mountains!
+Van tres y se cae el del médium.
+Some brains have less potential than others though...
+¡Está bien! ¡Te estaba tomando el pelo!
+Alright, alright! I was just pulling your leg!
+¡Esto no lo había visto!
+I hadn't seen this coming!
+No todo el que anda errante está perdido.
+Not all who wander are lost.
+Ojos que no ven, tropezón que te llevas.
+Out of sight, out of mind... until you trip over it.
+Cuando el Honchkrow vuelva bajo... bueno, ya sabes.
+I bet Sabrina saw this coming and didn't warn me. Rude.
+Ya veo, ya. Todo empieza a verse con más claridad, como nubes disipándose en el horizonte.
+I see now. Everything is becoming clearer, like clouds parting on the horizon.
+¡Detenido me hallo!
+I've been stopped!
+Oye, tú no digas nada, ¿vale?
+Hey, don't say anything, okay?
+¡Regresa a la sombra!
+Return to the shadows!
+Supongo que esto acaba con las negociaciones.
+I guess this puts an end to the negotiations.
+También soy el hermano más débil...
+I'm also the weakest sibling...
+¡Mis hermanos se burlarán de mí!
+My siblings are going to make fun of me!
+¡La torta me la he llevado yo!
+I just got served!
+No ha colado mi discursito, ¿no?
+You didn't buy my little speech, did you?
+¡No somos invencibles!
+We are not invincible!
+¡Ayuda! ¡Rocket abatida!
+Mayday! Rocket down!
+¡El Team Rocket despega de nuevo!
+Team Rocket's blasting off again!
+Pero el uniforme me queda divino, ¿verdad?
+But I make this uniform look good, right?
+¡Has descubierto mi tapadera!
+You blew my cover!
+¡La ciencia no es cosa de risa! La risa la doy yo...
+Science is no laughing matter! I'm the only joke here...
+Ahora sí que veo las estrellas.
+Now I'm really seeing stars.
+¿Es que no tienes puntos débiles?
+Don't you have any weak points?
+¡Mira qué fácil se ha resuelto el problema!
+Look how easily the problem was resolved!
+¡Perdóname, mamá!
+Forgive me, mom!
+¿Mi temible Pokémon no ha sido suficiente?
+Were my fearsome Pokémon not enough?
+¿Cómo es posible? ¿Derrotado otra vez?
+To be defeated by a child... again? How is this possible?
+¿Por qué defiendes a la compañía multimillonaria?
+Why are you defending a multi-billion dollar company?
+Ya puedes dejar de sudar, que has ganado.
+...Relax, you won.
+¡Aargh! ¡Ya me estoy cansando de tus tonterías!
+Aargh! I'm getting tired of your meddling!
+¡Puagh! ¡No he podido más!
+Blech! I can't take anymore!
+¡Uy! ¡Se me escapan las Pokéball!
+Oops! My Poké Balls are slipping away!
+¡La fuerza sin control no sirve de nada!
+Power without control is useless!
+¡Esto también forma parte de mi entrenamiento!
+This is part of my training too!
+La ira no lleva a ningún buen puerto.
+Anger only leaves you adrift.
+¡Aaah! ¡Se me ha partido el sedal!
+Aaah! My fishing line snapped!
+¡Me hundo en las profundidades!
+I'm sinking into the depths!
+¿Ya hemos acabado?
+Are we done already?
+He perdido la concentración por culpa del frío, que lo sepas.
+I've lost focus because of the cold, just so you know.
+Tal vez debería dar ejemplo y abrigarme un poco.
+Maybe I should lead by example and put on something warm.
+¿Perder yo? ¡Si soy la favorita de mamá!
+Lose? Me? I'm mom's favorite!
+¡Se cree el ladrón que son todos de su condición!
+A crook always assumes everyone else is one too!
+¡Pues para ser un fantasma, cómo repartes!
+For a ghost, you sure pack a punch!
+El auténtico laberinto es el de tu corazón.
+The real labyrinth lies within your heart.
+Puedes pasar, pero no curiosees demasiado, ¿eh?
+You can come in, but don't snoop around too much, okay?
+¡Ten cuidado, hombre! El suelo podría romperse bajo nuestros pies.
+Jeez! Be careful! The ground could collapse beneath our feet.
+¡Me he encontrado con algo que no esperaba!
+I've come across something unexpected!
+¡Jo! Pero si siempre gano yo...
+Oh! But I always win...
+Mi mente no ha sabido dirigir el poder de las llamas.
+My mind failed to harness the power of the flames.
+¡Te manejas bien con el fuego!
+You handle fire well!
+¡El calor a ti nunca te molestó!
+The heat never bothered you!
+Tu poder se sale de la escala Kelvin.
+Your power is off the Kelvin scale.
+¡Qué combate tan asombroso! De tanto encender mi fuego, he quedado reducido a cenizas.
+What a battle! All that heat and I've been reduced to ashes!
+¡Uff, uff! ¡Me falta el aliento!
+Phew, phew! I'm out of breath!
+¡No solo tienes talento sobre ruedas!
+You're not just talented on wheels!
+¡Gracias por el empuje, colega!
+Thanks for the boost, buddy!
+Pii, pii, piii...
+Beep, beep, beep...
+¿De dónde sales tú? ¡Me has pasado por encima como un tren!
+Where did you come from? You steamrolled me like a runaway train!
+¡Buen entrenamiento!
+That was a great training session!
+Yo no soy el peligro, ¡estoy en peligro!
+I'm not the danger... I'm in danger!
+¡Hora de retirarse, supongo!
+Guess it's time to blast off!
+¿Es demasiado tarde para negociar una rendición?
+Is it too late to negotiate a surrender?
+Pues buena guardia he montado...
+Well, I've done a fantastic job guarding...
+Creo que voy a vomitar...
+I think I'm gonna throw up...
+Me llevo una lección de humildad por bocazas.
+Looks like I'm learning a little humility for running my mouth.
+Acabo de presenciar algo increíble.
+I just witnessed something incredible.
+Ya veo. Crees en eso.
+I see. That's what you believe in.
+¡Por favor, no me hagas daño!
+Please don't hurt me!
+¡Esto no es lo que anhelaba!
+This is not what I longed for!
+¡La belleza de nuestras ilusiones jamás será derrotada!
+The beauty of our dreams will never be defeated!
+¡Gran Giovanni, perdóname!
+Great Giovanni, forgive me!
+¡Esto es toda una devastación!
+This is absolute devastation!
+¡Noooo! ¡Por favor! ¡No le hagas eso a mis Pokémon cuquis!
+Noooo! Please! Don't do that to my cute Pokémon!
+Me has dado una gran cura de humildad, eso lo reconozco. ¿Qué debería hacer ahora el gran Giovanni? Lo he apostado todo a esta operación...
+You've humbled me greatly, I admit that. What should the great Giovanni do now? I staked everything on this operation...
+¡Para hacer esto, me podría haber jubilado!
+I could've just retired instead of doing this!
+Cuanto más alto subes, más dura es la caída...
+The higher you climb, the harder you fall...
+Parece que me he quedado en fase de capullo.
+Looks like I'm still stuck in my cocoon stage.
+¡Te has puesto supergrande!
+You've gotten so big!
+Por perder, ya pierdo hasta en los combates Pokémon.
+I lose all the time, even in Pokémon battles.
+¿No has pensado en aceptar a alguien como pupilo tú también?
+Have you ever thought of taking on an apprentice yourself?
+Al igual que un insecto puede levantar hasta 10 veces su peso, tú también has desplegado un poder 10 veces mayor del que aparentas. Y por eso te alabo y te reverencio.
+Just as an insect can lift up to ten times its weight, you've shown a power ten times greater than you seem. For that, I applaud you.
+¡Vaya! ¡Tu valor es realmente incalculable!
+Wow! Your courage is remarkable!
+Debería replantear mi estrategia.
+I need to rethink my strategy.
+Tú tampoco pareces muy normal.
+You don't seem all that normal yourself.
+¡Tal vez con un Pokémon solo no sea suficiente!
+Maybe one Pokémon won't be enough!
+¡Eres demasiado!
+You're amazing!
+Mis Pokémon escaladores no alcanzan la altura óptima todavía.
+My climbing Pokémon aren't at their peak height yet.
+¡Este combate era de prueba!
+This battle was just a test!
+Aquí acaba mi viaje... por ahora.
+This is where my journey ends... for now.
+¿De dónde sacas tanta fuerza? Parece inagotable.
+Where do you get all that strength? It seems endless.
+He perdido, pero estoy feliz. He dado todo lo que he podido y más.
+I've lost, but I'm happy. I gave it everything I had, and then some.
+¡Increíble! ¡Quiero entrenar contigo algún día!
+Incredible! I want to train with you someday!
+Me voy a casa con la lección bien aprendida.
+I'm going home with a valuable lesson learned.
+Cuando el rival es de categoría, una se siente bien aunque pierda.
+When your opponent is top-tier, it feels good even to lose.
+Eso es todo lo que tenía que decir. Al menos, por ahora.
+That's all... for now, anyway.
+Eso es todo lo que tenía que decirte. Al menos, por ahora.
+That's all... for now, anyway.
+Pensaba que ibas a dejarme fría, pero tus ataques han logrado fundir mis defensas. ¡Ji, ji, ji!
+I expected a cold reception, but your attacks melted right through my defenses. Hee hee!
+Tus ataques mueven montañas. Tus defensas, conmueven el corazón.
+Your attacks can move mountains... and your defense shows the unbreakable spirit you share with your Pokémon!
+¡Jo, jo, jo! ¡Veo que tengo ante a mí a alguien muy capaz! Puedo retirarme con tranquilidad.
+Hohoho! I see a truly capable Trainer standing before me! I can retire in peace.
+Tienes un destino dorado en la cima de los Entrenadores, Aspirante. ¡Que nadie te haga pensar lo contrario!
+A golden destiny awaits you at the pinnacle of the Pokémon world, challenger. Don't let anyone make you think otherwise!
+Este combate ha sido... ¡el mejor de toda mi vida! Y por eso te doy las gracias y además reconozco que eres mejor que yo. Contar contigo como rival ha sido lo mejor que me podía pasar.
+That was... one heck of a battle. Ugh, guess I gotta hand it to you... you're better than me. Yet for some reason, I'm not mad about it. Having you as my rival brought out the best in me.
+Maravilloso, ¡si es que la edad es solo un número cuando se trata de Pokémon!
+Wonderful! Age is but a number when it comes to Pokémon!
+¡He perdido, pero ha sido un combate genial! ¡Esto solo puede significar que aún me queda trabajo para llegar a ser un Maestro Pokémon!
+I lost, but what a battle! This just means I still have work to do if I want to become a Pokémon Master!
+¡Ya veo que los jóvenes de Kanto os las gastáis bien!
+I see you young Trainers from Kanto know how to handle yourselves!
+¡Buah! ¡No esperaba encontrarme con un oponente tan tremendo en un sitio tan tranquilo!
+Whoa! I didn't expect to find such a strong Trainer way out here!
+¡Te espera una carrera muy prometedora en esto! ¡De altos vuelos, diría yo!
+You have a promising future ahead of you! I'd say you're destined to soar to great heights!
+¡Esto sí que es todo un giro de los acontecimientos! ¡Ja, ja, ja!
+What a shocking turn of events! Wahahahah!
+¡Ostras! ¡Ya veo que llevas bastante ventaja en esto! ¿Dónde has aprendido tan bien?
+I see... You are quite strong! Where did you learn so much?
+¡Esto sí que es un entrenamiento de categoría! ¡Me has obligado a ir con todo y más allá!
+Whoa, wow! Now *that's* what I call top-tier training! I was pushed to my limits and beyond!
+¡Tú no entrenas Pokémon! ¡Tú haces arte, créeme!
+Bravo! You don't just train Pokémon. You make art, believe me!
+Aún siendo dos contra uno, no teníamos ninguna posibilidad. Sin duda, eres alguien fuera de serie.
+Even as two against one, we didn't stand a chance. You're definitely one of a kind.
+¡Auch! Creo que he tragado agua salada.
+Bleh! I think I swallowed some salt water.
+Allá donde vayas, te irá bien.
+Wherever you go, you'll do great.
+¡Bien hecho! Aunque deberías relajarte más.
+Nicely done! But you should take it easy now and then.
+¡Un corazón de oro!
+A heart of gold!
+Esta fuerza... es algo que no había visto nunca.
+This strength... is something I have never seen before.
+Cada primavera tiene un verde distinto.
+Every spring has its own shade of green.
+Tu ascenso es muy fructífero. ¡Enhorabuena!
+Your climb has been quite fruitful. Congratulations!
+¿Qué clase de entrenamiento has llevado a cabo?
+What kind of training have you done?
+¡Ay! ¡Me ha dado un calambre!
+Ow! I got a cramp!
+¡BUAAAAAAAAA!
+WAAAAAAAH!
+¡Vale, vale! ¡Hoy ganas tú!
+Alright, alright! You win this time!
+¡Uff! ¡Se supone que esto era un viaje de placer!
+Phew! This was supposed to be a relaxing trip!
+Vaya, no esperaba esto en mi ronda de hoy.
+Wow, I didn't see this coming on my patrol today.
+También me gusta disfrutar del tiempo libre, como todo el mundo.
+But hey, I enjoy my downtime just like everyone else.
+¿Cómo sabías que iba a usar esa estrategia?
+How did you know I was going to use that strategy?
+Era una pieza demasiado grande para mí.
+It was way too big a catch for me.
+Al final quien ha picado... ¡he sido yo!
+In the end, the one who got hooked... was me!
+¡Qué paliza!
+What a thrashing!
+¡No estoy preparado para afrontar la verdad!
+I'm not ready to face reality!
+¡Jamás nos doblegaremos ante la plebe!
+We will never bow down to the plebs!
+No era la más indicada para montar guardia...
+I guess I wasn't the best choice for guard duty...
+¡Aaaaaay!
+Yeeeowch!
+A mí me parecía un trato justo...
+It seemed like a fair deal to me...
+Tu estilo es muy particular y distinguido.
+Your style is very unique and refined.
+¡Muy bien! ¡Guárdate tus secretos!
+Very well! Keep your secrets!
+¡Ja, ja, ja! Soy una perdedora.
+Hahaha! I'm such a loser.
+¡Gracias! No podría estar más contenta con este combate.
+Thank you! I couldn't be happier with this battle.
+No has estado perdiendo el tiempo, según veo.
+You haven't been slacking off, I see.
+Podemos compartir este espacio.
+We can share this space.
+Magnífico. Has superado a tu maestro.
+Magnificent. You have surpassed your master.
+Tranqui, que también llevo dinero encima.
+Don't worry, I've got some money on me too.
+¡No llegarás hasta nuestra señora tan fácilmente!
+You won't reach our lady that easily!
+¡Somos la espada de la Isla Prisma!
+We are the sword of Prism Island!
+¿Cómo osas desafiar nuestros enormes poderes?
+How dare you stand against our immense power?
+¿Es que no te cansas nunca?
+Don't you ever get tired?
+¡Formidable! ¡Espeluznante! Y estoy seguro de que aún no has liberado toda tu fuerza.
+Magnificent! A-plus! And I suspect you haven't even unleashed your full strength yet.
+Tienes el porte de un héroe, sin duda alguna.
+You have the air of a true champion.
+Al terminar un combate, siempre le invade a uno un viento de paz y de serenidad. Y por eso te estoy agradecido.
+After every battle, a wave of peace and serenity washes over me. For that, I'm grateful.
+¡Increíble! Has podido hacer frente a mi colección de Pokémon rarísimos.
+Way to go! You managed to take on my collection of rare Pokémon.
+Has hecho frente al poder de las 3 aves legendarias... ¿y aún así te has hecho con la victoria? No, no eres una persona cualquiera. La forma en la que combates junto a tus Pokémon es digna de una deidad.
+You withstood the might of the three Legendary Birds... and still emerged victorious? No, you are no ordinary Trainer. The way you battle alongside your Pokémon is worthy of a deity.
+Pelear contra ti sigue derritiendo todas mis defensas. ¡Ji, ji, ji!
+Your attacks still melted right through all my defenses. Hee hee hee!
+Tus ataques siguen moviendo montañas. Tus defensas, conmueven el corazón.
+Your attacks still move mountains... and your defense shows the unbreakable spirit you share with your Pokémon!
+¡Jo, jo, jo! ¡Sigues tan capaz como siempre! ¡No dejas de sorprenderme!
+Not bad! You are as capable as ever! You never cease to surprise me, child.
+Una vez más reafirmas por qué estás en la cima de los mejores Entrenadores de la región. ¡Bien hecho!
+Once again, you have proven why you stand at the pinnacle of this region's Trainers. Well done!
+Sigues superándome, pero contar con un rival como tú hace que me siga queriendo esforzar por ser mejor.
+You still manage to one-up me, eh? But having a rival like you is exactly what keeps pushing me to be the best!

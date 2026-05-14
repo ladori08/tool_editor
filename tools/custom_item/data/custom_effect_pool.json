@@ -1,0 +1,2939 @@
+{
+  "version": 2,
+  "updated_at_utc": "2026-05-01T00:00:00Z",
+  "effects": [
+    {
+      "id": "LEFTOVERS_HEAL_1_16",
+      "source_kind": "item",
+      "source_id": "LEFTOVERS",
+      "display_name": "Leftovers Healing",
+      "description": "Leftovers Healing",
+      "hook": "end_of_round",
+      "template": "heal_fraction_max_hp",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 16
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "LIFE_ORB_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "LIFEORB",
+      "display_name": "Life Orb Damage Boost",
+      "description": "Boosts damage by 30%; recoil is intentionally not implemented in Phase 2A.",
+      "hook": "damage_calc",
+      "template": "damage_multiplier",
+      "target": "self",
+      "params": {
+        "multiplier": 1.3,
+        "recoil_enabled": false
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "DRAINING_KISS_HEAL_75",
+      "source_kind": "move",
+      "source_id": "DRAININGKISS",
+      "display_name": "Draining Kiss Heal (75%)",
+      "description": "Draining Kiss Heal (75%)",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 75
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "SWORDSDANCE_AFTER_MOVE",
+      "source_kind": "move",
+      "source_id": "SWORDSDANCE",
+      "display_name": "Swords Dance Effect",
+      "description": "Swords Dance Effect",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "ATTACK",
+        "stages": 2,
+        "trigger": "after_successful_move",
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "NASTYPLOT_AFTER_MOVE",
+      "source_kind": "move",
+      "source_id": "NASTYPLOT",
+      "display_name": "Nasty Plot Effect",
+      "description": "Nasty Plot Effect",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "SPECIAL_ATTACK",
+        "stages": 2,
+        "trigger": "after_successful_move",
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "CHLOROPHYLL_SPEED_IN_SUN",
+      "source_kind": "ability",
+      "source_id": "CHLOROPHYLL",
+      "display_name": "Chlorophyll Speed in Sun",
+      "description": "Chlorophyll Speed in Sun",
+      "hook": "speed_calc",
+      "template": "speed_multiplier_if_weather",
+      "target": "self",
+      "params": {
+        "weather": [
+          "Sun",
+          "HarshSun"
+        ],
+        "multiplier": 2.0
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "SHEER_FORCE_MODIFIER",
+      "source_kind": "ability",
+      "source_id": "SHEERFORCE",
+      "display_name": "Sheer Force Modifier",
+      "description": "Routed through ability_active_bridge; exact vanilla interactions remain partial.",
+      "hook": "damage_calc",
+      "template": "sheer_force_modifier",
+      "target": "self",
+      "params": {
+        "multiplier": 1.3,
+        "only_moves_with_additional_effect": true,
+        "suppress_additional_effects": true,
+        "suppress_life_orb_recoil": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "BIG_ROOT_DRAIN_MULTIPLIER",
+      "source_kind": "item",
+      "source_id": "BIGROOT",
+      "display_name": "Big Root Drain Multiplier",
+      "description": "Big Root Drain Multiplier",
+      "hook": "after_damage_dealt",
+      "template": "drain_heal_multiplier",
+      "target": "self",
+      "params": {
+        "multiplier": 1.3
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "SPEEDBOOST_END_OF_ROUND",
+      "source_kind": "ability",
+      "source_id": "SPEEDBOOST",
+      "display_name": "Speed Boost End of Round",
+      "description": "Speed Boost End of Round",
+      "hook": "end_of_round_effect",
+      "template": "raise_user_stat_stage_end_of_round",
+      "target": "self",
+      "params": {
+        "stat": "SPEED",
+        "stages": 1
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "ORANBERRY_HEAL_THRESHOLD",
+      "source_kind": "item",
+      "source_id": "ORANBERRY",
+      "display_name": "Oran Berry Heal",
+      "description": "Oran Berry Heal",
+      "hook": "hp_heal",
+      "template": "heal_at_hp_threshold",
+      "target": "self",
+      "params": {
+        "threshold_numerator": 1,
+        "threshold_denominator": 2,
+        "heal_fixed_hp": 10
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "SITRUSBERRY_HEAL_THRESHOLD",
+      "source_kind": "item",
+      "source_id": "SITRUSBERRY",
+      "display_name": "Sitrus Berry Heal Threshold",
+      "description": "Sitrus Berry Heal Threshold",
+      "hook": "hp_heal",
+      "template": "heal_at_hp_threshold",
+      "target": "self",
+      "params": {
+        "threshold_numerator": 1,
+        "threshold_denominator": 2,
+        "heal_fraction_numerator": 1,
+        "heal_fraction_denominator": 4
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "LUMBERRY_STATUS_CURE",
+      "source_kind": "item",
+      "source_id": "LUMBERRY",
+      "display_name": "Lumberry Status Cure",
+      "description": "Lumberry Status Cure",
+      "hook": "status_cure",
+      "template": "status_cure",
+      "target": "self",
+      "params": {
+        "cures_status": [
+          "ANY",
+          "CONFUSION"
+        ]
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "CHERIBERRY_STATUS_CURE",
+      "source_kind": "item",
+      "source_id": "CHERIBERRY",
+      "display_name": "Cheriberry Status Cure",
+      "description": "Cheriberry Status Cure",
+      "hook": "status_cure",
+      "template": "status_cure",
+      "target": "self",
+      "params": {
+        "cures_status": [
+          "PARALYSIS"
+        ]
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "CHESTOBERRY_STATUS_CURE",
+      "source_kind": "item",
+      "source_id": "CHESTOBERRY",
+      "display_name": "Chestoberry Status Cure",
+      "description": "Chestoberry Status Cure",
+      "hook": "status_cure",
+      "template": "status_cure",
+      "target": "self",
+      "params": {
+        "cures_status": [
+          "SLEEP"
+        ]
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "PECHABERRY_STATUS_CURE",
+      "source_kind": "item",
+      "source_id": "PECHABERRY",
+      "display_name": "Pechaberry Status Cure",
+      "description": "Pechaberry Status Cure",
+      "hook": "status_cure",
+      "template": "status_cure",
+      "target": "self",
+      "params": {
+        "cures_status": [
+          "POISON"
+        ]
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "RAWSTBERRY_STATUS_CURE",
+      "source_kind": "item",
+      "source_id": "RAWSTBERRY",
+      "display_name": "Rawstberry Status Cure",
+      "description": "Rawstberry Status Cure",
+      "hook": "status_cure",
+      "template": "status_cure",
+      "target": "self",
+      "params": {
+        "cures_status": [
+          "BURN"
+        ]
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "ASPEARBERRY_STATUS_CURE",
+      "source_kind": "item",
+      "source_id": "ASPEARBERRY",
+      "display_name": "Aspearberry Status Cure",
+      "description": "Aspearberry Status Cure",
+      "hook": "status_cure",
+      "template": "status_cure",
+      "target": "self",
+      "params": {
+        "cures_status": [
+          "FROZEN",
+          "FROSTBITE"
+        ]
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "PERSIMBERRY_STATUS_CURE",
+      "source_kind": "item",
+      "source_id": "PERSIMBERRY",
+      "display_name": "Persimberry Status Cure",
+      "description": "Persimberry Status Cure",
+      "hook": "status_cure",
+      "template": "status_cure",
+      "target": "self",
+      "params": {
+        "cures_status": [
+          "CONFUSION"
+        ]
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "LIECHIBERRY_PINCH_ATTACK",
+      "source_kind": "item",
+      "source_id": "LIECHIBERRY",
+      "display_name": "Liechiberry Pinch ATTACK",
+      "description": "Liechiberry Pinch ATTACK",
+      "hook": "hp_heal",
+      "template": "raise_stat_at_hp_threshold",
+      "target": "self",
+      "params": {
+        "threshold_numerator": 1,
+        "threshold_denominator": 4,
+        "stat": "ATTACK",
+        "stages": 1
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "GANLONBERRY_PINCH_DEFENSE",
+      "source_kind": "item",
+      "source_id": "GANLONBERRY",
+      "display_name": "Ganlonberry Pinch DEFENSE",
+      "description": "Ganlonberry Pinch DEFENSE",
+      "hook": "hp_heal",
+      "template": "raise_stat_at_hp_threshold",
+      "target": "self",
+      "params": {
+        "threshold_numerator": 1,
+        "threshold_denominator": 4,
+        "stat": "DEFENSE",
+        "stages": 1
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "SALACBERRY_PINCH_SPEED",
+      "source_kind": "item",
+      "source_id": "SALACBERRY",
+      "display_name": "Salacberry Pinch SPEED",
+      "description": "Salacberry Pinch SPEED",
+      "hook": "hp_heal",
+      "template": "raise_stat_at_hp_threshold",
+      "target": "self",
+      "params": {
+        "threshold_numerator": 1,
+        "threshold_denominator": 4,
+        "stat": "SPEED",
+        "stages": 1
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "PETAYABERRY_PINCH_SPECIAL_ATTACK",
+      "source_kind": "item",
+      "source_id": "PETAYABERRY",
+      "display_name": "Petayaberry Pinch SPECIAL_ATTACK",
+      "description": "Petayaberry Pinch SPECIAL_ATTACK",
+      "hook": "hp_heal",
+      "template": "raise_stat_at_hp_threshold",
+      "target": "self",
+      "params": {
+        "threshold_numerator": 1,
+        "threshold_denominator": 4,
+        "stat": "SPECIAL_ATTACK",
+        "stages": 1
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "APICOTBERRY_PINCH_SPECIAL_DEFENSE",
+      "source_kind": "item",
+      "source_id": "APICOTBERRY",
+      "display_name": "Apicotberry Pinch SPECIAL_DEFENSE",
+      "description": "Apicotberry Pinch SPECIAL_DEFENSE",
+      "hook": "hp_heal",
+      "template": "raise_stat_at_hp_threshold",
+      "target": "self",
+      "params": {
+        "threshold_numerator": 1,
+        "threshold_denominator": 4,
+        "stat": "SPECIAL_DEFENSE",
+        "stages": 1
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "EXPERTBELT_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "EXPERTBELT",
+      "display_name": "Expertbelt Damage Boost",
+      "description": "Expertbelt Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_super_effective": true
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "MUSCLEBAND_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "MUSCLEBAND",
+      "display_name": "Muscleband Damage Boost",
+      "description": "Muscleband Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.1,
+        "require_physical": true
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "WISEGLASSES_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "WISEGLASSES",
+      "display_name": "Wiseglasses Damage Boost",
+      "description": "Wiseglasses Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.1,
+        "require_special": true
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "CHARCOAL_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "CHARCOAL",
+      "display_name": "Charcoal Damage Boost",
+      "description": "Charcoal Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "FIRE"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "MYSTICWATER_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "MYSTICWATER",
+      "display_name": "Mysticwater Damage Boost",
+      "description": "Mysticwater Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "WATER"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "MIRACLESEED_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "MIRACLESEED",
+      "display_name": "Miracleseed Damage Boost",
+      "description": "Miracleseed Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "GRASS"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "MAGNET_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "MAGNET",
+      "display_name": "Magnet Damage Boost",
+      "description": "Magnet Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "ELECTRIC"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "NEVERMELTICE_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "NEVERMELTICE",
+      "display_name": "Nevermeltice Damage Boost",
+      "description": "Nevermeltice Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "ICE"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "BLACKBELT_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "BLACKBELT",
+      "display_name": "Blackbelt Damage Boost",
+      "description": "Blackbelt Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "FIGHTING"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "POISONBARB_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "POISONBARB",
+      "display_name": "Poisonbarb Damage Boost",
+      "description": "Poisonbarb Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "POISON"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "SOFTSAND_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "SOFTSAND",
+      "display_name": "Softsand Damage Boost",
+      "description": "Softsand Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "GROUND"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "SHARPBEAK_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "SHARPBEAK",
+      "display_name": "Sharpbeak Damage Boost",
+      "description": "Sharpbeak Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "FLYING"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "TWISTEDSPOON_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "TWISTEDSPOON",
+      "display_name": "Twistedspoon Damage Boost",
+      "description": "Twistedspoon Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "PSYCHIC"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "SILVERPOWDER_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "SILVERPOWDER",
+      "display_name": "Silverpowder Damage Boost",
+      "description": "Silverpowder Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "BUG"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "HARDSTONE_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "HARDSTONE",
+      "display_name": "Hardstone Damage Boost",
+      "description": "Hardstone Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "ROCK"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "SPELLTAG_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "SPELLTAG",
+      "display_name": "Spelltag Damage Boost",
+      "description": "Spelltag Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "GHOST"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "DRAGONFANG_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "DRAGONFANG",
+      "display_name": "Dragonfang Damage Boost",
+      "description": "Dragonfang Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "DRAGON"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "BLACKGLASSES_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "BLACKGLASSES",
+      "display_name": "Blackglasses Damage Boost",
+      "description": "Blackglasses Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "DARK"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "METALCOAT_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "METALCOAT",
+      "display_name": "Metalcoat Damage Boost",
+      "description": "Metalcoat Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "STEEL"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "PIXIEPLATE_DAMAGE_BOOST",
+      "source_kind": "item",
+      "source_id": "PIXIEPLATE",
+      "display_name": "Pixieplate Damage Boost",
+      "description": "Pixieplate Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.2,
+        "require_move_type": "FAIRY"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "CHOICEBAND_ATTACK_MODIFIER",
+      "source_kind": "item",
+      "source_id": "CHOICEBAND",
+      "display_name": "Choiceband ATTACK Modifier",
+      "description": "Partial: secondary restrictions/lock behavior may not be fully implemented.",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.5,
+        "require_physical": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "CHOICESPECS_SPECIAL_ATTACK_MODIFIER",
+      "source_kind": "item",
+      "source_id": "CHOICESPECS",
+      "display_name": "Choicespecs SPECIAL_ATTACK Modifier",
+      "description": "Partial: secondary restrictions/lock behavior may not be fully implemented.",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "self",
+      "params": {
+        "multiplier": 1.5,
+        "require_special": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "CHOICESCARF_SPEED_MODIFIER",
+      "source_kind": "item",
+      "source_id": "CHOICESCARF",
+      "display_name": "Choicescarf SPEED Modifier",
+      "description": "Partial: secondary restrictions/lock behavior may not be fully implemented.",
+      "hook": "speed_calc",
+      "template": "speed_multiplier",
+      "target": "self",
+      "params": {
+        "multiplier": 1.5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "ASSAULTVEST_SPECIAL_DEFENSE_MODIFIER",
+      "source_kind": "item",
+      "source_id": "ASSAULTVEST",
+      "display_name": "Assaultvest SPECIAL_DEFENSE Modifier",
+      "description": "Partial: secondary restrictions/lock behavior may not be fully implemented.",
+      "hook": "damage_calc_from_target",
+      "template": "damage_reduction_multiplier",
+      "target": "self",
+      "params": {
+        "multiplier": 0.6667,
+        "require_special": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "IRONBALL_SPEED_MODIFIER",
+      "source_kind": "item",
+      "source_id": "IRONBALL",
+      "display_name": "Ironball SPEED Modifier",
+      "description": "Partial: secondary restrictions/lock behavior may not be fully implemented.",
+      "hook": "speed_calc",
+      "template": "speed_multiplier",
+      "target": "self",
+      "params": {
+        "multiplier": 0.5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "FLOATSTONE_WEIGHT_MODIFIER",
+      "source_kind": "item",
+      "source_id": "FLOATSTONE",
+      "display_name": "Floatstone WEIGHT Modifier",
+      "description": "Partial: secondary restrictions/lock behavior may not be fully implemented.",
+      "hook": "weight_calc",
+      "template": "weight_multiplier",
+      "target": "self",
+      "params": {
+        "multiplier": 0.5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "ROCKYHELMET_CONTACT_RECOIL",
+      "source_kind": "item",
+      "source_id": "ROCKYHELMET",
+      "display_name": "Rocky Helmet Contact Recoil",
+      "description": "Rocky Helmet Contact Recoil",
+      "hook": "on_being_hit",
+      "template": "contact_recoil_damage",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 6,
+        "require_contact": true
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "WEAKNESSPOLICY_ON_HIT_STAT_RAISE",
+      "source_kind": "item",
+      "source_id": "WEAKNESSPOLICY",
+      "display_name": "Weaknesspolicy On-Hit Stat Raise",
+      "description": "Weaknesspolicy On-Hit Stat Raise",
+      "hook": "on_being_hit",
+      "template": "stat_raise_on_hit",
+      "target": "self",
+      "params": {
+        "stages": 2,
+        "stats": [
+          "ATTACK",
+          "SPECIAL_ATTACK"
+        ],
+        "require_super_effective": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "ABSORBBULB_ON_HIT_STAT_RAISE",
+      "source_kind": "item",
+      "source_id": "ABSORBBULB",
+      "display_name": "Absorbbulb On-Hit Stat Raise",
+      "description": "Absorbbulb On-Hit Stat Raise",
+      "hook": "on_being_hit",
+      "template": "stat_raise_on_hit",
+      "target": "self",
+      "params": {
+        "stages": 1,
+        "stat": "SPECIAL_ATTACK"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "CELLBATTERY_ON_HIT_STAT_RAISE",
+      "source_kind": "item",
+      "source_id": "CELLBATTERY",
+      "display_name": "Cellbattery On-Hit Stat Raise",
+      "description": "Cellbattery On-Hit Stat Raise",
+      "hook": "on_being_hit",
+      "template": "stat_raise_on_hit",
+      "target": "self",
+      "params": {
+        "stages": 1,
+        "stat": "ATTACK"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "LUMINOUSMOSS_ON_HIT_STAT_RAISE",
+      "source_kind": "item",
+      "source_id": "LUMINOUSMOSS",
+      "display_name": "Luminousmoss On-Hit Stat Raise",
+      "description": "Luminousmoss On-Hit Stat Raise",
+      "hook": "on_being_hit",
+      "template": "stat_raise_on_hit",
+      "target": "self",
+      "params": {
+        "stages": 1,
+        "stat": "SPECIAL_DEFENSE"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "SNOWBALL_ON_HIT_STAT_RAISE",
+      "source_kind": "item",
+      "source_id": "SNOWBALL",
+      "display_name": "Snowball On-Hit Stat Raise",
+      "description": "Snowball On-Hit Stat Raise",
+      "hook": "on_being_hit",
+      "template": "stat_raise_on_hit",
+      "target": "self",
+      "params": {
+        "stages": 1,
+        "stat": "ATTACK"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "FLAMEORB_END_ROUND_STATUS",
+      "source_kind": "item",
+      "source_id": "FLAMEORB",
+      "display_name": "Flameorb End-Round Status",
+      "description": "Flameorb End-Round Status",
+      "hook": "end_of_round_effect",
+      "template": "inflict_status_end_of_round",
+      "target": "self",
+      "params": {
+        "status": "BURN"
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "TOXICORB_END_ROUND_STATUS",
+      "source_kind": "item",
+      "source_id": "TOXICORB",
+      "display_name": "Toxicorb End-Round Status",
+      "description": "Toxicorb End-Round Status",
+      "hook": "end_of_round_effect",
+      "template": "inflict_status_end_of_round",
+      "target": "self",
+      "params": {
+        "status": "TOXIC"
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "BLACKSLUDGE_POISON_HEAL",
+      "source_kind": "item",
+      "source_id": "BLACKSLUDGE",
+      "display_name": "Black Sludge Poison Heal",
+      "description": "Black Sludge Poison Heal",
+      "hook": "end_of_round",
+      "template": "heal_fraction_by_type",
+      "target": "self",
+      "params": {
+        "required_type": "POISON",
+        "fraction_numerator": 1,
+        "fraction_denominator": 16
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Partial: poison-type branch is compiled, but exact vanilla paired damage branch and messaging may vary by engine version."
+    },
+    {
+      "id": "BLACKSLUDGE_NON_POISON_DAMAGE",
+      "source_kind": "item",
+      "source_id": "BLACKSLUDGE",
+      "display_name": "Black Sludge Non-Poison Damage",
+      "description": "Black Sludge Non-Poison Damage",
+      "hook": "end_of_round_effect",
+      "template": "damage_fraction_end_of_round",
+      "target": "self",
+      "params": {
+        "excluded_type": "POISON",
+        "fraction_numerator": 1,
+        "fraction_denominator": 8
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "FOCUSSASH_ADVANCED",
+      "source_kind": "item",
+      "source_id": "FOCUSSASH",
+      "display_name": "Focus Sash",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "survive_lethal_hit_once",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "AIRBALLOON_ADVANCED",
+      "source_kind": "item",
+      "source_id": "AIRBALLOON",
+      "display_name": "Air Balloon",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "ground_immunity_until_hit",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "PROTECT_ADVANCED",
+      "source_kind": "move",
+      "source_id": "PROTECT",
+      "display_name": "Protect",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_battle_flow",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "SUBSTITUTE_ADVANCED",
+      "source_kind": "move",
+      "source_id": "SUBSTITUTE",
+      "display_name": "Substitute",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_battle_flow",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "TRANSFORM_ADVANCED",
+      "source_kind": "move",
+      "source_id": "TRANSFORM",
+      "display_name": "Transform",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_battle_flow",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "TRICKROOM_ADVANCED",
+      "source_kind": "move",
+      "source_id": "TRICKROOM",
+      "display_name": "Trick Room",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "field_room",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "ILLUSION_ADVANCED",
+      "source_kind": "item",
+      "source_id": "ILLUSION",
+      "display_name": "Illusion",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "identity_mask",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "IMPOSTER_ADVANCED",
+      "source_kind": "item",
+      "source_id": "IMPOSTER",
+      "display_name": "Imposter",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "auto_transform",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "CHOICELOCK_ADVANCED",
+      "source_kind": "item",
+      "source_id": "CHOICELOCK",
+      "display_name": "Full Choice Lock",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "move_selection_lock",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "WONDERGUARD_ADVANCED",
+      "source_kind": "item",
+      "source_id": "WONDERGUARD",
+      "display_name": "Wonder Guard",
+      "description": "Recognized in pool but intentionally not auto-compiled in Phase 2A.",
+      "hook": "advanced_battle_flow",
+      "template": "type_effectiveness_gate",
+      "target": "self",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": ""
+    },
+    {
+      "id": "SWIFTSWIM_SPEED_IN_RAIN",
+      "source_kind": "ability",
+      "source_id": "SWIFTSWIM",
+      "display_name": "Swift Swim Speed in Rain",
+      "description": "Swift Swim Speed in Rain",
+      "hook": "speed_calc",
+      "template": "speed_multiplier_if_weather",
+      "target": "holder",
+      "params": {
+        "weather": [
+          "Rain",
+          "HeavyRain"
+        ],
+        "multiplier": 2.0
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "SANDRUSH_SPEED_IN_SAND",
+      "source_kind": "ability",
+      "source_id": "SANDRUSH",
+      "display_name": "Sand Rush Speed in Sandstorm",
+      "description": "Sand Rush Speed in Sandstorm",
+      "hook": "speed_calc",
+      "template": "speed_multiplier_if_weather",
+      "target": "holder",
+      "params": {
+        "weather": [
+          "Sandstorm"
+        ],
+        "multiplier": 2.0
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "SLUSHRUSH_SPEED_IN_HAIL_SNOW",
+      "source_kind": "ability",
+      "source_id": "SLUSHRUSH",
+      "display_name": "Slush Rush Speed in Hail/Snow",
+      "description": "Slush Rush Speed in Hail/Snow",
+      "hook": "speed_calc",
+      "template": "speed_multiplier_if_weather",
+      "target": "holder",
+      "params": {
+        "weather": [
+          "Hail",
+          "Snow"
+        ],
+        "multiplier": 2.0
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "RAINDISH_HEAL_IN_RAIN",
+      "source_kind": "ability",
+      "source_id": "RAINDISH",
+      "display_name": "Rain Dish Heal in Rain",
+      "description": "Rain Dish Heal in Rain",
+      "hook": "end_of_round",
+      "template": "heal_fraction_if_weather",
+      "target": "holder",
+      "params": {
+        "weather": [
+          "Rain",
+          "HeavyRain"
+        ],
+        "fraction_numerator": 1,
+        "fraction_denominator": 16
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "ICEBODY_HEAL_IN_HAIL_SNOW",
+      "source_kind": "ability",
+      "source_id": "ICEBODY",
+      "display_name": "Ice Body Heal in Hail/Snow",
+      "description": "Ice Body Heal in Hail/Snow",
+      "hook": "end_of_round",
+      "template": "heal_fraction_if_weather",
+      "target": "holder",
+      "params": {
+        "weather": [
+          "Hail",
+          "Snow"
+        ],
+        "fraction_numerator": 1,
+        "fraction_denominator": 16
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": ""
+    },
+    {
+      "id": "HUGEPOWER_PHYSICAL_DAMAGE",
+      "source_kind": "ability",
+      "source_id": "HUGEPOWER",
+      "display_name": "Huge Power Physical Damage Boost",
+      "description": "Huge Power Physical Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "holder",
+      "params": {
+        "multiplier": 2.0,
+        "require_physical": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Approximates Huge Power as physical damage x2 instead of raw Attack stat x2."
+    },
+    {
+      "id": "PUREPOWER_PHYSICAL_DAMAGE",
+      "source_kind": "ability",
+      "source_id": "PUREPOWER",
+      "display_name": "Pure Power Physical Damage Boost",
+      "description": "Pure Power Physical Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "holder",
+      "params": {
+        "multiplier": 2.0,
+        "require_physical": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Approximates Pure Power as physical damage x2 instead of raw Attack stat x2."
+    },
+    {
+      "id": "TECHNICIAN_LOW_POWER_DAMAGE",
+      "source_kind": "ability",
+      "source_id": "TECHNICIAN",
+      "display_name": "Technician Low-Power Damage Boost",
+      "description": "Technician Low-Power Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "holder",
+      "params": {
+        "multiplier": 1.5,
+        "max_base_power": 60
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Uses base power <= 60 from damage calc hook; special base-power rewrites may differ from vanilla."
+    },
+    {
+      "id": "ADAPTABILITY_STAB_DAMAGE",
+      "source_kind": "ability",
+      "source_id": "ADAPTABILITY",
+      "display_name": "Adaptability STAB Damage Boost",
+      "description": "Adaptability STAB Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "holder",
+      "params": {
+        "multiplier": 1.3333,
+        "require_user_has_type": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Approximates Adaptability by multiplying STAB moves by 4/3 on top of normal STAB."
+    },
+    {
+      "id": "FILTER_SUPER_EFFECTIVE_REDUCTION",
+      "source_kind": "ability",
+      "source_id": "FILTER",
+      "display_name": "Filter Super-Effective Damage Reduction",
+      "description": "Filter Super-Effective Damage Reduction",
+      "hook": "damage_calc_from_target",
+      "template": "damage_reduction_multiplier",
+      "target": "holder",
+      "params": {
+        "multiplier": 0.75,
+        "require_super_effective": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Reduces super-effective damage by 25%; depends on DamageCalcFromTarget hook."
+    },
+    {
+      "id": "SOLIDROCK_SUPER_EFFECTIVE_REDUCTION",
+      "source_kind": "ability",
+      "source_id": "SOLIDROCK",
+      "display_name": "Solid Rock Super-Effective Damage Reduction",
+      "description": "Solid Rock Super-Effective Damage Reduction",
+      "hook": "damage_calc_from_target",
+      "template": "damage_reduction_multiplier",
+      "target": "holder",
+      "params": {
+        "multiplier": 0.75,
+        "require_super_effective": true
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Reduces super-effective damage by 25%; depends on DamageCalcFromTarget hook."
+    },
+    {
+      "id": "THICKFAT_FIRE_REDUCTION",
+      "source_kind": "ability",
+      "source_id": "THICKFAT",
+      "display_name": "Thick Fat Fire Damage Reduction",
+      "description": "Thick Fat Fire Damage Reduction",
+      "hook": "damage_calc_from_target",
+      "template": "damage_reduction_multiplier",
+      "target": "holder",
+      "params": {
+        "multiplier": 0.5,
+        "require_move_type": "FIRE"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "One of two Thick Fat branches."
+    },
+    {
+      "id": "THICKFAT_ICE_REDUCTION",
+      "source_kind": "ability",
+      "source_id": "THICKFAT",
+      "display_name": "Thick Fat Ice Damage Reduction",
+      "description": "Thick Fat Ice Damage Reduction",
+      "hook": "damage_calc_from_target",
+      "template": "damage_reduction_multiplier",
+      "target": "holder",
+      "params": {
+        "multiplier": 0.5,
+        "require_move_type": "ICE"
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "One of two Thick Fat branches."
+    },
+    {
+      "id": "GUTS_STATUS_PHYSICAL_DAMAGE",
+      "source_kind": "ability",
+      "source_id": "GUTS",
+      "display_name": "Guts Status Physical Damage Boost",
+      "description": "Guts Status Physical Damage Boost",
+      "hook": "damage_calc",
+      "template": "damage_multiplier_conditional",
+      "target": "holder",
+      "params": {
+        "multiplier": 1.5,
+        "require_physical": true,
+        "require_user_status": [
+          "BURN",
+          "POISON",
+          "TOXIC",
+          "PARALYSIS",
+          "SLEEP",
+          "FROZEN"
+        ]
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Approximates Guts as physical damage x1.5 while statused. Does not suppress burn Attack drop globally."
+    },
+    {
+      "id": "POISONHEAL_POISON_HEAL",
+      "source_kind": "ability",
+      "source_id": "POISONHEAL",
+      "display_name": "Poison Heal",
+      "description": "Poison Heal",
+      "hook": "end_of_round",
+      "template": "heal_fraction_if_status",
+      "target": "holder",
+      "params": {
+        "require_status": [
+          "POISON",
+          "TOXIC"
+        ],
+        "fraction_numerator": 1,
+        "fraction_denominator": 8
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": ""
+    },
+    {
+      "id": "INTIMIDATE_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "INTIMIDATE",
+      "display_name": "Intimidate",
+      "description": "Intimidate",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "target": "holder",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Needs switch-in opponent stat-lowering hook and double-battle target handling."
+    },
+    {
+      "id": "MOXIE_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "MOXIE",
+      "display_name": "Moxie",
+      "description": "Moxie",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "target": "holder",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Needs after-KO attribution hook."
+    },
+    {
+      "id": "MAGICGUARD_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "MAGICGUARD",
+      "display_name": "Magic Guard",
+      "description": "Magic Guard",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "target": "holder",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Needs broad indirect-damage prevention hook."
+    },
+    {
+      "id": "WONDERGUARD_ABILITY_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "WONDERGUARD",
+      "display_name": "Wonder Guard",
+      "description": "Wonder Guard",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "target": "holder",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Needs type effectiveness gate before damage application."
+    },
+    {
+      "id": "PRANKSTER_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "PRANKSTER",
+      "display_name": "Prankster",
+      "description": "Prankster",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "target": "holder",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Needs move priority calculation hook."
+    },
+    {
+      "id": "AGILITY_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "AGILITY",
+      "display_name": "Agility +2 Speed",
+      "description": "Agility +2 Speed",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "SPEED",
+        "stages": 2,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "ROCKPOLISH_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "ROCKPOLISH",
+      "display_name": "Rock Polish +2 Speed",
+      "description": "Rock Polish +2 Speed",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "SPEED",
+        "stages": 2,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "SWORDSDANCE_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "SWORDSDANCE",
+      "display_name": "Swords Dance +2 Attack",
+      "description": "Swords Dance +2 Attack",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "ATTACK",
+        "stages": 2,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "NASTYPLOT_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "NASTYPLOT",
+      "display_name": "Nasty Plot +2 Sp. Atk",
+      "description": "Nasty Plot +2 Sp. Atk",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "SPECIAL_ATTACK",
+        "stages": 2,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "IRONDEFENSE_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "IRONDEFENSE",
+      "display_name": "Iron Defense +2 Defense",
+      "description": "Iron Defense +2 Defense",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "DEFENSE",
+        "stages": 2,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "AMNESIA_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "AMNESIA",
+      "display_name": "Amnesia +2 Sp. Def",
+      "description": "Amnesia +2 Sp. Def",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stat": "SPECIAL_DEFENSE",
+        "stages": 2,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "HONECLAWS_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "HONECLAWS",
+      "display_name": "Hone Claws +1 Attack / Accuracy",
+      "description": "Hone Claws +1 Attack / Accuracy",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stats": [
+          "ATTACK",
+          "ACCURACY"
+        ],
+        "stages": 1,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "BULKUP_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "BULKUP",
+      "display_name": "Bulk Up +1 Attack / Defense",
+      "description": "Bulk Up +1 Attack / Defense",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stats": [
+          "ATTACK",
+          "DEFENSE"
+        ],
+        "stages": 1,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "CALMMIND_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "CALMMIND",
+      "display_name": "Calm Mind +1 Sp. Atk / Sp. Def",
+      "description": "Calm Mind +1 Sp. Atk / Sp. Def",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stats": [
+          "SPECIAL_ATTACK",
+          "SPECIAL_DEFENSE"
+        ],
+        "stages": 1,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "DRAGONDANCE_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "DRAGONDANCE",
+      "display_name": "Dragon Dance +1 Attack / Speed",
+      "description": "Dragon Dance +1 Attack / Speed",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stats": [
+          "ATTACK",
+          "SPEED"
+        ],
+        "stages": 1,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "COIL_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "COIL",
+      "display_name": "Coil +1 Attack / Defense / Accuracy",
+      "description": "Coil +1 Attack / Defense / Accuracy",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stats": [
+          "ATTACK",
+          "DEFENSE",
+          "ACCURACY"
+        ],
+        "stages": 1,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "QUIVERDANCE_RAISE_USER_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "QUIVERDANCE",
+      "display_name": "Quiver Dance +1 Sp. Atk / Sp. Def / Speed",
+      "description": "Quiver Dance +1 Sp. Atk / Sp. Def / Speed",
+      "hook": "after_move_use",
+      "template": "raise_user_stat_stage",
+      "target": "self",
+      "params": {
+        "stats": [
+          "SPECIAL_ATTACK",
+          "SPECIAL_DEFENSE",
+          "SPEED"
+        ],
+        "stages": 1,
+        "once_per_battle": true
+      },
+      "support_status": "supported",
+      "risk_level": "medium",
+      "notes": "Move-derived stat boost adaptation; triggers after holder uses a move."
+    },
+    {
+      "id": "GROWL_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "GROWL",
+      "display_name": "Growl lowers Attack",
+      "description": "Growl lowers Attack",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "ATTACK",
+        "stages": 1,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "CHARM_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "CHARM",
+      "display_name": "Charm lowers Attack sharply",
+      "description": "Charm lowers Attack sharply",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "ATTACK",
+        "stages": 2,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "SCREECH_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "SCREECH",
+      "display_name": "Screech lowers Defense sharply",
+      "description": "Screech lowers Defense sharply",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "DEFENSE",
+        "stages": 2,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "LEER_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "LEER",
+      "display_name": "Leer lowers Defense",
+      "description": "Leer lowers Defense",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "DEFENSE",
+        "stages": 1,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "TAILWHIP_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "TAILWHIP",
+      "display_name": "Tail Whip lowers Defense",
+      "description": "Tail Whip lowers Defense",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "DEFENSE",
+        "stages": 1,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "FAKETEARS_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "FAKETEARS",
+      "display_name": "Fake Tears lowers Sp. Def sharply",
+      "description": "Fake Tears lowers Sp. Def sharply",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "SPECIAL_DEFENSE",
+        "stages": 2,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "METALSOUND_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "METALSOUND",
+      "display_name": "Metal Sound lowers Sp. Def sharply",
+      "description": "Metal Sound lowers Sp. Def sharply",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "SPECIAL_DEFENSE",
+        "stages": 2,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "STRINGSHOT_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "STRINGSHOT",
+      "display_name": "String Shot lowers Speed",
+      "description": "String Shot lowers Speed",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "SPEED",
+        "stages": 2,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "ROCKTOMB_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "ROCKTOMB",
+      "display_name": "Rock Tomb lowers Speed",
+      "description": "Rock Tomb lowers Speed",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "SPEED",
+        "stages": 1,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "MUDSHOT_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "MUDSHOT",
+      "display_name": "Mud Shot lowers Speed",
+      "description": "Mud Shot lowers Speed",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "SPEED",
+        "stages": 1,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "ACIDSPRAY_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "ACIDSPRAY",
+      "display_name": "Acid Spray lowers Sp. Def sharply",
+      "description": "Acid Spray lowers Sp. Def sharply",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "SPECIAL_DEFENSE",
+        "stages": 2,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "BREAKINGSWIPE_LOWER_TARGET_STAT_STAGE",
+      "source_kind": "move",
+      "source_id": "BREAKINGSWIPE",
+      "display_name": "Breaking Swipe lowers Attack",
+      "description": "Breaking Swipe lowers Attack",
+      "hook": "after_move_use",
+      "template": "lower_target_stat_stage",
+      "target": "target",
+      "params": {
+        "stat": "ATTACK",
+        "stages": 1,
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move and target exists."
+    },
+    {
+      "id": "SPORE_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "SPORE",
+      "display_name": "Spore applies sleep",
+      "description": "Spore applies sleep",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "SLEEP",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "SLEEPPOWDER_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "SLEEPPOWDER",
+      "display_name": "Sleep Powder applies sleep",
+      "description": "Sleep Powder applies sleep",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "SLEEP",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "HYPNOSIS_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "HYPNOSIS",
+      "display_name": "Hypnosis applies sleep",
+      "description": "Hypnosis applies sleep",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "SLEEP",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "THUNDERWAVE_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "THUNDERWAVE",
+      "display_name": "Thunder Wave applies paralysis",
+      "description": "Thunder Wave applies paralysis",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "PARALYSIS",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "GLARE_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "GLARE",
+      "display_name": "Glare applies paralysis",
+      "description": "Glare applies paralysis",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "PARALYSIS",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "WILLOWISP_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "WILLOWISP",
+      "display_name": "Will-O-Wisp applies burn",
+      "description": "Will-O-Wisp applies burn",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "BURN",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "TOXIC_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "TOXIC",
+      "display_name": "Toxic badly poisons",
+      "description": "Toxic badly poisons",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "TOXIC",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "POISONPOWDER_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "POISONPOWDER",
+      "display_name": "Poison Powder poisons",
+      "description": "Poison Powder poisons",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "POISON",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "STUNSPORE_APPLY_STATUS_TARGET",
+      "source_kind": "move",
+      "source_id": "STUNSPORE",
+      "display_name": "Stun Spore applies paralysis",
+      "description": "Stun Spore applies paralysis",
+      "hook": "after_move_use",
+      "template": "apply_status_target",
+      "target": "target",
+      "params": {
+        "status": "PARALYSIS",
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; does not model original accuracy/immunity edge cases beyond battler status checks."
+    },
+    {
+      "id": "FAKEOUT_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "FAKEOUT",
+      "display_name": "Fakeout flinch effect",
+      "description": "Fakeout flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 100
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "BITE_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "BITE",
+      "display_name": "Bite flinch effect",
+      "description": "Bite flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 30
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "HEADBUTT_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "HEADBUTT",
+      "display_name": "Headbutt flinch effect",
+      "description": "Headbutt flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 30
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "IRONHEAD_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "IRONHEAD",
+      "display_name": "Ironhead flinch effect",
+      "description": "Ironhead flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 30
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "AIRSLASH_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "AIRSLASH",
+      "display_name": "Airslash flinch effect",
+      "description": "Airslash flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 30
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "ROCKSLIDE_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "ROCKSLIDE",
+      "display_name": "Rockslide flinch effect",
+      "description": "Rockslide flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 30
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "ZENHEADBUTT_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "ZENHEADBUTT",
+      "display_name": "Zenheadbutt flinch effect",
+      "description": "Zenheadbutt flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 20
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "DARKPULSE_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "DARKPULSE",
+      "display_name": "Darkpulse flinch effect",
+      "description": "Darkpulse flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 20
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "WATERFALL_FLINCH_TARGET",
+      "source_kind": "move",
+      "source_id": "WATERFALL",
+      "display_name": "Waterfall flinch effect",
+      "description": "Waterfall flinch effect",
+      "hook": "after_move_use",
+      "template": "flinch_target",
+      "target": "target",
+      "params": {
+        "chance_percent": 20
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies after holder uses a move."
+    },
+    {
+      "id": "ABSORB_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "ABSORB",
+      "display_name": "Absorb drain heal",
+      "description": "Absorb drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 50
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "MEGADRAIN_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "MEGADRAIN",
+      "display_name": "Megadrain drain heal",
+      "description": "Megadrain drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 50
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "GIGADRAIN_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "GIGADRAIN",
+      "display_name": "Gigadrain drain heal",
+      "description": "Gigadrain drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 50
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "DRAINPUNCH_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "DRAINPUNCH",
+      "display_name": "Drainpunch drain heal",
+      "description": "Drainpunch drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 50
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "HORNLEECH_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "HORNLEECH",
+      "display_name": "Hornleech drain heal",
+      "description": "Hornleech drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 50
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "LEECHLIFE_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "LEECHLIFE",
+      "display_name": "Leechlife drain heal",
+      "description": "Leechlife drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 50
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "DRAININGKISS_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "DRAININGKISS",
+      "display_name": "Drainingkiss drain heal",
+      "description": "Drainingkiss drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 75
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "OBLIVIONWING_HEAL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "OBLIVIONWING",
+      "display_name": "Oblivionwing drain heal",
+      "description": "Oblivionwing drain heal",
+      "hook": "after_damage_dealt",
+      "template": "heal_percent_damage_dealt",
+      "target": "self",
+      "params": {
+        "percent": 75
+      },
+      "support_status": "supported",
+      "risk_level": "low",
+      "notes": "Heals holder based on damage dealt by any successful move while item is active."
+    },
+    {
+      "id": "RECOVER_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "RECOVER",
+      "display_name": "Recover self heal",
+      "description": "Recover self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "ROOST_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "ROOST",
+      "display_name": "Roost self heal",
+      "description": "Roost self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "SOFTBOILED_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "SOFTBOILED",
+      "display_name": "Softboiled self heal",
+      "description": "Softboiled self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "MILKDRINK_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "MILKDRINK",
+      "display_name": "Milkdrink self heal",
+      "description": "Milkdrink self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "SYNTHESIS_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "SYNTHESIS",
+      "display_name": "Synthesis self heal",
+      "description": "Synthesis self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "MOONLIGHT_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "MOONLIGHT",
+      "display_name": "Moonlight self heal",
+      "description": "Moonlight self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "MORNINGSUN_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "MORNINGSUN",
+      "display_name": "Morningsun self heal",
+      "description": "Morningsun self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "SLACKOFF_HEAL_USER_FRACTION",
+      "source_kind": "move",
+      "source_id": "SLACKOFF",
+      "display_name": "Slackoff self heal",
+      "description": "Slackoff self heal",
+      "hook": "after_move_use",
+      "template": "heal_user_fraction",
+      "target": "self",
+      "params": {
+        "fraction_numerator": 1,
+        "fraction_denominator": 2
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; heals after holder uses a move, not an exact move clone."
+    },
+    {
+      "id": "TAKEDOWN_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "TAKEDOWN",
+      "display_name": "Takedown recoil",
+      "description": "Takedown recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 25
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "DOUBLEEDGE_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "DOUBLEEDGE",
+      "display_name": "Doubleedge recoil",
+      "description": "Doubleedge recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 33
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "WILDCHARGE_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "WILDCHARGE",
+      "display_name": "Wildcharge recoil",
+      "description": "Wildcharge recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 25
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "FLAREBLITZ_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "FLAREBLITZ",
+      "display_name": "Flareblitz recoil",
+      "description": "Flareblitz recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 33
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "BRAVEBIRD_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "BRAVEBIRD",
+      "display_name": "Bravebird recoil",
+      "description": "Bravebird recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 33
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "WOODHAMMER_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "WOODHAMMER",
+      "display_name": "Woodhammer recoil",
+      "description": "Woodhammer recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 33
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "HEADSMASH_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "HEADSMASH",
+      "display_name": "Headsmash recoil",
+      "description": "Headsmash recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 50
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "VOLTTACKLE_RECOIL_PERCENT_DAMAGE_DEALT",
+      "source_kind": "move",
+      "source_id": "VOLTTACKLE",
+      "display_name": "Volttackle recoil",
+      "description": "Volttackle recoil",
+      "hook": "after_move_use",
+      "template": "recoil_percent_damage_dealt",
+      "target": "target",
+      "params": {
+        "percent": 33
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; applies recoil to holder after damage dealt."
+    },
+    {
+      "id": "SUNNYDAY_START_WEATHER",
+      "source_kind": "move",
+      "source_id": "SUNNYDAY",
+      "display_name": "Sunnyday starts Sun",
+      "description": "Sunnyday starts Sun",
+      "hook": "after_move_use",
+      "template": "start_weather",
+      "target": "self",
+      "params": {
+        "weather": "Sun",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts weather after holder uses a move."
+    },
+    {
+      "id": "RAINDANCE_START_WEATHER",
+      "source_kind": "move",
+      "source_id": "RAINDANCE",
+      "display_name": "Raindance starts Rain",
+      "description": "Raindance starts Rain",
+      "hook": "after_move_use",
+      "template": "start_weather",
+      "target": "self",
+      "params": {
+        "weather": "Rain",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts weather after holder uses a move."
+    },
+    {
+      "id": "SANDSTORM_START_WEATHER",
+      "source_kind": "move",
+      "source_id": "SANDSTORM",
+      "display_name": "Sandstorm starts Sandstorm",
+      "description": "Sandstorm starts Sandstorm",
+      "hook": "after_move_use",
+      "template": "start_weather",
+      "target": "self",
+      "params": {
+        "weather": "Sandstorm",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts weather after holder uses a move."
+    },
+    {
+      "id": "HAIL_START_WEATHER",
+      "source_kind": "move",
+      "source_id": "HAIL",
+      "display_name": "Hail starts Hail",
+      "description": "Hail starts Hail",
+      "hook": "after_move_use",
+      "template": "start_weather",
+      "target": "self",
+      "params": {
+        "weather": "Hail",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts weather after holder uses a move."
+    },
+    {
+      "id": "SNOWSCAPE_START_WEATHER",
+      "source_kind": "move",
+      "source_id": "SNOWSCAPE",
+      "display_name": "Snowscape starts Snow",
+      "description": "Snowscape starts Snow",
+      "hook": "after_move_use",
+      "template": "start_weather",
+      "target": "self",
+      "params": {
+        "weather": "Snow",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts weather after holder uses a move."
+    },
+    {
+      "id": "ELECTRICTERRAIN_START_TERRAIN",
+      "source_kind": "move",
+      "source_id": "ELECTRICTERRAIN",
+      "display_name": "Electricterrain starts Electric Terrain",
+      "description": "Electricterrain starts Electric Terrain",
+      "hook": "after_move_use",
+      "template": "start_terrain",
+      "target": "self",
+      "params": {
+        "terrain": "Electric",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts terrain after holder uses a move."
+    },
+    {
+      "id": "GRASSYTERRAIN_START_TERRAIN",
+      "source_kind": "move",
+      "source_id": "GRASSYTERRAIN",
+      "display_name": "Grassyterrain starts Grassy Terrain",
+      "description": "Grassyterrain starts Grassy Terrain",
+      "hook": "after_move_use",
+      "template": "start_terrain",
+      "target": "self",
+      "params": {
+        "terrain": "Grassy",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts terrain after holder uses a move."
+    },
+    {
+      "id": "MISTYTERRAIN_START_TERRAIN",
+      "source_kind": "move",
+      "source_id": "MISTYTERRAIN",
+      "display_name": "Mistyterrain starts Misty Terrain",
+      "description": "Mistyterrain starts Misty Terrain",
+      "hook": "after_move_use",
+      "template": "start_terrain",
+      "target": "self",
+      "params": {
+        "terrain": "Misty",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts terrain after holder uses a move."
+    },
+    {
+      "id": "PSYCHICTERRAIN_START_TERRAIN",
+      "source_kind": "move",
+      "source_id": "PSYCHICTERRAIN",
+      "display_name": "Psychicterrain starts Psychic Terrain",
+      "description": "Psychicterrain starts Psychic Terrain",
+      "hook": "after_move_use",
+      "template": "start_terrain",
+      "target": "self",
+      "params": {
+        "terrain": "Psychic",
+        "duration": 5
+      },
+      "support_status": "partial",
+      "risk_level": "medium",
+      "notes": "Custom item adaptation; starts terrain after holder uses a move."
+    },
+    {
+      "id": "PROTECT_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "PROTECT",
+      "display_name": "Protect-like battle flow",
+      "description": "Protect-like battle flow",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    },
+    {
+      "id": "DETECT_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "DETECT",
+      "display_name": "Detect-like battle flow",
+      "description": "Detect-like battle flow",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    },
+    {
+      "id": "SUBSTITUTE_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "SUBSTITUTE",
+      "display_name": "Substitute battle state",
+      "description": "Substitute battle state",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    },
+    {
+      "id": "TRICKROOM_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "TRICKROOM",
+      "display_name": "Trick Room field order",
+      "description": "Trick Room field order",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    },
+    {
+      "id": "TRANSFORM_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "TRANSFORM",
+      "display_name": "Transform state copy",
+      "description": "Transform state copy",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    },
+    {
+      "id": "FLY_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "FLY",
+      "display_name": "Semi-invulnerable multi-turn",
+      "description": "Semi-invulnerable multi-turn",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    },
+    {
+      "id": "DIG_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "DIG",
+      "display_name": "Semi-invulnerable multi-turn",
+      "description": "Semi-invulnerable multi-turn",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    },
+    {
+      "id": "SOLARBEAM_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "SOLARBEAM",
+      "display_name": "Charge/multi-turn move",
+      "description": "Charge/multi-turn move",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "target": "battle",
+      "params": {},
+      "support_status": "advanced",
+      "risk_level": "high",
+      "notes": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes."
+    }
+  ]
+}

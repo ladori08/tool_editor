@@ -1,0 +1,124 @@
+{
+  "profile_version": 1,
+  "created_at_utc": "2026-04-25T04:52:07Z",
+  "game_root": "D:\\InfiniteFusion",
+  "script_sources": {
+    "scripts_rxdata": true,
+    "plugin_scripts_rxdata": true,
+    "data_scripts_rb": true,
+    "loaded_source_count": 542
+  },
+  "data_files": {
+    "items_dat": true,
+    "abilities_dat": true,
+    "moves_dat": true
+  },
+  "scan": {
+    "registries": {
+      "item_handlers": true,
+      "battle_item_effects": false,
+      "battle_ability_effects": false
+    },
+    "schemas": {
+      "game_data_item": true,
+      "game_data_ability": true,
+      "game_data_move": true,
+      "handler_hash_symbol": false
+    },
+    "buckets": {
+      "item_handlers": [
+        "BattleUseOnBattler",
+        "BattleUseOnPokemon",
+        "CanUseInBattle",
+        "ConfirmUseInField",
+        "UseFromBag",
+        "UseInBattle",
+        "UseInField",
+        "UseOnPokemon",
+        "UseText"
+      ],
+      "battle_item_effects": [],
+      "battle_ability_effects": []
+    }
+  },
+  "patch_levels": {
+    "A_metadata_item_data": true,
+    "B_clone_existing_effects": false,
+    "C_ruby_injection": false
+  },
+  "ev_patch_target": {
+    "game_root": "D:\\InfiniteFusion",
+    "manifest_path": "D:\\InfiniteFusion\\tools\\ev_patch_state.json",
+    "target_ev_limit": 1512,
+    "current_ev_limit": 1512,
+    "is_target_applied": true,
+    "source_type": "rb_file",
+    "target_path": "D:\\InfiniteFusion\\Data\\Scripts\\014_Pokemon\\001_Pokemon.rb",
+    "state": {
+      "version": 1,
+      "active": true,
+      "applied_at": "2026-04-21T09:38:34Z",
+      "source_type": "rb_file",
+      "target_path": "F:\\InfiniteFusion\\Data\\Scripts\\014_Pokemon\\001_Pokemon.rb",
+      "backup_path": "",
+      "from_ev_limit": 1512,
+      "to_ev_limit": 1512,
+      "patched_files": [],
+      "quarantined_legacy_backups": [
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\011_Battle\\003_Battle\\004_Battle_ExpAndMoveLearning.rb.pre-ev-unlock-20260421-162644.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\011_Battle\\003_Battle\\004_Battle_ExpAndMoveLearning.rb.pre-ev-unlock-20260421-162644.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\011_Battle\\003_Battle\\004_Battle_ExpAndMoveLearning.rb.pre-ev-unlock-20260421-162717.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\011_Battle\\003_Battle\\004_Battle_ExpAndMoveLearning.rb.pre-ev-unlock-20260421-162717.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\013_Items\\001_Item_Utilities.rb.pre-ev-unlock-20260421-162644.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\013_Items\\001_Item_Utilities.rb.pre-ev-unlock-20260421-162644.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\013_Items\\001_Item_Utilities.rb.pre-ev-unlock-20260421-162717.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\013_Items\\001_Item_Utilities.rb.pre-ev-unlock-20260421-162717.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\014_Pokemon\\001_Pokemon.rb.pre-ev-unlock-20260421-160740.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\014_Pokemon\\001_Pokemon.rb.pre-ev-unlock-20260421-160740.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\014_Pokemon\\003_Pokemon_ShadowPokemon.rb.pre-ev-unlock-20260421-162644.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\014_Pokemon\\003_Pokemon_ShadowPokemon.rb.pre-ev-unlock-20260421-162644.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\014_Pokemon\\003_Pokemon_ShadowPokemon.rb.pre-ev-unlock-20260421-162717.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\014_Pokemon\\003_Pokemon_ShadowPokemon.rb.pre-ev-unlock-20260421-162717.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\020_Debug\\003_Debug menus\\005_Debug_PokemonCommands.rb.pre-ev-unlock-20260421-162644.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\020_Debug\\003_Debug menus\\005_Debug_PokemonCommands.rb.pre-ev-unlock-20260421-162644.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\020_Debug\\003_Debug menus\\005_Debug_PokemonCommands.rb.pre-ev-unlock-20260421-162717.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\020_Debug\\003_Debug menus\\005_Debug_PokemonCommands.rb.pre-ev-unlock-20260421-162717.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\011_Battle\\003_Battle\\004_Battle_ExpAndMoveLearning.rb.pre-ev-rollback-20260421-162706.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\011_Battle\\003_Battle\\004_Battle_ExpAndMoveLearning.rb.pre-ev-rollback-20260421-162706.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\013_Items\\001_Item_Utilities.rb.pre-ev-rollback-20260421-162706.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\013_Items\\001_Item_Utilities.rb.pre-ev-rollback-20260421-162706.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\014_Pokemon\\003_Pokemon_ShadowPokemon.rb.pre-ev-rollback-20260421-162706.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\014_Pokemon\\003_Pokemon_ShadowPokemon.rb.pre-ev-rollback-20260421-162706.bak"
+        },
+        {
+          "from": "F:\\InfiniteFusion\\Data\\Scripts\\020_Debug\\003_Debug menus\\005_Debug_PokemonCommands.rb.pre-ev-rollback-20260421-162706.bak",
+          "to": "F:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\020_Debug\\003_Debug menus\\005_Debug_PokemonCommands.rb.pre-ev-rollback-20260421-162706.bak"
+        }
+      ]
+    },
+    "latest_backup_path": "D:\\InfiniteFusion\\tools\\ev_patch_backups\\legacy-inplace\\Data\\Scripts\\014_Pokemon\\001_Pokemon.rb.pre-ev-unlock-20260421-160740.bak"
+  }
+}

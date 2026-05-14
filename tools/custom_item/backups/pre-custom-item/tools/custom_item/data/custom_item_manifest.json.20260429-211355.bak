@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "updated_at_utc": "2026-04-29T07:06:59Z",
+  "items": {
+    "DRAGONSOUL": {
+      "item_spec": {
+        "id": "DRAGONSOUL",
+        "name": "Dragon's Soul",
+        "name_plural": "Dragon's Souls",
+        "pocket": 1,
+        "price": 20000,
+        "sell_price": 20000,
+        "bp_price": 50,
+        "field_use": 0,
+        "battle_use": 0,
+        "flags": [],
+        "move_id": "",
+        "description": "Auto-generated from selected effects:\n\n- Item Leftovers:\nThey gradually restore the HP of the Pokémon carrying them during battle.\n\nMechanics (Known):\n- Heals holder by 1/16 max HP at end of each turn.\n- Fling base power: 10.\n\n- Item Big Root:\nBoosts moves that steal HP.It must be carried by a Pokémon.\n\nMechanics (Known):\n- Drain/healing-from-damage effects are multiplied by 1.3x.\n- Fling base power: 10.\n\n- Move Draining Kiss:\nFairy-type special move. Target: Nearother.\n\nMechanics (Known):\n- Base power: 60.\n- Accuracy: 100%.\n- Base PP: 10.\n- Recovers HP equal to 3/4 of damage dealt.\n- Internal function code: HealUserByThreeQuartersOfDamageDone.\n\n- Move Fake Out:\nNormal-type physical move. Target: Nearother.\n\nMechanics (Known):\n- Base power: 40.\n- Accuracy: 100%.\n- Base PP: 10.\n- Priority: +3.\n- Internal function code: FlinchTargetFailsIfNotUserFirstTurn.\n\n- Move Nasty Plot:\nDark-type status move. Target: User.\n\nMechanics (Known):\n- Accuracy: no standard accuracy roll (self-target or guaranteed effect).\n- Base PP: 20.\n- Raises Sp. Atk of user by 2 stages.\n- Internal function code: RaiseUserSpAtk2.\n\n- Move Swords Dance:\nFrenzied dance that greatly increases Attack.\n\nMechanics (Known):\n- Accuracy: no standard accuracy roll (self-target or guaranteed effect).\n- Base PP: 10.\n- Raises Attack of user by 2 stages.\n- Internal function code: RaiseUserAttack2.\n\n- Ability Speed Boost:\nIncreases the user's Speed ​​by one level at the end of each turn.\n\nMechanics (Known):\n- At end of each turn, raises Speed by 1 stage.",
+        "consumable": false,
+        "show_quantity": true
+      },
+      "effect_spec": {
+        "mode": "composite",
+        "source_item_id": "",
+        "resolved_source_item_ids": [],
+        "selected_item_effect_ids": [
+          "LEFTOVERS",
+          "BIGROOT"
+        ],
+        "selected_move_effect_ids": [
+          "DRAININGKISS",
+          "FAKEOUT",
+          "NASTYPLOT",
+          "SWORDSDANCE"
+        ],
+        "selected_ability_effect_ids": [
+          "SPEEDBOOST"
+        ],
+        "selected_effect_ids": [
+          "LEFTOVERS_HEAL_1_16",
+          "BIG_ROOT_DRAIN_MULTIPLIER",
+          "DRAINING_KISS_HEAL_75",
+          "NASTYPLOT_AFTER_MOVE",
+          "SWORDSDANCE_AFTER_MOVE",
+          "SPEEDBOOST_END_OF_ROUND"
+        ],
+        "resolved_templates": [
+          {
+            "source_kind": "move",
+            "source_id": "FAKEOUT",
+            "template_key": "move_additional_effect_bridge",
+            "move_function_code": "FlinchTargetFailsIfNotUserFirstTurn"
+          }
+        ],
+        "resolved_pool_effects": [
+          {
+            "id": "LEFTOVERS_HEAL_1_16",
+            "source_kind": "item",
+            "source_id": "LEFTOVERS",
+            "display_name": "Leftovers Healing",
+            "description": "Restores 1/16 of max HP at the end of each round.",
+            "hook": "end_of_round",
+            "template": "heal_fraction_max_hp",
+            "target": "self",
+            "params": {
+              "fraction_numerator": 1,
+              "fraction_denominator": 16
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::EndOfRoundHealing.add. Non-invasive per-item registration."
+          },
+          {
+            "id": "BIG_ROOT_DRAIN_MULTIPLIER",
+            "source_kind": "item",
+            "source_id": "BIGROOT",
+            "display_name": "Big Root Drain Boost",
+            "description": "Boosts HP restored from draining effects by 30%.",
+            "hook": "after_damage_dealt",
+            "template": "drain_heal_multiplier",
+            "target": "self",
+            "params": {
+              "multiplier": 1.3
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Used by combined AfterMoveUseFromUser handler with drain effects. Does not copy vanilla item handler directly to avoid duplicate/overwrite behavior."
+          },
+          {
+            "id": "DRAINING_KISS_HEAL_75",
+            "source_kind": "move",
+            "source_id": "DRAININGKISS",
+            "display_name": "Draining Kiss Heal (75%)",
+            "description": "Restores 75% of damage dealt as HP after the holder deals damage.",
+            "hook": "after_damage_dealt",
+            "template": "heal_percent_damage_dealt",
+            "target": "self",
+            "params": {
+              "percent": 75
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::AfterMoveUseFromUser.add. Replaces legacy drain_damage_three_quarters template."
+          },
+          {
+            "id": "NASTYPLOT_AFTER_MOVE",
+            "source_kind": "move",
+            "source_id": "NASTYPLOT",
+            "display_name": "Nasty Plot Effect",
+            "description": "Raises the holder's Special Attack by 2 stages once per battle after successfully using a move.",
+            "hook": "after_move_use",
+            "template": "raise_user_stat_stage",
+            "target": "self",
+            "params": {
+              "stat": "SPECIAL_ATTACK",
+              "stages": 2,
+              "trigger": "after_successful_move",
+              "once_per_battle": true
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::AfterMoveUseFromUser.add. once_per_battle tracked via battler instance variable. Replaces unsupported move_additional_effect_bridge for status self-buff moves."
+          },
+          {
+            "id": "SWORDSDANCE_AFTER_MOVE",
+            "source_kind": "move",
+            "source_id": "SWORDSDANCE",
+            "display_name": "Swords Dance Effect",
+            "description": "Raises the holder's Attack by 2 stages once per battle after successfully using a move.",
+            "hook": "after_move_use",
+            "template": "raise_user_stat_stage",
+            "target": "self",
+            "params": {
+              "stat": "ATTACK",
+              "stages": 2,
+              "trigger": "after_successful_move",
+              "once_per_battle": true
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::AfterMoveUseFromUser.add. once_per_battle tracked via battler instance variable. Replaces unsupported move_additional_effect_bridge for status self-buff moves."
+          },
+          {
+            "id": "SPEEDBOOST_END_OF_ROUND",
+            "source_kind": "ability",
+            "source_id": "SPEEDBOOST",
+            "display_name": "Speed Boost End-of-Round",
+            "description": "Raises the holder's Speed by 1 stage at the end of each round.",
+            "hook": "end_of_round_effect",
+            "template": "raise_user_stat_stage_end_of_round",
+            "target": "self",
+            "params": {
+              "stat": "SPEED",
+              "stages": 1
+            },
+            "support_status": "supported",
+            "risk_level": "low",
+            "notes": "Uses Battle::ItemEffects::EndOfRoundEffect.add instead of ability_active_bridge, because vanilla Speed Boost is dispatched from an end-of-round ability bucket."
+          }
+        ],
+        "unsupported_reasons": [],
+        "unsupported_reason": ""
+      },
+      "updated_at_utc": "2026-04-29T07:06:59Z"
+    }
+  },
+  "last_transaction": {
+    "stamp": "20260429-140659",
+    "kind": "upsert",
+    "item_id": "DRAGONSOUL",
+    "patched_files": [
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\Data\\items.dat.20260429-140659.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\Data\\Scripts.rxdata.20260429-140659.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\data\\custom_item_manifest.json",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\tools\\custom_item\\data\\custom_item_manifest.json.20260429-140659.bak"
+      }
+    ]
+  },
+  "last_rollback": {
+    "rolled_back_at_utc": "2026-04-24T06:18:13Z",
+    "restored_files": [
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_manifest.json"
+    ],
+    "from_transaction_stamp": "20260424-131813",
+    "from_transaction_kind": "upsert",
+    "from_item_id": "ZZUNSUPPORTEDTEST"
+  }
+}

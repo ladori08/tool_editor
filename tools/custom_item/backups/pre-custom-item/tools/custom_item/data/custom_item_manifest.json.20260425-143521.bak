@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "updated_at_utc": "2026-04-25T07:22:30Z",
+  "items": {
+    "DRAGONSOUL": {
+      "item_spec": {
+        "id": "DRAGONSOUL",
+        "name": "Dragon's Soul",
+        "name_plural": "Dragon's Souls",
+        "pocket": 1,
+        "price": 20000,
+        "sell_price": 20000,
+        "bp_price": 50,
+        "field_use": 0,
+        "battle_use": 0,
+        "flags": [],
+        "move_id": "",
+        "description": "Auto-generated from selected effects:\n\n- Item Leftovers:\nThey gradually restore the HP of the Pokémon carrying them during battle.\n\nMechanics (Known):\n- Heals holder by 1/16 max HP at end of each turn.\n- Fling base power: 10.\n\n- Item Shell Bell:\nIt must be carried by a Pokémon.Every time it deals damage, it will recover some HP.\n\nMechanics (Known):\n- Holder heals by 1/8 of damage dealt.\n- Fling base power: 30.\n\n- Item Life Orb:\nEmpowers movements, but consumes HP with each attack by 30%.It must be carried by a Pokémon.\n\nMechanics (Known):\n- Moves deal 1.3x damage; user loses 1/10 max HP after a damaging hit.\n- Fling base power: 30.\n\n- Move Drain Punch:\nA blow that drains energy.The Pokémon recovers half of the HP taken from the target.\n\nMechanics (Known):\n- Base power: 75.\n- Accuracy: 100%.\n- Base PP: 10.\n- Recovers HP equal to 1/2 of damage dealt.\n- Internal function code: HealUserByHalfOfDamageDone.\n\n- Move Draining Kiss:\nFairy-type special move. Target: Nearother.\n\nMechanics (Known):\n- Base power: 60.\n- Accuracy: 100%.\n- Base PP: 10.\n- Recovers HP equal to 3/4 of damage dealt.\n- Internal function code: HealUserByThreeQuartersOfDamageDone.\n\n- Ability Shed Skin:\nThe Pokémon has a 30% chance to cure its status ailments at the end of each turn by shedding its skin.\n\n- Ability Contrary:\nReverses changes in characteristics: they go down when it's time to go up and go up when it's time to go down.\n\n- Ability Sheer Force:\nIncreases power on 30% of moves with side effects, but negates the effect.",
+        "consumable": false,
+        "show_quantity": true
+      },
+      "effect_spec": {
+        "mode": "composite",
+        "source_item_id": "LEFTOVERS",
+        "resolved_source_item_ids": [
+          "LEFTOVERS",
+          "SHELLBELL",
+          "LIFEORB"
+        ],
+        "selected_item_effect_ids": [
+          "LEFTOVERS",
+          "SHELLBELL",
+          "LIFEORB"
+        ],
+        "selected_move_effect_ids": [
+          "DRAINPUNCH",
+          "DRAININGKISS"
+        ],
+        "selected_ability_effect_ids": [
+          "SHEDSKIN",
+          "CONTRARY",
+          "SHEERFORCE"
+        ],
+        "resolved_templates": [
+          {
+            "source_kind": "ability",
+            "source_id": "SHEDSKIN",
+            "template_key": "ability_active_bridge"
+          },
+          {
+            "source_kind": "ability",
+            "source_id": "CONTRARY",
+            "template_key": "ability_contrary"
+          },
+          {
+            "source_kind": "ability",
+            "source_id": "SHEERFORCE",
+            "template_key": "ability_sheer_force"
+          },
+          {
+            "source_kind": "move",
+            "source_id": "DRAINPUNCH",
+            "template_key": "drain_damage_half"
+          },
+          {
+            "source_kind": "move",
+            "source_id": "DRAININGKISS",
+            "template_key": "drain_damage_three_quarters"
+          }
+        ],
+        "unsupported_reasons": [],
+        "unsupported_reason": ""
+      },
+      "updated_at_utc": "2026-04-25T07:22:30Z"
+    }
+  },
+  "last_transaction": {
+    "stamp": "20260425-142230",
+    "kind": "upsert",
+    "item_id": "DRAGONSOUL",
+    "patched_files": [
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\Data\\items.dat.20260425-142230.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\Data\\Scripts.rxdata.20260425-142230.bak"
+      },
+      {
+        "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\data\\custom_item_manifest.json",
+        "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item\\backups\\pre-custom-item\\tools\\custom_item\\data\\custom_item_manifest.json.20260425-142230.bak"
+      }
+    ]
+  },
+  "last_rollback": {
+    "rolled_back_at_utc": "2026-04-24T06:18:13Z",
+    "restored_files": [
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\items.dat",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+      "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\custom_item_manifest.json"
+    ],
+    "from_transaction_stamp": "20260424-131813",
+    "from_transaction_kind": "upsert",
+    "from_item_id": "ZZUNSUPPORTEDTEST"
+  }
+}

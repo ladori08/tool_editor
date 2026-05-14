@@ -1,0 +1,259 @@
+{
+  "generated_by": "ChatGPT Phase 2D hotfix/foundation",
+  "advanced_or_unsupported_count": 23,
+  "effects": [
+    {
+      "effect_id": "FOCUSSASH_ADVANCED",
+      "source_kind": "item",
+      "source_id": "FOCUSSASH",
+      "hook": "advanced_battle_flow",
+      "template": "survive_lethal_hit_once",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 4 - Advanced item effects"
+    },
+    {
+      "effect_id": "AIRBALLOON_ADVANCED",
+      "source_kind": "item",
+      "source_id": "AIRBALLOON",
+      "hook": "advanced_battle_flow",
+      "template": "ground_immunity_until_hit",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 4 - Advanced item effects"
+    },
+    {
+      "effect_id": "PROTECT_ADVANCED",
+      "source_kind": "move",
+      "source_id": "PROTECT",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_battle_flow",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "SUBSTITUTE_ADVANCED",
+      "source_kind": "move",
+      "source_id": "SUBSTITUTE",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_battle_flow",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "TRANSFORM_ADVANCED",
+      "source_kind": "move",
+      "source_id": "TRANSFORM",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_battle_flow",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "TRICKROOM_ADVANCED",
+      "source_kind": "move",
+      "source_id": "TRICKROOM",
+      "hook": "advanced_battle_flow",
+      "template": "field_room",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "ILLUSION_ADVANCED",
+      "source_kind": "item",
+      "source_id": "ILLUSION",
+      "hook": "advanced_battle_flow",
+      "template": "identity_mask",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 4 - Advanced item effects"
+    },
+    {
+      "effect_id": "IMPOSTER_ADVANCED",
+      "source_kind": "item",
+      "source_id": "IMPOSTER",
+      "hook": "advanced_battle_flow",
+      "template": "auto_transform",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 4 - Advanced item effects"
+    },
+    {
+      "effect_id": "CHOICELOCK_ADVANCED",
+      "source_kind": "item",
+      "source_id": "CHOICELOCK",
+      "hook": "advanced_battle_flow",
+      "template": "move_selection_lock",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 4 - Advanced item effects"
+    },
+    {
+      "effect_id": "WONDERGUARD_ADVANCED",
+      "source_kind": "item",
+      "source_id": "WONDERGUARD",
+      "hook": "advanced_battle_flow",
+      "template": "type_effectiveness_gate",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Advanced/unsupported effect requires a dedicated hook contract and manual verification before auto-compile.",
+      "recommended_phase": "Phase 4 - Advanced item effects"
+    },
+    {
+      "effect_id": "INTIMIDATE_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "INTIMIDATE",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Needs switch-in opponent stat-lowering hook and double-battle target handling.",
+      "recommended_phase": "Phase 5 - Advanced ability effects"
+    },
+    {
+      "effect_id": "MOXIE_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "MOXIE",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Needs after-KO attribution hook.",
+      "recommended_phase": "Phase 5 - Advanced ability effects"
+    },
+    {
+      "effect_id": "MAGICGUARD_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "MAGICGUARD",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Needs broad indirect-damage prevention hook.",
+      "recommended_phase": "Phase 5 - Advanced ability effects"
+    },
+    {
+      "effect_id": "WONDERGUARD_ABILITY_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "WONDERGUARD",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Needs type effectiveness gate before damage application.",
+      "recommended_phase": "Phase 5 - Advanced ability effects"
+    },
+    {
+      "effect_id": "PRANKSTER_ADVANCED",
+      "source_kind": "ability",
+      "source_id": "PRANKSTER",
+      "hook": "advanced_battle_flow",
+      "template": null,
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Needs move priority calculation hook.",
+      "recommended_phase": "Phase 5 - Advanced ability effects"
+    },
+    {
+      "effect_id": "PROTECT_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "PROTECT",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "DETECT_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "DETECT",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "SUBSTITUTE_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "SUBSTITUTE",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "TRICKROOM_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "TRICKROOM",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "TRANSFORM_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "TRANSFORM",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "FLY_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "FLY",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "DIG_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "DIG",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    },
+    {
+      "effect_id": "SOLARBEAM_ADVANCED_MARKER",
+      "source_kind": "move",
+      "source_id": "SOLARBEAM",
+      "hook": "advanced_battle_flow",
+      "template": "advanced_marker",
+      "support_status": "advanced",
+      "risk_level": "high",
+      "reason_not_auto_compiled": "Recognized but not auto-compiled in Phase 2C to avoid broad battle-flow changes.",
+      "recommended_phase": "Phase 6 - Advanced move/battle-flow effects"
+    }
+  ]
+}

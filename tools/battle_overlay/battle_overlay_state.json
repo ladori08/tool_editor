@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "active": true,
+  "overlay_version": 1,
+  "last_transaction": {
+    "stamp": "20260506-105005",
+    "kind": "apply",
+    "active": true,
+    "overlay_version": 1,
+    "adapter": "scripts_rxdata",
+    "path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\Data\\Scripts.rxdata",
+    "backup_path": "D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\battle_overlay\\backups\\pre-battle-overlay\\Data\\Scripts.rxdata.20260506-105005.bak",
+    "updated_at_utc": "2026-05-06T03:50:05Z"
+  }
+}

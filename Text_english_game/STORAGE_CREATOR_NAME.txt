@@ -1,0 +1,6 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[STORAGE_CREATOR_NAME]
+Bill
+Bill

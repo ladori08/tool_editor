@@ -1,0 +1,1722 @@
+﻿# Para traducir este texto a un idioma en concreto, por favor
+# traduce las segundas líneas de este archivo.
+#-------------------------------
+[ITEM_DESCRIPTIONS]
+Repele Pokémon salvajes débiles en un recorrido de 100 pasos.
+Xua đuổi Pokémon hoang dã yếu trong 100 bước di chuyển.
+Repele Pokémon salvajes débiles en un recorrido de 200 pasos.
+Xua đuổi Pokémon hoang dã yếu trong 200 bước di chuyển.
+Repele Pokémon salvajes débiles en un recorrido de 250 pasos.
+Xua đuổi Pokémon hoang dã yếu trong 250 bước di chuyển.
+Flauta de cristal negro cuya melodía reduce las probabilidades de encontrarse con Pokémon salvajes.
+Sáo pha lê đen có giai điệu làm giảm xác suất gặp Pokémon hoang dã.
+Flauta de cristal blanco cuya melodía aumenta las probabilidades de encontrarse con Pokémon salvajes.
+Sáo pha lê trắng có giai điệu làm tăng xác suất gặp Pokémon hoang dã.
+Su delicioso aroma atrae a Pokémon salvajes si se usa en zonas de hierba alta, cuevas o árboles especiales.
+Hương thơm ngon ngọt thu hút Pokémon hoang dã khi dùng ở bãi cỏ cao, hang động hoặc cây đặc biệt.
+Un pequeño fragmento rojo. Parece formar parte de algún tipo de herramienta antigua.
+Một mảnh nhỏ màu đỏ. Có vẻ là một phần của công cụ cổ đại nào đó.
+Un pequeño fragmento amarillo. Parece formar parte de algún tipo de herramienta antigua.
+Một mảnh nhỏ màu vàng. Có vẻ là một phần của công cụ cổ đại nào đó.
+Un pequeño fragmento azul. Parece formar parte de algún tipo de herramienta antigua.
+Một mảnh nhỏ màu xanh dương. Có vẻ là một phần của công cụ cổ đại nào đó.
+Un pequeño fragmento verde. Parece formar parte de algún tipo de herramienta antigua.
+Một mảnh nhỏ màu xanh lá. Có vẻ là một phần của công cụ cổ đại nào đó.
+Curiosa piedra que permite evolucionar a determinadas especies de Pokémon. Amarilla como el fuego.
+Viên đá kỳ lạ cho phép tiến hóa một số loài Pokémon. Màu vàng như lửa.
+Curiosa piedra que permite evolucionar a determinadas especies de Pokémon. Tiene dibujado un rayo.
+Viên đá kỳ lạ cho phép tiến hóa một số loài Pokémon. Có hình tia sét khắc trên đó.
+Curiosa piedra que permite evolucionar a determinadas especies de Pokémon. Es azul, como el agua.
+Viên đá kỳ lạ cho phép tiến hóa một số loài Pokémon. Màu xanh như nước.
+Curiosa piedra que permite evolucionar a determinadas especies de Pokémon. Tiene dibujada una hoja.
+Viên đá kỳ lạ cho phép tiến hóa một số loài Pokémon. Có hình chiếc lá khắc trên đó.
+Curiosa piedra que permite evolucionar a determinadas especies de Pokémon. Negra como el azabache.
+Viên đá kỳ lạ cho phép tiến hóa một số loài Pokémon. Đen như hắc ngọc.
+Curiosa piedra que permite evolucionar a determinadas especies de Pokémon. Es roja como el sol.
+Viên đá kỳ lạ cho phép tiến hóa một số loài Pokémon. Đỏ như mặt trời.
+Una piedra peculiar que permite evolucionar a algunos Pokémon. Es oscura como la noche.
+Viên đá đặc biệt cho phép tiến hóa một số Pokémon. Tối như đêm đen.
+Una piedra peculiar que permite evolucionar a algunos Pokémon. Brilla como un lucero.
+Viên đá đặc biệt cho phép tiến hóa một số Pokémon. Sáng lóng lánh như sao mai.
+Una piedra peculiar que permite evolucionar a algunos Pokémon. Tiene un brillo espectacular.
+Viên đá đặc biệt cho phép tiến hóa một số Pokémon. Có ánh sáng rực rỡ.
+Curiosa piedra que permite evolucionar a determinadas especies de Pokémon. Tiene un patrón nevado.
+Viên đá kỳ lạ cho phép tiến hóa một số loài Pokémon. Có họa tiết tuyết rơi.
+Curiosa manzana, de sabor particularmente dulce, que permite evolucionar a Applin.
+Quả táo kỳ lạ, vị đặc biệt ngọt, cho phép tiến hóa Applin.
+Curiosa manzana, de sabor particularmente ácido, que permite evolucionar a Applin.
+Quả táo kỳ lạ, vị đặc biệt chua, cho phép tiến hóa Applin.
+Tetera agrietada que permite evolucionar a Sinistea (forma Falsificada). Sirve un té exquisito.
+Ấm trà bị nứt cho phép tiến hóa Sinistea (dạng Giả). Pha ra tách trà tuyệt vời.
+Tetera rota que permite evolucionar a Sinistea (forma Genuina). Sirve un té exquisito.
+Ấm trà bị vỡ cho phép tiến hóa Sinistea (dạng Thật). Pha ra tách trà tuyệt vời.
+Un brazalete hecho de Ramas de Galanuez trenzadas. Los Slowpoke de Galar lo adoran.
+Một chiếc vòng làm từ Cành Galarian Twigs bện lại. Slowpoke Galar rất thích đeo.
+Una corona hecha con Ramas de Galanuez. Los Slowpoke de Galar lo adoran.
+Chiếc vương miện làm từ Cành Galarian Twigs. Slowpoke Galar rất thích đeo.
+Bonguri de color rojo y aroma muy penetrante.
+Bonguri màu đỏ với hương thơm rất nồng.
+Bonguri de color amarillo y aroma refrescante.
+Bonguri màu vàng với hương thơm sảng khoái.
+Bonguri de color azul y aroma tierno.
+Bonguri màu xanh dương với hương thơm dịu nhẹ.
+Bonguri de color verde y aroma peculiar que recuerda al café tostado.
+Bonguri màu xanh lá với hương thơm đặc biệt gợi nhớ cà phê rang.
+Bonguri de color rosa y aroma dulce.
+Bonguri màu hồng với hương thơm ngọt ngào.
+Bonguri de color blanco que no desprende aroma alguno.
+Bonguri màu trắng không tỏa ra hương thơm nào.
+Bonguri de color negro y aroma indescriptible.
+Bonguri màu đen với hương thơm không thể tả.
+Fósil de un Pokémon ancestral que vivió en el fondo del mar. Parece ser un fragmento de concha marina.
+Hóa thạch của Pokémon cổ đại sống dưới đáy biển. Có vẻ là mảnh vỏ sò biển.
+Fósil de un Pokémon ancestral que vivió en el fondo del mar. Parece ser un fragmento de concha.
+Hóa thạch của Pokémon cổ đại sống dưới đáy biển. Có vẻ là mảnh vỏ sò.
+Fragmento de ámbar que contiene información genética de un Pokémon ancestral. Es de color amarillo.
+Mảnh hổ phách chứa thông tin di truyền của Pokémon cổ đại. Màu vàng.
+Fósil de un Pokémon ancestral que vivió en el fondo del mar. Parece ser parte de una raíz.
+Hóa thạch của Pokémon cổ đại sống dưới đáy biển. Có vẻ là một phần rễ cây.
+Fósil de un Pokémon ancestral que vivió en el fondo del mar. Parece ser parte de una garra.
+Hóa thạch của Pokémon cổ đại sống dưới đáy biển. Có vẻ là một phần móng vuốt.
+Fósil de un Pokémon prehistórico terrestre. Parece ser parte de una cabeza.
+Hóa thạch của Pokémon tiền sử sống trên cạn. Có vẻ là một phần đầu.
+Fósil de un Pokémon prehistórico terrestre. Parece ser un fragmento del cuello.
+Hóa thạch của Pokémon tiền sử sống trên cạn. Có vẻ là mảnh cổ.
+Fósil de un Pokémon ancestral que vivió en el fondo del mar. Parece ser un fragmento de caparazón.
+Hóa thạch của Pokémon cổ đại sống dưới đáy biển. Có vẻ là mảnh mai.
+Fósil de un Pokémon ancestral que surcó los cielos. Parece ser parte de un ala suya.
+Hóa thạch của Pokémon cổ đại bay trên bầu trời. Có vẻ là một phần cánh của nó.
+Fósil de un Pokémon prehistórico terrestre. Parece ser parte de una mandíbula.
+Hóa thạch của Pokémon tiền sử sống trên cạn. Có vẻ là một phần hàm.
+Fósil de un Pokémon prehistórico marino. Parece ser parte de una aleta.
+Hóa thạch của Pokémon tiền sử sống dưới biển. Có vẻ là một phần vây.
+Parte del fósil de un Pokémon prehistórico que surcaba los cielos. Su apariencia es una incógnita.
+Một phần hóa thạch của Pokémon tiền sử bay trên bầu trời. Ngoại hình của nó vẫn là ẩn số.
+Parte del fósil de un Pokémon prehistórico que habitaba en el mar. Su apariencia es una incógnita.
+Một phần hóa thạch của Pokémon tiền sử sống dưới biển. Ngoại hình của nó vẫn là ẩn số.
+Parte del fósil de un Pokémon prehistórico que habitaba en tierra firme. Su apariencia es una incógnita.
+Một phần hóa thạch của Pokémon tiền sử sống trên cạn. Ngoại hình của nó vẫn là ẩn số.
+Pluma normal y corriente. Muy bonita, pero no sirve para nada.
+Chiếc lông bình thường. Rất đẹp nhưng không có tác dụng gì.
+Seta pequeña bastante popular. Hay quien las usa para cambiar las habilidades de tus Pokémon.
+Nấm nhỏ khá phổ biến. Có người dùng chúng để thay đổi ability của Pokémon.
+Seta grande y poco común muy popular entre determinados grupos de gourmets.
+Nấm lớn và hiếm, rất được một số nhóm ẩm thực ưa chuộng.
+Extraña seta que desprende un agradable aroma. Muy apreciada por los gourmets.
+Nấm kỳ lạ tỏa ra hương thơm dễ chịu. Được các tín đồ ẩm thực đánh giá cao.
+Brillante perla plateada de tamaño más bien pequeño que no alcanza mucho precio en las tiendas.
+Ngọc trai bạc lấp lánh cỡ nhỏ, không được giá cao trong cửa hàng.
+Brillante perla plateada de gran tamaño que puede venderse a buen precio en las tiendas.
+Ngọc trai bạc lấp lánh cỡ lớn, có thể bán được giá tốt trong cửa hàng.
+Brillantes perlas plateadas de gran tamaño. Muy valoradas por los coleccionistas.
+Những viên ngọc trai bạc lấp lánh cỡ lớn. Được các nhà sưu tầm đánh giá cao.
+Bonita arena roja de tacto sedoso que alcanza un alto precio en las tiendas.
+Cát đỏ đẹp, mịn như lụa, đạt giá cao trong cửa hàng.
+Fragmento de una bonita gema roja que puede venderse muy caro en las tiendas.
+Mảnh vỡ của viên đá quý đỏ đẹp, có thể bán rất đắt trong cửa hàng.
+Fragmento de un cometa caído al suelo al atravesar la atmósfera. Muy valorado por los coleccionistas.
+Mảnh sao chổi rơi xuống đất khi đi qua khí quyển. Được các nhà sưu tầm đánh giá cao.
+Pepita de oro puro que desprende un brillo espectacular. Puede venderse muy cara en las tiendas.
+Cục vàng ròng tỏa ra ánh sáng rực rỡ. Có thể bán rất đắt trong cửa hàng.
+Pepita grande de oro puro que desprende un brillo espectacular. Muy valorada por los coleccionistas.
+Cục vàng ròng lớn tỏa ra ánh sáng rực rỡ. Được các nhà sưu tầm đánh giá cao.
+Bella escama con forma de corazón que brilla con los colores del arco iris. Es muy poco común.
+Vảy đẹp hình trái tim lấp lánh màu cầu vồng. Rất hiếm.
+Cola de origen desconocido y muy sabrosa. Se vende muy cara.
+Đuôi nguồn gốc không rõ và rất ngon. Bán rất đắt.
+Un hueso de gran valor arqueológico que puede alcanzar un alto precio en las tiendas.
+Một chiếc xương có giá trị khảo cổ lớn, có thể đạt giá cao trong cửa hàng.
+Moneda de cobre de más de tres mil años de antigüedad. Muy valorada por los coleccionistas.
+Đồng tiền bằng đồng hơn ba nghìn năm tuổi. Được các nhà sưu tầm đánh giá cao.
+Moneda de plata de más de tres mil años de antigüedad. Muy valorada por los coleccionistas.
+Đồng tiền bằng bạc hơn ba nghìn năm tuổi. Được các nhà sưu tầm đánh giá cao.
+Moneda de oro de más de tres mil años de antigüedad. Muy valorada por los coleccionistas.
+Đồng tiền bằng vàng hơn ba nghìn năm tuổi. Được các nhà sưu tầm đánh giá cao.
+Jarrón de más de tres mil años de antigüedad. Muy valorado por los coleccionistas.
+Chiếc bình hơn ba nghìn năm tuổi. Được các nhà sưu tầm đánh giá cao.
+Brazalete de más de tres mil años de antigüedad. Muy valorado por los coleccionistas.
+Vòng tay hơn ba nghìn năm tuổi. Được các nhà sưu tầm đánh giá cao.
+Efigie de piedra de más de tres mil años de antigüedad. Muy valorado por los coleccionistas.
+Tượng đá hơn ba nghìn năm tuổi. Được các nhà sưu tầm đánh giá cao.
+Corona de más de tres mil años de antigüedad. Muy valorada por los coleccionistas.
+Vương miện hơn ba nghìn năm tuổi. Được các nhà sưu tầm đánh giá cao.
+Un fertilizante que se usa en tierra suelta. Acelera el crecimiento de las bayas, pero también seca el suelo.
+Phân bón dùng trên đất tơi xốp. Tăng tốc tăng trưởng Berry nhưng cũng làm khô đất.
+Fertilizante para tierra suelta que ralentiza el crecimiento de las bayas y seca el suelo lentamente.
+Phân bón cho đất tơi xốp làm chậm tăng trưởng Berry và làm khô đất từ từ.
+Fertilizante para tierra suelta que retrasa la caída de las bayas maduras.
+Phân bón cho đất tơi xốp làm chậm sự rơi rụng của Berry chín.
+Fertilizante para tierra suelta que hace que broten más plantas nuevas de las plantas marchitas.
+Phân bón cho đất tơi xốp làm nảy sinh nhiều cây mới hơn từ cây héo tàn.
+Sal pura y de sabor intenso procedente de las profundidades de la Cueva Cardumen.
+Muối tinh khiết, hương vị đậm đà từ sâu thẳm Hang Cardumen.
+Hermosa concha marina hallada en lo más profundo de la Cueva Cardumen. Tiene rayas azules y blancas.
+Vỏ sò biển đẹp tìm thấy ở sâu nhất Hang Cardumen. Có sọc xanh và trắng.
+Vital para impedir que una torre de piedra se derrumbe. A veces se oyen voces en su interior.
+Thiết yếu để ngăn tháp đá sụp đổ. Đôi khi nghe thấy tiếng thì thầm bên trong.
+Néctar de ciertas flores de los Jardines de Ula-Ula, capaz de hacer cambiar de forma a Oricorio.
+Mật hoa từ một số loài hoa ở Vườn Ula-Ula, có thể làm Oricorio thay đổi hình dạng.
+Néctar de ciertas flores de los Jardines de Melemele, capaz de hacer cambiar de forma a Oricorio.
+Mật hoa từ một số loài hoa ở Vườn Melemele, có thể làm Oricorio thay đổi hình dạng.
+Néctar de ciertas flores de los parterres de la Avenida Royale, capaz de hacer cambiar de forma a Oricorio.
+Mật hoa từ một số loài hoa ở Đại Lộ Royale, có thể làm Oricorio thay đổi hình dạng.
+Néctar de ciertas flores de los Jardines de Poni, capaz de hacer cambiar de forma a Oricorio.
+Mật hoa từ một số loài hoa ở Vườn Poni, có thể làm Oricorio thay đổi hình dạng.
+El Pokémon que lo lleve flotará en el aire. Si recibe un golpe, estallará.
+Pokémon mang nó sẽ lơ lửng trong không khí. Nếu bị đánh trúng sẽ nổ tung.
+Lanza un destello que baja la precisión del enemigo. Debe llevarlo un Pokémon.
+Tung ra tia sáng làm giảm độ chính xác kẻ thù. Phải để Pokémon mang.
+El Pokémon portador aumentará su Defensa y su Defensa Especial si aún puede evolucionar.
+Pokémon mang nó sẽ tăng Phòng Thủ và Đặc Phòng nếu vẫn có thể tiến hóa.
+Piedra muy ligera que reduce el peso del Pokémon que la lleve.
+Viên đá rất nhẹ làm giảm cân nặng Pokémon mang nó.
+Un hilo largo y delgado de color rojo que transmite el enamoramiento del Pokémon que lo lleva a su rival.
+Sợi chỉ dài mỏng màu đỏ truyền cảm giác yêu say của Pokémon mang nó đến đối thủ.
+Si el portador es alcanzado por un ataque físico, el agresor también recibe daño.
+Nếu người mang bị đánh bằng đòn vật lý, kẻ tấn công cũng nhận sát thương.
+Chaleco que potencia la Def. Esp. del Pokémon que lo lleva, pero le impide lanzar ataques de estado.
+Áo giáp tăng Đặc Phòng Pokémon mang, nhưng ngăn tung đòn trạng thái.
+Gafa que protege de los efectos adversos del clima y del polvo lanzado por los rivales.
+Kính bảo vệ khỏi hiệu ứng bất lợi của thời tiết và bụi do đối thủ tung ra.
+Protege al Pokémon de los efectos que le produciría el contacto directo en combate.
+Bảo vệ Pokémon khỏi các hiệu ứng do tiếp xúc trực tiếp trong chiến đấu.
+Anula los efectos de aquello que se coloca a los pies del Pokémon para obstaculizarlo, como las trampas.
+Vô hiệu hóa hiệu ứng của những thứ đặt dưới chân Pokémon để cản trở nó, như bẫy.
+El portador se vuelve invulnerable a los efectos de los climas lluvioso y soleado.
+Người mang trở nên miễn nhiễm với hiệu ứng thời tiết mưa và nắng.
+Si el portador es alcanzado por un ataque, saldrá del combate y será sustituido por otro Pokémon.
+Nếu người mang bị tấn công, sẽ rời chiến đấu và được thay thế bằng Pokémon khác.
+Si el portador ve reducidas sus características, será sustituido por otro Pokémon del equipo.
+Nếu người mang bị giảm chỉ số, sẽ được thay thế bằng Pokémon khác trong đội.
+Misteriosa tarjeta que permite al Pokémon que la lleve expulsar al agresor cuando este le cause daño.
+Thẻ bí ẩn cho phép Pokémon mang đẩy kẻ tấn công ra khi bị gây sát thương.
+En combate, esta concha desechada sirve para que un Pokémon se cambie por otro que no esté combatiendo.
+Trong chiến đấu, vỏ sò bỏ đi này cho phép một Pokémon đổi chỗ với Pokémon không chiến đấu.
+Debe llevarla un Pokémon. Permite huir de combates contra Pokémon salvajes.
+Phải để Pokémon mang. Cho phép chạy trốn khỏi chiến đấu với Pokémon hoang dã.
+Es un huevo lleno de felicidad que te hará ganar Puntos de Exp. extra en combate. Debe llevarlo un Pokémon.
+Quả trứng đầy hạnh phúc giúp bạn nhận thêm Điểm Kinh Nghiệm trong chiến đấu. Phải để Pokémon mang.
+El Pokémon que lo lleva obtiene parte de los Puntos de Exp. conseguidos en el combate sin participar en él.
+Pokémon mang nhận một phần Điểm Kinh Nghiệm từ chiến đấu mà không cần tham gia.
+Permite repartir los Puntos de Exp. entre los Pokémon que el entrenador elija desde la opción del equipo.
+Cho phép chia sẻ Điểm Kinh Nghiệm giữa các Pokémon mà huấn luyện viên chọn từ tùy chọn đội.
+Si el Pokémon que la lleva lucha en un combate, duplica las ganancias.
+Nếu Pokémon mang tham gia chiến đấu, tăng gấp đôi tiền thưởng.
+Una campana con un tañido calmante que reconforta al Pokémon que la lleva y lo vuelve más amistoso.
+Chiếc chuông có tiếng rung êm dịu an ủi Pokémon mang và làm nó thân thiện hơn.
+Si lo lleva el primer Pokémon del equipo, se reduce la probabilidad de que se acerquen Pokémon salvajes.
+Nếu Pokémon đầu đội mang, giảm xác suất Pokémon hoang dã tiếp cận.
+Aumenta el Ataque un 50% pero solo permite usar un tipo de movimiento un 50%. Debe llevarla un Pokémon.
+Tăng Tấn Công 50% nhưng chỉ cho phép dùng một loại chiêu 50% thời gian. Phải để Pokémon mang.
+Potencian el At. Esp. un 50% pero solo permiten usar un tipo de movimiento. Debe llevarlas un Pokémon.
+Tăng Đặc Tấn 50% nhưng chỉ cho phép dùng một loại chiêu. Phải để Pokémon mang.
+Debe llevarlo un Pokémon. Potencia la Velocidad un 50%, pero solo permite usar un tipo de movimiento.
+Phải để Pokémon mang. Tăng Tốc Độ 50%, nhưng chỉ cho phép dùng một loại chiêu.
+Prolonga la duración del movimiento Día Soleado que use el Pokémon que la lleva.
+Kéo dài thời gian chiêu Sunny Day mà Pokémon mang sử dụng.
+Prolonga la duración del movimiento Danza Lluvia que use el Pokémon que la lleva.
+Kéo dài thời gian chiêu Rain Dance mà Pokémon mang sử dụng.
+Prolonga la duración del movimiento Tormenta Arena que use el Pokémon que la lleva.
+Kéo dài thời gian chiêu Sandstorm mà Pokémon mang sử dụng.
+Prolonga la duración del movimiento Granizo del Pokémon que la lleva.
+Kéo dài thời gian chiêu Hail mà Pokémon mang sử dụng.
+Al llevarlo, prolonga la duración de los campos creados por el Pokémon en el terreno de combate.
+Khi mang, kéo dài thời gian các terrain do Pokémon tạo ra trên sân chiến đấu.
+Prolonga la duración de barreras como Reflejo y Pantalla de Luz. Debe llevarla un Pokémon.
+Kéo dài thời gian rào chắn như Reflect và Light Screen. Phải để Pokémon mang.
+Prolonga la duración de ataques multiturno como Atadura y Repetición. Debe llevarla un Pokémon.
+Kéo dài thời gian chiêu nhiều lượt như Bind và Wrap. Phải để Pokémon mang.
+Banda que potencia los movimientos que estrujan al rival.
+Băng tăng sức mạnh các chiêu kẹp đối thủ.
+Potencia los movimientos que roban PS. Debe llevarla un Pokémon.
+Tăng sức mạnh các chiêu hút HP. Phải để Pokémon mang.
+Restaura gradualmente los PS de los Pokémon de tipo Veneno y daña a todos los demás.
+Hồi dần HP của Pokémon hệ Độc và gây sát thương cho tất cả các Pokémon khác.
+Restauran gradualmente los PS del Pokémon que los lleva durante el combate.
+Hồi dần HP của Pokémon đang mang trong chiến đấu.
+Debe llevarla un Pokémon. Cada vez que este inflija daño, recuperará algunos PS.
+Phải để Pokémon mang. Mỗi khi gây sát thương, hồi phục một ít HP.
+El Pokémon que la lleve se libera del enamoramiento. Solo puede usarse una vez.
+Pokémon mang thoát khỏi tình trạng say nắng. Chỉ dùng được một lần.
+Restaura cualquier característica debilitada en combate. Solo se puede usar una vez.
+Hồi phục bất kỳ chỉ số nào bị giảm trong chiến đấu. Chỉ dùng được một lần.
+Permite el uso inmediato de cualquier movimiento en el primer turno. Es de un solo uso.
+Cho phép dùng bất kỳ chiêu nào ngay lập tức ở lượt đầu tiên. Dùng một lần.
+Raíz de usar y tirar que sube el Ataque Especial cuando se recibe un ataque de tipo Agua.
+Rễ cây dùng một lần tăng Đặc Tấn khi nhận đòn hệ Nước.
+Batería de usar y tirar que sube el Ataque de quien la lleva cuando recibe un golpe de tipo Eléctrico.
+Pin dùng một lần tăng Tấn Công người mang khi nhận đòn hệ Điện.
+Objeto de un solo uso. Aumenta la Def. Esp. del Pokémon que la lleva si este recibe un ataque de tipo Agua.
+Vật phẩm dùng một lần. Tăng Đặc Phòng Pokémon mang nếu nhận đòn hệ Nước.
+Objeto de un solo uso. Aumenta el Ataque del Pokémon que lo lleva si este recibe un ataque de tipo Hielo.
+Vật phẩm dùng một lần. Tăng Tấn Công Pokémon mang nếu nhận đòn hệ Băng.
+Aumenta mucho el Atq. y el At. Esp. cuando el Pokémon que lo lleva recibe un ataque frente al cual es débil.
+Tăng mạnh Tấn Công và Đặc Tấn khi Pokémon mang nhận đòn tấn công mà nó yếu trước.
+Aumenta mucho la Velocidad cuando el Pokémon erra el movimiento debido a la precisión.
+Tăng mạnh Tốc Độ khi Pokémon trượt chiêu do độ chính xác.
+Aumenta el Ataque Especial al emplear un movimiento que se sirva del sonido.
+Tăng Đặc Tấn khi dùng chiêu dựa trên âm thanh.
+Si lo lleva un Pokémon, sube la Velocidad al ser intimidado. De un solo uso.
+Nếu Pokémon mang, Tốc Độ tăng khi bị uy hiếp. Dùng một lần.
+Si lo lleva un Pokémon, reduce la Velocidad cuando se usa Espacio Raro.
+Nếu Pokémon mang, Tốc Độ giảm khi dùng Trick Room.
+Aumenta la Defensa del portador si el terreno está cubierto por un Campo Eléctrico.
+Tăng Phòng Thủ người mang nếu sân được phủ bởi Electric Terrain.
+Aumenta la Defensa del portador si el terreno está cubierto por un Campo de Hierba.
+Tăng Phòng Thủ người mang nếu sân được phủ bởi Grassy Terrain.
+Aumenta la Defensa Especial del portador si el terreno está cubierto por un Campo de Niebla.
+Tăng Đặc Phòng người mang nếu sân được phủ bởi Misty Terrain.
+Aumenta la Defensa Especial del portador si el terreno está cubierto por un Campo Psíquico.
+Tăng Đặc Phòng người mang nếu sân được phủ bởi Psychic Terrain.
+Potencia los movimientos, pero consume PS con cada ataque un 30%. Debe llevarla un Pokémon.
+Tăng sức mạnh chiêu, nhưng tiêu tốn 30% HP với mỗi đòn tấn công. Phải để Pokémon mang.
+Potencia ligeramente los movimientos supereficaces un 20%. Debe llevarla un Pokémon.
+Tăng nhẹ 20% chiêu siêu hiệu quả. Phải để Pokémon mang.
+Potencia un movimiento que se use de forma consecutiva. Pero el efecto se pierde si se emplea otro movimiento.
+Tăng sức mạnh chiêu dùng liên tiếp. Nhưng hiệu ứng mất nếu dùng chiêu khác.
+Cinta de pelo que aumenta ligeramente la potencia de los movimientos físicos.
+Băng đô tóc tăng nhẹ sức mạnh các chiêu vật lý.
+Potencian ligeramente los movimientos especiales. Debe llevarlas un Pokémon.
+Tăng nhẹ các chiêu đặc biệt. Phải để Pokémon mang.
+Aumenta a la probabilidad de que el Pokémon que la lleva consiga un golpe crítico.
+Tăng xác suất Pokémon mang đạt đòn chí mạng.
+Su lente aumenta la posibilidad que tiene el Pokémon que lo lleva de conseguir un golpe crítico.
+Thấu kính của nó tăng khả năng Pokémon mang đạt đòn chí mạng.
+Debe llevarla un Pokémon. Aumenta ligeramente la precisión de los movimientos.
+Phải để Pokémon mang. Tăng nhẹ độ chính xác của các chiêu.
+Debe llevarlo un Pokémon. Si se mueve después del enemigo, aumenta el índice de precisión del Pokémon.
+Phải để Pokémon mang. Nếu hành động sau kẻ thù, tăng độ chính xác của Pokémon.
+Puede amedrentar al enemigo cuando el Pokémon que la lleva le hiera.
+Có thể làm kẻ thù run sợ khi Pokémon mang gây thương tích.
+Si lo lleva un Pokémon cuando hiere a un rival, puede amedrentarlo.
+Nếu Pokémon mang khi gây thương tích đối thủ, có thể làm họ run sợ.
+Es muy pesada y hace que el Pokémon que la lleva se mueva más lento de lo normal.
+Rất nặng và làm Pokémon mang di chuyển chậm hơn bình thường.
+Garra ligera y afilada que permite que el Pokémon que la lleve ataque primero ocasionalmente.
+Móng vuốt nhẹ và sắc cho phép Pokémon mang tấn công trước đôi khi.
+El Pokémon que la lleve puede resistir un golpe que lo debilitaría y quedarse con 1 PS.
+Pokémon mang có thể chịu đựng đòn sẽ ngã ngựa nó và còn lại 1 HP.
+Si el Pokémon que la lleva tiene los PS al máximo, resistirá un golpe que potencialmente lo deja KO con 1 PS.
+Nếu Pokémon mang có HP tối đa, chịu được đòn có thể ngã ngựa nó còn lại 1 HP.
+Extraña esfera que causa quemaduras a quien la usa en combate. Debe llevarla un Pokémon.
+Quả cầu kỳ lạ gây bỏng cho người dùng trong chiến đấu. Phải để Pokémon mang.
+Extraña esfera que envenena gravemente a quien la usa en combate. Debe llevarla un Pokémon.
+Quả cầu kỳ lạ gây nhiễm độc nặng cho người dùng trong chiến đấu. Phải để Pokémon mang.
+Daña en cada turno al Pokémon que la lleva y también puede dañar a los enemigos que toquen al Pokémon.
+Gây sát thương mỗi lượt cho Pokémon mang và cũng có thể gây sát thương kẻ thù chạm vào Pokémon.
+Reduce la Velocidad y los movimientos tipo Tierra afectan a Pokémon que levitan y los de tipo Volador.
+Giảm Tốc Độ và chiêu hệ Đất ảnh hưởng đến Pokémon có Levitate và hệ Bay.
+El Pokémon que lo lleva es vulnerable frente a movimientos que normalmente no afectan a su tipo.
+Pokémon mang dễ bị tổn thương trước các chiêu thường không ảnh hưởng đến hệ của nó.
+Sólido y pesado brazal que fomenta el crecimiento pero reduce la Velocidad. Debe llevarlo un Pokémon.
+Vòng tay chắc và nặng thúc đẩy tăng trưởng nhưng giảm Tốc Độ. Phải để Pokémon mang.
+Ayuda a conseguir más PS al subir de nivel, pero reduce la Velocidad. Debe llevarla un Pokémon.
+Giúp nhận nhiều HP hơn khi lên cấp, nhưng giảm Tốc Độ. Phải để Pokémon mang.
+Ayuda a ganar Ataque al subir de nivel, pero reduce la Velocidad. Debe llevarlo un Pokémon.
+Giúp tăng Tấn Công khi lên cấp, nhưng giảm Tốc Độ. Phải để Pokémon mang.
+Ayuda a ganar Defensa al subir de nivel, pero reduce la Velocidad. Debe llevarlo un Pokémon.
+Giúp tăng Phòng Thủ khi lên cấp, nhưng giảm Tốc Độ. Phải để Pokémon mang.
+Ayuda a ganar At. Esp. al subir de nivel, pero reduce la Velocidad. Debe llevarla un Pokémon.
+Giúp tăng Đặc Tấn khi lên cấp, nhưng giảm Tốc Độ. Phải để Pokémon mang.
+Ayuda a ganar Def. Esp. al subir de nivel, pero reduce la Velocidad. Debe llevarla un Pokémon.
+Giúp tăng Đặc Phòng khi lên cấp, nhưng giảm Tốc Độ. Phải để Pokémon mang.
+Ayuda a ganar Velocidad al subir de nivel, pero reduce la Velocidad en combate. Debe llevarla un Pokémon.
+Giúp tăng Tốc Độ khi lên cấp, nhưng giảm Tốc Độ trong chiến đấu. Phải để Pokémon mang.
+Debe llevarlo un Pokémon. Su peculiar aroma reduce la precisión del rival.
+Phải để Pokémon mang. Hương thơm đặc biệt của nó làm giảm độ chính xác đối thủ.
+Exótica sustancia aromática que hace que el Pokémon que la lleva se mueva más despacio.
+Chất thơm kỳ lạ làm Pokémon mang di chuyển chậm hơn.
+Incienso de aroma exótico. Si el Pokémon que lo lleva participa en un combate, duplica las ganancias.
+Hương thơm kỳ lạ. Nếu Pokémon mang tham gia chiến đấu, tăng gấp đôi tiền thưởng.
+Si lo lleva el primer Pokémon del equipo, los Pokémon salvajes se acercarán con menos frecuencia.
+Nếu Pokémon đầu đội mang, Pokémon hoang dã ít tiếp cận hơn.
+Tiene un curioso aroma que potencia la energía de los ataques de tipo Agua. Debe llevarlo un Pokémon.
+Có hương thơm kỳ lạ tăng sức mạnh đòn hệ Nước. Phải để Pokémon mang.
+Incienso exótico que fortalece los movimientos de tipo Agua. Debe llevarlo un Pokémon.
+Hương thơm kỳ lạ tăng sức mạnh chiêu hệ Nước. Phải để Pokémon mang.
+Incienso de exótico aroma que fortalece los movimientos de tipo Planta. Debe llevarlo un Pokémon.
+Hương thơm kỳ lạ tăng sức mạnh chiêu hệ Cỏ. Phải để Pokémon mang.
+Incienso de exótico aroma que fortalece los movimientos de tipo Psíquico. Debe llevarlo un Pokémon.
+Hương thơm kỳ lạ tăng sức mạnh chiêu hệ Tâm Linh. Phải để Pokémon mang.
+Incienso de exótico aroma que fortalece los movimientos de tipo Roca. Debe llevarlo un Pokémon.
+Hương thơm kỳ lạ tăng sức mạnh chiêu hệ Đá. Phải để Pokémon mang.
+Actúa como combustible y potencia la energía de los ataques de tipo Fuego. Debe llevarlo un Pokémon.
+Hoạt động như nhiên liệu và tăng sức mạnh đòn hệ Lửa. Phải để Pokémon mang.
+Gema con forma de lágrima que fortalece los ataques de tipo Agua un 20%. Debe llevarla un Pokémon.
+Đá quý hình giọt nước tăng 20% đòn hệ Nước. Phải để Pokémon mang.
+Debe llevarlo un Pokémon. Su potente magnetismo fortalece los ataques de tipo Eléctrico.
+Phải để Pokémon mang. Từ trường mạnh của nó tăng sức mạnh đòn hệ Điện.
+Debe llevarla un Pokémon. La vitalidad de la semilla fortalece los ataques de tipo Planta.
+Phải để Pokémon mang. Sức sống của hạt giống tăng sức mạnh đòn hệ Cỏ.
+Fragmento de hielo que repele el calor y fortalece los ataques de tipo Hielo. Debe llevarlo un Pokémon.
+Mảnh băng đẩy lùi nhiệt và tăng sức mạnh đòn hệ Băng. Phải để Pokémon mang.
+Debe llevarlo un Pokémon. Aumenta la decisión y fortalece los ataques de tipo Lucha.
+Phải để Pokémon mang. Tăng quyết tâm và sức mạnh đòn hệ Chiến.
+Flecha venenosa que refuerza los movimientos de tipo Veneno un 20%. Debe llevarla un Pokémon.
+Mũi tên độc tăng 20% chiêu hệ Độc. Phải để Pokémon mang.
+Debe llevarla un Pokémon. La suavidad de la arena fortalece los ataques de tipo Tierra.
+Phải để Pokémon mang. Sự mềm mại của cát tăng sức mạnh đòn hệ Đất.
+Pico largo y afilado que aumenta la potencia de los movimientos de tipo Volador. Debe llevarlo un Pokémon.
+Mỏ dài và sắc tăng sức mạnh chiêu hệ Bay. Phải để Pokémon mang.
+Cuchara llena de energía telequinética que potencia los movimientos de tipo Psíquico.
+Cái thìa đầy năng lượng thần giao cách cảm tăng sức mạnh chiêu hệ Tâm Linh.
+Polvo de brillo argénteo que fortalece los ataques de tipo Bicho. Debe llevarlo un Pokémon.
+Bụi sáng bạc tăng sức mạnh đòn hệ Côn Trùng. Phải để Pokémon mang.
+Debe llevarla un Pokémon. La robustez de la piedra fortalece los ataques de tipo Roca.
+Phải để Pokémon mang. Sự vững chắc của đá tăng sức mạnh đòn hệ Đá.
+Misterioso y oscuro objeto que refuerza los ataques de tipo Fantasma. Debe llevarlo un Pokémon.
+Vật phẩm bí ẩn và tối tăm tăng sức mạnh đòn hệ Ma. Phải để Pokémon mang.
+Colmillo de gran dureza que refuerza los ataques de tipo Dragón. Debe llevarlo un Pokémon.
+Nanh rất cứng tăng sức mạnh đòn hệ Rồng. Phải để Pokémon mang.
+Debe llevarlas un Pokémon. Fortalecen los ataques de tipo Siniestro.
+Phải để Pokémon mang. Tăng sức mạnh đòn hệ Tối.
+Película metálica que fortalece los ataques de tipo Acero. Debe llevarlo un Pokémon.
+Màng kim loại tăng sức mạnh đòn hệ Thép. Phải để Pokémon mang.
+La delicadeza del pañuelo fortalece los ataques de tipo Normal. Debe llevarlo un Pokémon.
+Sự tinh tế của khăn tăng sức mạnh đòn hệ Thường. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Fuego un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Lửa. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Agua un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Nước. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Eléctrico un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Điện. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Planta un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Cỏ. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Hielo un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Băng. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Lucha un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Chiến. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Veneno un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Độc. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Tierra un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Đất. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Volador un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Bay. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Psíquico un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Tâm Linh. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Bicho un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Côn Trùng. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Roca un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Đá. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Fantasma un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Ma. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Dragón un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Rồng. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Siniestro un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Tối. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Acero un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Thép. Phải để Pokémon mang.
+Tabla de piedra que potencia los movimientos de tipo Hada un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Tiên. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Fuego un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Lửa. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Agua un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Nước. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Eléctrico un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Điện. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Planta un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Cỏ. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Hielo un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Băng. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Lucha un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Chiến. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Veneno un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Độc. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Tierra un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Đất. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Volador un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Bay. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Psíquico un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Tâm Linh. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Bicho un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Côn Trùng. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Roca un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Đá. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Fantasma un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Ma. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Dragón un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Rồng. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Siniestro un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Tối. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Acero un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Thép. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Hada un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Tiên. Phải để Pokémon mang.
+Joya de un solo uso que potencia los movimientos de tipo Normal un 50%. Debe llevarla un Pokémon.
+Đá quý dùng một lần tăng 50% chiêu hệ Thường. Phải để Pokémon mang.
+Asombrosa esfera que debe llevar Pikachu y que aumenta el Ataque y el Ataque Especial.
+Quả cầu tuyệt vời mà Pikachu phải mang và tăng Tấn Công và Đặc Tấn.
+Debe llevarlo Chansey. Potencia su índice de golpe crítico.
+Chansey phải mang. Tăng xác suất đòn chí mạng.
+Debe llevarlo Ditto. Es un polvo muy fino, pero a la vez resistente, que aumentará su Defensa.
+Ditto phải mang. Là bột rất mịn nhưng bền, tăng Phòng Thủ.
+Este objeto duplica la Velocidad de Ditto en batalla. Deja de ser efectivo una vez se transforma.
+Vật phẩm này tăng gấp đôi Tốc Độ Ditto trong chiến đấu. Mất hiệu lực khi biến hình.
+Un extraño tipo de hueso que potencia el Ataque. Suelen llevarlo Cubone o Marowak.
+Loại xương kỳ lạ tăng Tấn Công. Thường được Cubone hoặc Marowak mang.
+Es un puerro muy largo que suele llevar Farfetch'd. Aumenta la probabilidad de un golpe crítico.
+Cây tỏi tây rất dài thường được Farfetch'd mang. Tăng xác suất đòn chí mạng.
+Un orbe fantástico que deben llevar Latios o Latias. Potencia los movimientos de tipo Dragón y Psíquico en un 20%.
+Quả cầu tuyệt vời mà Latios hoặc Latias phải mang. Tăng 20% chiêu hệ Rồng và Tâm Linh.
+Tiene el brillo afilado de la plata y debe llevarlo Clamperl. Sube el At. Esp.
+Có ánh sáng sắc bén của bạc và Clamperl phải mang. Tăng Đặc Tấn.
+Tiene un débil brillo rosado y debe llevarla Clamperl. Sube la Def. Esp.
+Có ánh sáng hồng nhạt và Clamperl phải mang. Tăng Đặc Phòng.
+Una esfera brillante que potencia los ataques de tipo Acero y Dragón. Debe llevarla Dialga.
+Quả cầu sáng tăng sức mạnh đòn hệ Thép và Rồng. Dialga phải mang.
+Una bonita esfera que potencia los ataques de tipo Dragón y Agua. Debe llevarla Palkia.
+Quả cầu đẹp tăng sức mạnh đòn hệ Rồng và Nước. Palkia phải mang.
+Una esfera brillante que potencia los ataques de tipo Dragón y Fantasma. Debe llevarla Giratina.
+Quả cầu sáng tăng sức mạnh đòn hệ Rồng và Ma. Giratina phải mang.
+Cuenta una antigua leyenda que un valiente héroe blandió esta espada para hacer frente a un cataclismo.
+Theo truyền thuyết cổ đại, một người hùng dũng cảm đã vung thanh kiếm này để đối mặt thảm họa.
+Cuenta una antigua leyenda que un valiente héroe asió este escudo para hacer frente a un cataclismo.
+Theo truyền thuyết cổ đại, một người hùng dũng cảm đã cầm chiếc khiên này để đối mặt thảm họa.
+Cartucho que convierte Tecno Shock de Genesect en un movimiento de tipo Agua.
+Hộp mực chuyển đổi Techno Blast của Genesect thành chiêu hệ Nước.
+Cartucho que convierte Tecno Shock de Genesect en un movimiento de tipo Eléctrico.
+Hộp mực chuyển đổi Techno Blast của Genesect thành chiêu hệ Điện.
+Cartucho que convierte Tecno Shock de Genesect en un movimiento de tipo Fuego.
+Hộp mực chuyển đổi Techno Blast của Genesect thành chiêu hệ Lửa.
+Cartucho que convierte Tecno Shock de Genesect en un movimiento de tipo Hielo.
+Hộp mực chuyển đổi Techno Blast của Genesect thành chiêu hệ Băng.
+Disco de datos que contiene información relativa al tipo Fuego. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Lửa. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Agua. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Nước. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Eléctrico. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Điện. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Planta. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Cỏ. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Hielo. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Băng. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Lucha. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Chiến. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Veneno. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Độc. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Tierra. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Đất. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Volador. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Bay. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Psíquico. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Tâm Linh. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Bicho. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Côn Trùng. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Roca. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Đá. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene info. relativa al tipo Fantasma. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Ma. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Dragón. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Rồng. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Siniestro. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Tối. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Acero. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Thép. Cho phép Silvally thay đổi hệ.
+Disco de datos que contiene información relativa al tipo Hada. Permite cambiar de tipo a Silvally.
+Đĩa dữ liệu chứa thông tin về hệ Tiên. Cho phép Silvally thay đổi hệ.
+El Pokémon que lleve esta piedra mágica no evolucionará.
+Pokémon mang viên đá ma thuật này sẽ không tiến hóa.
+Una gruesa y resistente escama que pueden llevar los Pokémon de tipo Dragón cuando son capturados.
+Vảy dày và bền mà Pokémon hệ Rồng có thể mang khi bị bắt.
+Peculiar dispositivo fabricado en Silph S.A. que contiene todo tipo de datos. Permite evolucionar a Porygon.
+Thiết bị đặc biệt sản xuất tại Silph Co. chứa mọi loại dữ liệu. Cho phép tiến hóa Porygon.
+Dispositivo transparente que contiene datos misteriosos. Permite evolucionar a Porygon2.
+Thiết bị trong suốt chứa dữ liệu bí ẩn. Cho phép tiến hóa Porygon2.
+Dispositivo de protección muy pesado. Sirve para evolucionar a Rhydon.
+Thiết bị bảo vệ rất nặng. Dùng để tiến hóa Rhydon.
+Este dispositivo contiene una gran cantidad de energía eléctrica. Sirve para evolucionar a Electabuzz.
+Thiết bị này chứa lượng lớn năng lượng điện. Dùng để tiến hóa Electabuzz.
+Esta caja contiene una enorme cantidad de energía magmática. Sirve para evolucionar a Magmar.
+Hộp này chứa lượng khổng lồ năng lượng dung nham. Dùng để tiến hóa Magmar.
+Tela imbuida de una energía espiritual muy potente. Sirve para evolucionar a Dusclops.
+Vải được thấm bởi năng lượng tinh thần rất mạnh. Dùng để tiến hóa Dusclops.
+Preciosa escama que permite evolucionar a Feebas. Brilla con los colores del arcoíris.
+Vảy quý đẹp cho phép tiến hóa Feebas. Lấp lánh màu cầu vồng.
+Una piedra peculiar que permite evolucionar a Happiny. Tiene forma de huevo.
+Viên đá đặc biệt cho phép tiến hóa Happiny. Có hình quả trứng.
+Un dulce a base de suave y esponjosa nata montada. Sirve para evolucionar a Swirlix.
+Kẹo ngọt từ kem đánh bông mềm xốp. Dùng để tiến hóa Swirlix.
+Saquito que desprende un aroma peculiar. Sirve para evolucionar a Spritzee.
+Túi nhỏ tỏa ra hương thơm đặc biệt. Dùng để tiến hóa Spritzee.
+Confite con forma de fresa. Permite evolucionar a Milcery.
+Kẹo hình dâu tây. Cho phép tiến hóa Milcery.
+Confite con forma de corazón. Permite evolucionar a Milcery.
+Kẹo hình trái tim. Cho phép tiến hóa Milcery.
+Confite con forma de fruto. Permite evolucionar a Milcery.
+Kẹo hình quả cây. Cho phép tiến hóa Milcery.
+Confite con forma de trébol. Permite evolucionar a Milcery.
+Kẹo hình lá cỏ ba lá. Cho phép tiến hóa Milcery.
+Confite con forma de flor. Permite evolucionar a Milcery.
+Kẹo hình bông hoa. Cho phép tiến hóa Milcery.
+Confite con forma de estrella. Permite evolucionar a Milcery.
+Kẹo hình ngôi sao. Cho phép tiến hóa Milcery.
+Confite con forma de lazo. Permite evolucionar a Milcery.
+Kẹo hình nơ. Cho phép tiến hóa Milcery.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Venusaur en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Venusaur trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Charizard en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Charizard trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Blastoise en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Blastoise trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Beedrill en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Beedrill trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Pidgeot en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Pidgeot trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Alakazam en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Alakazam trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Slowbro en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Slowbro trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Gengar en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Gengar trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Kangaskhan en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Kangaskhan trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Pinsir en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Pinsir trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Gyarados en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Gyarados trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Aerodactyl en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Aerodactyl trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Mewtwo en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Mewtwo trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Ampharos en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Ampharos trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Steelix en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Steelix trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Scizor en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Scizor trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Heracross en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Heracross trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Houndoom en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Houndoom trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Tyranitar en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Tyranitar trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Sceptile en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Sceptile trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Blaziken en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Blaziken trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Swampert en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Swampert trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Gardevoir en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Gardevoir trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Sableye en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Sableye trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Mawile en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Mawile trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Aggron en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Aggron trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Medicham en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Medicham trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Manectric en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Manectric trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Sharpedo en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Sharpedo trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Camerupt en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Camerupt trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Altaria en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Altaria trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Banette en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Banette trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Absol en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Absol trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Glalie en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Glalie trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Salamence en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Salamence trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Metagross en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Metagross trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Latias en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Latias trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Latios en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Latios trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Lopunny en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Lopunny trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Garchomp en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Garchomp trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Lucario en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Lucario trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Abomasnow en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Abomasnow trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Gallade en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Gallade trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Audino en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Audino trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Diancie en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Diancie trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Jumpluff en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Jumpluff trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Rillaboom en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Rillaboom trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Cinderace en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Cinderace trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Inteleon en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Inteleon trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Snorlax en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Snorlax trong chiến đấu.
+Piedra carmesí de la que se dice que guarda una estrecha relación con las leyendas de Hoenn.
+Viên đá đỏ thẫm được cho là có mối liên hệ chặt chẽ với truyền thuyết Hoenn.
+Piedra añil que, según dicen, guarda una estrecha relación con las leyendas de Hoenn.
+Viên đá chàm được cho là có mối liên hệ chặt chẽ với truyền thuyết Hoenn.
+Medicina en spray que cura heridas y restaura 20 PS de un Pokémon.
+Thuốc xịt chữa vết thương và hồi 20 HP của một Pokémon.
+Medicina en spray que cura heridas y restaura 60 PS de un Pokémon.
+Thuốc xịt chữa vết thương và hồi 60 HP của một Pokémon.
+Medicina en spray que cura heridas y restaura 120 PS de un Pokémon.
+Thuốc xịt chữa vết thương và hồi 120 HP của một Pokémon.
+Medicina en spray que cura heridas y restaura todos los PS de un Pokémon.
+Thuốc xịt chữa vết thương và hồi toàn bộ HP của một Pokémon.
+Medicina que restaura todos los PS y cura todos los problemas de estado de un Pokémon.
+Thuốc hồi toàn bộ HP và chữa mọi trạng thái bất lợi của một Pokémon.
+Reanima completamente a los Pokémon debilitados y restaura todos sus PS.
+Hồi sức hoàn toàn Pokémon đã ngã ngựa và hồi toàn bộ HP.
+Medicina en spray que libera a un Pokémon de las garras del sueño.
+Thuốc xịt giải phóng Pokémon khỏi giấc ngủ.
+Medicina en spray que contrarresta los efectos del veneno en un Pokémon.
+Thuốc xịt trung hòa hiệu ứng nhiễm độc của một Pokémon.
+Medicina en spray que cura las quemaduras a un Pokémon.
+Thuốc xịt chữa bỏng cho một Pokémon.
+Medicina en spray que cura a un Pokémon paralizado.
+Thuốc xịt chữa tê liệt cho một Pokémon.
+Medicina en spray que descongela a un Pokémon.
+Thuốc xịt làm tan băng cho một Pokémon.
+Medicina en spray que cura todos los problemas de estado de un Pokémon.
+Thuốc xịt chữa mọi trạng thái bất lợi của một Pokémon.
+Snack crujiente típico de Ciudad Plateada. Cura todos los problemas de estado de un Pokémon.
+Snack giòn đặc sản Thành Phố Pewter. Chữa mọi trạng thái bất lợi của một Pokémon.
+Caramelo típico de Pueblo Caoba, muy popular como souvenir.
+Kẹo đặc sản Làng Mahogany, rất phổ biến như quà lưu niệm.
+Dulce típico de Pueblo Lavacalda que cura todos los problemas de estado de un Pokémon.
+Đồ ngọt đặc sản Làng Lavaridge chữa mọi trạng thái bất lợi của một Pokémon.
+Especialidad de la Vieja Mansión. Cura los problemas de estado de un Pokémon.
+Đặc sản của Biệt Thự Cũ. Chữa trạng thái bất lợi của một Pokémon.
+Especialidad de Ciudad Porcelana. Cura los problemas de estado de un Pokémon.
+Đặc sản Thành Phố Ecruteak. Chữa trạng thái bất lợi của một Pokémon.
+Postre típico de Ciudad Luminalia. Cura los problemas de estado de un Pokémon.
+Món tráng miệng đặc sản Thành Phố Lumios. Chữa trạng thái bất lợi của một Pokémon.
+Especialidad de Ciudad Yantra. Cura los problemas de estado de un Pokémon.
+Đặc sản Thành Phố Yantra. Chữa trạng thái bất lợi của một Pokémon.
+Fritura típica de Alola que cura todos los problemas de estado de un Pokémon.
+Đồ chiên đặc trưng Alola chữa mọi trạng thái bất lợi của một Pokémon.
+Medicina que reanima a un Pokémon debilitado y restaura la mitad de sus PS.
+Thuốc hồi sức Pokémon đã ngã ngựa và hồi một nửa HP.
+Medicina que reanima a un Pokémon debilitado y restaura todos sus PS.
+Thuốc hồi sức Pokémon đã ngã ngựa và hồi toàn bộ HP.
+Zumo de bayas 100% natural que restaura 20 PS de un Pokémon.
+Nước ép Berry 100% tự nhiên hồi 20 HP của một Pokémon.
+Chocolatina de sabor dulce. Restaura 20 PS de un Pokémon.
+Thanh sô-cô-la ngọt ngào. Hồi 20 HP của một Pokémon.
+Agua de alto contenido mineral que restaura 30 PS de un Pokémon.
+Nước có hàm lượng khoáng chất cao hồi 30 HP của một Pokémon.
+Chispeante bebida gaseosa que restaura 50 PS de un Pokémon.
+Đồ uống có gas sủi bọt hồi 50 HP của một Pokémon.
+Bebida dulce que restaura 70 PS de un Pokémon.
+Đồ uống ngọt hồi 70 HP của một Pokémon.
+Leche de alto valor nutritivo que restaura 100 PS de un Pokémon.
+Sữa có giá trị dinh dưỡng cao hồi 100 HP của một Pokémon.
+Polvo medicinal muy amargo que restaura 50 PS de un Pokémon.
+Bột thuốc rất đắng hồi 50 HP của một Pokémon.
+Raíz muy amarga que restaura 120 PS de un Pokémon.
+Rễ cây rất đắng hồi 120 HP của một Pokémon.
+Polvos muy amargos que curan todos los problemas de estado de un Pokémon.
+Bột rất đắng chữa mọi trạng thái bất lợi của một Pokémon.
+Hierba muy amarga que reanima a un Pokémon debilitado y restaura todos sus PS.
+Cỏ rất đắng hồi sức Pokémon đã ngã ngựa và hồi toàn bộ HP.
+Miel producida por un Vespiquen Dinamax. Revive y restaura todos los PS de un Pokémon.
+Mật ong do Vespiquen Dynamax sản xuất. Hồi sức và hồi toàn bộ HP của một Pokémon.
+Restaura un máximo de 10 PP del ataque que elijas de un Pokémon.
+Hồi tối đa 10 PP của chiêu bạn chọn của một Pokémon.
+Restaura completamente los PP del movimiento que elijas de un Pokémon.
+Hồi hoàn toàn PP của chiêu bạn chọn của một Pokémon.
+Restaura 10 PP de todos los movimientos aprendidos por un Pokémon.
+Hồi 10 PP của tất cả chiêu mà một Pokémon đã học.
+Restaura completamente los PP de todos los movimientos aprendidos por el Pokémon elegido.
+Hồi hoàn toàn PP của tất cả chiêu mà Pokémon được chọn đã học.
+Aumenta ligeramente los PP máximos del ataque que elijas de un Pokémon.
+Tăng nhẹ PP tối đa của chiêu bạn chọn của một Pokémon.
+Aumenta al máximo los PP del ataque que elijas de un Pokémon.
+Tăng tối đa PP của chiêu bạn chọn của một Pokémon.
+Nutritiva bebida que aumenta los PS de un Pokémon.
+Đồ uống bổ dưỡng tăng HP của một Pokémon.
+Nutritiva bebida que aumenta el Ataque de un Pokémon.
+Đồ uống bổ dưỡng tăng Tấn Công của một Pokémon.
+Nutritiva bebida que aumenta la Defensa de un Pokémon.
+Đồ uống bổ dưỡng tăng Phòng Thủ của một Pokémon.
+Nutritiva bebida que sube el At. Esp. de un Pokémon.
+Đồ uống bổ dưỡng tăng Đặc Tấn của một Pokémon.
+Nutritiva bebida que aumenta la Defensa Especial de un Pokémon.
+Đồ uống bổ dưỡng tăng Đặc Phòng của một Pokémon.
+Nutritiva bebida que sube la Velocidad de un Pokémon.
+Đồ uống bổ dưỡng tăng Tốc Độ của một Pokémon.
+Objeto que aumenta los PS base de un Pokémon.
+Vật phẩm tăng HP nền tảng của một Pokémon.
+Objeto que aumenta el Ataque base de un Pokémon.
+Vật phẩm tăng Tấn Công nền tảng của một Pokémon.
+Objeto que aumenta la Defensa base de un Pokémon.
+Vật phẩm tăng Phòng Thủ nền tảng của một Pokémon.
+Objeto que aumenta el Ataque Especial base de un Pokémon.
+Vật phẩm tăng Đặc Tấn nền tảng của một Pokémon.
+Objeto que aumenta la Defensa Especial base de un Pokémon.
+Vật phẩm tăng Đặc Phòng nền tảng của một Pokémon.
+Objeto que aumenta la Velocidad base de un Pokémon.
+Vật phẩm tăng Tốc Độ nền tảng của một Pokémon.
+Chapa que aumenta en 10 IVs los PS de un Pokémon.
+Nhãn tăng 10 IV HP của một Pokémon.
+Chapa que aumenta en 10 IVs el Ataque de un Pokémon.
+Nhãn tăng 10 IV Tấn Công của một Pokémon.
+Chapa que aumenta en 10 IVs la Defensa de un Pokémon.
+Nhãn tăng 10 IV Phòng Thủ của một Pokémon.
+Chapa que aumenta en 10 IVs el At. Esp. de un Pokémon.
+Nhãn tăng 10 IV Đặc Tấn của một Pokémon.
+Chapa que aumenta en 10 IVs la Def. Esp. de un Pokémon.
+Nhãn tăng 10 IV Đặc Phòng của một Pokémon.
+Chapa que aumenta en 10 IVs la Velocidad de un Pokémon.
+Nhãn tăng 10 IV Tốc Độ của một Pokémon.
+Menta que cambia la naturaleza de tu Pokémon a Huraña (+At., -Def.).
+Bạc hà thay đổi tính cách Pokémon thành Lonely (+Tấn Công, -Phòng Thủ).
+Menta que cambia la naturaleza de tu Pokémon a Firme (+At., -At.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Adamant (+Tấn Công, -Đặc Tấn).
+Menta que cambia la naturaleza de tu Pokémon a Pícara (+At., -Def.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Naughty (+Tấn Công, -Đặc Phòng).
+Menta que cambia la naturaleza de tu Pokémon a Audaz (+At., -Vel.).
+Bạc hà thay đổi tính cách Pokémon thành Brave (+Tấn Công, -Tốc Độ).
+Menta que cambia la naturaleza de tu Pokémon a Osada (+Def., -At.).
+Bạc hà thay đổi tính cách Pokémon thành Bold (+Phòng Thủ, -Tấn Công).
+Menta que cambia la naturaleza de tu Pokémon a Agitada (+Def., -At.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Impish (+Phòng Thủ, -Đặc Tấn).
+Menta que cambia la naturaleza de tu Pokémon a Floja (+Def., -Def.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Lax (+Phòng Thủ, -Đặc Phòng).
+Menta que cambia la naturaleza de tu Pokémon a Plácida (+Def., -Vel.).
+Bạc hà thay đổi tính cách Pokémon thành Relaxed (+Phòng Thủ, -Tốc Độ).
+Menta que cambia la naturaleza de tu Pokémon a Modesta (+At.Esp., -At.).
+Bạc hà thay đổi tính cách Pokémon thành Modest (+Đặc Tấn, -Tấn Công).
+Menta que cambia la naturaleza de tu Pokémon a Afable (+At.Esp., -Def.).
+Bạc hà thay đổi tính cách Pokémon thành Mild (+Đặc Tấn, -Phòng Thủ).
+Menta que cambia la naturaleza de tu Pokémon a Alocada (+At.Esp., -Def.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Rash (+Đặc Tấn, -Đặc Phòng).
+Menta que cambia la naturaleza de tu Pokémon a Mansa (+At.Esp., -Vel.).
+Bạc hà thay đổi tính cách Pokémon thành Quiet (+Đặc Tấn, -Tốc Độ).
+Menta que cambia la naturaleza de tu Pokémon a Serena (+Def.Esp., -At.).
+Bạc hà thay đổi tính cách Pokémon thành Calm (+Đặc Phòng, -Tấn Công).
+Menta que cambia la naturaleza de tu Pokémon a Amable (+Def.Esp., -Def.).
+Bạc hà thay đổi tính cách Pokémon thành Gentle (+Đặc Phòng, -Phòng Thủ).
+Menta que cambia la naturaleza de tu Pokémon a Cauta (+Def.Esp., -At.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Careful (+Đặc Phòng, -Đặc Tấn).
+Menta que cambia la naturaleza de tu Pokémon a Grosera (+Def.Esp., -Vel.).
+Bạc hà thay đổi tính cách Pokémon thành Sassy (+Đặc Phòng, -Tốc Độ).
+Menta que cambia la naturaleza de tu Pokémon a Miedosa (+Vel., -At.).
+Bạc hà thay đổi tính cách Pokémon thành Timid (+Tốc Độ, -Tấn Công).
+Menta que cambia la naturaleza de tu Pokémon a Activa (+Vel., -Def.).
+Bạc hà thay đổi tính cách Pokémon thành Hasty (+Tốc Độ, -Phòng Thủ).
+Menta que cambia la naturaleza de tu Pokémon a Alegre (+Vel., -At.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Jolly (+Tốc Độ, -Đặc Tấn).
+Menta que cambia la naturaleza de tu Pokémon a Ingenua (+Vel., -Def.Esp.).
+Bạc hà thay đổi tính cách Pokémon thành Naive (+Tốc Độ, -Đặc Phòng).
+Menta que cambia la naturaleza de tu Pokémon a seria (neutra).
+Bạc hà thay đổi tính cách Pokémon thành Serious (trung lập).
+Una cápsula especial que permite a un Pokémon cambiar de habilidad entre todas las que tiene.
+Viên nang đặc biệt cho phép Pokémon thay đổi ability giữa tất cả ability nó có.
+Caramelo energético que aumenta ligerísimamente los Puntos de Experiencia de un Pokémon.
+Kẹo năng lượng tăng rất nhẹ Điểm Kinh Nghiệm của một Pokémon.
+Caramelo energético que aumenta ligeramente los Puntos de Experiencia de un Pokémon.
+Kẹo năng lượng tăng nhẹ Điểm Kinh Nghiệm của một Pokémon.
+Caramelo energético que aumenta los Puntos de Experiencia de un Pokémon.
+Kẹo năng lượng tăng Điểm Kinh Nghiệm của một Pokémon.
+Caramelo energético que aumenta bastante los Puntos de Experiencia de un Pokémon.
+Kẹo năng lượng tăng khá nhiều Điểm Kinh Nghiệm của một Pokémon.
+Caramelo energético que aumenta mucho los Puntos de Experiencia de un Pokémon.
+Kẹo năng lượng tăng nhiều Điểm Kinh Nghiệm của một Pokémon.
+Caramelo energético que sube a un Pokémon de nivel.
+Kẹo năng lượng tăng một Pokémon lên cấp.
+Caramelo energético que baja a un Pokémon de nivel.
+Kẹo năng lượng giảm một Pokémon xuống cấp.
+Dispositivo con diseño capsular que atrapa Pokémon salvajes. Se lanza como una bola contra el blanco.
+Thiết bị dạng nang bắt Pokémon hoang dã. Được ném như quả bóng về phía mục tiêu.
+Poké Ball de alto rendimiento. Tiene un índice de éxito superior al de la Poké Ball.
+Poké Ball hiệu suất cao. Tỷ lệ thành công cao hơn Poké Ball.
+Poké Ball de rendimiento superior. Tiene más índice de éxito que la Superball.
+Poké Ball hiệu suất vượt trội. Tỷ lệ thành công cao hơn Great Ball.
+La Poké Ball definitiva. Atrapa a cualquier Pokémon salvaje y no falla nunca.
+Poké Ball tối thượng. Bắt bất kỳ Pokémon hoang dã nào và không bao giờ thất bại.
+Poké Ball con un diseño de camuflaje que se utiliza únicamente en el Gran Pantano.
+Poké Ball thiết kế ngụy trang, chỉ dùng ở Đầm Lầy Lớn.
+Poké Ball especial para el Concurso de Captura de Bichos.
+Poké Ball đặc biệt cho Cuộc Thi Bắt Côn Trùng.
+Es algo distinta a las demás. Funciona especialmente bien con los Pokémon de tipo Agua y Bicho.
+Khác một chút so với các loại khác. Hoạt động đặc biệt tốt với Pokémon hệ Nước và Côn Trùng.
+Es algo distinta a las demás. Funciona especialmente bien con los Pokémon que viven en el mar.
+Khác một chút so với các loại khác. Hoạt động đặc biệt tốt với Pokémon sống dưới biển.
+Es algo distinta a las demás. Funciona especialmente bien con los Pokémon salvajes de menor nivel.
+Khác một chút so với các loại khác. Hoạt động đặc biệt tốt với Pokémon hoang dã cấp độ thấp hơn.
+Es algo distinta a las demás. Funciona especialmente bien con los Pokémon iguales a los que ya has capturado.
+Khác một chút so với các loại khác. Hoạt động đặc biệt tốt với Pokémon giống những gì bạn đã bắt.
+Una Poké Ball algo distinta que va mejorando su rendimiento con cada turno de combate.
+Một Poké Ball khác biệt cải thiện hiệu suất theo từng lượt chiến đấu.
+Acogedora Poké Ball que hace más amistosos a los Pokémon salvajes capturados.
+Poké Ball ấm cúng làm Pokémon hoang dã bị bắt thân thiện hơn.
+Es una Poké Ball muy particular que se creó para conmemorar algún acontecimiento.
+Là một Poké Ball rất đặc biệt được tạo ra để kỷ niệm một sự kiện nào đó.
+Es algo distinta. Hace que sea más fácil capturar a Pokémon salvajes en la oscuridad.
+Khác một chút. Dễ bắt Pokémon hoang dã hơn trong bóng tối.
+Poké Ball curativa que restaura los PS de un Pokémon capturado y cura sus problemas de estado.
+Poké Ball chữa lành hồi HP của Pokémon bị bắt và chữa trạng thái bất lợi.
+Una Poké Ball que aumenta su eficacia si se usa en el turno 1 del combate.
+Một Poké Ball tăng hiệu quả nếu dùng ở lượt 1 của chiến đấu.
+Poké Ball algo distinta, especialmente indicada para capturar Pokémon con Velocidad muy alta.
+Poké Ball khác biệt, đặc biệt phù hợp để bắt Pokémon có Tốc Độ rất cao.
+Una Poké Ball diseñada para capturar Pokémon de nivel inferior al de tu Pokémon.
+Một Poké Ball được thiết kế để bắt Pokémon có cấp độ thấp hơn Pokémon của bạn.
+Poké Ball algo distinta, especialmente indicada para capturar los Pokémon que se han pescado con una Caña.
+Poké Ball khác biệt, đặc biệt phù hợp để bắt Pokémon được câu bằng cần câu.
+Una Poké Ball diseñada para capturar Pokémon muy pesados.
+Một Poké Ball được thiết kế để bắt Pokémon rất nặng.
+Una Poké Ball diseñada para capturar Pokémon del género opuesto al de tu Pokémon.
+Một Poké Ball được thiết kế để bắt Pokémon giới tính ngược với Pokémon của bạn.
+Una Poké Ball que hace más amistosos a los Pokémon capturados.
+Một Poké Ball làm Pokémon bị bắt thân thiện hơn.
+Una Poké Ball diseñada para capturar Pokémon que evolucionan con Piedra Lunar.
+Một Poké Ball được thiết kế để bắt Pokémon tiến hóa với Moon Stone.
+Una Poké Ball algo diferente que funciona mejor cuando el Pokémon está dormido.
+Một Poké Ball khác biệt hoạt động tốt hơn khi Pokémon đang ngủ.
+Una Poké Ball especial diseñada para capturar Ultraentes. Con otros Pokémon suele fallar.
+Một Poké Ball đặc biệt được thiết kế để bắt Ultra Beasts. Thường thất bại với Pokémon khác.
+Tormenta de hielo que puede llegar a congelar.
+Bão tuyết có thể gây đóng băng.
+Araña al objetivo con garras afiladas.
+Cào mục tiêu bằng móng vuốt sắc.
+Crea una onda psíquica que golpea al objetivo y provoca un gran daño físico.
+Tạo sóng tâm linh đánh mục tiêu và gây sát thương vật lý lớn.
+Aumenta la concentración y calma el espíritu para subir el Ataque Especial y la Defensa Especial.
+Tăng tập trung và làm bình tĩnh tinh thần để tăng Đặc Tấn và Đặc Phòng.
+El usuario mueve un dedo y estimula su cerebro para usar al azar casi cualquier movimiento.
+Người dùng vẫy ngón tay và kích thích não để dùng ngẫu nhiên hầu hết mọi chiêu.
+Ataca con su dura cabeza de hierro. Puede hacer que el objetivo se amedrente.
+Tấn công bằng đầu sắt cứng. Có thể làm mục tiêu run sợ.
+Tormenta de nieve que dura cinco turnos. Aumenta la defensa de los Pokémon tipo Hielo en un 50%.
+Bão tuyết kéo dài 5 lượt. Tăng Phòng Thủ của Pokémon hệ Băng lên 50%.
+Robustece el cuerpo para subir el Ataque y la Defensa.
+Củng cố cơ thể để tăng Tấn Công và Phòng Thủ.
+Ataca golpeando gracias a la fuerza del agua. También puede reducir la Defensa del objetivo.
+Tấn công bằng sức mạnh nước. Cũng có thể giảm Phòng Thủ mục tiêu.
+Una trampa de rocas que flota en el aire y daña a los objetivos que entran en combate.
+Bẫy đá lơ lửng trong không khí và gây sát thương cho mục tiêu vào chiến đấu.
+Intensifica el sol durante cinco turnos, lo que potencia los movimientos de tipo Fuego.
+Tăng cường ánh nắng trong 5 lượt, tăng sức mạnh chiêu hệ Lửa.
+Enfurece al objetivo para que solo use movimientos de ataque durante tres turnos.
+Khiến mục tiêu tức giận chỉ dùng chiêu tấn công trong 3 lượt.
+Rayo de hielo que puede llegar a congelar.
+Tia băng có thể gây đóng băng.
+Ataque único cuyo tipo y potencia varían según el agresor.
+Chiêu độc đáo có hệ và sức mạnh thay đổi theo kẻ tấn công.
+Inunda el campo de batalla con una ola gigante.
+Nhấn chìm chiến trường bằng một con sóng khổng lồ.
+Pared de luz que reduce durante cinco turnos el daño producido por los ataques especiales.
+Bức tường ánh sáng giảm sát thương từ đòn đặc biệt trong 5 lượt.
+Frena s los ataques, pero puede fallar si se usa repetidamente.
+Chặn các đòn tấn công, nhưng có thể thất bại nếu dùng liên tục.
+Genera una fuerte lluvia que refuerza los movimientos de tipo Agua durante cinco turnos.
+Tạo ra cơn mưa lớn tăng sức mạnh chiêu hệ Nước trong 5 lượt.
+Provoca un terrible escalofrío en el objetivo y lo congela.
+Gây ra cơn rùng mình khủng khiếp cho mục tiêu và đóng băng nó.
+Si al objetivo le queda la mitad o menos de sus PS, el ataque será el doble de fuerte.
+Nếu mục tiêu còn một nửa hoặc ít hơn HP, đòn tấn công sẽ mạnh gấp đôi.
+Ataca con un rayo de luz siniestro. Puede confundir al objetivo.
+Tấn công bằng tia sáng tối tăm. Có thể gây hỗn loạn mục tiêu.
+Primer turno: absorbe luz. Segundo turno: ataca.
+Lượt đầu: hấp thụ ánh sáng. Lượt hai: tấn công.
+Viento cortante que azota. Suele ser un golpe crítico.
+Gió cắt quất vào. Thường là đòn chí mạng.
+Potente ataque eléctrico que puede paralizar al objetivo.
+Đòn điện mạnh có thể làm tê liệt mục tiêu.
+Lanza al objetivo una descarga de semillas explosivas desde arriba.
+Tung xuống mục tiêu một loạt hạt nổ từ trên cao.
+Un terremoto que afecta a los Pokémon de alrededor en combate.
+Trận động đất ảnh hưởng đến các Pokémon xung quanh trong chiến đấu.
+Cuanto mayor sea la amistad con el Entrenador, más poderoso será este ataque.
+Càng thân thiết với Huấn Luyện Viên, đòn tấn công càng mạnh.
+El primer turno el Pokémon alza el vuelo, para posteriormente en el segundo atacar a su objetivo.
+Lượt đầu Pokémon bay lên, sau đó lượt hai tấn công mục tiêu.
+Fuerte ataque telequinético que puede bajar la Defensa Especial del objetivo.
+Đòn thần giao cách cảm mạnh có thể giảm Đặc Phòng mục tiêu.
+Lanza una bola oscura que puede bajar la Defensa Especial del objetivo.
+Tung quả cầu tối có thể giảm Đặc Phòng mục tiêu.
+Potente ataque que también es capaz de destruir barreras como pantalla de luz y reflejo.
+Đòn mạnh cũng có thể phá hủy rào chắn như Light Screen và Reflect.
+Ataca agitando la cola como si fuera una ola rabiosa en una tormenta devastadora.
+Tấn công bằng cách vẫy đuôi như sóng dữ trong cơn bão tàn phá.
+Pared de luz que reduce durante cinco turnos el daño producido por los ataques físicos.
+Bức tường ánh sáng giảm sát thương từ đòn vật lý trong 5 lượt.
+Ataca con un rayo de luz que centellea como si lo formaran miles de joyas.
+Tấn công bằng tia sáng lấp lánh như thể được tạo thành từ hàng nghìn viên đá quý.
+Patada baja. Cuanto más pesa el objetivo, más daño causa.
+Đá thấp. Mục tiêu càng nặng, sát thương càng lớn.
+Arroja residuos al objetivo. Puede llegar a envenenar.
+Ném rác thải vào mục tiêu. Có thể gây nhiễm độc.
+Tormenta de arena que dura cinco turnos y hiere a s, excepto a los de tipo Roca, Tierra y Acero.
+Bão cát kéo dài 5 lượt và gây thương tích cho tất cả, trừ hệ Đá, Đất và Thép.
+Llama intensa que lo chamusca y puede causar quemaduras.
+Ngọn lửa mãnh liệt thiêu đốt và có thể gây bỏng.
+Tira rocas que detienen al objetivo y bajan su Velocidad.
+Ném đá làm dừng mục tiêu và giảm Tốc Độ.
+El usuario lanza un ataque muy rápido e ineludible.
+Người dùng tung đòn rất nhanh và không thể tránh được.
+Puñetazo ardiente. Puede quemar.
+Cú đấm đang cháy. Có thể gây bỏng.
+Ataca con el doble de potencia si el usuario está quemado, paralizado o envenenado.
+Tấn công với gấp đôi sức mạnh nếu người dùng đang bị bỏng, tê liệt hoặc nhiễm độc.
+Llamas que golpean al objetivo y aumentan la Velocidad del atacante.
+Ngọn lửa đánh mục tiêu và tăng Tốc Độ của người tấn công.
+Restaura s los PS y cura s los problemas de estado del usuario. Duerme los dos próximos turnos.
+Hồi toàn bộ HP và chữa mọi trạng thái bất lợi của người dùng. Ngủ trong 2 lượt tiếp theo.
+Si el objetivo es del sexo opuesto, se enamorará y bajará la posibilidad de que ataque.
+Nếu mục tiêu khác giới, sẽ say nắng và giảm khả năng tấn công.
+Ataca y le quita al objetivo su objeto. Si el agresor lleva un objeto, no robará el del objetivo.
+Tấn công và lấy vật phẩm của mục tiêu. Nếu kẻ tấn công đang mang vật phẩm, không đánh cắp của mục tiêu.
+Ataque con garras o guadañas que crece en intensidad si se usa repetidas veces.
+Đòn tấn công bằng móng vuốt hoặc lưỡi hái tăng cường độ khi dùng liên tục.
+Puñetazo eléctrico. Puede paralizar.
+Cú đấm điện. Có thể gây tê liệt.
+Puñetazo helado. Puede congelar.
+Cú đấm băng. Có thể gây đóng băng.
+Concentra su energía psíquica en la cabeza para golpear. Puede hacer que el objetivo se amedrente.
+Tập trung năng lượng tâm linh vào đầu để đánh. Có thể làm mục tiêu run sợ.
+Ataca con un potente chorro de agua. Puede confundir al objetivo.
+Tấn công bằng vòi nước mạnh. Có thể gây hỗn loạn mục tiêu.
+Agudiza la concentración mental y libera su poder. Puede disminuir la Def. Esp. del rival.
+Mài giũa tập trung tinh thần và giải phóng sức mạnh. Có thể giảm Đặc Phòng đối thủ.
+Aúna fuerzas de la naturaleza y libera su ataque. Puede disminuir la Defensa Especial del objetivo.
+Kết hợp sức mạnh thiên nhiên và giải phóng đòn tấn công. Có thể giảm Đặc Phòng mục tiêu.
+Ataque moderado que no debilita al objetivo y le deja al menos un PS.
+Đòn tấn công vừa phải không ngã ngựa mục tiêu và để lại ít nhất 1 HP.
+Ataca al objetivo rociándolo con un agua gélida y desalentadora que reduce su Ataque.
+Tấn công mục tiêu bằng cách phun nước lạnh giá và chán nản làm giảm Tấn Công.
+Ataca con una cola férrea y puede bajar la Defensa del objetivo.
+Tấn công bằng chiếc đuôi sắt và có thể giảm Phòng Thủ mục tiêu.
+Lanza un rayo eléctrico contra el rival. Puede subir el Ataque Especial de quien lo usa.
+Tung tia điện vào đối thủ. Có thể tăng Đặc Tấn của người dùng.
+Ataca con una gran ráfaga de fuego que puede causar quemaduras.
+Tấn công bằng luồng lửa lớn có thể gây bỏng.
+Llamas que golpean a los objetivos adyacentes. Si llevan Bayas, se quemarán y desaparecerán.
+Ngọn lửa đánh các mục tiêu lân cận. Nếu mang Berry, chúng sẽ cháy và biến mất.
+Alas macizas que golpean al objetivo y pueden subir la Defensa del usuario.
+Đôi cánh chắc đánh mục tiêu và có thể tăng Phòng Thủ người dùng.
+Siniestra llama morada que produce quemaduras.
+Ngọn lửa tím tối tăm gây bỏng.
+Golpea ágilmente. Si el usuario no porta ningún objeto, el objetivo resulta seriamente dañado.
+Đánh nhanh nhẹn. Nếu người dùng không mang vật phẩm, mục tiêu bị tổn thương nặng.
+Absorbe la mitad del daño producido.
+Hấp thụ một nửa sát thương gây ra.
+Abre mucho la boca y libera una onda de choque que ataca al objetivo.
+Mở to miệng và tung ra sóng xung kích tấn công mục tiêu.
+Ataca con una garra afilada hecha de sombras. Suele ser crítico.
+Tấn công bằng móng vuốt sắc làm từ bóng tối. Thường là đòn chí mạng.
+El usuario contraataca con el doble de fuerza si el objetivo usa un movimiento antes.
+Người dùng phản công với gấp đôi sức mạnh nếu mục tiêu dùng chiêu trước.
+Ataca al adversario golpeándolo dos veces con las alas.
+Tấn công đối thủ bằng cách đánh hai lần bằng cánh.
+Hace cucamonas al objetivo y lo ataca. Puede disminuir el Ataque del objetivo.
+Làm mục tiêu cưng nựng rồi tấn công. Có thể giảm Tấn Công của mục tiêu.
+Ataque eléctrico muy rápido e ineludible.
+Đòn điện rất nhanh và không thể tránh được.
+Grito desgarrador que inflige daño al objetivo.
+Tiếng hét xé lòng gây sát thương cho mục tiêu.
+Clava piedras muy afiladas al objetivo. Suele ser crítico.
+Cắm những viên đá rất sắc vào mục tiêu. Thường là đòn chí mạng.
+Tras atacar, vuelve a toda prisa para dar paso a otro Pokémon del equipo.
+Sau khi tấn công, nhanh chóng quay về để nhường chỗ cho Pokémon khác trong đội.
+Una ligera descarga que paraliza al objetivo si lo alcanza.
+Một tia điện nhẹ làm tê liệt mục tiêu nếu đánh trúng.
+Embiste con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa.
+Tấn công bằng đòn xoáy mạnh. Người dùng càng chậm, gây càng nhiều sát thương.
+Baile frenético que aumenta mucho el Ataque.
+Điệu nhảy điên cuồng tăng mạnh Tấn Công.
+Un poderoso rayo que daña al objetivo y puede paralizarlo.
+Tia sét mạnh gây sát thương mục tiêu và có thể làm tê liệt.
+Inflige daño a los oponentes con una potente luz.
+Gây sát thương cho đối thủ bằng ánh sáng mạnh.
+Ataca con una sacudida sísmica que afecta a los Pokémon adyacentes y baja su Velocidad.
+Tấn công bằng rung động địa chấn ảnh hưởng đến Pokémon lân cận và giảm Tốc Độ của chúng.
+Estimula su cerebro pensando en cosas malas. Aumenta considerablemente el Ataque Especial.
+Kích thích não bằng cách nghĩ đến những điều xấu. Tăng đáng kể Đặc Tấn.
+Lanza grandes pedruscos. Puede amedrentar al objetivo.
+Tung những tảng đá lớn. Có thể làm mục tiêu run sợ.
+Cruza las guadañas o las garras para atacar al rival como si fueran unas tijeras.
+Bắt chéo lưỡi hái hoặc móng vuốt để tấn công đối thủ như kéo cắt.
+Violenta embestida con cuernos imponentes.
+Lao vào mạnh mẽ bằng những chiếc sừng oai vệ.
+Movimiento que aumenta el Ataque y el Ataque Especial de quien lo usa.
+Chiêu tăng Tấn Công và Đặc Tấn của người dùng.
+Pincha al rival con un tentáculo o brazo envenenado. Puede llegar a envenenar al rival.
+Chọc đối thủ bằng xúc tu hoặc cánh tay độc. Có thể gây nhiễm độc đối thủ.
+Ataque con aire helado que baja la Velocidad del objetivo.
+Đòn không khí lạnh giá làm giảm Tốc Độ mục tiêu.
+Enreda al objetivo con hierba y lo derriba. Cuanto más pesado es el objetivo, más daño inflige.
+Quấn mục tiêu bằng cỏ và quật ngã. Mục tiêu càng nặng, gây càng nhiều sát thương.
+Libera una horrible aura llena de malos pensamientos y puede amedrentar al objetivo.
+Giải phóng hào quang khủng khiếp đầy suy nghĩ xấu và có thể làm mục tiêu run sợ.
+Picotea al objetivo. Si este sostiene una Baya, la picotea también y obtiene sus efectos.
+Mổ vào mục tiêu. Nếu mục tiêu đang giữ Berry, cũng mổ vào đó và nhận hiệu ứng của nó.
+Utiliza parte de los PS propios para crear un sustituto que actúa como señuelo.
+Dùng một phần HP của mình để tạo ra Substitute hoạt động như mồi nhử.
+El usuario concentra toda la luz del cuerpo y la libera. Puede bajar la Defensa Especial del objetivo.
+Người dùng tập trung toàn bộ ánh sáng cơ thể và giải phóng. Có thể giảm Đặc Phòng mục tiêu.
+Provoca un viento abrasador que puede quemar al objetivo.
+Gây ra gió bỏng rát có thể đốt cháy mục tiêu.
+Corta con garras, guadañas, etc. También sirve para cortar árboles finos.
+Cắt bằng móng vuốt, lưỡi hái, v.v. Cũng dùng để chặt cây nhỏ.
+Ataca con puñetazos que pueden romper rocas. Puede bajar la Defensa del objetivo.
+Tấn công bằng những cú đấm có thể phá vỡ đá. Có thể giảm Phòng Thủ mục tiêu.
+Tras atacar, el usuario da paso a toda prisa a otro Pokémon del equipo.
+Sau khi tấn công, người dùng nhanh chóng nhường chỗ cho Pokémon khác trong đội.
+Un golpe que drena energía. El Pokémon recupera la mitad de los PS arrebatados al objetivo.
+Một đòn hút năng lượng. Pokémon hồi phục một nửa HP đã hút từ mục tiêu.
+Ataca al objetivo arrojándole arena a temperaturas muy elevadas. Puede causar quemaduras.
+Tấn công mục tiêu bằng cách ném cát ở nhiệt độ rất cao. Có thể gây bỏng.
+Lanza una trampa de púas tóxicas a los pies del objetivo. El veneno afecta a los Pokémon que entran.
+Tung bẫy gai độc dưới chân mục tiêu. Độc ảnh hưởng đến Pokémon vào chiến đấu.
+Patea hasta tres veces seguidas y cada vez más fuerte.
+Đá liên tiếp tối đa ba lần, mỗi lần mạnh hơn.
+Hace que grandes cometas caigan del cielo. Baja mucho el Ataque Especial de quien lo usa.
+Làm những sao chổi lớn rơi xuống từ bầu trời. Giảm mạnh Đặc Tấn của người dùng.
+Ataca abalanzándose sobre el objetivo y le reduce la Velocidad.
+Tấn công bằng cách lao vào mục tiêu và giảm Tốc Độ của nó.
+Ataca como si saltara desde la hierba alta. Aumenta su Velocidad.
+Tấn công như thể nhảy ra từ bãi cỏ cao. Tăng Tốc Độ của mình.
+Recubre las extremidades con una capa de hielo y golpea al rival. Si hay un campo lo rompe.
+Bao phủ các chi bằng lớp băng và đánh đối thủ. Nếu có terrain sẽ phá hủy nó.
+Un susurro que aumenta de potencia conforme el usuario y otros Pokémon lo van utilizando.
+Tiếng thì thầm tăng sức mạnh khi người dùng và Pokémon khác dùng nó.
+Aterriza sobre la superficie para descansar. Recupera hasta la mitad del total de sus PS.
+Hạ xuống mặt đất để nghỉ ngơi. Hồi phục tối đa một nửa tổng HP.
+Ataque de gran potencia, pero que reduce el Ataque y la Defensa del agresor.
+Đòn tấn công mạnh, nhưng giảm Tấn Công và Phòng Thủ của người tấn công.
+Se crea un espacio extraño en el que los Pokémon lentos se mueven primero durante cinco turnos.
+Tạo ra một không gian kỳ lạ nơi Pokémon chậm di chuyển trước trong 5 lượt.
+Potente puñetazo.
+Cú đấm mạnh mẽ.
+Dispara rápido de dos a cinco ráfagas de semillas de manera consecutiva.
+Bắn nhanh từ hai đến năm loạt hạt giống liên tiếp.
+Un rayo fulminante, pero el atacante deberá descansar en el siguiente turno.
+Tia sét chói lòa, nhưng người tấn công phải nghỉ ngơi ở lượt tiếp theo.
+Crea un campo protector que evita problemas de estado durante cinco turnos.
+Tạo ra trường bảo vệ ngăn trạng thái bất lợi trong 5 lượt.
+Primer turno: cava. Segundo turno: ataca. También sirve para salir de ciertas zonas.
+Lượt đầu: đào. Lượt hai: tấn công. Cũng dùng để thoát khỏi một số khu vực.
+Crea copias de sí mismo para mejorar la Evasión.
+Tạo ra các bản sao của bản thân để cải thiện Né Tránh.
+Atormenta y enfurece al objetivo, que no puede usar dos veces seguidas el mismo movimiento.
+Hành hạ và làm tức giận mục tiêu, không thể dùng cùng một chiêu liên tiếp hai lần.
+El movimiento de las alas crea una onda sónica dañina. Puede disminuir la Defensa Especial del objetivo.
+Chuyển động của cánh tạo ra sóng âm gây hại. Có thể giảm Đặc Phòng mục tiêu.
+Ataca lanzando un chillido insoportable que baja el Ataque Especial de los objetivos.
+Tấn công bằng tiếng kêu không thể chịu được làm giảm Đặc Tấn của các mục tiêu.
+Embiste con un gran impulso que puede amedrentar. También sirve para remontar cascadas.
+Lao vào với tốc độ lớn có thể làm run sợ. Cũng dùng để leo lên thác nước.
+Ataca con una gran embestida. Puede confundir al objetivo.
+Tấn công bằng một cú lao mạnh. Có thể gây hỗn loạn mục tiêu.
+Este ataque inflige el doble de daño a un objetivo que haya golpeado al usuario en ese mismo turno.
+Đòn này gây gấp đôi sát thương cho mục tiêu đã đánh người dùng trong cùng lượt đó.
+Permite atacar primero. Falla si el objetivo no está preparando ningún ataque.
+Cho phép tấn công trước. Thất bại nếu mục tiêu không đang chuẩn bị bất kỳ đòn tấn công nào.
+Electrifica su cuerpo y salta en plancha sobre el objetivo. Si falla, se hiere a sí mismo.
+Tích điện cơ thể và nhảy người vào mục tiêu. Nếu thất bại, tự gây thương tích.
+Ataca arrojando agua hirviendo al objetivo. Puede causar quemaduras.
+Tấn công bằng cách ném nước sôi vào mục tiêu. Có thể gây bỏng.
+Bramido que aumenta la probabilidad de golpe crítico de aliados, y en dos niveles si es Dragón.
+Tiếng gầm tăng xác suất chí mạng của đồng minh, và hai bậc nếu là hệ Rồng.
+Canto angelical que confunde al objetivo si sus características han aumentado en ese turno.
+Bài hát thiên thần làm hỗn loạn mục tiêu nếu chỉ số của nó đã tăng trong lượt đó.
+Primer turno: se sumerge en el mar. Segundo turno: emerge y ataca.
+Lượt đầu: lặn xuống biển. Lượt hai: nổi lên và tấn công.
+Los Pokémon pueden llevarla o usarla para recuperarse de la parálisis.
+Pokémon có thể mang hoặc dùng để hồi phục khỏi tê liệt.
+Los Pokémon pueden llevarla o usarla para despertar del sueño.
+Pokémon có thể mang hoặc dùng để thức dậy khỏi giấc ngủ.
+Los Pokémon pueden llevarla o usarla para curarse del envenenamiento.
+Pokémon có thể mang hoặc dùng để chữa khỏi nhiễm độc.
+Los Pokémon pueden llevarla o usarla para curarse las quemaduras.
+Pokémon có thể mang hoặc dùng để chữa khỏi bỏng.
+Los Pokémon pueden llevarla o usarla para descongelarse.
+Pokémon có thể mang hoặc dùng để tan băng.
+Los Pokémon pueden llevarla o usarla para restaurar 10 PP de un movimiento.
+Pokémon có thể mang hoặc dùng để hồi 10 PP của một chiêu.
+Los Pokémon pueden usarla o llevarla para restaurar 10 PS.
+Pokémon có thể dùng hoặc mang để hồi 10 HP.
+Los Pokémon pueden usarla o llevarla para salir del estado de confusión.
+Pokémon có thể dùng hoặc mang để thoát khỏi trạng thái hỗn loạn.
+Los Pokémon pueden llevarla o usarla para recuperarse de problemas de estado.
+Pokémon có thể mang hoặc dùng để hồi phục khỏi trạng thái bất lợi.
+Los Pokémon pueden usarla o llevarla para restaurar algunos PS.
+Pokémon có thể dùng hoặc mang để hồi phục một ít HP.
+Restaura los PS del Pokémon que la usa en un apuro, pero puede causar confusión.
+Hồi HP của Pokémon dùng nó khi nguy cấp, nhưng có thể gây hỗn loạn.
+Si la plantas en tierra suelta, saldrá una planta de Frambu.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Razz Berry.
+Si la plantas en tierra suelta, saldrá una planta de Oram.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Bluk Berry.
+Si la plantas en tierra suelta, saldrá una planta de Latano.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Nanab Berry.
+Si la plantas en tierra suelta, saldrá una planta de Peragu.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Wepear Berry.
+Si la plantas en tierra suelta, saldrá una planta de Pinia.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Pinap Berry.
+Si la usas en un Pokémon te ganas su amistad, pero también reduces sus PS.
+Nếu dùng cho Pokémon, bạn giành được tình bạn của nó, nhưng cũng giảm HP.
+Si la usas en un Pokémon te ganas su amistad, pero reduces su Ataque.
+Nếu dùng cho Pokémon, bạn giành được tình bạn của nó, nhưng giảm Tấn Công.
+Si la usas en un Pokémon te ganas su amistad, pero reduces su Defensa.
+Nếu dùng cho Pokémon, bạn giành được tình bạn của nó, nhưng giảm Phòng Thủ.
+Si la usas en un Pokémon te ganas su amistad, pero reduces su Ataque Especial.
+Nếu dùng cho Pokémon, bạn giành được tình bạn của nó, nhưng giảm Đặc Tấn.
+Si la usas en un Pokémon te ganas su amistad, pero reduces su Defensa Especial.
+Nếu dùng cho Pokémon, bạn giành được tình bạn của nó, nhưng giảm Đặc Phòng.
+Si la usas en un Pokémon te ganas su amistad, pero baja su Velocidad.
+Nếu dùng cho Pokémon, bạn giành được tình bạn của nó, nhưng giảm Tốc Độ.
+Si la plantas en tierra suelta, saldrá una planta de Mais.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Pomeg Berry.
+Si la plantas en tierra suelta, saldrá una planta de Aostan.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Kelpsy Berry.
+Si la plantas en tierra suelta, saldrá una planta de Rautan.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Qualot Berry.
+Si la plantas en tierra suelta, saldrá una planta de Monli.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Hondew Berry.
+Si la plantas en tierra suelta, saldrá una planta de Wikano.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Grepa Berry.
+Si la plantas en tierra suelta, saldrá una planta de Plama.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Tamato Berry.
+Si la plantas en tierra suelta, saldrá una planta de Sambia.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Cornn Berry.
+Si la plantas en tierra suelta, saldrá una planta de Rudion.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Magost Berry.
+Si la plantas en tierra suelta, saldrá una planta de Andano.
+Nếu trồng vào đất tơi xốp, sẽ mọc lên cây Rabuta Berry.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Fuego.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Lửa.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Agua.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Nước.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Eléctrico.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Điện.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Planta.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Cỏ.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Hielo.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Băng.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Lucha.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Chiến.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Veneno.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Độc.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Tierra.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Đất.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Volador.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Bay.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Psíquico.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Tâm Linh.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Bicho.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Côn Trùng.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Roca.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Đá.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Fantasma.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Ma.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Dragón.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Rồng.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Siniestro.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Tối.
+Si la lleva un Pokémon, debilita ataques supereficaces de tipo Acero.
+Nếu Pokémon mang, làm suy yếu đòn siêu hiệu quả hệ Thép.
+Debilita ataques super eficaces de tipo Hada.
+Làm suy yếu đòn siêu hiệu quả hệ Tiên.
+Si la lleva un Pokémon, debilita el ataque de tipo Normal de un enemigo.
+Nếu Pokémon mang, làm suy yếu đòn hệ Thường của kẻ thù.
+Si la lleva un Pokémon, le subirá el Ataque en un momento de apuro.
+Nếu Pokémon mang, tăng Tấn Công khi nguy cấp.
+Si la lleva un Pokémon, le subirá la Defensa en un momento de apuro.
+Nếu Pokémon mang, tăng Phòng Thủ khi nguy cấp.
+Si la lleva un Pokémon, le subirá la Velocidad en un momento de apuro.
+Nếu Pokémon mang, tăng Tốc Độ khi nguy cấp.
+Si la lleva un Pokémon, le subirá el At. Esp. en un momento de apuro.
+Nếu Pokémon mang, tăng Đặc Tấn khi nguy cấp.
+Si la lleva un Pokémon, le subirá la Def. Esp. en un momento de apuro.
+Nếu Pokémon mang, tăng Đặc Phòng khi nguy cấp.
+Si la lleva un Pokémon, sube su capacidad de dar un golpe crítico en un apuro.
+Nếu Pokémon mang, tăng khả năng đòn chí mạng khi nguy cấp.
+Si la lleva un Pokémon, aumenta drásticamente 1 característica en un momento de apuro.
+Nếu Pokémon mang, tăng mạnh 1 chỉ số khi nguy cấp.
+Restaura los PS de un Pokémon si la lleva cuando le alcanza un ataque supereficaz.
+Hồi HP của Pokémon mang nó khi bị đòn siêu hiệu quả.
+Cuando la lleve un Pokémon, le subirá la precisión de un movimiento en un momento de apuro.
+Khi Pokémon mang, tăng độ chính xác của một chiêu khi nguy cấp.
+El Pokémon que la lleve podrá actuar en primer lugar una vez cuando se encuentre en un momento de apuro.
+Pokémon mang có thể hành động trước một lần khi nguy cấp.
+Si la lleva un Pokémon cuando un enemigo lanza un ataque físico, este también recibirá daño.
+Nếu Pokémon mang khi kẻ thù tung đòn vật lý, kẻ thù cũng nhận sát thương.
+Si la lleva un Pokémon cuando un enemigo lanza un ataque especial, este también recibirá daño.
+Nếu Pokémon mang khi kẻ thù tung đòn đặc biệt, kẻ thù cũng nhận sát thương.
+Aumenta la defensa cuando el Pokémon recibe un ataque físico.
+Tăng Phòng Thủ khi Pokémon nhận đòn vật lý.
+Aumenta la defensa especial cuando el Pokémon recibe un ataque especial.
+Tăng Đặc Phòng khi Pokémon nhận đòn đặc biệt.
+Carta con un estampado de hierba. Haz que la entregue un Pokémon.
+Thư có họa tiết cỏ. Cho Pokémon giao nó.
+Carta con los colores del fuego. Haz que la entregue un Pokémon.
+Thư có màu sắc của lửa. Cho Pokémon giao nó.
+Carta con una imagen de burbujas. Haz que la entregue un Pokémon.
+Thư có hình ảnh bong bóng. Cho Pokémon giao nó.
+Carta con un bonito estampado floral. Haz que la entregue un Pokémon.
+Thư có họa tiết hoa đẹp. Cho Pokémon giao nó.
+Carta con la imagen de una mina de carbón poco iluminada. Haz que la entregue un Pokémon.
+Thư có hình ảnh mỏ than ít ánh sáng. Cho Pokémon giao nó.
+Carta con un estupendo diseño de estilo industrial. Haz que la entregue un Pokémon.
+Thư có thiết kế phong cách công nghiệp tuyệt vời. Cho Pokémon giao nó.
+Carta con un estampado de corazones. Haz que la entregue un Pokémon.
+Thư có họa tiết trái tim. Cho Pokémon giao nó.
+Carta con la imagen de un bonito mundo cubierto de nieve. Haz que la entregue un Pokémon.
+Thư có hình ảnh thế giới đẹp phủ đầy tuyết. Cho Pokémon giao nó.
+Carta con la imagen de una galaxia. Haz que la entregue un Pokémon.
+Thư có hình ảnh thiên hà. Cho Pokémon giao nó.
+Carta con el diseño tradicional del correo aéreo. Haz que la entregue un Pokémon.
+Thư với thiết kế thư hàng không truyền thống. Cho Pokémon giao nó.
+Carta con un mosaico de arco iris. Haz que la entregue un Pokémon.
+Thư có khảm cầu vồng. Cho Pokémon giao nó.
+Carta con la imagen de una pared de ladrillos. Haz que la entregue un Pokémon.
+Thư có hình ảnh tường gạch. Cho Pokémon giao nó.
+Aumenta 1 nivel el Ataque en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tấn Công 1 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 2 niveles el Ataque en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tấn Công 2 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 3 niveles el Ataque en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tấn Công 3 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 6 niveles el Ataque en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tấn Công 6 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 1 nivel la Defensa en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Phòng Thủ 1 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 2 niveles la Defensa en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Phòng Thủ 2 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 3 niveles la Defensa en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Phòng Thủ 3 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 6 niveles la Defensa en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Phòng Thủ 6 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 1 nivel el At. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Tấn 1 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 2 niveles el At. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Tấn 2 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 3 niveles el At. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Tấn 3 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 6 niveles el At. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Tấn 6 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 1 nivel la Def. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Phòng 1 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 2 niveles la Def. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Phòng 2 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 3 niveles la Def. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Phòng 3 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 6 niveles la Def. Especial en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Đặc Phòng 6 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 1 nivel la Velocidad en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tốc Độ 1 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 2 niveles la Velocidad en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tốc Độ 2 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 3 niveles la Velocidad en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tốc Độ 3 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 6 niveles la Velocidad en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Tốc Độ 6 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 1 nivel la Precisión en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Độ Chính Xác 1 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 2 niveles la Precisión en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Độ Chính Xác 2 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 3 niveles la Precisión en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Độ Chính Xác 3 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 6 niveles la Precisión en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng Độ Chính Xác 6 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Setas que aumentan todas las estadísticas de un Pokémon en combate.
+Nấm tăng tất cả chỉ số của một Pokémon trong chiến đấu.
+Aumenta 1 nivel el índice de golpe crítico en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng xác suất chí mạng 1 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 2 niveles el índice de golpe crítico en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng xác suất chí mạng 2 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Aumenta 3 niveles el índice de golpe crítico en combate. Al cambiar de Pokémon, el efecto desaparece.
+Tăng xác suất chí mạng 3 bậc trong chiến đấu. Khi đổi Pokémon, hiệu ứng biến mất.
+Evita que bajen las características del equipo Pokémon durante cinco turnos.
+Ngăn các chỉ số của đội Pokémon giảm trong 5 lượt.
+Cuando se usa, se anulan los cambios en las características de un Pokémon de tu equipo.
+Khi dùng, vô hiệu hóa các thay đổi chỉ số của một Pokémon trong đội.
+Al usarlo, activa la habilidad de un Pokémon de tu equipo.
+Khi dùng, kích hoạt ability của một Pokémon trong đội.
+Cuando se usa, un Pokémon de tu equipo utiliza su objeto inmediatamente.
+Khi dùng, một Pokémon trong đội dùng vật phẩm ngay lập tức.
+Cuando se usa, un Pokémon de tu equipo pierde su objeto.
+Khi dùng, một Pokémon trong đội mất vật phẩm của mình.
+Flauta de cristal azul cuya melodía despierta a los Pokémon dormidos.
+Sáo pha lê xanh có giai điệu đánh thức Pokémon đang ngủ.
+Flauta de cristal amarillo que espabila a los Pokémon confusos.
+Sáo pha lê vàng làm tỉnh táo Pokémon đang hỗn loạn.
+Flauta de cristal rojo que libera a un Pokémon del enamoramiento.
+Sáo pha lê đỏ giải phóng Pokémon khỏi tình trạng say nắng.
+Un muñeco que atrae a los Pokémon. Puedes utilizarlo para huir de un combate con un Pokémon salvaje.
+Búp bê thu hút Pokémon. Có thể dùng để chạy trốn khỏi chiến đấu với Pokémon hoang dã.
+Atrae a los Pokémon y sirve para huir de un combate con un Pokémon salvaje.
+Thu hút Pokémon và dùng để chạy trốn khỏi chiến đấu với Pokémon hoang dã.
+Un objeto que atrae a los Pokémon. Puedes utilizarlo para huir de un combate con un Pokémon salvaje.
+Vật phẩm thu hút Pokémon. Có thể dùng để chạy trốn khỏi chiến đấu với Pokémon hoang dã.
+Bicicleta plegable con la que se va más rápido que con deportivas.
+Xe đạp gấp di chuyển nhanh hơn đi bộ.
+Una caña de pescar bastante usada y desgastada. Pesca Pokémon salvajes en todo tipo de aguas.
+Cần câu khá cũ và mòn. Câu Pokémon hoang dã trong mọi loại nước.
+Una caña de pescar nuevecita y de gran calidad. Pesca Pokémon salvajes en todo tipo de aguas.
+Cần câu mới toanh và chất lượng cao. Câu Pokémon hoang dã trong mọi loại nước.
+Una increíble caña de pescar de alta tecnología. Pesca Pokémon salvajes en todo tipo de aguas.
+Cần câu công nghệ cao đáng kinh ngạc. Câu Pokémon hoang dã trong mọi loại nước.
+Detector de objetos invisibles por ondas sonoras. Emite una señal cuando encuentra un objeto.
+Máy dò vật phẩm vô hình bằng sóng âm. Phát tín hiệu khi tìm thấy vật phẩm.
+Aparato de precisión que reacciona con luz y sonido ante los objetos que no se ven e indica su posición.
+Thiết bị chính xác phản ứng bằng ánh sáng và âm thanh trước các vật phẩm không nhìn thấy và chỉ vị trí.
+Busca Pokémon que se esconden en la hierba. La batería se recarga mientras caminas.
+Tìm kiếm Pokémon ẩn trong cỏ. Pin sạc lại khi bạn đi bộ.
+Un mapa que puede consultarse en cualquier momento y que te indica dónde te encuentras.
+Bản đồ có thể xem bất cứ lúc nào và cho biết bạn đang ở đâu.
+Cuerda larga y resistente que sirve para huir de cuevas y sitios cerrados en general.
+Dây dài và bền dùng để thoát khỏi hang động và các nơi kín nói chung.
+Pequeño monedero para guardar fichas.
+Ví nhỏ để đựng coin.
+Consigue despertar al instante a cualquier Pokémon y suena de maravilla.
+Có thể đánh thức bất kỳ Pokémon nào ngay lập tức và có âm thanh tuyệt vời.
+Un saco grande y resistente utilizado para transportar la ceniza volcánica.
+Túi lớn và bền dùng để vận chuyển tro núi lửa.
+Dispositivo hecho en SILPH S.A para ver Pokémon invisibles.
+Thiết bị do SILPH S.A. sản xuất để nhìn thấy Pokémon vô hình.
+Dispositivo hecho en DEVON para ver Pokémon invisibles.
+Thiết bị do DEVON sản xuất để nhìn thấy Pokémon vô hình.
+Una regadera con forma de Squirtle. Ayuda a que las bayas plantadas en tierra suelta crezcan mejor.
+Bình tưới hình Squirtle. Giúp Berry trồng trong đất tơi xốp phát triển tốt hơn.
+Una regadera con forma de Psyduck. Ayuda a que las bayas plantadas en tierra suelta crezcan mejor.
+Bình tưới hình Psyduck. Giúp Berry trồng trong đất tơi xốp phát triển tốt hơn.
+Una regadera con forma de Wailmer. Ayuda a que las bayas plantadas en tierra suelta crezcan mejor.
+Bình tưới hình Wailmer. Giúp Berry trồng trong đất tơi xốp phát triển tốt hơn.
+Una regadera con forma de Lotad. Ayuda a que las bayas plantadas en suelo blandito crezcan mejor.
+Bình tưới hình Lotad. Giúp Berry trồng trong đất mềm phát triển tốt hơn.
+Una flor que se suele regalar para expresar agradecimiento. Permite cambiar a Shaymin a su forma Cielo.
+Bông hoa thường được tặng để bày tỏ lòng biết ơn. Cho phép Shaymin thay đổi sang Sky Form.
+Espejo misterioso que refleja la verdad y devuelve los Pokémon a su forma original.
+Gương bí ẩn phản chiếu sự thật và trả Pokémon về hình dạng gốc.
+Vasija en la que se halla confinado el poder de cierto Pokémon desde hace mucho tiempo.
+Bình mà sức mạnh của một Pokémon nhất định đã bị giam cầm từ lâu.
+Catálogos con los distintos electrodomésticos que Rotom puede poseer.
+Danh mục các thiết bị gia dụng mà Rotom có thể chiếm hữu.
+Dispositivo para almacenar células de Zygarde. Permite cambiarle de forma y movs.
+Thiết bị để lưu trữ tế bào Zygarde. Cho phép thay đổi hình dạng và chiêu.
+Punta que permite fusionar a Kyurem con cierto Pokémon con el que, originariamente, formaba un solo ser.
+Đầu nhọn cho phép hợp nhất Kyurem với Pokémon nhất định mà ban đầu cùng là một sinh thể.
+Artefacto que permite fusionar a Necrozma, ávido de luz, con Solgaleo.
+Cổ vật cho phép hợp nhất Necrozma, háo hức ánh sáng, với Solgaleo.
+Artefacto que permite fusionar a Necrozma, ávido de luz, con Lunala.
+Cổ vật cho phép hợp nhất Necrozma, háo hức ánh sáng, với Lunala.
+Riendas que permiten unir a Calyrex con su montura.
+Dây cương cho phép kết hợp Calyrex với ngựa cỡi của nó.
+Misterioso amuleto redondo que aumenta la posibilidad de encontrar Huevos en la Guardería Pokémon.
+Bùa hộ mệnh huyền bí hình tròn tăng khả năng tìm thấy Trứng ở Nhà Trẻ Pokémon.
+Misterioso amuleto brillante que aumenta la probabilidad de encontrar Pokémon variocolores.
+Bùa hộ mệnh sáng bí ẩn tăng xác suất tìm thấy Pokémon shiny.
+Misterioso amuleto que aumenta la posibilidad de hacer capturas críticas.
+Bùa hộ mệnh bí ẩn tăng khả năng bắt chí mạng.
+Amuleto que aumenta los Puntos de Exp. que ganan los Pokémon en combate.
+Bùa hộ mệnh tăng Điểm Kinh Nghiệm mà Pokémon nhận được trong chiến đấu.
+Aro que sirve para activar el poder de la Mega Evolución.
+Vòng dùng để kích hoạt sức mạnh Mega Tiến Hóa.
+Te permite acceder al sistema de almacenamiento desde el equipo. En algunos lugares falla.
+Cho phép truy cập hệ thống lưu trữ từ đội. Ở một số nơi bị lỗi.
+Una tarjeta de identificación necesaria para acceder a los Puertos Espaciales.
+Thẻ nhận dạng cần thiết để truy cập vào các Cảng Không Gian.
+Un mapa viejo descolorido que muestra el camino a una determinada isla.
+Bản đồ cũ phai màu chỉ đường đến một hòn đảo nhất định.
+Mineral de color muy oscuro que permite evolucionar a Scyther.
+Khoáng vật rất tối màu cho phép tiến hóa Scyther.
+Extraño bloque compuesto de carbón fósil. Permite evolucionar a Ursaring.
+Khối lạ được tạo thành từ than hóa thạch. Cho phép tiến hóa Ursaring.
+Extraño cordón que recuerda a un cable. Permite evolucionar a ciertos Pokémon.
+Sợi dây kỳ lạ trông như cáp. Cho phép tiến hóa một số Pokémon nhất định.
+Si se usa en Dialga, esta gran gema le hace cambiar de forma.
+Nếu dùng cho Dialga, viên đá quý lớn này làm nó thay đổi hình dạng.
+Si se usa en Palkia, esta gran gema le hace cambiar de forma.
+Nếu dùng cho Palkia, viên đá quý lớn này làm nó thay đổi hình dạng.
+Tabla de piedra que convierte a Arceus en función del tipo del rival.
+Bảng đá chuyển đổi Arceus theo hệ của đối thủ.
+Tabla de piedra que potencia los movimientos de tipo Normal un 25%. Debe llevarla un Pokémon.
+Bảng đá tăng 25% chiêu hệ Thường. Phải để Pokémon mang.
+Si se usa en Giratina, esta gran gema le hace cambiar de forma.
+Nếu dùng cho Giratina, viên đá quý lớn này làm nó thay đổi hình dạng.
+Armadura que alberga sentimientos auspiciosos. Permite evolucionar a Charcadet.
+Giáp chứa đựng cảm xúc tốt đẹp. Cho phép tiến hóa Charcadet.
+Armadura que alberga sentimientos de rencor. Permite evolucionar a Charcadet.
+Giáp chứa đựng cảm xúc oán hận. Cho phép tiến hóa Charcadet.
+Curioso manuscrito que permite cambiar a Urshifu a su forma Estilo brusco.
+Bản thảo kỳ lạ cho phép Urshifu chuyển sang hình dạng Rapid Strike Style.
+Curioso manuscrito que permite cambiar a Urshifu a su forma Estilo fluido.
+Bản thảo kỳ lạ cho phép Urshifu chuyển sang hình dạng Single Strike Style.
+Fragmento de lo que parece una cuchilla desgastada. Permite evolucionar a Bisharp.
+Mảnh vỡ của thứ trông như lưỡi dao mòn. Cho phép tiến hóa Bisharp.
+Tanque que contiene energía. Si lo lleva un Pokémon que posea cierta habilidad, potenciará su poder.
+Bình chứa năng lượng. Nếu Pokémon có ability nhất định mang, sẽ tăng sức mạnh của nó.
+Escudo muy bonito que impide que otros Pokémon cambien la habilidad del Pokémon que lo lleva.
+Khiên rất đẹp ngăn Pokémon khác thay đổi ability của Pokémon mang.
+Amuleto brillante y transparente. Impide que otros Pokémon reduzcan las características de quien lo lleva.
+Bùa hộ mệnh sáng và trong suốt. Ngăn Pokémon khác giảm chỉ số của người mang.
+Quien la lleva aumenta sus características si el rival aumenta las suyas. De un solo uso.
+Người mang tăng chỉ số nếu đối thủ tăng của họ. Dùng một lần.
+Guante que aumenta la potencia de los movimientos con puños y evita que hagan contacto con el rival.
+Găng tay tăng sức mạnh các chiêu đấm và ngăn chúng tiếp xúc với đối thủ.
+Capa con capucha que protege de los efectos secundarios de los movimientos de sus rivales.
+Áo choàng có mũ bảo vệ khỏi hiệu ứng phụ của các chiêu đối thủ.
+Dado que siempre cae favorablemente. Los movimientos de ataque múltiple golpearán más veces.
+Xúc xắc luôn rơi thuận lợi. Các chiêu đa đòn sẽ đánh nhiều lần hơn.
+Moneda perteneciente al cofre de un Gimmighoul. Permite hacerle evolucionar.
+Đồng xu thuộc về rương của Gimmighoul. Cho phép tiến hóa nó.
+Un pequeño y raro trozo de bambú. Es muy popular entre cierta clase de gourmets.
+Một mảnh tre nhỏ và hiếm. Rất được một loại ẩm thực ưa chuộng.
+Un trozo grande y raro de bambú. Es muy popular entre cierta clase de gourmets.
+Một mảnh tre lớn và hiếm. Rất được một loại ẩm thực ưa chuộng.
+Antiguo libro de la región de Paldea que habla sobre especies de ensueño del pasado.
+Sách cổ của vùng Paldea nói về các loài ước mơ của quá khứ.
+Antiguo libro de la región de Paldea que habla sobre especies de ensueño del futuro.
+Sách cổ của vùng Paldea nói về các loài ước mơ của tương lai.
+Mochi preparado con bayas que aumenta en 50 EVs los PS de un Pokémon.
+Mochi được làm từ Berry tăng 50 EV HP của một Pokémon.
+Mochi preparado con bayas que aumenta en 50 EVs el Ataque de un Pokémon.
+Mochi được làm từ Berry tăng 50 EV Tấn Công của một Pokémon.
+Mochi preparado con bayas que aumenta en 50 EVs la Defensa de un Pokémon.
+Mochi được làm từ Berry tăng 50 EV Phòng Thủ của một Pokémon.
+Mochi preparado con bayas que aumenta en 50 EVs el At. Esp. de un Pokémon.
+Mochi được làm từ Berry tăng 50 EV Đặc Tấn của một Pokémon.
+Mochi preparado con bayas que aumenta en 50 EVs la Def. Esp. de un Pokémon.
+Mochi được làm từ Berry tăng 50 EV Đặc Phòng của một Pokémon.
+Mochi preparado con bayas que aumenta en 50 EVs la Velocidad de un Pokémon.
+Mochi được làm từ Berry tăng 50 EV Tốc Độ của một Pokémon.
+Mochi preparado con bayas que reinicia todos los EVs un Pokémon.
+Mochi được làm từ Berry đặt lại tất cả EV của một Pokémon.
+Hermosa pluma que brilla si le da el sol. Fortalece los ataques de tipo Hada.
+Chiếc lông đẹp sáng lên khi có ánh nắng. Tăng sức mạnh đòn hệ Tiên.
+Curiosa manzana recubierta de sirope que permite evolucionar a Applin.
+Quả táo kỳ lạ phủ xi-rô cho phép tiến hóa Applin.
+Cuenco mediocre que permite evolucionar a Poltchageist (forma Fraudulenta).
+Bát tầm thường cho phép tiến hóa Poltchageist (dạng Giả).
+Cuenco exquisito que permite evolucionar a Poltchageist (forma Opulenta).
+Bát tuyệt vời cho phép tiến hóa Poltchageist (dạng Thật).
+Extraña máscara que permite cambiar a Ogerpon a su forma Máscara Fuente.
+Mặt nạ kỳ lạ cho phép Ogerpon thay đổi sang Wellspring Mask Form.
+Extraña máscara que permite cambiar a Ogerpon a su forma Máscara Horno.
+Mặt nạ kỳ lạ cho phép Ogerpon thay đổi sang Hearthflame Mask Form.
+Extraña máscara que permite cambiar a Ogerpon a su forma Máscara Cimiento.
+Mặt nạ kỳ lạ cho phép Ogerpon thay đổi sang Cornerstone Mask Form.
+Máscara que se dice que perteneció a un Pokémon muy fuerte de la región de Noroteo.
+Mặt nạ được cho là từng thuộc về một Pokémon rất mạnh của vùng Noroteo.
+Metal resultante de la mezcla de otros metales. Permite evolucionar a Duraludon.
+Kim loại kết quả từ việc pha trộn các kim loại khác. Cho phép tiến hóa Duraludon.
+Extraño disco que parece estar relacionado con el Área Cero de Paldea.
+Đĩa kỳ lạ có vẻ liên quan đến Khu Vực Zero của Paldea.
+Baya Meloc de la más alta calidad. Hay un Pokémon que la adora.
+Rawst Berry chất lượng cao nhất. Có một Pokémon rất thích nó.
+Extraño meteorito proveniente del espacio. Permite cambiar de forma a Deoxys.
+Thiên thạch kỳ lạ đến từ không gian. Cho phép Deoxys thay đổi hình dạng.
+Un repelente que nunca se gasta. Puedes activarlo y desactivarlo.
+Thuốc xua đuổi không bao giờ hết. Bạn có thể bật và tắt nó.
+El Repelente infinito está desactivado.
+Thuốc Xua Đuổi Vô Hạn đang tắt.
+Dispositivo que ofrece información sobre los Pokémon salvajes del lugar en el que estés.
+Thiết bị cung cấp thông tin về Pokémon hoang dã ở nơi bạn đang ở.
+Aparato de usos limitados que permite curar a todo tu equipo. Se recarga en Centros Pokémon.
+Thiết bị dùng hạn chế cho phép chữa trị toàn bộ đội. Sạc lại ở Trung Tâm Pokémon.
+Aparato de usos limitados que permite curar a todo tu equipo. Se recarga en Centros Pokémon. Vacío.
+Thiết bị dùng hạn chế cho phép chữa trị toàn bộ đội. Sạc lại ở Trung Tâm Pokémon. Hết pin.
+Incubadora que permite mantener 6 huevos hasta que eclosionen.
+Máy ấp trứng cho phép giữ 6 trứng cho đến khi nở.
+Dispositivo con forma de flauta. Permite volar a distintos puntos ya visitados.
+Thiết bị hình sáo. Cho phép bay đến các điểm đã ghé thăm.
+Perteneció a un importante noble, pero le sentaría mejor a un Pokémon.
+Từng thuộc về một quý tộc quan trọng, nhưng sẽ phù hợp hơn với một Pokémon.
+La pluma parece moverse siempre como si hubiera una ligera brisa.
+Chiếc lông dường như luôn di chuyển như thể có làn gió nhẹ.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Pikachu en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Pikachu trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Eevee en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Eevee trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Lapras en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Lapras trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Butterfree en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Butterfree trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Machamp en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Machamp trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Kingler en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Kingler trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Garbodor en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Garbodor trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Corvinight en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Corviknight trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Orbeetle en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Orbeetle trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Drednaw en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Drednaw trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Coalossal en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Coalossal trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Flapple y Appletun en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Flapple và Appletun trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Sandaconda en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Sandaconda trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Toxtricity en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Toxtricity trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Centiskorch en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Centiskorch trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Hatterene en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Hatterene trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Grimmsnarl en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Grimmsnarl trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Alcremie en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Alcremie trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Copperajah en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Copperajah trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Duraludon en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Duraludon trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Dragonite en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Dragonite trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Hawlucha en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Hawlucha trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Victreebel en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Victreebel trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Chesnaught en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Chesnaught trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Delphox en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Delphox trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Greninja en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Greninja trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Clefable en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Clefable trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Starmie en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Starmie trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Meganium en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Meganium trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Feraligatr en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Feraligatr trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Skarmory en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Skarmory trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Froslass en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Froslass trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Emboar en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Emboar trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Excadril en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Excadrill trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Scolipede en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Scolipede trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Eelektross en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Eelektross trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Scrafty en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Scrafty trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Chandelure en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Chandelure trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Pyroar en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Pyroar trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Malamar en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Malamar trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Barbaracle en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Barbaracle trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Dragalge en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Dragalge trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Drampa en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Drampa trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Falinks en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Falinks trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Zygarde en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Zygarde trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Floette Flor Eterna en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Floette Eternal Flower trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Scovillain en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Scovillain trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Crabominable en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Crabominable trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Staraptor en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Staraptor trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Golurk en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Golurk trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Raichu en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Raichu trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Darkrai en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Darkrai trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Tatsugiri en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Tatsugiri trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Magearna en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Magearna trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Golisopod en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Golisopod trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Meowstic en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Meowstic trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Heatran en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Heatran trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Glimmora en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Glimmora trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Baxcalibur en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Baxcalibur trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Chimecho en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Chimecho trong chiến đấu.
+Una de las misteriosas Megapiedras. Permite megaevolucionar a Zeraora en combate.
+Một trong những Mega Stone bí ẩn. Cho phép Mega Tiến Hóa Zeraora trong chiến đấu.
+Un ticket para embarcar en el SS Anne de Ciudad Carmín.
+Vé lên tàu SS Anne ở Thành Phố Vermilion.
+Se puede intercambiar por una bici en Ciudad Celeste.
+Có thể đổi lấy xe đạp ở Thành Phố Cerulean.
+Reaniman a un Pokemon. Funcionan incluso en un Nuzlocke.
+Hồi sức một Pokémon. Hoạt động ngay cả trong Nuzlocke.
+Dispositivo desarrollado por Silph SA que permite ver entidades espectrales.
+Thiết bị do Silph S.A. phát triển cho phép nhìn thấy các thực thể ma.
+Una llave que activa el ascensor de la Guarida Rocket.
+Chìa khóa kích hoạt thang máy của Sào Huyệt Rocket.
+El resguardo de una generosa compra de Leche Mu-Mu.
+Biên lai của một đơn hàng Moo-Moo Milk hào phóng.
+Pertenece a la Copiona de Ciudad Azafrán.
+Thuộc về Người Bắt Chước ở Thành Phố Saffron.
+Un anillo de compromiso que llevó una persona casada alguna vez
+Nhẫn đính hôn mà một người đã kết hôn từng đeo.
+Su aroma es embriagador.
+Hương thơm của nó ngây ngất.
+Combinada con otra tarjeta
+Kết hợp với một thẻ khác.
+El siguiente Pokémon salvaje que te encuentres será variocolor (no pueden salir super shinys).
+Pokémon hoang dã tiếp theo bạn gặp sẽ là shiny (không thể ra super shiny).
+Activa el ascensor secreto de la Guarida Rocket.
+Kích hoạt thang máy bí mật của Sào Huyệt Rocket.
+Tal vez, si se acompañase del sonido de una campana más grande...
+Có lẽ, nếu được kết hợp với âm thanh của một chiếc chuông lớn hơn...
+Atrae Pokémon en los Nidos Alfa de la Isla Prisma.
+Thu hút Pokémon vào Tổ Alpha của Đảo Prisma.
+Abre la parte trasera de un camión.
+Mở phần sau của một chiếc xe tải.
+Entrégalas en los Altares de las Aves Guardianas.
+Giao chúng tại Bàn Thờ của Chim Hộ Vệ.
+Está sorprendentemente fría.
+Lạnh một cách đáng ngạc nhiên.
+Al tocarla, notas una pequeña corriente
+Khi chạm vào, bạn cảm nhận được dòng điện nhỏ.
+Es sorprendentemente cálida.
+Ấm một cách đáng ngạc nhiên.
+Un diploma por haber completado la Pokédex.
+Bằng khen vì đã hoàn thành Pokédex.
+Producto de alta cocina. Altera el género del Pokémon.
+Sản phẩm ẩm thực cao cấp. Thay đổi giới tính của Pokémon.
+Aumenta un 50% las estadísticas si puede evolucionar 2 veces. Evita evolucionar.
+Tăng 50% chỉ số nếu có thể tiến hóa 2 lần. Ngăn tiến hóa.
+Capsula que permite randomizar las habilidades de un Pokémon.
+Viên nang cho phép ngẫu nhiên hóa ability của một Pokémon.
+Permite revelar verdades ocultas en el mundo...
+Cho phép tiết lộ những sự thật ẩn giấu trong thế giới...
+Una herramienta que permite romper rocas pequeñas y hacerlas desaparecer.
+Công cụ cho phép phá vỡ đá nhỏ và làm chúng biến mất.
+Una herramienta que permite cortar arbustos y hacerlos desaparecer, muy ecológico.
+Công cụ cho phép cắt bụi cây và làm chúng biến mất, rất thân thiện với môi trường.
+Brazos con super fuerza que permiten mover objetos pesados.
+Cánh tay với siêu sức mạnh cho phép di chuyển vật nặng.
+Artilugio que permite iluminar zonas oscuras.
+Thiết bị cho phép chiếu sáng các khu vực tối.
+Te permite navegar por el agua.
+Cho phép bơi trên mặt nước.
+Herramientas para poder trepar por una pared rocosa.
+Công cụ để leo trên vách đá.
+Álbum donde puedes ver todas las fotografías que te vayas haciendo por la región.
+Album nơi bạn có thể xem tất cả ảnh đã chụp trong hành trình qua vùng.
+Libro donde puedes ver las reglas de los distintos modos de juego que tengas activos.
+Sách nơi bạn có thể xem các quy tắc của các chế độ chơi khác nhau đang hoạt động.
+Moneda muy valorada por entrenadores Prodigiosos. Es posible que alguien la acepte a cambio de intercambios.
+Đồng xu được các huấn luyện viên Kỳ Diệu đánh giá cao. Có thể ai đó chấp nhận để đổi lấy trao đổi.
+Dispositivo para usar si estas bugueado atravesando una pared o en una casilla de la que no puedes salir.
+Thiết bị để dùng nếu bạn bị lỗi đi xuyên tường hoặc ở ô không thể thoát ra.
