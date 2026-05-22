@@ -246,6 +246,7 @@ Notes:
 
 ## Recent Actions
 - 2026-05-22: Ran syntax compile and demo generation for `per_hit` stat-stage path. Created `tools/_demo_per_hit.py` and executed it; compiled JSON and Ruby output saved to `tools/_demo_per_hit_compiled.json` and `tools/_demo_per_hit_output.rb`. No game data (`Data/*.dat`, `Scripts.rxdata`) were modified.
+ - 2026-05-23: Implemented Builder v2 UI updates: renamed "Effect Type" to "Mechanic Style", added Sitrus-style threshold healing and On-hit Absorption Healing archetypes in the GUI, wired new effect types in `tools/custom_item/effect_pool.py`, and added `heal_on_being_hit` generator in `tools/custom_item/hook_compiler.py`. Ran `py_compile` on modified files.
 
 Near-term maintenance:
 - Decide whether to also remove manifest-linked baked `DRAGONSOUL` from `Data/items.dat` in a separate explicit cleanup/migration. This is not orphan cleanup and should only happen after confirming runtime/held-item behavior is solid.

@@ -36,6 +36,23 @@
 - Next action: install Inno Setup or provide `-IsccPath` to `tools\installer\build_installer.ps1` and re-run installer build.
 
 
+## Session 2026-05-23 (Implement: Archetype UI + On-Hit Heal Generator)
+
+### Scope
+- Add Archetype-style labels to the Custom Effect Builder UI, show/hide archetype-specific fields, and compile new heal-on-being-hit and threshold-heal templates.
+
+### Implement
+- UI: Renamed "Effect Type" to "Mechanic Style" and added new archetype labels including Sitrus-style threshold healing, On-hit Absorption Healing, and On-hit Stat Raise. Added `HP Threshold (%)` control (hidden by default) and show/hide behavior using grid/pack forget to keep the layout tidy.
+- Backend: Added builder mappings in `tools/custom_item/effect_pool.py` for `heal_at_hp_threshold`, `heal_on_being_hit`, and `stat_raise_on_hit`. Allowed new templates in `CUSTOM_EFFECT_ALLOWED_TEMPLATES`.
+- Hook compiler: Added `_gen_heal_on_being_hit` generator in `tools/custom_item/hook_compiler.py` and routed `on_being_hit/heal_on_being_hit` to the new generator. Kept existing `heal_at_hp_threshold` and `stat_raise_on_hit` generators.
+
+### Verification
+- Ran `python -m py_compile` on modified modules; no syntax errors reported.
+
+### Request Outcomes
+- UI + backend wiring for new archetypes implemented. Next: runtime test in-game and polish GUI placements as requested by user.
+
+
 ## Session 2026-05-12 (Implement: Custom Effect Builder v1 Compile-Path Hardening + Builder v2 Prep)
 
 ### Scope

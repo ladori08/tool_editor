@@ -1000,6 +1000,63 @@ def _gen_stat_raise_on_hit(item_id: str, effect_id: str, params: dict[str, Any])
     return body
 
 
+def _gen_heal_on_being_hit(item_id: str, effect_id: str, params: dict[str, Any]) -> list[str]:
+    """on_being_hit / heal_on_being_hit — heal the holder when hit by a matching move type."""
+    heal_fixed = params.get("heal_fixed_hp")
+    heal_num = params.get("heal_fraction_numerator")
+    heal_den = params.get("heal_fraction_denominator")
+    require_move_type = params.get("require_move_type")
+    require_se = bool(params.get("require_super_effective", False))
+
+    # Compute heal expression (target is the holder in OnBeingHit handlers)
+    if heal_fixed is not None:
+        heal_expr = f"{int(heal_fixed)}"
+    elif heal_num is not None and heal_den is not None:
+        heal_expr = f"[(target.totalhp.to_f * {int(heal_num)} / {int(heal_den)}).ceil, 1].max"
+    else:
+        heal_expr = "[(target.totalhp.to_f / 4).ceil, 1].max"
+
+    body = [
+        f"# --- pool effect: {effect_id} for {item_id} ---",
+        "begin",
+        "  if defined?(Battle::ItemEffects::OnBeingHit)",
+        f"    Battle::ItemEffects::OnBeingHit.add(:{item_id},",
+        "      proc { |item, user, target, move, battle|",
+        "        next unless CustomItemPatch.custom_item_effect_item_active?(target)",
+        "        next if !user || user == target || user.fainted?",
+    ]
+    if require_move_type:
+        body.append(f"        next unless move.calcType == {_ruby_type(str(require_move_type))}")
+    if require_se:
+        body += [
+            "        begin",
+            "          tm = move.pbCalcTypeMod(move.calcType, user, target)",
+            "          if defined?(Effectiveness)",
+            "            next if tm <= Effectiveness::NORMAL_EFFECTIVE",
+            "          else",
+            "            next if tm <= 8",
+            "          end",
+            "        rescue StandardError",
+            "          next",
+            "        end",
+        ]
+
+    body += [
+        "        next unless target.canHeal?",
+        f"        hp_gain = {heal_expr}",
+        "        target.pbRecoverHP(hp_gain)",
+        '        battle.pbDisplay(_INTL("{1} restored its HP with {2}!", target.pbThis, target.itemName))',
+        "      }",
+        "    )",
+        "  end",
+        "rescue StandardError => e",
+        f'  echoln("CustomItemPatch pool [{effect_id}]: #{{e}}") if defined?(echoln)',
+        "end",
+        "",
+    ]
+    return body
+
+
 def _gen_heal_at_hp_threshold(item_id: str, effect_id: str, params: dict[str, Any]) -> list[str]:
     """hp_heal / heal_at_hp_threshold (Sitrus, Oran)."""
     th_num = max(1, int(params.get("threshold_numerator", 1)))
@@ -1699,6 +1756,8 @@ def compile_pool_effects(item_pool_effects: dict[str, list[dict[str, Any]]]) -> 
                 lines.extend(_gen_contact_recoil_damage(item_id, effect_id, params))
             elif hook == "on_being_hit" and template == "inflict_status_on_contact":
                 lines.extend(_gen_inflict_status_on_contact(item_id, effect_id, params))
+            elif hook == "on_being_hit" and template == "heal_on_being_hit":
+                lines.extend(_gen_heal_on_being_hit(item_id, effect_id, params))
             elif hook == "on_being_hit" and template == "stat_raise_on_hit":
                 lines.extend(_gen_stat_raise_on_hit(item_id, effect_id, params))
             elif hook == "hp_heal" and template == "heal_at_hp_threshold":

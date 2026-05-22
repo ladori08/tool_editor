@@ -58,4 +58,11 @@ Notes:
 - Hook compiler should emit per-hit loops when `per_hit` true and preserve `once_per_battle` semantics.
 - GUI should add `per_hit` control, produce lowercase slugs, and enforce timing constraints by category.
 
+8) New Archetypes added (v2)
+- Sitrus-style threshold healing (`heal_at_hp_threshold`): UI exposes `threshold_percent` plus heal fraction; compiler emits `hp_heal` / `heal_at_hp_threshold` params (`threshold_numerator`/`threshold_denominator`, `heal_fraction_numerator`/`heal_fraction_denominator` or `heal_fixed_hp`). Hook generator registers under `Battle::ItemEffects::HPHeal` and performs the threshold check before healing.
+- On-hit Absorption Healing (`heal_on_being_hit`): UI exposes move-type condition and heal fraction/fixed HP. Compiler emits `on_being_hit` / `heal_on_being_hit` params (`require_move_type`, `require_super_effective`, `heal_fraction_*`/`heal_fixed_hp`). Hook generator registers under `Battle::ItemEffects::OnBeingHit` and heals the holder when the condition matches.
+- On-hit Stat Raise (`stat_raise_on_hit`): UI exposes stats, stages, `once_per_battle` and move-type condition. Compiler emits `on_being_hit` / `stat_raise_on_hit` params and hook generator raises target stats when hit (Weakness Policy-style), respecting `once_per_battle`.
+
+Prepared by: GitHub Copilot (GPT-5 mini)
+
 Prepared by: GitHub Copilot (GPT-5 mini)
