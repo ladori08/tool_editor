@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['D:\\Games\\Rom games\\Pokemon Indigo 4.0.2 EN-5\\tools\\assets\\masterball.ico'],
+    icon=['C:\\Users\\duyle\\tool_editor\\tools\\assets\\masterball.ico'],
 )

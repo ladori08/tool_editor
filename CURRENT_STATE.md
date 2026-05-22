@@ -244,6 +244,9 @@ Notes:
 - add a real Ruby syntax check if a compatible Ruby executable becomes available
 - If approved, implement Custom Effect authoring before or alongside bridge hardening so new bridge handlers immediately become user-creatable effect templates.
 
+## Recent Actions
+- 2026-05-22: Ran syntax compile and demo generation for `per_hit` stat-stage path. Created `tools/_demo_per_hit.py` and executed it; compiled JSON and Ruby output saved to `tools/_demo_per_hit_compiled.json` and `tools/_demo_per_hit_output.rb`. No game data (`Data/*.dat`, `Scripts.rxdata`) were modified.
+
 Near-term maintenance:
 - Decide whether to also remove manifest-linked baked `DRAGONSOUL` from `Data/items.dat` in a separate explicit cleanup/migration. This is not orphan cleanup and should only happen after confirming runtime/held-item behavior is solid.
 - Harden fixed runtime bridge v1:

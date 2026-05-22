@@ -1,5 +1,41 @@
 # WORKLOG
 
+## Session 2026-05-20 (Analyze: Read CURRENT_STATE.md / TASKS.md / WORKLOG.md)
+
+### Scope
+- Bootstrap current chat by reading `CURRENT_STATE.md`, `TASKS.md`, and `WORKLOG.md` to confirm project status.
+
+### Analyze
+- Read the three files to capture the current project state, active tasks, and recent worklog entries.
+
+### Implement
+- No code changes. This is an analyze-only request to collect context.
+
+### Request Outcomes
+- User request (read project state files) -> done.
+
+## Session 2026-05-22 (Implement: Compile & Demo per_hit)
+
+### Scope
+- Run `py_compile` on modified `tools/` modules and generate a demo custom effect using the per-hit stat-stage path.
+
+### Analyze
+- Confirm that recent edits (per_hit param in compiler and hook generator) compile and produce expected Ruby.
+
+### Implement
+- Created `tools/_demo_per_hit.py` to compile an example authoring payload and emit compiled JSON and Ruby preview.
+- Ran syntax checks via `python -m py_compile` and executed the demo with the Windows Python launcher (`py -3`).
+- Outputs written:
+  - `tools/_demo_per_hit_compiled.json`
+  - `tools/_demo_per_hit_output.rb`
+
+### Request Outcomes
+- Demo compile & Ruby generation -> done. Py compile OK.
+- EXE build: succeeded — `tools/PokemonIndigoSaveEditor.exe` created via PyInstaller.
+- Installer build: blocked — `ISCC.exe` (Inno Setup Compiler) not found; installer not produced.
+- Next action: install Inno Setup or provide `-IsccPath` to `tools\installer\build_installer.ps1` and re-run installer build.
+
+
 ## Session 2026-05-12 (Implement: Custom Effect Builder v1 Compile-Path Hardening + Builder v2 Prep)
 
 ### Scope

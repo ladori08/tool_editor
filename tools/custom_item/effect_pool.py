@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -91,6 +92,26 @@ def slug_effect_id_from_name(name: str, fallback: str = "CUSTOM_EFFECT") -> str:
     text = re.sub(r"[^A-Za-z0-9]+", "_", text).upper()
     text = re.sub(r"_+", "_", text).strip("_")
     return text or fallback
+
+
+def slug_effect_id_from_name_lower(name: str, fallback: str = "custom_effect") -> str:
+    """Generate a lowercase, underscored slug from a name removing diacritics.
+
+    This is intended for GUI-friendly, real-time suggestions (e.g. "leftovers_style_heal").
+    """
+    text = str(name or "").strip()
+    if not text:
+        return fallback
+    # Normalize and remove combining diacritical marks (Vietnamese accents, etc.)
+    try:
+        normalized = unicodedata.normalize("NFKD", text)
+        no_diacritics = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    except Exception:
+        no_diacritics = text
+    no_diacritics = no_diacritics.lower()
+    no_diacritics = re.sub(r"[^a-z0-9]+", "_", no_diacritics)
+    no_diacritics = re.sub(r"_+", "_", no_diacritics).strip("_")
+    return no_diacritics or fallback
 
 
 def _default_custom_effect_manifest() -> dict[str, Any]:
@@ -319,6 +340,8 @@ def compile_custom_effect_authoring(authoring: dict[str, Any]) -> tuple[dict[str
         if hook == "after_move_use":
             params["trigger"] = "after_successful_move"
             params["once_per_battle"] = _as_bool(values.get("once_per_battle", True))
+            # If this stat-stage effect should trigger per hit on multi-hit moves
+            params["per_hit"] = _as_bool(values.get("per_hit", False))
         else:
             params["trigger"] = "end_of_round"
     elif effect_type == "speed_multiplier":

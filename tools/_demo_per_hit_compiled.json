@@ -1,0 +1,24 @@
+{
+  "category": "Stat",
+  "description": "Demo effect: raise ATTACK by 1 per hit (multi-hit moves)",
+  "display_name": "Demo Per-Hit Raise",
+  "hook": "after_move_use",
+  "id": "DEMO_PER_HIT",
+  "notes": "User-created custom effect from custom_effect_manifest.json.",
+  "params": {
+    "direction": "raise",
+    "once_per_battle": true,
+    "per_hit": true,
+    "stages": 1,
+    "stats": [
+      "ATTACK"
+    ],
+    "trigger": "after_successful_move"
+  },
+  "risk_level": "low",
+  "source_id": "DEMO_PER_HIT",
+  "source_kind": "custom",
+  "support_status": "supported",
+  "target": "holder",
+  "template": "raise_user_stat_stage"
+}
