@@ -56,14 +56,16 @@ CUSTOM_EFFECT_ALLOWED_TEMPLATES = {
     ("hp_heal", "heal_at_hp_threshold"),
     ("on_being_hit", "stat_raise_on_hit"),
     ("on_being_hit", "heal_on_being_hit"),
+    ("after_move_use", "apply_status_target"),
+    ("after_move_use", "lower_target_stat_stage"),
 }
 BUILDER_V1_CATEGORY_TYPE_MAP: dict[str, list[str]] = {
     "damage": ["damage_multiplier"],
     "healing": ["heal_holder", "heal_at_hp_threshold", "heal_on_being_hit", "drain_damage_dealt"],
-    "stat": ["change_user_stat_stage", "raise_user_stat_stage", "stat_raise_on_hit"],
-    "status": [],
+    "stat": ["change_user_stat_stage", "raise_user_stat_stage", "stat_raise_on_hit", "lower_target_stat_stage"],
+    "status": ["apply_status_target"],
     "speed": ["speed_multiplier"],
-    "contact": [],
+    "contact": ["apply_status_target", "lower_target_stat_stage"],
     "end_turn": ["heal_holder", "heal_at_hp_threshold", "change_user_stat_stage", "raise_user_stat_stage"],
     "battle_field": [],
 }
@@ -388,6 +390,48 @@ def compile_custom_effect_authoring(authoring: dict[str, Any]) -> tuple[dict[str
             params["require_move_type"] = require_move_type
         if require_se:
             params["require_super_effective"] = True
+    elif effect_type == "apply_status_target":
+        status = _clean_symbol(values.get("status", "POISON"))
+        allowed_statuses = {"BURN", "POISON", "TOXIC", "PARALYSIS", "SLEEP", "FREEZE", "FROZEN"}
+        if status not in allowed_statuses:
+            errors.append(f"Unsupported status for apply_status_target: {status or '<empty>'}.")
+            status = "POISON"
+        chance = _as_int(values.get("chance_percent", values.get("percent", 100)), 100)
+        if chance <= 0 or chance > 100:
+            errors.append("Chance percent must be in range 1..100.")
+            chance = max(1, min(100, chance))
+        hook = "after_move_use"
+        template = "apply_status_target"
+        params = {
+            "status": status,
+            "chance_percent": chance,
+        }
+    elif effect_type == "lower_target_stat_stage":
+        stats_raw = values.get("stats", values.get("stat", "DEFENSE"))
+        if isinstance(stats_raw, str):
+            stats = [_clean_symbol(x) for x in re.split(r"[,;/]+", stats_raw) if _clean_symbol(x)]
+        elif isinstance(stats_raw, list):
+            stats = [_clean_symbol(x) for x in stats_raw if _clean_symbol(x)]
+        else:
+            stats = []
+        if not stats:
+            errors.append("At least one target stat must be selected.")
+            stats = ["DEFENSE"]
+        stages = _as_int(values.get("stages", 1), 1)
+        if stages < 1 or stages > 6:
+            errors.append("Stat stages must be in range 1..6.")
+            stages = 1
+        chance = _as_int(values.get("chance_percent", values.get("percent", 100)), 100)
+        if chance <= 0 or chance > 100:
+            errors.append("Chance percent must be in range 1..100.")
+            chance = max(1, min(100, chance))
+        hook = "after_move_use"
+        template = "lower_target_stat_stage"
+        params = {
+            "stats": stats,
+            "stages": abs(stages),
+            "chance_percent": chance,
+        }
     elif effect_type in {"raise_user_stat_stage", "change_user_stat_stage"}:
         stats_raw = values.get("stats", values.get("stat", "ATTACK"))
         if isinstance(stats_raw, str):

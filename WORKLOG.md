@@ -1,5 +1,182 @@
 # WORKLOG
 
+## Session 2026-05-25 (Implement: Remove Manual Auto Controls + Effect-First Description)
+
+### Scope
+- Remove the unnecessary circled manual controls in Custom Effect dialog and make Description generation consistently effect-first.
+
+### Analyze
+- User reported two UX issues:
+  - manual controls (`Auto` ID button / description generation controls) were unnecessary
+  - when Description was empty and only Name changed, generated Description could follow Name fallback instead of current effect defaults/values.
+
+### Implement
+- Updated `tools/pokemon_indigo_save_editor_gui.py`:
+  - removed `Auto` button next to `Effect ID`
+  - removed `Auto Description` checkbox
+  - removed `Generate Description` button
+  - Description generation is now system-driven on form changes via compile-shape mechanics.
+  - added explicit mechanics mapping for `damage_multiplier` in `_custom_pool_effect_mechanics_lines(...)` so initial/default effect state generates mechanics text from effect params, not from Name fallback text.
+
+### Verification
+- Compile check passed:
+  - `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/custom_item/patcher.py tools/pokemon_indigo_game_data.py`
+- Rebuild passed:
+  - `tools/PokemonIndigoSaveEditor.exe` (`2026-05-25 17:48:38`, `11,561,405` bytes)
+  - `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-25 17:48:41`, `13,524,339` bytes)
+
+### Request Outcomes
+- User request (remove circled controls and make Description effect-driven) -> `done`.
+
+## Session 2026-05-25 (Implement: Custom Effects Left-Column Width Reduction)
+
+### Scope
+- Reduce the left column width in the `Custom Effects` dialog so the editor area is less cramped.
+
+### Analyze
+- User feedback confirmed the `Parallel Custom Effects` panel was visually too wide for its content.
+
+### Implement
+- Updated `tools/pokemon_indigo_save_editor_gui.py` (`manage_custom_effects`):
+  - set dialog column 0 `minsize=260`
+  - set left frame width to `260` and disabled geometry propagation (`grid_propagate(False)`)
+  - reduced left listbox width from `38` to `26`
+
+### Verification
+- Compile check passed:
+  - `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/custom_item/patcher.py tools/pokemon_indigo_game_data.py`
+- Rebuild passed:
+  - `tools/PokemonIndigoSaveEditor.exe` (`2026-05-25 17:00:28`, `11,562,724` bytes)
+  - `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-25 17:00:32`, `13,526,450` bytes)
+
+### Request Outcomes
+- User request (make left column shorter/narrower) -> `done`.
+
+## Session 2026-05-24 (Implement: Builder Auto-Description + Target On-Hit Effects)
+
+### Scope
+- Add two requested capabilities in Custom Effect Builder:
+  - auto-regenerate Description when effect values change
+  - option to inflict status or lower target stats when holder attacks.
+
+### Analyze
+- Existing description generation was manual/limited and did not continuously track parameter edits.
+- Runtime compiler already supported combined `after_move_use` templates for `apply_status_target` and `lower_target_stat_stage`, but Builder mappings/UI did not expose these safely.
+
+### Implement
+- Updated `tools/pokemon_indigo_save_editor_gui.py`:
+  - Added `Auto Description` mode (default on), so generated mechanics text updates when effect fields change.
+  - Manual edits in Description now auto-disable `Auto Description` to preserve user-authored text.
+  - Added new mechanic styles:
+    - `Inflict target status on hit`
+    - `Lower target stat stage on hit`
+  - Added target-status selector and chance-based `%` flow (`Chance Percent`) for on-hit effects.
+  - Added mechanics summary lines for `apply_status_target` and `lower_target_stat_stage`.
+- Updated `tools/custom_item/effect_pool.py`:
+  - Added Builder compile support for `apply_status_target` and `lower_target_stat_stage`.
+  - Expanded custom-effect allowlist and category mapping for new effect types.
+- Updated `tools/custom_item/hook_compiler.py`:
+  - `lower_target_stat_stage` generator path now supports multi-stat lists (`stats: [...]`) in combined after-move handling.
+
+### Verification
+- Compile check passed:
+  - `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/custom_item/patcher.py tools/pokemon_indigo_game_data.py`
+- Static smoke checks passed:
+  - `TEST_STATUS_ON_HIT` compiled to `after_move_use/apply_status_target`.
+  - `TEST_LOWER_TARGET` compiled to `after_move_use/lower_target_stat_stage` with multi-stat params.
+- Rebuild passed:
+  - `tools/PokemonIndigoSaveEditor.exe` (`2026-05-24 15:44:16`, `11,563,011` bytes)
+  - `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-24 15:44:19`, `13,526,487` bytes)
+
+### Request Outcomes
+- User request (auto-sync Description from effect values) -> `done`.
+- User request (add on-hit target status/stat-drop option) -> `done`.
+
+## Session 2026-05-24 (Implement: Custom Effect Description Recursion Fix)
+
+### Scope
+- Fix repeated `Generate Description` behavior in Custom Effect Builder where extra blank/`Mechanics:` lines appeared on subsequent clicks.
+
+### Analyze
+- Root cause: description generation path indirectly reused current Description text as fallback mechanics source for templates lacking explicit mechanics mapping (notably `speed_multiplier`), creating recursive self-appending content.
+
+### Implement
+- Updated `tools/pokemon_indigo_save_editor_gui.py`:
+  - `_custom_effect_builder_generated_description(...)` now compiles from a clean payload (`description=""`), preventing self-feeding from existing Description text.
+  - Filters out blank lines and literal `Mechanics:` lines before composing generated bullets.
+  - Added explicit mechanics mapping for `speed_multiplier` in `_custom_pool_effect_mechanics_lines(...)`.
+
+### Verification
+- Compile check passed:
+  - `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/custom_item/patcher.py tools/pokemon_indigo_game_data.py`
+- Rebuild passed:
+  - `tools/PokemonIndigoSaveEditor.exe` (`2026-05-24 14:31:19`, `11,558,685` bytes)
+  - `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-24 14:31:21`, `13,522,169` bytes)
+
+### Request Outcomes
+- User request (fix repeated Generate Description adding empty/duplicate mechanics lines) -> `done`.
+
+## Session 2026-05-24 (Implement: Custom Effect Builder Input/Generation Polish)
+
+### Scope
+- Improve Custom Effect Builder UX for Drain Percent notation, ID generation smoothness, and Description generation flow.
+
+### Analyze
+- The form showed `Drain Percent` without `%`, which made the expected unit less explicit.
+- `Effect ID` auto-generation was bound to every `Name` keypress, causing frequent re-generation during typing.
+- `Description` lacked a dedicated generation action despite having enough compiled mechanics data in many cases.
+
+### Implement
+- Updated `tools/pokemon_indigo_save_editor_gui.py`:
+  - Added inline `%` label next to `Drain Percent` input.
+  - Added `Effect ID` `Auto` button.
+  - Changed ID auto-generation behavior:
+    - trigger on `Name` focus-out / Enter (instead of every keystroke)
+    - respect manual `Effect ID` edits (stop auto-overwrite once user edits ID)
+  - Added mechanics-based description generation:
+    - new `Generate Description` button
+    - auto-fill Description only when it is blank and compile-shape is valid
+    - generated text format: `Mechanics:` bullet list derived from compiled effect mechanics lines.
+
+### Verification
+- Compile check passed:
+  - `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/custom_item/patcher.py tools/pokemon_indigo_game_data.py`
+- Rebuild passed after code changes:
+  - `tools/PokemonIndigoSaveEditor.exe` (`2026-05-24 14:27:56`, `11,559,737` bytes)
+  - `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-24 14:27:59`, `13,523,031` bytes)
+
+### Request Outcomes
+- User request (add `%` hint + smooth ID/Description generation behavior) -> `done`.
+
+## Session 2026-05-24 (Implement: Sync PR + Rebuild Release)
+
+### Scope
+- Pull the latest PR created from another machine and run full release build under current project rules.
+
+### Analyze
+- Checked local branch/remote status and discovered open PR head `refs/pull/1/head`.
+- Confirmed `main` was behind PR commits and suitable for fast-forward merge.
+
+### Implement
+- Fetched PR #1 into local branch `pr-1` and fast-forward merged into `main`:
+  - `7e72bc7d` chore: update logs â€” EXE built; installer blocked (ISCC missing)
+  - `e00ad503` Custom Effect Builder v2 starter archetypes + hook compiler/UI/docs updates
+- Ran compile check:
+  - `python -m py_compile tools/pokemon_indigo_save_editor_gui.py tools/custom_item/effect_pool.py tools/custom_item/hook_compiler.py tools/custom_item/patcher.py tools/pokemon_indigo_game_data.py`
+- Ran release build:
+  - `tools/build_release.bat`
+
+### Verification
+- Compile check passed.
+- EXE build passed:
+  - `tools/PokemonIndigoSaveEditor.exe` (`2026-05-24 14:16:19`, `11,558,879` bytes)
+- Installer build passed:
+  - `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-24 14:16:22`, `13,521,720` bytes)
+
+### Request Outcomes
+- User request (pull latest PR from other machine) -> `done`.
+- User request (run build and follow rules) -> `done`.
+
 ## Session 2026-05-20 (Analyze: Read CURRENT_STATE.md / TASKS.md / WORKLOG.md)
 
 ### Scope
