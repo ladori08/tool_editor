@@ -231,6 +231,7 @@ def _gen_raise_user_stat_stage(item_id: str, effect_id: str, params: dict[str, A
     direction = str(params.get("direction", "raise") or "raise").strip().lower()
     is_lower = direction == "lower"
     once_per_battle = bool(params.get("once_per_battle", True))
+    per_hit = bool(params.get("per_hit", False))
     tracker_suffix = _safe_effect_id(effect_id)
     tracker_var = f":@custom_item_pool_once_{tracker_suffix}"
     lines = [
@@ -245,27 +246,49 @@ def _gen_raise_user_stat_stage(item_id: str, effect_id: str, params: dict[str, A
             f"      tracker = {tracker_var}",
             "      next if user.instance_variable_defined?(tracker) && user.instance_variable_get(tracker)",
         ]
-    lines += [
-        f"      stats = [{stat_symbols}]",
-        "      any_raised = false",
-        "      stats.each do |stat|",
-        (
-            "        next unless user.pbCanLowerStatStage?(stat, user)"
-            if is_lower else
-            "        next unless user.pbCanRaiseStatStage?(stat, user)"
-        ),
-        (
-            f"        user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
-            if is_lower else
-            f"        user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
-        ),
-        "        any_raised = true",
-        "      end",
-    ]
-    if once_per_battle:
+    lines += [f"      stats = [{stat_symbols}]", "      any_raised = false"]
+    if per_hit:
+        # Run the stat-change logic once per hit (numHits may be nil)
         lines += [
-            "      user.instance_variable_set(tracker, true) if any_raised",
+            "      hits = (numHits || 1)",
+            "      hits.times do",
+            "        stats.each do |stat|",
+            (
+                "          next unless user.pbCanLowerStatStage?(stat, user)"
+                if is_lower
+                else
+                "          next unless user.pbCanRaiseStatStage?(stat, user)"
+            ),
+            (
+                f"          user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
+                if is_lower
+                else
+                f"          user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
+            ),
+            "          any_raised = true",
+            "        end",
+            "      end",
         ]
+    else:
+        lines += [
+            "      stats.each do |stat|",
+            (
+                "        next unless user.pbCanLowerStatStage?(stat, user)"
+                if is_lower
+                else
+                "        next unless user.pbCanRaiseStatStage?(stat, user)"
+            ),
+            (
+                f"        user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
+                if is_lower
+                else
+                f"        user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
+            ),
+            "        any_raised = true",
+            "      end",
+        ]
+    if once_per_battle:
+        lines += ["      user.instance_variable_set(tracker, true) if any_raised"]
     lines += [
         "    }",
         "  )",
@@ -398,6 +421,7 @@ def _gen_after_move_use_combined(item_id: str, effects: list[dict[str, Any]]) ->
     for effect in stat_raise_effects:
         eid = str(effect.get("id", "UNKNOWN"))
         params = effect.get("params", {}) if isinstance(effect.get("params"), dict) else {}
+        per_hit = bool(params.get("per_hit", False))
         stats_raw = params.get("stats")
         if isinstance(stats_raw, str):
             stats_raw = [stats_raw]
@@ -417,38 +441,79 @@ def _gen_after_move_use_combined(item_id: str, effects: list[dict[str, Any]]) ->
                 f"      unless user.instance_variable_defined?(tracker_{tracker_suffix}) && user.instance_variable_get(tracker_{tracker_suffix})",
                 f"        stats_{tracker_suffix} = [{stat_symbols}]",
                 f"        any_raised_{tracker_suffix} = false",
-                f"        stats_{tracker_suffix}.each do |stat|",
-                (
-                    "          next unless user.pbCanLowerStatStage?(stat, user)"
-                    if is_lower else
-                    "          next unless user.pbCanRaiseStatStage?(stat, user)"
-                ),
-                (
-                    f"          user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
-                    if is_lower else
-                    f"          user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
-                ),
-                f"          any_raised_{tracker_suffix} = true",
-                "        end",
-                f"        user.instance_variable_set(tracker_{tracker_suffix}, true) if any_raised_{tracker_suffix}",
-                "      end",
             ]
+            if per_hit:
+                lines += [
+                    f"        hits_{tracker_suffix} = (numHits || 1)",
+                    f"        hits_{tracker_suffix}.times do",
+                    f"          stats_{tracker_suffix}.each do |stat|",
+                    (
+                        "            next unless user.pbCanLowerStatStage?(stat, user)"
+                        if is_lower else
+                        "            next unless user.pbCanRaiseStatStage?(stat, user)"
+                    ),
+                    (
+                        f"            user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
+                        if is_lower else
+                        f"            user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
+                    ),
+                    f"            any_raised_{tracker_suffix} = true",
+                    "          end",
+                    "        end",
+                ]
+            else:
+                lines += [
+                    f"        stats_{tracker_suffix}.each do |stat|",
+                    (
+                        "          next unless user.pbCanLowerStatStage?(stat, user)"
+                        if is_lower else
+                        "          next unless user.pbCanRaiseStatStage?(stat, user)"
+                    ),
+                    (
+                        f"          user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
+                        if is_lower else
+                        f"          user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
+                    ),
+                    f"          any_raised_{tracker_suffix} = true",
+                    "        end",
+                ]
+            lines += [f"        user.instance_variable_set(tracker_{tracker_suffix}, true) if any_raised_{tracker_suffix}", f"      end"]
         else:
-            lines += [
-                f"      stats_{tracker_suffix} = [{stat_symbols}]",
-                f"      stats_{tracker_suffix}.each do |stat|",
-                (
-                    "        next unless user.pbCanLowerStatStage?(stat, user)"
-                    if is_lower else
-                    "        next unless user.pbCanRaiseStatStage?(stat, user)"
-                ),
-                (
-                    f"        user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
-                    if is_lower else
-                    f"        user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
-                ),
-                "      end",
-            ]
+            if per_hit:
+                lines += [
+                    f"      stats_{tracker_suffix} = [{stat_symbols}]",
+                    f"      hits_{tracker_suffix} = (numHits || 1)",
+                    f"      hits_{tracker_suffix}.times do",
+                    f"        stats_{tracker_suffix}.each do |stat|",
+                    (
+                        "          next unless user.pbCanLowerStatStage?(stat, user)"
+                        if is_lower else
+                        "          next unless user.pbCanRaiseStatStage?(stat, user)"
+                    ),
+                    (
+                        f"          user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
+                        if is_lower else
+                        f"          user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
+                    ),
+                    "        end",
+                    "      end",
+                ]
+            else:
+                lines += [
+                    f"      stats_{tracker_suffix} = [{stat_symbols}]",
+                    f"      stats_{tracker_suffix}.each do |stat|",
+                    (
+                        "        next unless user.pbCanLowerStatStage?(stat, user)"
+                        if is_lower else
+                        "        next unless user.pbCanRaiseStatStage?(stat, user)"
+                    ),
+                    (
+                        f"        user.pbLowerStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbLowerStatStage(stat, {stages}, user)"
+                        if is_lower else
+                        f"        user.pbRaiseStatStageByCause(stat, {stages}, user, user.itemName) rescue user.pbRaiseStatStage(stat, {stages}, user)"
+                    ),
+                    "      end",
+                ]
 
     for effect in stat_drop_effects:
         eid = str(effect.get("id", "UNKNOWN"))
@@ -924,6 +989,63 @@ def _gen_stat_raise_on_hit(item_id: str, effect_id: str, params: dict[str, Any])
             f"        target.instance_variable_set(tracker, true) if any_raised",
         ]
     body += [
+        "      }",
+        "    )",
+        "  end",
+        "rescue StandardError => e",
+        f'  echoln("CustomItemPatch pool [{effect_id}]: #{{e}}") if defined?(echoln)',
+        "end",
+        "",
+    ]
+    return body
+
+
+def _gen_heal_on_being_hit(item_id: str, effect_id: str, params: dict[str, Any]) -> list[str]:
+    """on_being_hit / heal_on_being_hit — heal the holder when hit by a matching move type."""
+    heal_fixed = params.get("heal_fixed_hp")
+    heal_num = params.get("heal_fraction_numerator")
+    heal_den = params.get("heal_fraction_denominator")
+    require_move_type = params.get("require_move_type")
+    require_se = bool(params.get("require_super_effective", False))
+
+    # Compute heal expression (target is the holder in OnBeingHit handlers)
+    if heal_fixed is not None:
+        heal_expr = f"{int(heal_fixed)}"
+    elif heal_num is not None and heal_den is not None:
+        heal_expr = f"[(target.totalhp.to_f * {int(heal_num)} / {int(heal_den)}).ceil, 1].max"
+    else:
+        heal_expr = "[(target.totalhp.to_f / 4).ceil, 1].max"
+
+    body = [
+        f"# --- pool effect: {effect_id} for {item_id} ---",
+        "begin",
+        "  if defined?(Battle::ItemEffects::OnBeingHit)",
+        f"    Battle::ItemEffects::OnBeingHit.add(:{item_id},",
+        "      proc { |item, user, target, move, battle|",
+        "        next unless CustomItemPatch.custom_item_effect_item_active?(target)",
+        "        next if !user || user == target || user.fainted?",
+    ]
+    if require_move_type:
+        body.append(f"        next unless move.calcType == {_ruby_type(str(require_move_type))}")
+    if require_se:
+        body += [
+            "        begin",
+            "          tm = move.pbCalcTypeMod(move.calcType, user, target)",
+            "          if defined?(Effectiveness)",
+            "            next if tm <= Effectiveness::NORMAL_EFFECTIVE",
+            "          else",
+            "            next if tm <= 8",
+            "          end",
+            "        rescue StandardError",
+            "          next",
+            "        end",
+        ]
+
+    body += [
+        "        next unless target.canHeal?",
+        f"        hp_gain = {heal_expr}",
+        "        target.pbRecoverHP(hp_gain)",
+        '        battle.pbDisplay(_INTL("{1} restored its HP with {2}!", target.pbThis, target.itemName))',
         "      }",
         "    )",
         "  end",
@@ -1634,6 +1756,8 @@ def compile_pool_effects(item_pool_effects: dict[str, list[dict[str, Any]]]) -> 
                 lines.extend(_gen_contact_recoil_damage(item_id, effect_id, params))
             elif hook == "on_being_hit" and template == "inflict_status_on_contact":
                 lines.extend(_gen_inflict_status_on_contact(item_id, effect_id, params))
+            elif hook == "on_being_hit" and template == "heal_on_being_hit":
+                lines.extend(_gen_heal_on_being_hit(item_id, effect_id, params))
             elif hook == "on_being_hit" and template == "stat_raise_on_hit":
                 lines.extend(_gen_stat_raise_on_hit(item_id, effect_id, params))
             elif hook == "hp_heal" and template == "heal_at_hp_threshold":

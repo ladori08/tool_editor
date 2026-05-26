@@ -1,5 +1,58 @@
 # WORKLOG
 
+## Session 2026-05-20 (Analyze: Read CURRENT_STATE.md / TASKS.md / WORKLOG.md)
+
+### Scope
+- Bootstrap current chat by reading `CURRENT_STATE.md`, `TASKS.md`, and `WORKLOG.md` to confirm project status.
+
+### Analyze
+- Read the three files to capture the current project state, active tasks, and recent worklog entries.
+
+### Implement
+- No code changes. This is an analyze-only request to collect context.
+
+### Request Outcomes
+- User request (read project state files) -> done.
+
+## Session 2026-05-22 (Implement: Compile & Demo per_hit)
+
+### Scope
+- Run `py_compile` on modified `tools/` modules and generate a demo custom effect using the per-hit stat-stage path.
+
+### Analyze
+- Confirm that recent edits (per_hit param in compiler and hook generator) compile and produce expected Ruby.
+
+### Implement
+- Created `tools/_demo_per_hit.py` to compile an example authoring payload and emit compiled JSON and Ruby preview.
+- Ran syntax checks via `python -m py_compile` and executed the demo with the Windows Python launcher (`py -3`).
+- Outputs written:
+  - `tools/_demo_per_hit_compiled.json`
+  - `tools/_demo_per_hit_output.rb`
+
+### Request Outcomes
+- Demo compile & Ruby generation -> done. Py compile OK.
+- EXE build: succeeded — `tools/PokemonIndigoSaveEditor.exe` created via PyInstaller.
+- Installer build: blocked — `ISCC.exe` (Inno Setup Compiler) not found; installer not produced.
+- Next action: install Inno Setup or provide `-IsccPath` to `tools\installer\build_installer.ps1` and re-run installer build.
+
+
+## Session 2026-05-23 (Implement: Archetype UI + On-Hit Heal Generator)
+
+### Scope
+- Add Archetype-style labels to the Custom Effect Builder UI, show/hide archetype-specific fields, and compile new heal-on-being-hit and threshold-heal templates.
+
+### Implement
+- UI: Renamed "Effect Type" to "Mechanic Style" and added new archetype labels including Sitrus-style threshold healing, On-hit Absorption Healing, and On-hit Stat Raise. Added `HP Threshold (%)` control (hidden by default) and show/hide behavior using grid/pack forget to keep the layout tidy.
+- Backend: Added builder mappings in `tools/custom_item/effect_pool.py` for `heal_at_hp_threshold`, `heal_on_being_hit`, and `stat_raise_on_hit`. Allowed new templates in `CUSTOM_EFFECT_ALLOWED_TEMPLATES`.
+- Hook compiler: Added `_gen_heal_on_being_hit` generator in `tools/custom_item/hook_compiler.py` and routed `on_being_hit/heal_on_being_hit` to the new generator. Kept existing `heal_at_hp_threshold` and `stat_raise_on_hit` generators.
+
+### Verification
+- Ran `python -m py_compile` on modified modules; no syntax errors reported.
+
+### Request Outcomes
+- UI + backend wiring for new archetypes implemented. Next: runtime test in-game and polish GUI placements as requested by user.
+
+
 ## Session 2026-05-12 (Implement: Custom Effect Builder v1 Compile-Path Hardening + Builder v2 Prep)
 
 ### Scope

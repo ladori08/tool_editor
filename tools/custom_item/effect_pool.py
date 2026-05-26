@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -50,15 +51,20 @@ CUSTOM_EFFECT_ALLOWED_TEMPLATES = {
     ("after_move_use", "raise_user_stat_stage"),
     ("end_of_round_effect", "raise_user_stat_stage_end_of_round"),
     ("speed_calc", "speed_multiplier"),
+
+    # Phase 2 builder v2 allowed templates
+    ("hp_heal", "heal_at_hp_threshold"),
+    ("on_being_hit", "stat_raise_on_hit"),
+    ("on_being_hit", "heal_on_being_hit"),
 }
 BUILDER_V1_CATEGORY_TYPE_MAP: dict[str, list[str]] = {
     "damage": ["damage_multiplier"],
-    "healing": ["heal_holder", "drain_damage_dealt"],
-    "stat": ["change_user_stat_stage", "raise_user_stat_stage"],
+    "healing": ["heal_holder", "heal_at_hp_threshold", "heal_on_being_hit", "drain_damage_dealt"],
+    "stat": ["change_user_stat_stage", "raise_user_stat_stage", "stat_raise_on_hit"],
     "status": [],
     "speed": ["speed_multiplier"],
     "contact": [],
-    "end_turn": ["heal_holder", "change_user_stat_stage", "raise_user_stat_stage"],
+    "end_turn": ["heal_holder", "heal_at_hp_threshold", "change_user_stat_stage", "raise_user_stat_stage"],
     "battle_field": [],
 }
 
@@ -91,6 +97,26 @@ def slug_effect_id_from_name(name: str, fallback: str = "CUSTOM_EFFECT") -> str:
     text = re.sub(r"[^A-Za-z0-9]+", "_", text).upper()
     text = re.sub(r"_+", "_", text).strip("_")
     return text or fallback
+
+
+def slug_effect_id_from_name_lower(name: str, fallback: str = "custom_effect") -> str:
+    """Generate a lowercase, underscored slug from a name removing diacritics.
+
+    This is intended for GUI-friendly, real-time suggestions (e.g. "leftovers_style_heal").
+    """
+    text = str(name or "").strip()
+    if not text:
+        return fallback
+    # Normalize and remove combining diacritical marks (Vietnamese accents, etc.)
+    try:
+        normalized = unicodedata.normalize("NFKD", text)
+        no_diacritics = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    except Exception:
+        no_diacritics = text
+    no_diacritics = no_diacritics.lower()
+    no_diacritics = re.sub(r"[^a-z0-9]+", "_", no_diacritics)
+    no_diacritics = re.sub(r"_+", "_", no_diacritics).strip("_")
+    return no_diacritics or fallback
 
 
 def _default_custom_effect_manifest() -> dict[str, Any]:
@@ -285,6 +311,83 @@ def compile_custom_effect_authoring(authoring: dict[str, Any]) -> tuple[dict[str
         hook = "after_damage_dealt"
         template = "heal_percent_damage_dealt"
         params = {"percent": percent}
+    elif effect_type == "heal_at_hp_threshold":
+        # Sitrus-style threshold heal: GUI provides percent and heal fraction
+        threshold_percent = _as_int(values.get("threshold_percent", 50), 50)
+        if threshold_percent <= 0:
+            errors.append("Threshold percent must be > 0.")
+            threshold_percent = 50
+        hook = "hp_heal"
+        template = "heal_at_hp_threshold"
+        params = {
+            "threshold_numerator": int(threshold_percent),
+            "threshold_denominator": 100,
+        }
+        # Allow fixed heal or fraction-based heal
+        heal_fixed = values.get("heal_fixed_hp")
+        if heal_fixed is not None and str(heal_fixed).strip() != "":
+            try:
+                params["heal_fixed_hp"] = int(float(str(heal_fixed).strip()))
+            except Exception:
+                pass
+        else:
+            num = _as_int(values.get("fraction_numerator", 1), 1)
+            den = _as_int(values.get("fraction_denominator", 16), 16)
+            params["heal_fraction_numerator"] = num
+            params["heal_fraction_denominator"] = den
+    elif effect_type == "heal_on_being_hit":
+        # Heal when holder is hit by a specified move type
+        require_move_type = _clean_symbol(conditions.get("move_type", ""))
+        require_super = _as_bool(conditions.get("require_super_effective", False))
+        hook = "on_being_hit"
+        template = "heal_on_being_hit"
+        params = {}
+        if require_move_type:
+            params["require_move_type"] = require_move_type
+        if require_super:
+            params["require_super_effective"] = True
+        # Heal amount: fraction or fixed
+        heal_fixed = values.get("heal_fixed_hp")
+        if heal_fixed is not None and str(heal_fixed).strip() != "":
+            try:
+                params["heal_fixed_hp"] = int(float(str(heal_fixed).strip()))
+            except Exception:
+                pass
+        else:
+            num = _as_int(values.get("fraction_numerator", 1), 1)
+            den = _as_int(values.get("fraction_denominator", 16), 16)
+            params["heal_fraction_numerator"] = num
+            params["heal_fraction_denominator"] = den
+    elif effect_type == "stat_raise_on_hit":
+        # Raise stats when holder is hit (Weakness Policy-style)
+        stats_raw = values.get("stats", values.get("stat", "ATTACK"))
+        if isinstance(stats_raw, str):
+            stats = [_clean_symbol(x) for x in re.split(r"[,;/]+", stats_raw) if _clean_symbol(x)]
+        elif isinstance(stats_raw, list):
+            stats = [_clean_symbol(x) for x in stats_raw if _clean_symbol(x)]
+        else:
+            stats = []
+        if not stats:
+            errors.append("At least one stat must be selected for stat-stage effects.")
+            stats = ["ATTACK"]
+        stages = _as_int(values.get("stages", 1), 1)
+        if stages < 1 or stages > 6:
+            errors.append("Stat stages must be in range 1..6.")
+            stages = 1
+        require_se = _as_bool(conditions.get("require_super_effective", False))
+        require_move_type = _clean_symbol(conditions.get("move_type", ""))
+        once_per_battle = _as_bool(values.get("once_per_battle", True))
+        hook = "on_being_hit"
+        template = "stat_raise_on_hit"
+        params = {
+            "stats": stats,
+            "stages": abs(stages),
+            "once_per_battle": once_per_battle,
+        }
+        if require_move_type:
+            params["require_move_type"] = require_move_type
+        if require_se:
+            params["require_super_effective"] = True
     elif effect_type in {"raise_user_stat_stage", "change_user_stat_stage"}:
         stats_raw = values.get("stats", values.get("stat", "ATTACK"))
         if isinstance(stats_raw, str):
@@ -319,6 +422,8 @@ def compile_custom_effect_authoring(authoring: dict[str, Any]) -> tuple[dict[str
         if hook == "after_move_use":
             params["trigger"] = "after_successful_move"
             params["once_per_battle"] = _as_bool(values.get("once_per_battle", True))
+            # If this stat-stage effect should trigger per hit on multi-hit moves
+            params["per_hit"] = _as_bool(values.get("per_hit", False))
         else:
             params["trigger"] = "end_of_round"
     elif effect_type == "speed_multiplier":

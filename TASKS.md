@@ -1,5 +1,52 @@
 # TASKS
 
+## Session 2026-05-22 (Implement: Compile & Demo per_hit)
+
+### Scope
+- Run `py_compile` on modified `tools/` modules and generate a demo custom effect using the per-hit stat-stage path.
+
+### Analyze
+- Confirm previous code edits compile and that `per_hit` propagates to compiled params and Ruby generation.
+
+### Implement
+- Created `tools/_demo_per_hit.py` to compile an example authoring payload and emit compiled JSON and Ruby preview.
+- Ran `py_compile` and executed the demo script; compiled JSON written to `tools/_demo_per_hit_compiled.json` and Ruby to `tools/_demo_per_hit_output.rb`.
+-- EXE build: succeeded — `tools/PokemonIndigoSaveEditor.exe` created via PyInstaller.
+-- Installer build: blocked — `ISCC.exe` (Inno Setup Compiler) not found; installer not produced.
+
+### Request Outcomes
+- Demo compile & Ruby generation -> done.
+- EXE built: `tools/PokemonIndigoSaveEditor.exe` created.
+- Installer: blocked by missing Inno Setup (`ISCC.exe`); run `tools\installer\build_installer.ps1 -IsccPath <path>` after installing Inno Setup to produce installer.
+
+
+## Session 2026-05-23 (Implement: Archetype UI + On-Hit Heal)
+
+### Scope
+- Add Archetype-style labels to Custom Effect Builder and wire new archetypes (`heal_at_hp_threshold`, `heal_on_being_hit`, `stat_raise_on_hit`) to compiler and hook generators.
+
+### Implement
+- GUI: Rename `Effect Type` to `Mechanic Style`; add new labels; add `HP Threshold (%)` control hidden by default and show/hide via grid/pack forget.
+- Backend: Map new effect types in `tools/custom_item/effect_pool.py` and allow new templates in `CUSTOM_EFFECT_ALLOWED_TEMPLATES`.
+- Hook generator: Add `_gen_heal_on_being_hit` and dispatch it for `on_being_hit/heal_on_being_hit`.
+
+### Request Outcomes
+- Code changes applied; `python -m py_compile` passed on modified files; runtime/in-game testing still required.
+
+## Session 2026-05-20 (Analyze: Read CURRENT_STATE.md / TASKS.md / WORKLOG.md)
+
+### Scope
+- Bootstrap current chat by reading `CURRENT_STATE.md`, `TASKS.md`, and `WORKLOG.md` to confirm project status.
+
+### Analyze
+- Read the three files to capture the current project state, active tasks, and recent worklog entries.
+
+### Implement
+- No code changes. This is an analyze-only request to collect context.
+
+### Request Outcomes
+- User request (read project state files) -> done.
+
 ## Persistent Rules (Added 2026-04-25, Reinforced 2026-04-26)
 - This rule is mandatory for every AI session working on this project.
 - Context bootstrap rule: new AI sessions should read `CURRENT_STATE.md` first, then open `TASKS.md`/`WORKLOG.md` only as needed.

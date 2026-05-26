@@ -1,0 +1,68 @@
+Custom Effect Builder v2 — Analysis
+
+1) Purpose
+- Implement per-hit semantics for "raise_user_stat_stage" effects when applied by multi-hit moves.
+- Keep custom effects parallel-only (manifest-driven); do not modify Data/*.dat.
+
+2) Key observation
+- The generated Ruby proc for AfterMoveUseFromUser receives signature: |item, user, targets, move, numHits, battle|
+  - `numHits` carries the actual number of hits (or nil). This makes per-hit behavior implementable by iterating `numHits.times`.
+
+3) Recommended Ruby generation pattern (stat raises per-hit)
+- For a stat-raise effect with params {"per_hit": true, "once_per_battle": X, "stats": [...], "stages": N} generate:
+
+begin
+  Battle::ItemEffects::AfterMoveUseFromUser.add(:ITEM_ID,
+    proc { |item, user, targets, move, numHits, battle|
+      next unless CustomItemPatch.custom_item_effect_item_active?(user)
+      tracker = :@custom_item_pool_once_effectid   # if once_per_battle true
+      next if user.instance_variable_defined?(tracker) && user.instance_variable_get(tracker)
+      stats = [:ATTACK, :DEFENSE]
+      any_raised = false
+      hits = (numHits || 1)
+      hits.times do
+        stats.each do |stat|
+          next unless user.pbCanRaiseStatStage?(stat, user)
+          user.pbRaiseStatStageByCause(stat, 1, user, user.itemName) rescue user.pbRaiseStatStage(stat, 1, user)
+          any_raised = true
+        end
+      end
+      user.instance_variable_set(tracker, true) if any_raised   # honor once-per-battle
+    }
+  )
+rescue StandardError => e
+  echoln("CustomItemPatch pool [EID]: #{e}") if defined?(echoln)
+end
+
+Notes:
+- If `once_per_battle` is true, the proc should exit early when the tracker is already set (so no repeated application across hits/moves).
+- The tracker must only be set after a successful raise (i.e., `any_raised == true`) to avoid blocking later valid raises.
+- For `per_hit == false` generate the existing single-iteration `stats.each` block.
+
+4) Architectural boundary: "Healing" vs "End Turn"
+- "End Turn" effects run at the end-of-round (turn-cycle) and are appropriate for persistent periodic behaviors (e.g., Leftovers).
+- "Healing" as a category in the Builder should prefer event-driven archetypes (after-move, after-damage-dealt, drain-on-hit) because they respond to in-battle events.
+- UI policy: when Category == "End Turn" lock timing to End-of-turn and disable event-driven options; when Category == "Healing" prefer event-driven timing and hide/disable End-of-turn selection to avoid authoring mistakes.
+
+5) GUI UX rules
+- Auto-suggest effect IDs as lowercase, underscore slugs with diacritics removed (e.g., "Parental Bond" -> "parental_bond"). Display lowercase in UI but store canonical ID uppercased in authoring manifest.
+- Add a "Trigger per hit (multi-hit moves)" checkbox to stat archetypes; default false.
+- Validate ID collisions against built-in pool IDs and manifest entries; prevent accidental override.
+
+6) Compatibility & Safety
+- Keep all runtime changes inside generated Ruby code (hook_compiler) and Python toolset (tools/custom_item/*). Do not modify game's core Data files.
+- Maintain rescue fallbacks when calling pbRaiseStatStageByCause/... to preserve compatibility across Indigo forks.
+
+7) Next steps implemented
+- Compiler should add `params["per_hit"]` into compiled params for stat archetypes.
+- Hook compiler should emit per-hit loops when `per_hit` true and preserve `once_per_battle` semantics.
+- GUI should add `per_hit` control, produce lowercase slugs, and enforce timing constraints by category.
+
+8) New Archetypes added (v2)
+- Sitrus-style threshold healing (`heal_at_hp_threshold`): UI exposes `threshold_percent` plus heal fraction; compiler emits `hp_heal` / `heal_at_hp_threshold` params (`threshold_numerator`/`threshold_denominator`, `heal_fraction_numerator`/`heal_fraction_denominator` or `heal_fixed_hp`). Hook generator registers under `Battle::ItemEffects::HPHeal` and performs the threshold check before healing.
+- On-hit Absorption Healing (`heal_on_being_hit`): UI exposes move-type condition and heal fraction/fixed HP. Compiler emits `on_being_hit` / `heal_on_being_hit` params (`require_move_type`, `require_super_effective`, `heal_fraction_*`/`heal_fixed_hp`). Hook generator registers under `Battle::ItemEffects::OnBeingHit` and heals the holder when the condition matches.
+- On-hit Stat Raise (`stat_raise_on_hit`): UI exposes stats, stages, `once_per_battle` and move-type condition. Compiler emits `on_being_hit` / `stat_raise_on_hit` params and hook generator raises target stats when hit (Weakness Policy-style), respecting `once_per_battle`.
+
+Prepared by: GitHub Copilot (GPT-5 mini)
+
+Prepared by: GitHub Copilot (GPT-5 mini)

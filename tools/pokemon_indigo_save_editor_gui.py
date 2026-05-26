@@ -17358,11 +17358,15 @@ class SaveEditorApp:
         return mapping.get(key)
 
     def _custom_effect_type_options(self, category: str = "") -> list[tuple[str, str]]:
+        # Mechanic / Archetype style labels (user-facing)
         all_options = [
             ("Damage multiplier", "damage_multiplier"),
-            ("Heal holder", "heal_holder"),
-            ("Drain damage dealt", "drain_damage_dealt"),
+            ("Leftovers-style (Turn Healing)", "heal_holder"),
+            ("Sitrus-style (Threshold Healing)", "heal_at_hp_threshold"),
+            ("Draining Kiss-style (Lifesteal)", "drain_damage_dealt"),
             ("Change holder stat stage", "change_user_stat_stage"),
+            ("On-hit stat raise (Weakness Policy-style)", "stat_raise_on_hit"),
+            ("On-hit Absorption Healing", "heal_on_being_hit"),
             ("Speed multiplier", "speed_multiplier"),
         ]
         if not category:
@@ -17413,6 +17417,8 @@ class SaveEditorApp:
     @staticmethod
     def _custom_effect_builder_timing_key(label: str) -> str:
         text = str(label or "").strip().casefold()
+        if "hit" in text or "bị" in text:
+            return "on_being_hit"
         if "end" in text or "turn" in text or "round" in text or "cuối" in text:
             return "end_of_round"
         return "after_move"
@@ -17420,23 +17426,32 @@ class SaveEditorApp:
     @staticmethod
     def _custom_effect_builder_timing_label(key: str) -> str:
         normalized = str(key or "").strip().casefold()
+        if normalized in {"on_being_hit", "hit_by_foe"}:
+            return "Hit by foe"
         if normalized in {"end_of_round", "end_of_turn", "end turn", "end_turn"}:
             return "End of turn"
         return "After holder uses a move"
 
     def _custom_effect_slug_from_name(self, name: str) -> str:
-        if custom_item_effect_pool is not None and hasattr(custom_item_effect_pool, "slug_effect_id_from_name"):
+        # Prefer backend helper that returns a lowercase, underscore slug if available
+        if custom_item_effect_pool is not None and hasattr(custom_item_effect_pool, "slug_effect_id_from_name_lower"):
             try:
-                return custom_item_effect_pool.slug_effect_id_from_name(str(name or ""), fallback="CUSTOM_EFFECT")
+                return custom_item_effect_pool.slug_effect_id_from_name_lower(str(name or ""), fallback="custom_effect")
             except Exception:
                 pass
+        # Fallback: strip diacritics, lowercase, replace non-alnum with underscores
         text = str(name or "").strip()
         if not text:
-            return "CUSTOM_EFFECT"
-        text = text.replace("'", "")
-        text = re.sub(r"[^A-Za-z0-9]+", "_", text).upper()
-        text = re.sub(r"_+", "_", text).strip("_")
-        return text or "CUSTOM_EFFECT"
+            return "custom_effect"
+        try:
+            normalized = unicodedata.normalize("NFKD", text)
+            no_diacritics = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+        except Exception:
+            no_diacritics = text
+        no_diacritics = no_diacritics.lower()
+        no_diacritics = re.sub(r"[^a-z0-9]+", "_", no_diacritics)
+        no_diacritics = re.sub(r"_+", "_", no_diacritics).strip("_")
+        return no_diacritics or "custom_effect"
 
     def _custom_effect_unique_id(self, base_id: str, allow_effect_id: str = "") -> str:
         base = str(base_id or "").strip().lstrip(":").upper() or "CUSTOM_EFFECT"
@@ -17511,9 +17526,11 @@ class SaveEditorApp:
                 "fraction_numerator": str(getattr(self, "custom_effect_builder_fraction_num_var", tk.StringVar(value="1")).get() or "1").strip(),
                 "fraction_denominator": str(getattr(self, "custom_effect_builder_fraction_den_var", tk.StringVar(value="16")).get() or "16").strip(),
                 "percent": str(getattr(self, "custom_effect_builder_percent_var", tk.StringVar(value="75")).get() or "75").strip(),
+                "threshold_percent": str(getattr(self, "custom_effect_builder_threshold_var", tk.StringVar(value="50")).get() or "50").strip(),
                 "stats": stats,
                 "stages": str(getattr(self, "custom_effect_builder_stages_var", tk.StringVar(value="1")).get() or "1").strip(),
                 "once_per_battle": bool(getattr(self, "custom_effect_builder_once_var", tk.BooleanVar(value=True)).get()),
+                "per_hit": bool(getattr(self, "custom_effect_builder_per_hit_var", tk.BooleanVar(value=False)).get()),
                 "direction": self._custom_effect_builder_direction_key(
                     str(getattr(self, "custom_effect_builder_direction_var", tk.StringVar(value="Raise")).get() or "Raise")
                 ),
@@ -17656,6 +17673,26 @@ class SaveEditorApp:
 
     def _custom_effect_builder_on_category_changed(self, _event=None):
         self._custom_effect_builder_refresh_type_options(preserve_current=False)
+        # Lock or adjust timing based on category semantics
+        category = str(getattr(self, "custom_effect_builder_category_var", tk.StringVar()).get() or "").strip()
+        key = self._custom_effect_category_key(category)
+        try:
+            if key == "end_turn":
+                self.custom_effect_builder_timing_var.set("End of turn")
+                if hasattr(self, "custom_effect_builder_timing_combo"):
+                    self.custom_effect_builder_timing_combo.configure(state="disabled")
+            elif key == "healing":
+                # Prefer event-driven archetypes for Healing category in the Builder UI
+                self.custom_effect_builder_timing_var.set("After holder uses a move")
+                if hasattr(self, "custom_effect_builder_timing_combo"):
+                    self.custom_effect_builder_timing_combo.configure(state="readonly")
+            else:
+                if hasattr(self, "custom_effect_builder_timing_combo"):
+                    self.custom_effect_builder_timing_combo.configure(state="readonly")
+        except Exception:
+            pass
+        # Ensure field states reflect new timing/category
+        self._custom_effect_builder_refresh_field_states()
 
     def _custom_effect_builder_autofill_id(self, _event=None):
         id_var = getattr(self, "custom_effect_builder_id_var", None)
@@ -17667,7 +17704,9 @@ class SaveEditorApp:
             self._custom_effect_builder_update_preview()
             return
         base = self._custom_effect_slug_from_name(str(name_var.get() or ""))
-        id_var.set(self._custom_effect_unique_id(base))
+        # Ensure uniqueness then present as lowercase slug
+        unique = self._custom_effect_unique_id((base or "custom_effect").upper())
+        id_var.set(str(unique or "CUSTOM_EFFECT").lower())
         self._custom_effect_builder_update_preview()
 
     def _custom_effect_builder_rows(self) -> list[dict[str, Any]]:
@@ -17912,38 +17951,120 @@ class SaveEditorApp:
         groups = getattr(self, "_custom_effect_builder_field_groups", {})
         widgets = groups.get(group_name, []) if isinstance(groups, dict) else []
         readonly_widgets = getattr(self, "_custom_effect_builder_readonly_widgets", set())
+
+        # Cache original grid/pack info so we can restore layout when re-enabling
+        if not hasattr(self, "_custom_effect_builder_widget_grid_info"):
+            self._custom_effect_builder_widget_grid_info = {}
+
         for widget in widgets:
             try:
+                if widget not in self._custom_effect_builder_widget_grid_info:
+                    try:
+                        info = widget.grid_info() or None
+                        if info:
+                            self._custom_effect_builder_widget_grid_info[widget] = ("grid", info)
+                        else:
+                            try:
+                                pinfo = widget.pack_info() or None
+                                if pinfo:
+                                    self._custom_effect_builder_widget_grid_info[widget] = ("pack", pinfo)
+                                else:
+                                    self._custom_effect_builder_widget_grid_info[widget] = None
+                            except Exception:
+                                self._custom_effect_builder_widget_grid_info[widget] = None
+                    except Exception:
+                        self._custom_effect_builder_widget_grid_info[widget] = None
+
+                layout_info = self._custom_effect_builder_widget_grid_info.get(widget)
                 if enabled:
-                    state = "readonly" if widget in readonly_widgets else "normal"
+                    # Restore to original layout if available, otherwise enable via state
+                    if layout_info:
+                        kind, info = layout_info
+                        if kind == "grid":
+                            try:
+                                widget.grid(**info)
+                            except Exception:
+                                pass
+                        elif kind == "pack":
+                            try:
+                                widget.pack(**info)
+                            except Exception:
+                                pass
+                    try:
+                        state = "readonly" if widget in readonly_widgets else "normal"
+                        widget.configure(state=state)
+                    except Exception:
+                        pass
                 else:
-                    state = "disabled"
-                widget.configure(state=state)
+                    # Hide from layout if possible
+                    try:
+                        if layout_info and layout_info[0] == "grid":
+                            widget.grid_forget()
+                        elif layout_info and layout_info[0] == "pack":
+                            widget.pack_forget()
+                        else:
+                            widget.configure(state="disabled")
+                    except Exception:
+                        try:
+                            widget.configure(state="disabled")
+                        except Exception:
+                            pass
             except Exception:
                 pass
 
     def _custom_effect_builder_refresh_field_states(self, _event=None):
         effect_type = self._custom_effect_type_key(str(getattr(self, "custom_effect_builder_type_var", tk.StringVar()).get() or ""))
+        timing = self._custom_effect_builder_timing_key(str(getattr(self, "custom_effect_builder_timing_var", tk.StringVar()).get() or ""))
+
         is_damage = effect_type == "damage_multiplier"
-        is_heal = effect_type == "heal_holder"
+        is_heal = effect_type in {"heal_holder", "heal_at_hp_threshold", "heal_on_being_hit"}
         is_drain = effect_type == "drain_damage_dealt"
-        is_stat = effect_type in {"change_user_stat_stage", "raise_user_stat_stage"}
+        is_stat = effect_type in {"change_user_stat_stage", "raise_user_stat_stage", "stat_raise_on_hit"}
         is_speed = effect_type == "speed_multiplier"
+        is_on_hit = timing == "on_being_hit" or effect_type in {"stat_raise_on_hit", "heal_on_being_hit"}
+
         for group_name, enabled in {
             "damage": is_damage,
             "heal": is_heal,
             "drain": is_drain,
             "stat": is_stat,
             "multiplier": is_damage or is_speed,
+            "move_type": is_damage or is_on_hit,
         }.items():
             self._custom_effect_builder_set_group_state(group_name, enabled)
-        timing = self._custom_effect_builder_timing_key(str(getattr(self, "custom_effect_builder_timing_var", tk.StringVar()).get() or ""))
+
         self._custom_effect_builder_set_group_state("once", is_stat and timing == "after_move")
+        self._custom_effect_builder_set_group_state("per_hit", is_stat and timing == "after_move")
+
         if is_stat and timing != "after_move":
             try:
                 self.custom_effect_builder_once_var.set(False)
             except Exception:
                 pass
+        if is_stat and timing != "after_move":
+            try:
+                self.custom_effect_builder_per_hit_var.set(False)
+            except Exception:
+                pass
+
+        # Show or hide threshold controls inside the heal fraction frame
+        try:
+            if getattr(self, "custom_effect_builder_threshold_label", None) is not None:
+                if effect_type == "heal_at_hp_threshold":
+                    try:
+                        self.custom_effect_builder_threshold_label.pack(side="left", padx=(8, 6))
+                        self.custom_effect_builder_threshold_combo.pack(side="left")
+                    except Exception:
+                        pass
+                else:
+                    try:
+                        self.custom_effect_builder_threshold_label.pack_forget()
+                        self.custom_effect_builder_threshold_combo.pack_forget()
+                    except Exception:
+                        pass
+        except Exception:
+            pass
+
         self._custom_effect_builder_update_preview()
 
     def manage_custom_effects(self):
@@ -17983,9 +18104,11 @@ class SaveEditorApp:
         self.custom_effect_builder_fraction_num_var = tk.StringVar(value="1")
         self.custom_effect_builder_fraction_den_var = tk.StringVar(value="16")
         self.custom_effect_builder_percent_var = tk.StringVar(value="75")
+        self.custom_effect_builder_threshold_var = tk.StringVar(value="50")
         self.custom_effect_builder_stat_var = tk.StringVar(value="ATTACK")
         self.custom_effect_builder_direction_var = tk.StringVar(value="Raise")
         self.custom_effect_builder_timing_var = tk.StringVar(value="After holder uses a move")
+        self.custom_effect_builder_per_hit_var = tk.BooleanVar(value=False)
         self.custom_effect_builder_stages_var = tk.StringVar(value="1")
         self.custom_effect_builder_once_var = tk.BooleanVar(value=True)
         self.custom_effect_builder_preview_var = tk.StringVar()
@@ -18008,7 +18131,7 @@ class SaveEditorApp:
             width=24,
         )
         category_combo.grid(row=1, column=1, sticky="ew", pady=3)
-        ttk.Label(right, text="Effect Type").grid(row=1, column=2, sticky="w", padx=(8, 6), pady=3)
+        ttk.Label(right, text="Mechanic Style").grid(row=1, column=2, sticky="w", padx=(8, 6), pady=3)
         type_combo = ttk.Combobox(
             right,
             textvariable=self.custom_effect_builder_type_var,
@@ -18049,6 +18172,21 @@ class SaveEditorApp:
         fraction_slash_label.pack(side="left", padx=3)
         fraction_den_entry = ttk.Entry(fraction_frame, textvariable=self.custom_effect_builder_fraction_den_var, width=5)
         fraction_den_entry.pack(side="left")
+        # Threshold controls for Sitrus-style heal (hidden by default)
+        self.custom_effect_builder_threshold_label = ttk.Label(fraction_frame, text="HP Threshold (%)")
+        self.custom_effect_builder_threshold_combo = ttk.Combobox(
+            fraction_frame,
+            textvariable=self.custom_effect_builder_threshold_var,
+            values=["50", "25", "75", "20"],
+            state="readonly",
+            width=6,
+        )
+        # Hide initially; shown only when archetype is heal_at_hp_threshold
+        try:
+            self.custom_effect_builder_threshold_label.pack_forget()
+            self.custom_effect_builder_threshold_combo.pack_forget()
+        except Exception:
+            pass
 
         drain_label = ttk.Label(right, text="Drain Percent")
         drain_label.grid(row=5, column=0, sticky="w", padx=(0, 6), pady=3)
@@ -18075,6 +18213,8 @@ class SaveEditorApp:
             width=24,
         )
         timing_combo.grid(row=6, column=1, sticky="ew", pady=3)
+        # expose timing combo for category-driven locking
+        self.custom_effect_builder_timing_combo = timing_combo
         stages_label = ttk.Label(right, text="Stages")
         stages_label.grid(row=6, column=2, sticky="w", padx=(8, 6), pady=3)
         stages_entry = ttk.Entry(right, textvariable=self.custom_effect_builder_stages_var, width=8)
@@ -18096,6 +18236,8 @@ class SaveEditorApp:
             var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
         once_check = ttk.Checkbutton(right, text="Once per battle", variable=self.custom_effect_builder_once_var)
         once_check.grid(row=8, column=1, columnspan=3, sticky="w", pady=3)
+        per_hit_check = ttk.Checkbutton(right, text="Trigger per hit (multi-hit moves)", variable=self.custom_effect_builder_per_hit_var)
+        per_hit_check.grid(row=8, column=3, sticky="w", pady=3, padx=(8, 0))
 
         ttk.Label(right, textvariable=self.custom_effect_builder_category_note_var, foreground="#555555", wraplength=720).grid(
             row=9, column=0, columnspan=4, sticky="ew", pady=(6, 4)
@@ -18135,17 +18277,21 @@ class SaveEditorApp:
             var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
         self.custom_effect_builder_super_effective_var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
         self.custom_effect_builder_once_var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
+        self.custom_effect_builder_per_hit_var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
         desc.bind("<KeyRelease>", self._custom_effect_builder_update_preview, add="+")
         category_combo.bind("<<ComboboxSelected>>", self._custom_effect_builder_on_category_changed, add="+")
         type_combo.bind("<<ComboboxSelected>>", self._custom_effect_builder_refresh_field_states, add="+")
         timing_combo.bind("<<ComboboxSelected>>", self._custom_effect_builder_refresh_field_states, add="+")
         self._custom_effect_builder_field_groups = {
-            "damage": [move_type_label, move_type_combo, super_check],
-            "heal": [heal_fraction_label, fraction_num_entry, fraction_slash_label, fraction_den_entry],
+            "damage": [multiplier_label, multiplier_entry, super_check],
+            "heal": [heal_fraction_label, fraction_frame],
             "drain": [drain_label, drain_entry],
             "stat": [direction_label, direction_combo, timing_label, timing_combo, stages_label, stages_entry, stats_label, *stat_widgets],
             "once": [once_check],
+            "per_hit": [per_hit_check],
             "multiplier": [multiplier_label, multiplier_entry],
+            "move_type": [move_type_label, move_type_combo],
+            "threshold": [self.custom_effect_builder_threshold_label, self.custom_effect_builder_threshold_combo],
         }
         self._custom_effect_builder_readonly_widgets = {category_combo, type_combo, direction_combo, timing_combo}
 
