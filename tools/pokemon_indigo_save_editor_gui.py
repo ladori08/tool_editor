@@ -17347,10 +17347,10 @@ class SaveEditorApp:
         mapping = {
             "damage": ["damage_multiplier"],
             "healing": ["heal_holder", "drain_damage_dealt"],
-            "stat": ["change_user_stat_stage"],
-            "status": [],
+            "stat": ["change_user_stat_stage", "lower_target_stat_stage"],
+            "status": ["apply_status_target"],
             "speed": ["speed_multiplier"],
-            "contact": [],
+            "contact": ["apply_status_target", "lower_target_stat_stage"],
             "end_turn": ["heal_holder", "change_user_stat_stage"],
             "battle_field": [],
         }
@@ -17365,6 +17365,8 @@ class SaveEditorApp:
             ("Sitrus-style (Threshold Healing)", "heal_at_hp_threshold"),
             ("Draining Kiss-style (Lifesteal)", "drain_damage_dealt"),
             ("Change holder stat stage", "change_user_stat_stage"),
+            ("Lower target stat stage on hit", "lower_target_stat_stage"),
+            ("Inflict target status on hit", "apply_status_target"),
             ("On-hit stat raise (Weakness Policy-style)", "stat_raise_on_hit"),
             ("On-hit Absorption Healing", "heal_on_being_hit"),
             ("Speed multiplier", "speed_multiplier"),
@@ -17431,6 +17433,10 @@ class SaveEditorApp:
         if normalized in {"end_of_round", "end_of_turn", "end turn", "end_turn"}:
             return "End of turn"
         return "After holder uses a move"
+
+    @staticmethod
+    def _custom_effect_builder_status_options() -> list[str]:
+        return ["POISON", "TOXIC", "BURN", "PARALYSIS", "SLEEP", "FREEZE"]
 
     def _custom_effect_slug_from_name(self, name: str) -> str:
         # Prefer backend helper that returns a lowercase, underscore slug if available
@@ -17526,6 +17532,8 @@ class SaveEditorApp:
                 "fraction_numerator": str(getattr(self, "custom_effect_builder_fraction_num_var", tk.StringVar(value="1")).get() or "1").strip(),
                 "fraction_denominator": str(getattr(self, "custom_effect_builder_fraction_den_var", tk.StringVar(value="16")).get() or "16").strip(),
                 "percent": str(getattr(self, "custom_effect_builder_percent_var", tk.StringVar(value="75")).get() or "75").strip(),
+                "chance_percent": str(getattr(self, "custom_effect_builder_percent_var", tk.StringVar(value="75")).get() or "75").strip(),
+                "status": str(getattr(self, "custom_effect_builder_status_var", tk.StringVar(value="POISON")).get() or "POISON").strip().upper(),
                 "threshold_percent": str(getattr(self, "custom_effect_builder_threshold_var", tk.StringVar(value="50")).get() or "50").strip(),
                 "stats": stats,
                 "stages": str(getattr(self, "custom_effect_builder_stages_var", tk.StringVar(value="1")).get() or "1").strip(),
@@ -17640,6 +17648,7 @@ class SaveEditorApp:
         if preview is None:
             return
         preview.set(self._custom_effect_compiled_preview_text(self._custom_effect_collect_authoring()))
+        self._custom_effect_builder_generate_description(force=False, allow_overwrite=True)
 
     def _custom_effect_builder_refresh_type_options(self, preserve_current: bool = True):
         combo = getattr(self, "custom_effect_builder_type_combo", None)
@@ -17699,15 +17708,82 @@ class SaveEditorApp:
         name_var = getattr(self, "custom_effect_builder_name_var", None)
         if id_var is None or name_var is None:
             return
+        if getattr(self, "_custom_effect_builder_id_user_edited", False):
+            self._custom_effect_builder_update_preview()
+            return
         current = str(id_var.get() or "").strip()
-        if current:
+        last_auto = str(getattr(self, "_custom_effect_builder_last_auto_id", "") or "").strip()
+        if current and current != last_auto:
             self._custom_effect_builder_update_preview()
             return
         base = self._custom_effect_slug_from_name(str(name_var.get() or ""))
+        if not str(base or "").strip():
+            self._custom_effect_builder_update_preview()
+            return
         # Ensure uniqueness then present as lowercase slug
         unique = self._custom_effect_unique_id((base or "custom_effect").upper())
-        id_var.set(str(unique or "CUSTOM_EFFECT").lower())
+        generated = str(unique or "CUSTOM_EFFECT").lower()
+        self._custom_effect_builder_id_autofill_lock = True
+        try:
+            id_var.set(generated)
+        finally:
+            self._custom_effect_builder_id_autofill_lock = False
+        self._custom_effect_builder_last_auto_id = generated
         self._custom_effect_builder_update_preview()
+
+    def _custom_effect_builder_mark_id_user_edited(self, _event=None):
+        if getattr(self, "_custom_effect_builder_id_autofill_lock", False):
+            return
+        self._custom_effect_builder_id_user_edited = True
+        self._custom_effect_builder_last_auto_id = ""
+
+    def _custom_effect_builder_get_desc(self) -> str:
+        widget = getattr(self, "custom_effect_builder_desc_text", None)
+        if widget is None:
+            return ""
+        try:
+            return str(widget.get("1.0", "end") or "").strip()
+        except Exception:
+            return ""
+
+    def _custom_effect_builder_generated_description(self, authoring: dict[str, Any] | None = None) -> str:
+        if custom_item_effect_pool is None:
+            return ""
+        payload = dict(authoring) if isinstance(authoring, dict) else self._custom_effect_collect_authoring()
+        # Avoid recursive self-feeding: generate from compile-shape, not from existing Description text.
+        payload["description"] = ""
+        try:
+            compiled, errors = custom_item_effect_pool.compile_custom_effect_authoring(payload)
+        except Exception:
+            return ""
+        if not isinstance(compiled, dict) or errors:
+            return ""
+        mechanics = self._custom_pool_effect_mechanics_lines(compiled)
+        mechanics = [
+            str(line or "").strip()
+            for line in mechanics
+            if str(line or "").strip() and str(line or "").strip().casefold() != "mechanics:"
+        ]
+        if not mechanics:
+            return ""
+        return "Mechanics:\n" + "\n".join(f"- {line}" for line in mechanics)
+
+    def _custom_effect_builder_generate_description(self, force: bool = False, allow_overwrite: bool = False) -> bool:
+        current = self._custom_effect_builder_get_desc()
+        if current and not force and not allow_overwrite:
+            return False
+        generated = self._custom_effect_builder_generated_description()
+        if not generated:
+            return False
+        if current == generated:
+            return False
+        self._custom_effect_builder_desc_autofill_lock = True
+        try:
+            self._custom_effect_builder_set_desc(generated)
+        finally:
+            self._custom_effect_builder_desc_autofill_lock = False
+        self._custom_effect_builder_update_preview()
+        return True
 
     def _custom_effect_builder_rows(self) -> list[dict[str, Any]]:
         if custom_item_effect_pool is None:
@@ -17774,6 +17850,10 @@ class SaveEditorApp:
     def _custom_effect_builder_clear_form(self):
         if not hasattr(self, "custom_effect_builder_id_var"):
             return
+        self._custom_effect_builder_id_user_edited = False
+        self._custom_effect_builder_id_autofill_lock = False
+        self._custom_effect_builder_last_auto_id = ""
+        self._custom_effect_builder_desc_autofill_lock = False
         self.custom_effect_builder_id_var.set("")
         self.custom_effect_builder_name_var.set("")
         self.custom_effect_builder_category_var.set("Damage")
@@ -17784,6 +17864,8 @@ class SaveEditorApp:
         self.custom_effect_builder_fraction_num_var.set("1")
         self.custom_effect_builder_fraction_den_var.set("16")
         self.custom_effect_builder_percent_var.set("75")
+        if hasattr(self, "custom_effect_builder_status_var"):
+            self.custom_effect_builder_status_var.set("POISON")
         self.custom_effect_builder_direction_var.set("Raise")
         self.custom_effect_builder_timing_var.set("After holder uses a move")
         stat_vars = getattr(self, "_custom_effect_builder_stat_vars", {})
@@ -17809,6 +17891,8 @@ class SaveEditorApp:
         if not row:
             return
         self.custom_effect_builder_id_var.set(effect_id)
+        self._custom_effect_builder_last_auto_id = str(effect_id or "").strip().lower()
+        self._custom_effect_builder_id_user_edited = True
         self.custom_effect_builder_name_var.set(str(row.get("name", "") or effect_id))
         self.custom_effect_builder_category_var.set(str(row.get("category", "") or "Custom"))
         self.custom_effect_builder_type_var.set(self._custom_effect_type_label(str(row.get("effect_type", "") or "")))
@@ -17829,7 +17913,9 @@ class SaveEditorApp:
         self.custom_effect_builder_multiplier_var.set(str(values.get("multiplier", "1.2")))
         self.custom_effect_builder_fraction_num_var.set(str(values.get("fraction_numerator", "1")))
         self.custom_effect_builder_fraction_den_var.set(str(values.get("fraction_denominator", "16")))
-        self.custom_effect_builder_percent_var.set(str(values.get("percent", "75")))
+        self.custom_effect_builder_percent_var.set(str(values.get("percent", values.get("chance_percent", "75"))))
+        if hasattr(self, "custom_effect_builder_status_var"):
+            self.custom_effect_builder_status_var.set(str(values.get("status", "POISON") or "POISON").upper())
         stats = values.get("stats", values.get("stat", "ATTACK"))
         if isinstance(stats, list):
             stat_values = {str(stat).strip().lstrip(":").upper() for stat in stats if str(stat).strip()}
@@ -17858,6 +17944,7 @@ class SaveEditorApp:
         if custom_item_effect_pool is None:
             messagebox.showerror("Custom Effect Error", "Custom Effect backend is unavailable.")
             return
+        self._custom_effect_builder_generate_description(force=False, allow_overwrite=False)
         category = str(getattr(self, "custom_effect_builder_category_var", tk.StringVar(value="Damage")).get() or "").strip()
         options = self._custom_effect_type_options(category)
         if not options:
@@ -18018,8 +18105,10 @@ class SaveEditorApp:
 
         is_damage = effect_type == "damage_multiplier"
         is_heal = effect_type in {"heal_holder", "heal_at_hp_threshold", "heal_on_being_hit"}
-        is_drain = effect_type == "drain_damage_dealt"
-        is_stat = effect_type in {"change_user_stat_stage", "raise_user_stat_stage", "stat_raise_on_hit"}
+        is_drain = effect_type in {"drain_damage_dealt", "apply_status_target", "lower_target_stat_stage"}
+        is_status = effect_type == "apply_status_target"
+        is_stat = effect_type in {"change_user_stat_stage", "raise_user_stat_stage", "stat_raise_on_hit", "lower_target_stat_stage"}
+        is_holder_stat = effect_type in {"change_user_stat_stage", "raise_user_stat_stage", "stat_raise_on_hit"}
         is_speed = effect_type == "speed_multiplier"
         is_on_hit = timing == "on_being_hit" or effect_type in {"stat_raise_on_hit", "heal_on_being_hit"}
 
@@ -18030,11 +18119,20 @@ class SaveEditorApp:
             "stat": is_stat,
             "multiplier": is_damage or is_speed,
             "move_type": is_damage or is_on_hit,
+            "status": is_status,
         }.items():
             self._custom_effect_builder_set_group_state(group_name, enabled)
 
-        self._custom_effect_builder_set_group_state("once", is_stat and timing == "after_move")
-        self._custom_effect_builder_set_group_state("per_hit", is_stat and timing == "after_move")
+        if hasattr(self, "custom_effect_builder_percent_label"):
+            try:
+                self.custom_effect_builder_percent_label.configure(
+                    text="Chance Percent" if effect_type in {"apply_status_target", "lower_target_stat_stage"} else "Drain Percent"
+                )
+            except Exception:
+                pass
+
+        self._custom_effect_builder_set_group_state("once", is_holder_stat and timing == "after_move")
+        self._custom_effect_builder_set_group_state("per_hit", is_holder_stat and timing == "after_move")
 
         if is_stat and timing != "after_move":
             try:
@@ -18044,6 +18142,26 @@ class SaveEditorApp:
         if is_stat and timing != "after_move":
             try:
                 self.custom_effect_builder_per_hit_var.set(False)
+            except Exception:
+                pass
+
+        if effect_type == "lower_target_stat_stage":
+            try:
+                self.custom_effect_builder_direction_var.set("Lower")
+                self.custom_effect_builder_timing_var.set("After holder uses a move")
+            except Exception:
+                pass
+            try:
+                if hasattr(self, "custom_effect_builder_direction_combo"):
+                    self.custom_effect_builder_direction_combo.configure(state="disabled")
+                if hasattr(self, "custom_effect_builder_timing_combo"):
+                    self.custom_effect_builder_timing_combo.configure(state="disabled")
+            except Exception:
+                pass
+        else:
+            try:
+                if hasattr(self, "custom_effect_builder_direction_combo"):
+                    self.custom_effect_builder_direction_combo.configure(state="readonly")
             except Exception:
                 pass
 
@@ -18075,13 +18193,15 @@ class SaveEditorApp:
         dialog.title("Custom Effects")
         dialog.transient(self.root)
         dialog.geometry("1040x700")
+        dialog.columnconfigure(0, weight=0, minsize=260)
         dialog.columnconfigure(1, weight=1)
         dialog.rowconfigure(0, weight=1)
 
-        left = ttk.LabelFrame(dialog, text="Parallel Custom Effects", padding=8)
+        left = ttk.LabelFrame(dialog, text="Parallel Custom Effects", padding=8, width=260)
         left.grid(row=0, column=0, sticky="nsew", padx=(10, 6), pady=10)
+        left.grid_propagate(False)
         left.rowconfigure(0, weight=1)
-        self.custom_effect_builder_listbox = tk.Listbox(left, width=38, exportselection=False)
+        self.custom_effect_builder_listbox = tk.Listbox(left, width=26, exportselection=False)
         self.custom_effect_builder_listbox.grid(row=0, column=0, sticky="nsew")
         effect_scroll = ttk.Scrollbar(left, orient="vertical", command=self.custom_effect_builder_listbox.yview)
         effect_scroll.grid(row=0, column=1, sticky="ns")
@@ -18104,6 +18224,7 @@ class SaveEditorApp:
         self.custom_effect_builder_fraction_num_var = tk.StringVar(value="1")
         self.custom_effect_builder_fraction_den_var = tk.StringVar(value="16")
         self.custom_effect_builder_percent_var = tk.StringVar(value="75")
+        self.custom_effect_builder_status_var = tk.StringVar(value="POISON")
         self.custom_effect_builder_threshold_var = tk.StringVar(value="50")
         self.custom_effect_builder_stat_var = tk.StringVar(value="ATTACK")
         self.custom_effect_builder_direction_var = tk.StringVar(value="Raise")
@@ -18114,13 +18235,20 @@ class SaveEditorApp:
         self.custom_effect_builder_preview_var = tk.StringVar()
         self.custom_effect_builder_category_note_var = tk.StringVar()
         self._custom_effect_builder_field_groups = {}
+        self._custom_effect_builder_desc_autofill_lock = False
 
         ttk.Label(right, text="Effect ID").grid(row=0, column=0, sticky="w", padx=(0, 6), pady=3)
-        ttk.Entry(right, textvariable=self.custom_effect_builder_id_var, width=28).grid(row=0, column=1, sticky="ew", pady=3)
+        effect_id_frame = ttk.Frame(right)
+        effect_id_frame.grid(row=0, column=1, sticky="ew", pady=3)
+        effect_id_frame.columnconfigure(0, weight=1)
+        effect_id_entry = ttk.Entry(effect_id_frame, textvariable=self.custom_effect_builder_id_var, width=28)
+        effect_id_entry.grid(row=0, column=0, sticky="ew")
         ttk.Label(right, text="Name").grid(row=0, column=2, sticky="w", padx=(8, 6), pady=3)
         name_entry = ttk.Entry(right, textvariable=self.custom_effect_builder_name_var, width=28)
         name_entry.grid(row=0, column=3, sticky="ew", pady=3)
-        name_entry.bind("<KeyRelease>", self._custom_effect_builder_autofill_id, add="+")
+        name_entry.bind("<FocusOut>", self._custom_effect_builder_autofill_id, add="+")
+        name_entry.bind("<Return>", self._custom_effect_builder_autofill_id, add="+")
+        effect_id_entry.bind("<KeyRelease>", self._custom_effect_builder_mark_id_user_edited, add="+")
 
         ttk.Label(right, text="Category").grid(row=1, column=0, sticky="w", padx=(0, 6), pady=3)
         category_combo = ttk.Combobox(
@@ -18190,8 +18318,12 @@ class SaveEditorApp:
 
         drain_label = ttk.Label(right, text="Drain Percent")
         drain_label.grid(row=5, column=0, sticky="w", padx=(0, 6), pady=3)
-        drain_entry = ttk.Entry(right, textvariable=self.custom_effect_builder_percent_var, width=12)
-        drain_entry.grid(row=5, column=1, sticky="w", pady=3)
+        self.custom_effect_builder_percent_label = drain_label
+        drain_frame = ttk.Frame(right)
+        drain_frame.grid(row=5, column=1, sticky="w", pady=3)
+        drain_entry = ttk.Entry(drain_frame, textvariable=self.custom_effect_builder_percent_var, width=10)
+        drain_entry.pack(side="left")
+        ttk.Label(drain_frame, text="%").pack(side="left", padx=(4, 0))
         direction_label = ttk.Label(right, text="Direction")
         direction_label.grid(row=5, column=2, sticky="w", padx=(8, 6), pady=3)
         direction_combo = ttk.Combobox(
@@ -18202,6 +18334,7 @@ class SaveEditorApp:
             width=14,
         )
         direction_combo.grid(row=5, column=3, sticky="w", pady=3)
+        self.custom_effect_builder_direction_combo = direction_combo
 
         timing_label = ttk.Label(right, text="Timing")
         timing_label.grid(row=6, column=0, sticky="w", padx=(0, 6), pady=3)
@@ -18219,6 +18352,16 @@ class SaveEditorApp:
         stages_label.grid(row=6, column=2, sticky="w", padx=(8, 6), pady=3)
         stages_entry = ttk.Entry(right, textvariable=self.custom_effect_builder_stages_var, width=8)
         stages_entry.grid(row=6, column=3, sticky="w", pady=3)
+        status_label = ttk.Label(right, text="Status")
+        status_label.grid(row=6, column=2, sticky="w", padx=(8, 6), pady=3)
+        status_combo = ttk.Combobox(
+            right,
+            textvariable=self.custom_effect_builder_status_var,
+            values=self._custom_effect_builder_status_options(),
+            state="readonly",
+            width=14,
+        )
+        status_combo.grid(row=6, column=3, sticky="w", pady=3)
 
         stats_label = ttk.Label(right, text="Stats")
         stats_label.grid(row=7, column=0, sticky="nw", padx=(0, 6), pady=3)
@@ -18270,6 +18413,7 @@ class SaveEditorApp:
             self.custom_effect_builder_fraction_num_var,
             self.custom_effect_builder_fraction_den_var,
             self.custom_effect_builder_percent_var,
+            self.custom_effect_builder_status_var,
             self.custom_effect_builder_direction_var,
             self.custom_effect_builder_timing_var,
             self.custom_effect_builder_stages_var,
@@ -18278,22 +18422,22 @@ class SaveEditorApp:
         self.custom_effect_builder_super_effective_var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
         self.custom_effect_builder_once_var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
         self.custom_effect_builder_per_hit_var.trace_add("write", lambda *_args: self._custom_effect_builder_update_preview())
-        desc.bind("<KeyRelease>", self._custom_effect_builder_update_preview, add="+")
         category_combo.bind("<<ComboboxSelected>>", self._custom_effect_builder_on_category_changed, add="+")
         type_combo.bind("<<ComboboxSelected>>", self._custom_effect_builder_refresh_field_states, add="+")
         timing_combo.bind("<<ComboboxSelected>>", self._custom_effect_builder_refresh_field_states, add="+")
         self._custom_effect_builder_field_groups = {
             "damage": [multiplier_label, multiplier_entry, super_check],
             "heal": [heal_fraction_label, fraction_frame],
-            "drain": [drain_label, drain_entry],
+            "drain": [drain_label, drain_frame],
             "stat": [direction_label, direction_combo, timing_label, timing_combo, stages_label, stages_entry, stats_label, *stat_widgets],
             "once": [once_check],
             "per_hit": [per_hit_check],
             "multiplier": [multiplier_label, multiplier_entry],
             "move_type": [move_type_label, move_type_combo],
             "threshold": [self.custom_effect_builder_threshold_label, self.custom_effect_builder_threshold_combo],
+            "status": [status_label, status_combo],
         }
-        self._custom_effect_builder_readonly_widgets = {category_combo, type_combo, direction_combo, timing_combo}
+        self._custom_effect_builder_readonly_widgets = {category_combo, type_combo, direction_combo, timing_combo, status_combo}
 
         self._custom_effect_builder_refresh_list()
         self._custom_effect_builder_clear_form()
@@ -18974,7 +19118,10 @@ class SaveEditorApp:
             return f"{fval:g}"
 
         lines: list[str] = []
-        if template == "heal_fraction_max_hp":
+        if template == "damage_multiplier":
+            mult = params.get("multiplier", "")
+            lines.append(f"Holder's damaging moves deal {number(mult)}x damage.")
+        elif template == "heal_fraction_max_hp":
             num = params.get("fraction_numerator", 1)
             den = params.get("fraction_denominator", 1)
             lines.append(f"Heals holder by {number(num)}/{number(den)} max HP at end of each turn.")
@@ -19029,6 +19176,9 @@ class SaveEditorApp:
             weather = str(params.get("weather", "") or params.get("require_weather", "") or "").strip()
             suffix = f" during {self._prettify_internal_id(weather)}" if weather else ""
             lines.append(f"Holder Speed is multiplied by {number(mult)}x{suffix}.")
+        elif template == "speed_multiplier":
+            mult = params.get("multiplier", "")
+            lines.append(f"Holder Speed is multiplied by {number(mult)}x.")
         elif template == "ability_active_bridge":
             ability = params.get("ability_id") or source_id
             ability_label = self._english_ability_name_for_id(str(ability))
@@ -19036,6 +19186,22 @@ class SaveEditorApp:
         elif template == "move_additional_effect_bridge":
             move_label = self._english_move_name_for_id(source_id)
             lines.append(f"Applies {move_label or source_label} additional effect while holder has this item active.")
+        elif template == "apply_status_target":
+            status = str(params.get("status", "POISON") or "POISON").upper()
+            chance = params.get("chance_percent", 100)
+            lines.append(f"After holder uses a move, inflicts {status.title()} on targets ({number(chance)}% chance).")
+        elif template == "lower_target_stat_stage":
+            stats = params.get("stats")
+            if not isinstance(stats, list) or not stats:
+                stats = [params.get("stat", "DEFENSE")]
+            stat_text = self._join_with_and([self._custom_stat_label(str(stat)) for stat in stats if str(stat or "").strip()])
+            stages = int(float(params.get("stages", 1) or 1))
+            chance = params.get("chance_percent", 100)
+            if stat_text:
+                lines.append(
+                    f"After holder uses a move, lowers target {stat_text} by -{abs(stages)} stage"
+                    f"{'s' if abs(stages) != 1 else ''} ({number(chance)}% chance)."
+                )
 
         if not lines:
             description = str(effect.get("description", "") or "").strip()

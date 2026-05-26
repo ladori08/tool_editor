@@ -32,6 +32,12 @@
 - Custom Effect Builder v1 stat wizard UX hardening: done initial version.
 - Custom Effect Builder category -> effect-type filtering: done initial version.
 - Custom Effect Builder v1 compile-path/validation hardening: done initial version.
+- Custom Effect Builder v2 starter archetypes (PR merge): done initial version (`heal_at_hp_threshold`, `heal_on_being_hit`, `stat_raise_on_hit`; UI label `Mechanic Style`).
+- Custom Effect Builder UX polish (`2026-05-24`): done initial version (Drain Percent `%` label, smoother ID generation, Description auto/generate flow).
+- Custom Effect Builder description recursion fix (`2026-05-24`): done initial version (no extra blank/`Mechanics:` lines on repeated Generate clicks).
+- Custom Effect Builder target-on-hit expansion (`2026-05-24`): done initial version (`apply_status_target`, `lower_target_stat_stage`) with runtime compile support.
+- Custom Effects dialog layout polish (`2026-05-25`): done initial version (left list panel narrowed to prioritize editor workspace).
+- Custom Effect dialog control simplification (`2026-05-25`): done initial version (removed manual `Auto` ID button and manual description-generation controls; generation is system-driven).
 - Next recommended phase: Custom Effect Builder v1 user-side smoke test plus Builder v2 expansion and user-side runtime/overlay verification.
 - Custom Item core status after review on `2026-05-07 14:25`: tool-side Custom Item engine is largely complete for the current scope. Runtime patch inspect reports `ok`, bridge v2 installed/current, patch before `Main`, 2 manifest items, and no warnings. Remaining Custom Item work is mostly user-side GUI/in-game validation, optional cleanup of manifest-linked baked `DRAGONSOUL`, bridge hardening as new selected effects need coverage, and the separate Custom Effect authoring phase.
 
@@ -72,6 +78,31 @@ Notes:
 - Proposed next architecture: reusable Custom Effect authoring, parallel to Custom Item authoring. User-facing creation should be wizard/dropdown-driven: choose trigger timing, effect family, target, condition, amount/stat/type/status/etc.; the tool compiles those choices into internal hook/template/params. Custom effects should live in `tools/custom_item/data/custom_effect_manifest.json`, be validated against safe runtime templates/hooks, then appear inside the CustomItem normalized effect pool as user-created reusable effects.
 - Implemented Custom Effect Builder v1 foundation on `2026-05-08`: `custom_effect_manifest.json` exists, Builder v1 can save/delete custom effects, validates against allowed v1 templates, merges user-created effects into the normalized pool, and can add a saved custom effect to the current custom item.
 - Custom Effect Builder stat-stage UX hardening on `2026-05-08`: stat effects now support multiple selected stats, Raise/Lower direction, `After holder uses a move` vs `End of turn` timing, disabled irrelevant fields, and preview text that says Raises/Lowers correctly.
+- Custom Effect Builder input polish on `2026-05-24`:
+  - Drain Percent now displays `%` inline next to the input field.
+  - `Effect ID` no longer re-generates on every `Name` keystroke.
+  - ID auto-generation now runs on `Name` focus-out/Enter (when ID is still auto-managed) or via explicit `Auto` button.
+  - Manually edited `Effect ID` is treated as user-owned and not overwritten by name changes.
+  - `Description` can be generated from compiled mechanics via `Generate Description`.
+  - `Auto Description` mode updates generated mechanics text automatically when effect values change.
+  - If user edits Description manually, `Auto Description` is turned off to prevent forced overwrite.
+- Custom Effect Builder description generation fix on `2026-05-24`:
+  - Generation now compiles from a clean payload (`description=""`) to prevent self-referential recursion.
+  - Generated mechanics list filters blank lines and literal `Mechanics:` rows.
+  - `speed_multiplier` now has a direct mechanics line (`Holder Speed is multiplied by <x>x.`), so it no longer falls back to stale description text.
+- Custom Effect Builder target-on-hit v2 starter support on `2026-05-24`:
+  - New mechanic styles:
+    - `Inflict target status on hit` -> `after_move_use/apply_status_target`
+    - `Lower target stat stage on hit` -> `after_move_use/lower_target_stat_stage`
+  - `Chance Percent` UI is shared with the `%` field when the selected mechanic is chance-based.
+  - `lower_target_stat_stage` now supports multi-stat lists (`stats: [...]`) in hook compiler generation.
+- Custom Effects dialog width tuning on `2026-05-25`:
+  - Left `Parallel Custom Effects` panel now uses fixed/narrower width (`~260px`) and smaller list width for cleaner right-side editing area.
+- Custom Effect description generation behavior update on `2026-05-25`:
+  - Description generation is now always system-driven from compiled effect mechanics.
+  - Manual controls `Auto Description` and `Generate Description` were removed from the dialog UI.
+  - `Effect ID` manual `Auto` button was removed; ID auto behavior remains system-driven.
+  - Added explicit mechanics line for base `damage_multiplier`, so initial/default effect state no longer falls back to Name text in Description.
 - Custom Effect Builder v1 validation hardening on `2026-05-12`:
   - strict parameter validation (no silent clamp for invalid values)
   - duplicate ID guards (built-in pool collision + custom collision)
@@ -98,10 +129,10 @@ Notes:
   - `End Turn`: effects checked at end of round/turn, such as Leftovers/Speed Boost/Orb-style effects.
   - `Battle Field`: weather, terrain, screens, rooms, hazards, and side/field conditions.
 - Fixed runtime bridge stat-stage runtime handlers now honor both `direction` (`raise`/`lower`) and multi-stat `stats` lists for after-move and end-of-round stat templates.
-- Latest rebuild after Builder v1 compile-path/validation hardening: `tools/PokemonIndigoSaveEditor.exe` (`2026-05-12 18:09:29`, `11,552,528` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-12 18:09:32`, `13,516,243` bytes).
+- Latest rebuild after dialog control simplification on `2026-05-25`: `tools/PokemonIndigoSaveEditor.exe` (`2026-05-25 17:48:38`, `11,561,405` bytes) and `tools/installer/dist/PokemonSaveEditor_Setup.exe` (`2026-05-25 17:48:41`, `13,524,339` bytes).
 - Saved detailed plan: `CUSTOM_EFFECT_BUILDER_PLAN.md`.
 - Saved Excel checklist: `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` (project editor-tool checklist workbook).
-- Current workbook scope after latest update: `Summary`, `Project Checklist`, `Custom Effect Builder`, and `Legend` sheets; generated from `TASKS.md` with 990 project checklist rows plus 157 Custom Effect Builder plan/milestone rows as of `2026-05-12`.
+- Current workbook scope after latest update: `Summary`, `Project Checklist`, `Custom Effect Builder`, and `Legend` sheets; generated from `TASKS.md` with 996 project checklist rows plus 157 Custom Effect Builder plan/milestone rows as of `2026-05-25`.
 - Checklist update rule: always update `CUSTOM_EFFECT_BUILDER_CHECKLIST.xlsx` when completing any tracked project/editor-tool item, including analyze-only work, and keep it aligned with `CURRENT_STATE.md`, `TASKS.md`, and `WORKLOG.md`.
 - Additional approved planning requirements:
 - Custom effects should be reusable/validated across multiple compatible Pokemon Essentials-style games.

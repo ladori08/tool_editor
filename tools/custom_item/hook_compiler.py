@@ -518,8 +518,11 @@ def _gen_after_move_use_combined(item_id: str, effects: list[dict[str, Any]]) ->
     for effect in stat_drop_effects:
         eid = str(effect.get("id", "UNKNOWN"))
         params = effect.get("params", {}) if isinstance(effect.get("params"), dict) else {}
-        stat_key = str(params.get("stat", "ATTACK")).upper().replace(" ", "_")
-        ruby_stat = _ruby_stat(stat_key)
+        stats_raw = params.get("stats")
+        if isinstance(stats_raw, list) and stats_raw:
+            stat_keys = [str(s).upper().replace(" ", "_") for s in stats_raw if str(s).strip()]
+        else:
+            stat_keys = [str(params.get("stat", "ATTACK")).upper().replace(" ", "_")]
         stages = max(1, int(params.get("stages", 1)))
         chance = max(1, min(100, int(params.get("chance_percent", 100))))
         lines += [
@@ -527,9 +530,15 @@ def _gen_after_move_use_combined(item_id: str, effects: list[dict[str, Any]]) ->
             "      targets.each do |target|",
             "        next if !target || target.fainted?",
             f"        next if battle.pbRandom(100) >= {chance}",
-            f"        if target.pbCanLowerStatStage?({ruby_stat}, user)",
-            f"          target.pbLowerStatStageByCause({ruby_stat}, {stages}, user, user.itemName) rescue target.pbLowerStatStage({ruby_stat}, {stages}, user)",
-            "        end",
+        ]
+        for stat_key in stat_keys:
+            ruby_stat = _ruby_stat(stat_key)
+            lines += [
+                f"        if target.pbCanLowerStatStage?({ruby_stat}, user)",
+                f"          target.pbLowerStatStageByCause({ruby_stat}, {stages}, user, user.itemName) rescue target.pbLowerStatStage({ruby_stat}, {stages}, user)",
+                "        end",
+            ]
+        lines += [
             "      end",
         ]
 
